@@ -20,8 +20,31 @@ body,
 body {
   margin: 0;
   min-height: 100svh;
-  background-color: #000;
   color: #e5e5e5;
+  background-color: #05080f;
+  background-image:
+    radial-gradient(
+      ellipse 90% 70% at 50% 50%,
+      transparent 45%,
+      rgba(0, 0, 0, 0.55) 100%
+    ),
+    radial-gradient(
+      ellipse 70% 55% at 12% -10%,
+      rgba(74, 168, 232, 0.28),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 55% 45% at 100% 0%,
+      rgba(124, 196, 250, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 70% 50% at 50% 110%,
+      rgba(184, 146, 76, 0.14),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #0a1424 0%, #08111e 40%, #05080f 100%);
+  background-attachment: fixed;
 }
 
 .app {
@@ -31,19 +54,42 @@ body {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(5, 8, 15, 0.55);
+  border-bottom: 1px solid rgba(124, 196, 250, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .navbar__brand {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #f5f5f5;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    #f4faff 0%,
+    #d6ecff 30%,
+    #a8d8ff 60%,
+    #6fb4e8 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 14px rgba(124, 196, 250, 0.22));
+}
+
+.navbar__brand:focus-visible {
+  outline: 2px solid #a8d8ff;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .navbar__nav {
@@ -54,4 +100,8 @@ body {
 
 .app__main {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(1.5rem, 4vw, 3.5rem) 1.25rem 4rem;
 }
