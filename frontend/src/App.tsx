@@ -1,8 +1,11 @@
+import { Navbar } from './components/layout/Navbar'
+
 function App() {
   return (
-    <main className="app">
-      <h1>Hello World</h1>
-    </main>
+    <div className="app">
+      <Navbar />
+      <main className="app__main" />
+    </div>
   )
 }
 
