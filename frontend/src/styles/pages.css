@@ -7,18 +7,68 @@
 
 .spec-page {
   --class-color: #f58cba;
+  --card-angle: 0deg;
+  position: relative;
   width: 100%;
   max-width: 60rem;
   padding: clamp(1.5rem, 3vw, 2.5rem);
-  border: 1px solid color-mix(in srgb, var(--class-color) 26%, transparent);
+  border: 1px solid color-mix(in srgb, var(--class-color) 16%, transparent);
   border-radius: 1.375rem;
   background: linear-gradient(
     180deg,
     rgba(14, 21, 36, 0.9),
     rgba(7, 11, 20, 0.96)
   );
-  box-shadow: 0 2rem 5rem -3rem
-    color-mix(in srgb, var(--class-color) 45%, transparent);
+  box-shadow:
+    0 2rem 5rem -3.5rem color-mix(in srgb, var(--class-color) 32%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition:
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.spec-page:hover,
+.spec-page:focus-within {
+  border-color: color-mix(in srgb, var(--class-color) 48%, transparent);
+  box-shadow:
+    0 2rem 6rem -2.5rem color-mix(in srgb, var(--class-color) 48%, transparent),
+    inset 0 0 2.5rem color-mix(in srgb, var(--class-color) 7%, transparent);
+}
+
+.spec-page::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--card-angle),
+    transparent 0deg,
+    transparent 220deg,
+    color-mix(in srgb, var(--class-color) 25%, transparent) 275deg,
+    color-mix(in srgb, var(--class-color) 95%, white) 330deg,
+    color-mix(in srgb, var(--class-color) 25%, transparent) 355deg,
+    transparent 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: opacity 320ms ease;
+  animation: card-border-spin 10s linear infinite;
+}
+
+.spec-page:hover::after,
+.spec-page:focus-within::after {
+  opacity: 1;
+  animation-duration: 3.2s;
 }
 
 .spec-page__back {

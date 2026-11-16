@@ -1,0 +1,11 @@
+@property --card-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes card-border-spin {
+  to {
+    --card-angle: 360deg;
+  }
+}
