@@ -147,3 +147,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Agents
+.antigravity/
+.agents/
+.ecc/
+.opencode/
