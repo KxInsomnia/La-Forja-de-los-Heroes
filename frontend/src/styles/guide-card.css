@@ -1,0 +1,159 @@
+.guide-card {
+  --guide-color: #8cc8ff;
+  --card-angle: 0deg;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--guide-color) 18%, transparent);
+  border-radius: 1.375rem;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 21, 36, 0.85),
+    rgba(7, 11, 20, 0.94)
+  );
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 200ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.guide-card:hover,
+.guide-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--guide-color) 46%, transparent);
+  box-shadow:
+    0 1.75rem 4rem -2.5rem color-mix(in srgb, var(--guide-color) 45%, transparent),
+    inset 0 0 2rem color-mix(in srgb, var(--guide-color) 6%, transparent);
+}
+
+.guide-card:focus-visible {
+  outline: 2px solid var(--guide-color);
+  outline-offset: 3px;
+}
+
+.guide-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--card-angle),
+    transparent 0deg,
+    transparent 220deg,
+    color-mix(in srgb, var(--guide-color) 25%, transparent) 275deg,
+    color-mix(in srgb, var(--guide-color) 95%, white) 330deg,
+    color-mix(in srgb, var(--guide-color) 25%, transparent) 355deg,
+    transparent 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 320ms ease;
+}
+
+.guide-card:hover::after,
+.guide-card:focus-visible::after {
+  opacity: 1;
+  animation: card-border-spin 3.2s linear infinite;
+}
+
+.guide-card__icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid color-mix(in srgb, var(--guide-color) 30%, transparent);
+  border-radius: 0.95rem;
+  background: color-mix(in srgb, var(--guide-color) 12%, transparent);
+  color: var(--guide-color);
+  box-shadow: inset 0 0 1.25rem
+    color-mix(in srgb, var(--guide-color) 14%, transparent);
+}
+
+.guide-card__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.guide-card__kicker {
+  margin: 1rem 0 0;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--guide-color) 75%, white);
+}
+
+.guide-card__title {
+  margin: 0.3rem 0 0;
+  font-size: 1.45rem;
+  color: #f2f8ff;
+}
+
+.guide-card__desc {
+  margin: 0.55rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #94a4bb;
+}
+
+.guide-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.guide-card__status {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #8b9bb2;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.guide-card__status--available {
+  border-color: color-mix(in srgb, var(--guide-color) 35%, transparent);
+  background: color-mix(in srgb, var(--guide-color) 10%, transparent);
+  color: color-mix(in srgb, var(--guide-color) 80%, white);
+}
+
+.guide-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--guide-color) 80%, white);
+}
+
+.guide-card__cta svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  transition: transform 150ms ease;
+}
+
+.guide-card:hover .guide-card__cta svg,
+.guide-card:focus-visible .guide-card__cta svg {
+  transform: translateX(3px);
+}

@@ -1,0 +1,32 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
+  color: #9fb0c7;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: #eaf4ff;
+}
+
+.back-link:focus-visible {
+  outline: 2px solid #a8d8ff;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.back-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  transition: transform 150ms ease;
+}
+
+.back-link:hover svg,
+.back-link:focus-visible svg {
+  transform: translateX(-3px);
+}

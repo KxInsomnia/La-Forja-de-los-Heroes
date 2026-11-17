@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { BackLink } from '../components/ui/BackLink'
 import { getClassBySlug } from '../data/classes'
 import { roleLabels } from '../lib/wow'
 
@@ -19,14 +20,12 @@ export function SpecPage() {
   if (!wowClass || !spec) {
     return (
       <div className="spec-page">
+        <BackLink />
         <p className="spec-page__kicker">Guía no encontrada</p>
         <h1 className="spec-page__title">Esta guía no existe</h1>
         <p className="spec-page__desc">
           Revisa la URL o vuelve al inicio para elegir una clase.
         </p>
-        <Link className="spec-page__back" to="/">
-          ← Volver al inicio
-        </Link>
       </div>
     )
   }
@@ -36,9 +35,7 @@ export function SpecPage() {
       className="spec-page"
       style={{ '--class-color': wowClass.color } as CSSProperties}
     >
-      <Link className="spec-page__back" to="/">
-        ← Volver al inicio
-      </Link>
+      <BackLink />
       <p className="spec-page__kicker">
         {wowClass.name} · {roleLabels[spec.role]}
       </p>

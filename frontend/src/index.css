@@ -58,6 +58,7 @@ body {
   top: 0;
   z-index: 10;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -94,8 +95,59 @@ body {
 
 .navbar__nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem 1.25rem;
+}
+
+.navbar__link {
+  position: relative;
+  padding: 0.25rem 0;
+  color: #9fb0c7;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  color: #eaf4ff;
+}
+
+.navbar__link:focus-visible {
+  outline: 2px solid #a8d8ff;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.navbar__link--active {
+  color: #d6ecff;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -0.2rem;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #8cc8ff, transparent);
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    gap: 0.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .navbar__nav {
+    gap: 0.4rem 0.85rem;
+  }
+
+  .navbar__link {
+    font-size: 0.72rem;
+  }
 }
 
 .app__main {
