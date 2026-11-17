@@ -9,7 +9,6 @@ interface GuideCardProps {
   variant: GuideVariant
   kicker: string
   title: string
-  description: string
   status: string
   available?: boolean
   color: string
@@ -94,7 +93,6 @@ export function GuideCard({
   variant,
   kicker,
   title,
-  description,
   status,
   available = false,
   color,
@@ -110,7 +108,6 @@ export function GuideCard({
       </span>
       <p className="guide-card__kicker">{kicker}</p>
       <h2 className="guide-card__title">{title}</h2>
-      <p className="guide-card__desc">{description}</p>
       <div className="guide-card__footer">
         <span
           className={`guide-card__status${available ? ' guide-card__status--available' : ''}`}

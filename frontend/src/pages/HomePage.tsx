@@ -10,7 +10,6 @@ export function HomePage() {
           variant="pve"
           kicker="Guías"
           title="PvE"
-          description="Especializaciones, talentos, glifos, estadísticas y rotaciones para cada clase."
           status="Guerrero disponible"
           available
           color="#8cc8ff"
@@ -20,7 +19,6 @@ export function HomePage() {
           variant="pvp"
           kicker="Guías"
           title="PvP"
-          description="Arena y campos de batalla: builds, combinaciones y estrategias."
           status="En trabajo"
           color="#fb7185"
         />
@@ -29,7 +27,6 @@ export function HomePage() {
           variant="raid"
           kicker="Guías"
           title="Bandas"
-          description="Encuentros, composiciones y consejos para cada raid de Wrath."
           status="En trabajo"
           color="#d9b877"
         />

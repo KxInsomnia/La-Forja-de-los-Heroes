@@ -103,13 +103,6 @@
   color: #f2f8ff;
 }
 
-.guide-card__desc {
-  margin: 0.55rem 0 0;
-  font-size: 0.85rem;
-  line-height: 1.55;
-  color: #94a4bb;
-}
-
 .guide-card__footer {
   display: flex;
   align-items: center;

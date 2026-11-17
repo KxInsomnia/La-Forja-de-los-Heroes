@@ -5,6 +5,7 @@ export interface WowSpec {
   name: string
   role: WowRole
   description?: string
+  recommended?: boolean
   buildCount: number
 }
 

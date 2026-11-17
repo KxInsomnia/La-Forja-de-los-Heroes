@@ -9,10 +9,6 @@ export function PvePage() {
       <header className="content-page__header">
         <p className="content-page__kicker">Guías</p>
         <h1 className="content-page__title">PvE</h1>
-        <p className="content-page__desc">
-          Empezamos por el Guerrero. Poco a poco iremos añadiendo el resto de
-          clases.
-        </p>
       </header>
       <ClassCard wowClass={warrior} />
     </section>

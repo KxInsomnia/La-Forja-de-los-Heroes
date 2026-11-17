@@ -20,8 +20,10 @@ function ClassEmblem() {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z" />
-      <path d="M12 8v6M9 11h6" />
+      <path d="M12 2.5l3 3v8l-3 3-3-3v-8l3-3z" />
+      <path d="M7 13.5h10" />
+      <path d="M12 16.5v4" />
+      <path d="M9.5 20.5h5" />
     </svg>
   )
 }
@@ -68,6 +70,13 @@ export function ClassCard({ wowClass }: ClassCardProps) {
             data-role={spec.role}
             aria-label={`Ver guía de ${spec.name}, ${roleLabels[spec.role]} de ${wowClass.name}`}
           >
+            {spec.recommended !== undefined && (
+              <span
+                className={`role-panel__badge${spec.recommended ? ' role-panel__badge--yes' : ''}`}
+              >
+                {spec.recommended ? 'Recomendado' : 'No recomendado'}
+              </span>
+            )}
             <span className="role-panel__icon">
               <RoleIcon role={spec.role} />
             </span>

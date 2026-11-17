@@ -25,9 +25,10 @@ export function RoleIcon({ role, className }: RoleIconProps) {
       )}
       {role === 'DPS' && (
         <>
-          <path d="M12 2l2.5 2.5L12 16l-2.5-11.5L12 2z" />
-          <path d="M8 16h8" />
-          <path d="M12 16v6" />
+          <path d="M12 2.5l2.4 2.4v8.1l-2.4 2.5-2.4-2.5V4.9L12 2.5z" />
+          <path d="M7.5 13.5h9" />
+          <path d="M12 15.5v4.5" />
+          <path d="M9.5 20.5h5" />
         </>
       )}
     </svg>
