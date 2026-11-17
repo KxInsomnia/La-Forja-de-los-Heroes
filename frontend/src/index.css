@@ -22,6 +22,14 @@ body {
   min-height: 100svh;
   color: #e5e5e5;
   background-color: #05080f;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image:
     radial-gradient(
       ellipse 90% 70% at 50% 50%,
@@ -44,7 +52,6 @@ body {
       transparent 60%
     ),
     linear-gradient(180deg, #0a1424 0%, #08111e 40%, #05080f 100%);
-  background-attachment: fixed;
 }
 
 .app {
@@ -63,10 +70,8 @@ body {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background: rgba(5, 8, 15, 0.55);
+  background: rgba(5, 8, 15, 0.9);
   border-bottom: 1px solid rgba(124, 196, 250, 0.12);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
 }
 
 .navbar__brand {

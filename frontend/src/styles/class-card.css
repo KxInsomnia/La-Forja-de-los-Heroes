@@ -76,17 +76,13 @@
   mask-composite: exclude;
   opacity: 1;
   pointer-events: none;
-  filter: drop-shadow(
-    0 0 0.55rem color-mix(in srgb, var(--class-color) 65%, transparent)
-  );
   transition: opacity 320ms ease;
-  animation: card-border-spin 10s linear infinite;
 }
 
 .class-card:hover::after,
 .class-card:focus-within::after {
   opacity: 1;
-  animation-duration: 3.2s;
+  animation: card-border-spin 3.2s linear infinite;
 }
 
 .class-card__header {

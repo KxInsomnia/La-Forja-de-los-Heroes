@@ -58,7 +58,6 @@
 
 .spec-page {
   --class-color: #f58cba;
-  --card-angle: 0deg;
   position: relative;
   width: 100%;
   max-width: 60rem;
@@ -84,42 +83,6 @@
   box-shadow:
     0 2rem 6rem -2.5rem color-mix(in srgb, var(--class-color) 48%, transparent),
     inset 0 0 2.5rem color-mix(in srgb, var(--class-color) 7%, transparent);
-}
-
-.spec-page::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  padding: 2px;
-  border-radius: inherit;
-  background: conic-gradient(
-    from var(--card-angle),
-    transparent 0deg,
-    transparent 220deg,
-    color-mix(in srgb, var(--class-color) 25%, transparent) 275deg,
-    color-mix(in srgb, var(--class-color) 95%, white) 330deg,
-    color-mix(in srgb, var(--class-color) 25%, transparent) 355deg,
-    transparent 360deg
-  );
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  opacity: 0.32;
-  pointer-events: none;
-  transition: opacity 320ms ease;
-  animation: card-border-spin 10s linear infinite;
-}
-
-.spec-page:hover::after,
-.spec-page:focus-within::after {
-  opacity: 1;
-  animation-duration: 3.2s;
 }
 
 .spec-page > .back-link {
@@ -164,6 +127,20 @@
   background: rgba(255, 255, 255, 0.02);
   color: #c7d4e6;
   font-size: 0.9rem;
+}
+
+.spec-page__talents {
+  margin-top: 2rem;
+}
+
+.spec-page__talents-head {
+  margin-bottom: 1rem;
+}
+
+.spec-page__talents-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #eef6ff;
 }
 
 .not-found {
