@@ -744,6 +744,147 @@ const holyTips: WowBuildTip[] = [
   },
 ]
 
+const druidRestorationGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Crecimiento salvaje',
+    icon: 'ability_druid_flourish',
+    description:
+      'Crecimiento salvaje puede afectar hasta a 1 objetivo extra.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Alivio Presto',
+    icon: 'inv_relics_idolofrejuvenation',
+    description:
+      'Tu facultad Alivio presto ya no consume un efecto de Rejuvenecimiento ni de Recrecimiento del objetivo.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Nutrir',
+    icon: 'ability_druid_nourish',
+    badge: '3 opciones',
+    description:
+      'Las sanaciones de tu Nutrir sanan un 6% extra por cada uno de tus efectos de sanación en el tiempo presentes en el objetivo.',
+    options: [
+      {
+        name: 'Glifo de Nutrir',
+        icon: 'ability_druid_nourish',
+        description:
+          'Las sanaciones de tu Nutrir sanan un 6% extra por cada uno de tus efectos de sanación en el tiempo presentes en el objetivo.',
+      },
+      {
+        name: 'Glifo de Estimular',
+        icon: 'spell_nature_lightning',
+        description:
+          'Estimular ahora otorga al taumaturgo un 45% de su reserva de maná de base durante 10 sec además de los efectos normales de Estimular.',
+      },
+      {
+        name: 'Glifo de Rejuvenecimiento',
+        icon: 'spell_nature_rejuvenation',
+        description:
+          'Mientras tus objetivos de Rejuvenecimiento se encuentren por debajo del 50% de salud, les sanarás un 50% adicional de salud.',
+      },
+    ],
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Renacer desahogado',
+    icon: 'spell_nature_reincarnation',
+    description:
+      'Tu hechizo Renacer ya no necesita un componente.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de lo Salvaje',
+    icon: 'spell_nature_giftofthewild',
+    description:
+      'Coste de maná de tus hechizos Marca de lo Salvaje y Don de lo Salvaje reducido un 50%.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Carrerilla',
+    icon: 'ability_druid_dash',
+    description:
+      'Reduce un 20% el tiempo de reutilización de tu facultad Carrerilla.',
+  },
+]
+
+const druidRestorationPriorityGroups: WowStatPriorityGroup[] = [
+  {
+    title: 'ORDEN DE PRIORIDAD DE ESTADISTICAS',
+    stats: [
+      'Cap Celeridad',
+      'Poder con Hechizos (SP)',
+      'Espiritu',
+      'Crítico',
+      'Intelecto',
+      'Mana por 5 segundos (MP5)',
+    ],
+  },
+]
+
+const druidRestorationStats: WowStatRow[] = [
+  {
+    label: 'Índice de celeridad',
+    value: '856',
+    note: '26.40% de celeridad',
+  },
+]
+
+const druidRestorationRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Prioridad',
+      steps: [
+        {
+          label: 'Rejuvenecimiento',
+          note: 'Mantener activo en la banda.',
+          icons: ['spell_nature_rejuvenation'],
+        },
+        {
+          label: 'Crecimiento salvaje',
+          note: 'Usarlo a CD en la banda.',
+          icons: ['ability_druid_flourish'],
+        },
+        {
+          label: 'Recrecimiento',
+          note: 'Mantener solamente en los tanques o alguno que se esté llevando mucho daño',
+          icons: ['spell_nature_resistnature'],
+        },
+        {
+          label: 'Nutrir',
+          note: 'Cura principal para levantar a cualquiera.',
+          icons: ['ability_druid_nourish'],
+        },
+        {
+          label: 'Alivio presto',
+          note: 'Cura grande de emergencia.',
+          icons: ['ability_druid_idolofrejuvenation'],
+        },
+      ],
+    },
+  ],
+}
+
+const druidRestorationTips: WowBuildTip[] = [
+  {
+    text: 'Siempre mantente spamneando Rejuvenecimiento en la banda, es tu hechizo principal de curación.',
+    icons: ['spell_nature_rejuvenation'],
+  },
+  {
+    text: 'Usa tu Crecimiento salvaje a CD en la banda, es tu hechizo de curación en área mas fuerte que tienes.',
+    icons: ['ability_druid_flourish'],
+  },
+  {
+    text: 'Usa tu Flor de Vida en conjunto de procs de Lanzamiento Libre para regenerar mana.',
+    icons: ['inv_misc_herb_felblossom'],
+  },
+  {
+    text: 'Manten Recrecimiento activo en los tanques, usa tu Nutrir cuando sea posible.',
+    icons: ['spell_nature_resistnature', 'ability_druid_nourish'],
+  },
+]
 
 const armsNotice =
   'Armas es una gran opción para subir de nivel y cuando eres fresh 80 con equipo bajo. Pero en cuanto pasas a un equipo decente (GS 3.500+), Furia comienza a ganar mayor daño en PvE. Si ya estás en ese punto, cambiar a Furia te dará mucho más rendimiento.'
@@ -1507,6 +1648,8 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
     const isArms = classSlug === 'guerrero' && specSlug === 'armas'
     const isFury = classSlug === 'guerrero' && specSlug === 'furia'
     const isProtection = classSlug === 'guerrero' && specSlug === 'proteccion'
+    const isDruidRestoration =
+      classSlug === 'druida' && specSlug === 'restauracion'
     const isHunter = classSlug === 'cazador'
     const isHunterBestias = isHunter && specSlug === 'bestias'
     const isHunterPunteria = isHunter && specSlug === 'punteria'
@@ -1516,7 +1659,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
       classSlug === 'paladin' && specSlug === 'proteccion'
     const isRetribution =
       classSlug === 'paladin' && specSlug === 'reprension'
-    const stats = isHoly
+    const stats = isDruidRestoration
+      ? druidRestorationStats
+      : isHoly
       ? []
       : isHunterBestias
         ? hunterBestiasStats
@@ -1533,7 +1678,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             : tankSpecs.has(specSlug)
               ? tankStats
               : dpsStats
-    const baseTips = isHoly
+    const baseTips = isDruidRestoration
+      ? druidRestorationTips
+      : isHoly
       ? holyTips
       : isHunterBestias
         ? hunterBestiasTips
@@ -1550,7 +1697,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             : isRetribution
               ? retributionTips
               : undefined
-    const rotation = isHoly
+    const rotation = isDruidRestoration
+      ? druidRestorationRotation
+      : isHoly
       ? holyRotation
       : isHunterBestias
         ? hunterBestiasRotation
@@ -1587,8 +1736,10 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
               : isArms || isFury
               ? armsPriority
               : undefined,
-        priorityGroups: isHunterBestias
-          ? hunterBestiasPriorityGroups
+        priorityGroups: isDruidRestoration
+          ? druidRestorationPriorityGroups
+          : isHunterBestias
+            ? hunterBestiasPriorityGroups
           : isPaladinProtection
             ? paladinProtectionPriorityGroups
           : isProtection
@@ -1596,7 +1747,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             : isRetribution
               ? retributionPriorityGroups
               : undefined,
-        glyphs: isHoly
+        glyphs: isDruidRestoration
+          ? druidRestorationGlyphs
+          : isHoly
           ? holyGlyphs
           : isHunterBestias
             ? hunterBestiasGlyphs

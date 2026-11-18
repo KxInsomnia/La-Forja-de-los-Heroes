@@ -1745,11 +1745,12 @@ export const specAllocations: Record<
         label: 'Build principal',
         trees: {
           'equilibrio': {
-            'Alcance de la Naturaleza': 2,
+            'Alcance de la Naturaleza': 0,
             'Resplandor lunar': 3,
             'Majestuosidad de la Naturaleza': 2,
-            'Tierra y Luna': 3,
+            'Tierra y Luna': 0,
             'Esplendor de la Naturaleza': 1,
+            'Génesis': 5,
           },
           'restauracion': {
             'Marca de lo Salvaje mejorada': 2,
@@ -1782,13 +1783,14 @@ export const specAllocations: Record<
         label: 'Variación 2 — CF Spec',
         trees: {
           'equilibrio': {
-            'Alcance de la Naturaleza': 2,
+            'Alcance de la Naturaleza': 0,
             'Resplandor lunar': 3,
             'Enfoque celestial': 3,
             'Gracia de la Naturaleza': 3,
             'Majestuosidad de la Naturaleza': 2,
-            'Tierra y Luna': 3,
+            'Tierra y Luna': 0,
             'Esplendor de la Naturaleza': 1,
+            'Génesis': 5,
           },
           'restauracion': {
             'Marca de lo Salvaje mejorada': 2,
@@ -1803,7 +1805,7 @@ export const specAllocations: Record<
             'Sutileza': 2,
             'Espíritu sosegado': 1,
             'Alivio presto': 1,
-            'Toque potenciado': 2,
+            'Toque potenciado': 0,
             'Rejuvenecimiento potenciado': 5,
             'Árbol de vida': 1,
             'Espíritu vivo': 3,
