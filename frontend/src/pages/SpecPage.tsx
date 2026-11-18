@@ -20,7 +20,16 @@ const guideSections = [
   'Rotación',
   'Consejos',
   'Mascota',
-]
+] as const
+
+const sectionAnchors: Record<(typeof guideSections)[number], string> = {
+  Talentos: 'talentos',
+  Glifos: 'glifos',
+  Estadísticas: 'estadisticas',
+  Rotación: 'rotacion',
+  Consejos: 'consejos',
+  Mascota: 'mascota',
+}
 
 export function SpecPage() {
   const { classSlug, specSlug } = useParams()
@@ -35,6 +44,7 @@ export function SpecPage() {
   const spec = wowClass?.specs.find((item) => item.slug === specSlug)
   const builds = wowClass && spec ? getSpecBuilds(wowClass.slug, spec.slug) : []
   const activeBuild = builds[activeBuildIndex] ?? builds[0]
+  const canShowPet = classSlug === 'cazador' && Boolean(activeBuild?.pet)
   const allocations =
     activeBuild?.allocations ??
     (wowClass && spec
@@ -53,10 +63,10 @@ export function SpecPage() {
     renderedSections.add('Estadísticas')
     if (activeBuild.rotation) renderedSections.add('Rotación')
     if (activeBuild.tips) renderedSections.add('Consejos')
-    if (activeBuild.pet) renderedSections.add('Mascota')
+    if (canShowPet) renderedSections.add('Mascota')
   }
-  const sections = guideSections.filter(
-    (section) => !renderedSections.has(section),
+  const sections = guideSections.filter((section) =>
+    renderedSections.has(section),
   )
 
   if (!wowClass || !spec) {
@@ -94,16 +104,29 @@ export function SpecPage() {
         <p className="spec-page__desc">{spec.description}</p>
       )}
 
-      <ul className="spec-page__sections">
-        {sections.map((section) => (
-          <li key={section} className="spec-page__section">
-            {section}
-          </li>
-        ))}
-      </ul>
+      {sections.length > 0 && (
+        <nav aria-label="Secciones de la guía">
+          <ul className="spec-page__sections">
+            {sections.map((section) => (
+              <li key={section} className="spec-page__section">
+                <a
+                  className="spec-page__section-link"
+                  href={`#${sectionAnchors[section]}`}
+                >
+                  {section}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       {talentTrees && (
-        <section className="spec-page__talents">
+        <section
+          id="talentos"
+          className="spec-page__talents"
+          tabIndex={-1}
+        >
           <div className="spec-page__talents-head">
             <h2 className="spec-page__talents-title">Talentos</h2>
             {builds.length > 1 && (
@@ -140,23 +163,37 @@ export function SpecPage() {
 
       {activeBuild && (
         <>
-          <GlyphsSection
-            key={`${routeKey}-${activeBuildIndex}`}
-            glyphs={activeBuild.glyphs}
-          />
-          <StatsSection
-            stats={activeBuild.stats}
-            priority={activeBuild.priority}
-            priorityGroups={activeBuild.priorityGroups}
-          />
-          {activeBuild.rotation && (
-            <RotationSection
-              rotation={activeBuild.rotation}
-              rotationNotice={activeBuild.rotationNotice}
+          <div id="glifos" className="spec-page__section-target" tabIndex={-1}>
+            <GlyphsSection
+              key={`${routeKey}-${activeBuildIndex}`}
+              glyphs={activeBuild.glyphs}
             />
+          </div>
+          <div id="estadisticas" className="spec-page__section-target" tabIndex={-1}>
+            <StatsSection
+              stats={activeBuild.stats}
+              priority={activeBuild.priority}
+              priorityGroups={activeBuild.priorityGroups}
+            />
+          </div>
+          {activeBuild.rotation && (
+            <div id="rotacion" className="spec-page__section-target" tabIndex={-1}>
+              <RotationSection
+                rotation={activeBuild.rotation}
+                rotationNotice={activeBuild.rotationNotice}
+              />
+            </div>
           )}
-          {activeBuild.tips && <TipsSection tips={activeBuild.tips} />}
-          {activeBuild.pet && <PetSection pet={activeBuild.pet} />}
+          {activeBuild.tips && (
+            <div id="consejos" className="spec-page__section-target" tabIndex={-1}>
+              <TipsSection tips={activeBuild.tips} />
+            </div>
+          )}
+          {canShowPet && activeBuild?.pet && (
+            <div id="mascota" className="spec-page__section-target" tabIndex={-1}>
+              <PetSection pet={activeBuild.pet} />
+            </div>
+          )}
         </>
       )}
     </article>

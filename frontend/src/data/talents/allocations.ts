@@ -621,11 +621,11 @@ export const specAllocations: Record<
         },
       },
       {
-        label: 'Variación 2 — Reflejos de relámpago',
+        label: 'Variación 2 — AOE',
         trees: {
           'asesinato': {
             'Venenos mejorados': 5,
-            'Letalidad': 4,
+            'Letalidad': 5,
             'Malicia': 5,
             'Crueldad': 3,
             'Asesinar': 2,
@@ -640,45 +640,11 @@ export const specAllocations: Record<
             'Mutilar': 1,
             'Pies de galgo': 2,
             'Ataques centrados': 3,
-            'Acortar': 5,
             'Hambre de sangre': 1,
           },
           'combate': {
             'Precisión': 5,
             'Combate próximo': 5,
-            'Reflejos de relámpago': 3,
-            'Especialización en doble empuñadura': 5,
-          },
-          'sutileza': {
-            'Golpes despiadados': 2,
-          },
-        },
-      },
-      {
-        label: 'Variación 3 — Aluvión de acero',
-        trees: {
-          'asesinato': {
-            'Venenos mejorados': 5,
-            'Letalidad': 4,
-            'Malicia': 5,
-            'Crueldad': 3,
-            'Asesinar': 2,
-            'Heridas perforadoras': 3,
-            'Sangre fría': 1,
-            'Exterminar': 1,
-            'Sellar destino': 5,
-            'Vigor': 1,
-            'Venenos inmundos': 3,
-            'Maestro envenenador': 3,
-            'Descubrir debilidad': 2,
-            'Mutilar': 1,
-            'Pies de galgo': 2,
-            'Ataques centrados': 3,
-          },
-          'combate': {
-            'Precisión': 5,
-            'Combate próximo': 5,
-            'Reflejos de relámpago': 3,
             'Especialización en doble empuñadura': 5,
             'Aluvión de acero': 1,
             'Hacer picadillo mejorado': 2,
@@ -725,7 +691,7 @@ export const specAllocations: Record<
         },
       },
       {
-        label: 'Variación 2 — Híbrido',
+        label: 'Variación 2 — AoE',
         trees: {
           'asesinato': {
             'Venenos mejorados': 5,
@@ -1805,6 +1771,7 @@ export const specAllocations: Record<
             'Sutileza': 2,
             'Espíritu sosegado': 1,
             'Alivio presto': 1,
+            'Tranquilidad mejorada': 2,
             'Toque potenciado': 0,
             'Rejuvenecimiento potenciado': 5,
             'Árbol de vida': 1,

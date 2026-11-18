@@ -14,7 +14,7 @@ export const rogue: WowClass = {
       name: 'Asesinato',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
-      buildCount: 3,
+      buildCount: 2,
     },
     {
       slug: 'combate',

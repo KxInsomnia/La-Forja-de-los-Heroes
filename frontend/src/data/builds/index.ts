@@ -748,40 +748,40 @@ const druidRestorationGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Crecimiento salvaje',
-    icon: 'ability_druid_flourish',
-    description:
-      'Crecimiento salvaje puede afectar hasta a 1 objetivo extra.',
+    icon: 'ability-druid-flourish',
+    description: 'Crecimiento salvaje puede afectar hasta a 1 objetivo extra.',
   },
   {
     type: 'major',
     name: 'Glifo de Alivio Presto',
-    icon: 'inv_relics_idolofrejuvenation',
+    icon: 'inv-relics-idol-of-rejuvenation',
     description:
       'Tu facultad Alivio presto ya no consume un efecto de Rejuvenecimiento ni de Recrecimiento del objetivo.',
   },
   {
     type: 'major',
     name: 'Glifo de Nutrir',
-    icon: 'ability_druid_nourish',
+    icon: 'ability-druid-nourish',
     badge: '3 opciones',
     description:
       'Las sanaciones de tu Nutrir sanan un 6% extra por cada uno de tus efectos de sanación en el tiempo presentes en el objetivo.',
+    featured: true,
     options: [
       {
         name: 'Glifo de Nutrir',
-        icon: 'ability_druid_nourish',
+        icon: 'ability-druid-nourish',
         description:
           'Las sanaciones de tu Nutrir sanan un 6% extra por cada uno de tus efectos de sanación en el tiempo presentes en el objetivo.',
       },
       {
         name: 'Glifo de Estimular',
-        icon: 'spell_nature_lightning',
+        icon: 'spell-nature-lightning',
         description:
           'Estimular ahora otorga al taumaturgo un 45% de su reserva de maná de base durante 10 sec además de los efectos normales de Estimular.',
       },
       {
         name: 'Glifo de Rejuvenecimiento',
-        icon: 'spell_nature_rejuvenation',
+        icon: 'spell-nature-rejuvenation',
         description:
           'Mientras tus objetivos de Rejuvenecimiento se encuentren por debajo del 50% de salud, les sanarás un 50% adicional de salud.',
       },
@@ -790,33 +790,31 @@ const druidRestorationGlyphs: WowGlyphSlot[] = [
   {
     type: 'minor',
     name: 'Glifo de Renacer desahogado',
-    icon: 'spell_nature_reincarnation',
-    description:
-      'Tu hechizo Renacer ya no necesita un componente.',
+    icon: 'spell-nature-reincarnation',
+    description: 'Tu hechizo Renacer ya no necesita un componente.',
   },
   {
     type: 'minor',
     name: 'Glifo de lo Salvaje',
-    icon: 'spell_nature_giftofthewild',
+    icon: 'spell-nature-gift-of-the-wild',
     description:
       'Coste de maná de tus hechizos Marca de lo Salvaje y Don de lo Salvaje reducido un 50%.',
   },
   {
     type: 'minor',
     name: 'Glifo de Carrerilla',
-    icon: 'ability_druid_dash',
-    description:
-      'Reduce un 20% el tiempo de reutilización de tu facultad Carrerilla.',
+    icon: 'ability-druid-dash',
+    description: 'Reduce un 20% el tiempo de reutilización de tu facultad Carrerilla.',
   },
 ]
 
 const druidRestorationPriorityGroups: WowStatPriorityGroup[] = [
   {
-    title: 'ORDEN DE PRIORIDAD DE ESTADISTICAS',
+    title: 'ORDEN DE PRIORIDAD DE ESTADÍSTICAS',
     stats: [
       'Cap Celeridad',
       'Poder con Hechizos (SP)',
-      'Espiritu',
+      'Espíritu',
       'Crítico',
       'Intelecto',
       'Mana por 5 segundos (MP5)',
@@ -840,27 +838,27 @@ const druidRestorationRotation: WowRotation = {
         {
           label: 'Rejuvenecimiento',
           note: 'Mantener activo en la banda.',
-          icons: ['spell_nature_rejuvenation'],
+          icons: ['spell-nature-rejuvenation'],
         },
         {
           label: 'Crecimiento salvaje',
           note: 'Usarlo a CD en la banda.',
-          icons: ['ability_druid_flourish'],
+          icons: ['ability-druid-flourish'],
         },
         {
           label: 'Recrecimiento',
           note: 'Mantener solamente en los tanques o alguno que se esté llevando mucho daño',
-          icons: ['spell_nature_resistnature'],
+          icons: ['spell-nature-resistnature'],
         },
         {
           label: 'Nutrir',
           note: 'Cura principal para levantar a cualquiera.',
-          icons: ['ability_druid_nourish'],
+          icons: ['ability-druid-nourish'],
         },
         {
           label: 'Alivio presto',
           note: 'Cura grande de emergencia.',
-          icons: ['ability_druid_idolofrejuvenation'],
+          icons: ['inv-relics-idol-of-rejuvenation'],
         },
       ],
     },
@@ -870,21 +868,22 @@ const druidRestorationRotation: WowRotation = {
 const druidRestorationTips: WowBuildTip[] = [
   {
     text: 'Siempre mantente spamneando Rejuvenecimiento en la banda, es tu hechizo principal de curación.',
-    icons: ['spell_nature_rejuvenation'],
+    icons: ['spell-nature-rejuvenation'],
   },
   {
-    text: 'Usa tu Crecimiento salvaje a CD en la banda, es tu hechizo de curación en área mas fuerte que tienes.',
-    icons: ['ability_druid_flourish'],
+    text: 'Usa tu Crecimiento salvaje a CD en la banda, es tu hechizo de curación en área más fuerte que tienes.',
+    icons: ['ability-druid-flourish'],
   },
   {
     text: 'Usa tu Flor de Vida en conjunto de procs de Lanzamiento Libre para regenerar mana.',
-    icons: ['inv_misc_herb_felblossom'],
+    icons: ['inv-misc-herb-felblossom'],
   },
   {
-    text: 'Manten Recrecimiento activo en los tanques, usa tu Nutrir cuando sea posible.',
-    icons: ['spell_nature_resistnature', 'ability_druid_nourish'],
+    text: 'Mantén Recrecimiento activo en los tanques, usa tu Nutrir cuando sea posible.',
+    icons: ['spell-nature-resistnature', 'ability-druid-nourish'],
   },
 ]
+
 
 const armsNotice =
   'Armas es una gran opción para subir de nivel y cuando eres fresh 80 con equipo bajo. Pero en cuanto pasas a un equipo decente (GS 3.500+), Furia comienza a ganar mayor daño en PvE. Si ya estás en ese punto, cambiar a Furia te dará mucho más rendimiento.'
@@ -1339,6 +1338,211 @@ const hunterSupervivenciaTips: WowBuildTip[] = [
   },
 ]
 
+const rogueAsesinatoStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '8%' },
+  { label: 'Pericia', value: '26/26' },
+]
+
+const rogueAsesinatoPriority = [
+  'Cap Golpe',
+  'Cap Pericia',
+  'Poder de ataque (AP)',
+  'Agilidad',
+  'Celeridad',
+  'Crítico',
+  'ArPen',
+]
+
+const rogueAsesinatoGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Mutilar',
+    icon: 'ability-rogue-shadowstrikes',
+    description: 'Reduce 5 p. de energía el coste de Mutilar.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Hambre de sangre',
+    icon: 'ability-rogue-hungerforblood',
+    description: 'Aumenta un 3% el bono de daño de Hambre de sangre.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Secretos del oficio',
+    icon: 'ability-rogue-tricks-of-the-trade',
+    description:
+      'El bono de daño y la redirección de amenaza de Secretos del oficio duran 4 s más.',
+    badge: '2 opciones',
+    featured: true,
+    options: [
+      {
+        name: 'Glifo de Secretos del oficio',
+        icon: 'ability-rogue-tricks-of-the-trade',
+        description:
+          'El bono de daño y la redirección de amenaza de Secretos del oficio duran 4 s más.',
+      },
+      {
+        name: 'Glifo de Abanico de cuchillos',
+        icon: 'ability-rogue-fan-of-knives',
+        description: 'Aumenta un 20% el daño de Abanico de cuchillos.',
+        reason: 'Para la build de AOE',
+      },
+    ],
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Velocidad borrosa',
+    icon: 'ability-rogue-sprint',
+    description: 'Te permite caminar sobre el agua mientras Sprint está activo.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Esfumarse',
+    icon: 'ability-vanish',
+    description: 'Aumenta un 30% tu velocidad de movimiento mientras Esfumarse está activo.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Caída segura',
+    icon: 'spell-magic-featherfall',
+    description: 'Aumenta la distancia que puedes caer sin recibir daño con Caída segura.',
+  },
+]
+
+const rogueAsesinatoRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Mutilar',
+          icons: ['ability-rogue-shadowstrikes'],
+        },
+        {
+          label: 'Hacer picadillo',
+          icons: ['ability-rogue-slicedice'],
+          note: 'Una vez; no importa los puntos de combo con los que se lance.',
+        },
+        {
+          label: 'Hambre de sangre',
+          icons: ['ability-rogue-hungerforblood'],
+          note: 'Mantener.',
+        },
+        {
+          label: 'Envenar',
+          icons: ['ability-rogue-disembowel'],
+          note: 'Con 4 o 5 puntos de combo; con eso se mantiene Hacer picadillo.',
+        },
+      ],
+    },
+  ],
+}
+
+const rogueAsesinatoTips: WowBuildTip[] = [
+  {
+    text: 'Si en tu grupo nadie tiene un sangrado para activar Hambre de sangre, usa Ruptura con los puntos de combo que tengas, ya sea 2 o 3, y activa tu Hambre de sangre.',
+    icons: ['ability-rogue-rupture', 'ability-rogue-hungerforblood'],
+  },
+]
+
+const rogueCombatStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '8%' },
+  { label: 'Pericia', value: '26/26' },
+  {
+    label: 'Penetración de armadura (ArPen) · Soft cap',
+    value: '722 (51.57%)',
+  },
+  {
+    label: 'Penetración de armadura (ArPen) · Hard cap',
+    value: '1400 (100%)',
+  },
+]
+
+const rogueCombatPriority = [
+  'Cap Golpe',
+  'Cap Pericia',
+  'Hard Cap Arpen',
+  'Agilidad = Poder de Ataque (AP)',
+  'Soft Cap Arpen',
+  'Crítico',
+  'Celeridad',
+]
+
+const rogueCombatGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Golpe siniestro',
+    icon: 'spell-shadow-ritual-of-sacrifice',
+    description:
+      'Tus golpes críticos con Golpe siniestro tienen un 50% de probabilidad de añadir un punto de combo adicional.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Asesinato múltiple',
+    icon: 'ability-rogue-murderspree',
+    description: 'Reduce 45 s el tiempo de reutilización de Asesinato múltiple.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Secretos del oficio',
+    icon: 'ability-rogue-tricks-of-the-trade',
+    description:
+      'El bono de daño y la redirección de amenaza de Secretos del oficio duran 4 s más.',
+    badge: '2 opciones',
+    featured: true,
+    options: [
+      {
+        name: 'Glifo de Secretos del oficio',
+        icon: 'ability-rogue-tricks-of-the-trade',
+        description:
+          'El bono de daño y la redirección de amenaza de Secretos del oficio duran 4 s más.',
+      },
+      {
+        name: 'Glifo de Subidón de adrenalina',
+        icon: 'spell-shadow-shadowworddominate',
+        description: 'Aumenta 5 s la duración de Subidón de adrenalina.',
+      },
+    ],
+  },
+  ...rogueAsesinatoGlyphs.filter((glyph) => glyph.type === 'minor'),
+]
+
+const rogueCombatRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Mantener Hacer picadillo',
+          icons: ['ability-rogue-slicedice'],
+        },
+        {
+          label: 'Mantener Ruptura con 4 o 5 puntos de combo',
+          icons: ['ability-rogue-rupture'],
+        },
+        {
+          label: 'Golpe siniestro',
+          icons: ['spell-shadow-ritual-of-sacrifice'],
+        },
+        {
+          label: 'Eviscerar',
+          icons: ['ability-rogue-eviscerate'],
+          note: 'Si a tu Hacer picadillo y/o Ruptura les quedan más de 8 segundos de duración restante.',
+        },
+      ],
+    },
+  ],
+}
+
+const rogueCombatTips: WowBuildTip[] = [
+  {
+    text: 'De forma casi obligatoria debes llevar un arma pesada en la mano principal y un arma rápida en la secundaria.',
+  },
+  {
+    text: 'Si tus 2 armas no son espadas o hachas, simplemente cambia el talento de especialización.',
+  },
+]
+
 function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
   return {
     slug: 'ferocidad',
@@ -1648,12 +1852,14 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
     const isArms = classSlug === 'guerrero' && specSlug === 'armas'
     const isFury = classSlug === 'guerrero' && specSlug === 'furia'
     const isProtection = classSlug === 'guerrero' && specSlug === 'proteccion'
-    const isDruidRestoration =
-      classSlug === 'druida' && specSlug === 'restauracion'
     const isHunter = classSlug === 'cazador'
     const isHunterBestias = isHunter && specSlug === 'bestias'
     const isHunterPunteria = isHunter && specSlug === 'punteria'
     const isHunterSupervivencia = isHunter && specSlug === 'supervivencia'
+    const isRogueAsesinato = classSlug === 'picaro' && specSlug === 'asesinato'
+    const isRogueCombate = classSlug === 'picaro' && specSlug === 'combate'
+    const isDruidRestoration =
+      classSlug === 'druida' && specSlug === 'restauracion'
     const isHoly = classSlug === 'paladin' && specSlug === 'sagrado'
     const isPaladinProtection =
       classSlug === 'paladin' && specSlug === 'proteccion'
@@ -1662,62 +1868,74 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
     const stats = isDruidRestoration
       ? druidRestorationStats
       : isHoly
-      ? []
-      : isHunterBestias
+        ? []
+        : isHunterBestias
         ? hunterBestiasStats
         : isHunterPunteria
           ? hunterPunteriaStats
           : isHunterSupervivencia
             ? hunterSupervivenciaStats
-            : isRetribution
-          ? retributionStats
-        : isArms
-          ? armsStats
-          : isFury
-            ? furyStats
-            : tankSpecs.has(specSlug)
-              ? tankStats
-              : dpsStats
+            : isRogueAsesinato
+              ? rogueAsesinatoStats
+              : isRogueCombate
+                ? rogueCombatStats
+                : isRetribution
+                ? retributionStats
+                : isArms
+                  ? armsStats
+                  : isFury
+                    ? furyStats
+                    : tankSpecs.has(specSlug)
+                      ? tankStats
+                      : dpsStats
     const baseTips = isDruidRestoration
       ? druidRestorationTips
       : isHoly
-      ? holyTips
-      : isHunterBestias
+        ? holyTips
+        : isHunterBestias
         ? hunterBestiasTips
         : isHunterPunteria
           ? hunterPunteriaTips
           : isHunterSupervivencia
             ? hunterSupervivenciaTips
-            : isArms
-          ? armsTips
-        : isFury
-          ? furyTips
-          : isProtection
-            ? protectionTips
-            : isRetribution
-              ? retributionTips
-              : undefined
+            : isRogueAsesinato
+              ? rogueAsesinatoTips
+              : isRogueCombate
+                ? rogueCombatTips
+                : isArms
+                ? armsTips
+                : isFury
+                  ? furyTips
+                  : isProtection
+                    ? protectionTips
+                    : isRetribution
+                      ? retributionTips
+                      : undefined
     const rotation = isDruidRestoration
       ? druidRestorationRotation
       : isHoly
-      ? holyRotation
-      : isHunterBestias
+        ? holyRotation
+        : isHunterBestias
         ? hunterBestiasRotation
         : isHunterPunteria
           ? hunterPunteriaRotation
           : isHunterSupervivencia
             ? hunterSupervivenciaRotation
-            : isPaladinProtection
-          ? paladinProtectionRotation
-        : isRetribution
-          ? retributionRotation
-          : isArms
-            ? armsRotation
-            : isFury
-              ? furyRotation
-              : isProtection
-                ? protectionRotation
-                : undefined
+            : isRogueAsesinato
+              ? rogueAsesinatoRotation
+              : isRogueCombate
+                ? rogueCombatRotation
+                : isPaladinProtection
+                ? paladinProtectionRotation
+                : isRetribution
+                  ? retributionRotation
+                  : isArms
+                    ? armsRotation
+                    : isFury
+                      ? furyRotation
+                      : isProtection
+                        ? protectionRotation
+                        : undefined
     builds[classSlug][specSlug] = variants.map((variant) => {
       const buildLabel = displayBuildLabel(variant.label)
       const buildRotation =
@@ -1733,14 +1951,18 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             ? hunterPunteriaPriority
             : isHunterSupervivencia
               ? hunterSupervivenciaPriority
-              : isArms || isFury
-              ? armsPriority
-              : undefined,
+              : isRogueAsesinato
+                ? rogueAsesinatoPriority
+                : isRogueCombate
+                  ? rogueCombatPriority
+                  : isArms || isFury
+                  ? armsPriority
+                  : undefined,
         priorityGroups: isDruidRestoration
           ? druidRestorationPriorityGroups
           : isHunterBestias
             ? hunterBestiasPriorityGroups
-          : isPaladinProtection
+            : isPaladinProtection
             ? paladinProtectionPriorityGroups
           : isProtection
             ? protectionPriorityGroups
@@ -1750,24 +1972,28 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
         glyphs: isDruidRestoration
           ? druidRestorationGlyphs
           : isHoly
-          ? holyGlyphs
-          : isHunterBestias
+            ? holyGlyphs
+            : isHunterBestias
             ? hunterBestiasGlyphs
             : isHunterPunteria
               ? hunterPunteriaGlyphs
               : isHunterSupervivencia
                 ? hunterSupervivenciaGlyphs
-                : isPaladinProtection
-              ? paladinProtectionGlyphs
-            : isRetribution
-              ? retributionGlyphs
-              : isArms
-                ? armsGlyphs
-                : isFury
-                  ? furyGlyphs
-                  : isProtection
-                    ? protectionGlyphs
-                    : undefined,
+                : isRogueAsesinato
+                  ? rogueAsesinatoGlyphs
+                  : isRogueCombate
+                    ? rogueCombatGlyphs
+                    : isPaladinProtection
+                    ? paladinProtectionGlyphs
+                    : isRetribution
+                      ? retributionGlyphs
+                      : isArms
+                        ? armsGlyphs
+                        : isFury
+                          ? furyGlyphs
+                          : isProtection
+                            ? protectionGlyphs
+                            : undefined,
         notice: isArms
           ? armsNotice
           : isHunterBestias
@@ -1776,9 +2002,13 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
               ? protectionNotice
               : undefined,
         rotation: buildRotation,
-        rotationNotice: isHunterPunteria || isHunterSupervivencia
-          ? undefined
-          : buildRotation
+        rotationNotice:
+          isHunterPunteria ||
+          isHunterSupervivencia ||
+          isRogueAsesinato ||
+          isRogueCombate
+            ? undefined
+            : buildRotation
             ? isFury && variant.label.includes('Overpower')
               ? furyOverpowerRotationNotice
               : rotationPriorityNotice

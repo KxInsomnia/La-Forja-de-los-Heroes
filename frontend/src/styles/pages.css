@@ -151,12 +151,41 @@
 }
 
 .spec-page__section {
-  padding: 1rem;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 0.9rem;
   background: rgba(255, 255, 255, 0.02);
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.spec-page__section:hover,
+.spec-page__section:focus-within {
+  border-color: color-mix(in srgb, var(--class-color) 35%, transparent);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.spec-page__section-link {
+  display: block;
+  padding: 1rem;
   color: #c7d4e6;
   font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.spec-page__section:hover .spec-page__section-link {
+  color: #eef6ff;
+}
+
+.spec-page__section-link:focus-visible {
+  color: #eef6ff;
+  outline: 2px solid color-mix(in srgb, var(--class-color) 70%, white);
+  outline-offset: -2px;
+}
+
+.spec-page__section-target {
+  scroll-margin-top: 5rem;
 }
 
 .spec-page__variations {
@@ -201,6 +230,7 @@
 
 .spec-page__talents {
   margin-top: 2rem;
+  scroll-margin-top: 5rem;
 }
 
 .spec-page__talents-head {
