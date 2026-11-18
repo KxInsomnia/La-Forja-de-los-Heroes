@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const deathknightSangreTalents: WowTalent[] = [
   {
     name: 'Carnicería',
-    icon: 'inv_axe_68',
+    icon: 'inv-axe-68',
     maxRank: 2,
     description: 'Cuando mates a un enemigo que otorgue experiencia u honor, generarás hasta 20 p. de poder rúnico. Además, también generarás 2 p. de poder rúnico cada 5 segundos mientras estés en combate.',
     row: 0,
@@ -11,7 +11,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Subversión',
-    icon: 'spell_deathknight_subversion',
+    icon: 'spell-death-knight-subversion',
     maxRank: 3,
     description: 'Aumenta la probabilidad de golpe crítico de Golpe sangriento, Golpe de la Plaga, Golpe en el corazón y Asolar un 9% y reduce un 25% la amenaza que generas mientras tienes activada Presencia de sangre o Presencia profana.',
     row: 0,
@@ -19,7 +19,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Barrera de filos',
-    icon: 'ability_upgrademoonglaive',
+    icon: 'ability-upgrademoonglaive',
     maxRank: 5,
     description: 'Cuando tus runas de sangre están en tiempo de reutilización, ganas el efecto de Barrera de filos, que reduce el daño recibido un 5% durante los próximos 10 sec.',
     row: 0,
@@ -27,7 +27,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Armadura con filo',
-    icon: 'inv_shoulder_36',
+    icon: 'inv-shoulder-36',
     maxRank: 5,
     description: 'Aumenta tu poder de ataque 5 p. por cada 180 p. de tu valor de armadura.',
     row: 1,
@@ -35,7 +35,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Aroma de sangre',
-    icon: 'ability_rogue_bloodyeye',
+    icon: 'ability-rogue-bloodyeye',
     maxRank: 3,
     description: 'Tras esquivar, parar o recibir daño directo, tienes un 15% de probabilidad de ganar el efecto Aroma de sangre, que provoca que tus 3 golpes cuerpo a cuerpo siguientes generen 10 p. de poder rúnico.',
     row: 1,
@@ -43,7 +43,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en armas de dos manos',
-    icon: 'inv_sword_68',
+    icon: 'inv-sword-68',
     maxRank: 2,
     description: 'Aumenta un 4% el daño infligido con las armas cuerpo a cuerpo de dos manos.',
     row: 1,
@@ -51,7 +51,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Transfusión de runa',
-    icon: 'spell_deathknight_runetap',
+    icon: 'spell-death-knight-runetap',
     maxRank: 1,
     description: 'Convierte una runa de sangre en un 10% de tu salud máxima.',
     row: 2,
@@ -59,7 +59,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Convicción oscura',
-    icon: 'spell_deathknight_darkconviction',
+    icon: 'spell-death-knight-darkconviction',
     maxRank: 5,
     description: 'Aumenta tu probabilidad de asestar un golpe crítico con armas, hechizos y facultades un 5%.',
     row: 2,
@@ -67,7 +67,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en runas de muerte',
-    icon: 'inv_sword_62',
+    icon: 'inv-sword-62',
     maxRank: 3,
     description: 'Al usar Golpe letal o Asolar, tienes un 100% de probabilidad de que las runas de escarcha y profanas se conviertan en runas de muerte al activarse. Las runas de muerte cuentan como runas de sangre, escarcha y profanas.',
     row: 2,
@@ -75,7 +75,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Transfusión de runa mejorada',
-    icon: 'spell_deathknight_runetap',
+    icon: 'spell-death-knight-runetap',
     maxRank: 3,
     description: 'Aumenta la salud proporcionada por Transfusión de runa un 100% y reduce su tiempo de utilización 30 s.',
     row: 3,
@@ -84,7 +84,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Desvío de hechizos',
-    icon: 'spell_deathknight_spelldeflection',
+    icon: 'spell-death-knight-spelldeflection',
     maxRank: 3,
     description: 'Tienes una probabilidad igual a tu probabilidad de parada de recibir un 45% de daño menos de un hechizo de daño directo.',
     row: 3,
@@ -92,7 +92,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Vendetta',
-    icon: 'spell_deathknight_vendetta',
+    icon: 'spell-death-knight-vendetta',
     maxRank: 3,
     description: 'Te sana hasta un 6% de tu salud máxima cuando matas a un objetivo que otorga experiencia u honor.',
     row: 3,
@@ -100,7 +100,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Golpes sangrientos',
-    icon: 'spell_deathknight_deathstrike',
+    icon: 'spell-death-knight-death-strike',
     maxRank: 3,
     description: 'Aumenta el daño de tu Golpe sangriento un 15% y tu Golpe en el corazón un 45%, y aumenta el daño de Hervor de sangre un 30%.',
     row: 4,
@@ -108,7 +108,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Veterano de la Tercera Guerra',
-    icon: 'spell_misc_warsongfocus',
+    icon: 'spell-misc-warsongfocus',
     maxRank: 3,
     description: 'Aumenta tu fuerza total un 6%, tu aguante total un 3% y tu pericia 6 p.',
     row: 4,
@@ -116,7 +116,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Marca de sangre',
-    icon: 'ability_hunter_rapidkilling',
+    icon: 'ability-hunter-rapidkilling',
     maxRank: 1,
     description: 'Coloca una Marca de sangre sobre un enemigo. Cuando el enemigo marcado inflija daño a un objetivo, se sanará al objetivo un 4% de su salud máxima. Dura 20 sec o hasta 20 golpes.',
     row: 4,
@@ -124,7 +124,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Venganza sangrienta',
-    icon: 'ability_backstab',
+    icon: 'ability-backstab',
     maxRank: 3,
     description: 'Proporciona un 3% de bonificación al daño físico que infliges durante 30 sec después de asestar un golpe crítico con un golpe de arma, hechizo o facultad. El efecto se acumula hasta 3 veces.',
     row: 5,
@@ -133,7 +133,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Poderío de abominación',
-    icon: 'ability_warrior_intensifyrage',
+    icon: 'ability-warrior-intensify-rage',
     maxRank: 2,
     description: 'Aumenta en un 10% el poder de ataque de los miembros del grupo y de la banda que se encuentren en un radio de 100 m. También aumenta tu fuerza total un 2%.',
     row: 5,
@@ -141,7 +141,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Gusanos de sangre',
-    icon: 'spell_shadow_soulleech',
+    icon: 'spell-shadow-soulleech',
     maxRank: 3,
     description: 'Tus golpes con arma tienen un 9% de probabilidad de provocar que el taumaturgo engendre 2-4 gusanos de sangre. Los gusanos de sangre atacan a tus enemigos, sanándote la misma cantidad de daño que ellos infligen durante 20 s o hasta que mueran.',
     row: 6,
@@ -149,7 +149,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Frenesí profano',
-    icon: 'spell_deathknight_bladedarmor',
+    icon: 'spell-death-knight-bladed-armor',
     maxRank: 1,
     description: 'Induce a una unidad amistosa a matar frenéticamente durante 30 sec. El objetivo se enfurece, lo que aumenta su daño físico un 20%, pero provoca que pierda salud igual al 1% de su salud máxima cada segundo.',
     row: 6,
@@ -157,7 +157,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Presencia de sangre mejorada',
-    icon: 'spell_deathknight_bloodpresence',
+    icon: 'spell-death-knight-bloodpresence',
     maxRank: 2,
     description: 'En Presencia de escarcha y Presencia profana, retienes un 4% de sanación de Presencia de sangre y la sanación que recibas aumenta un 10% en Presencia de sangre.',
     row: 6,
@@ -165,7 +165,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Golpe letal mejorado',
-    icon: 'spell_deathknight_butcher2',
+    icon: 'spell-death-knight-butcher-2',
     maxRank: 2,
     description: 'Aumenta el daño de tu Golpe letal un 30%, aumenta la probabilidad de golpe crítico un 6% y aumenta la sanación otorgada un 50%.',
     row: 7,
@@ -173,7 +173,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Fatalidad súbita',
-    icon: 'spell_shadow_painspike',
+    icon: 'spell-shadow-pain-spike',
     maxRank: 3,
     description: 'Tus Golpes sangrientos y tus Golpes en el corazón tienen un 15% de probabilidad de lanzar una Espiral de la muerte gratuita a tu objetivo.',
     row: 7,
@@ -181,7 +181,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Sangre vampírica',
-    icon: 'spell_shadow_lifedrain',
+    icon: 'spell-shadow-lifedrain',
     maxRank: 1,
     description: 'Otorga de forma temporal un 15% de la salud máxima al caballero de la Muerte y aumenta la cantidad de salud generada a través de los hechizos y efectos un 35% durante 10 sec. Cuando el efecto se disipa, la salud se pierde.',
     row: 7,
@@ -189,7 +189,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Voluntad de la necrópolis',
-    icon: 'ability_creature_cursed_02',
+    icon: 'ability-creature-cursed-02',
     maxRank: 3,
     description: 'El daño que recibas que deje tu salud por debajo del 35% o cuando tengas un 35% de salud se reduce un 15%.',
     row: 8,
@@ -197,7 +197,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Golpe en el corazón',
-    icon: 'inv_weapon_shortblade_40',
+    icon: 'inv-weapon-shortblade-40',
     maxRank: 1,
     description: 'Golpea instantáneamente al objetivo y a su aliado más cercano, infligiéndoles un 50% de daño con arma más 125 p. al objetivo principal y un 25% de daño de arma más 63 p. al objetivo secundario. Cada objetivo recibe un 10% de daño adicional por cada una de las enfermedades que tengas activas sobre él Glifo de Golpe en el corazón y la velocidad de movimiento se reduce un 50% durante10 sec .',
     row: 8,
@@ -205,7 +205,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Poderío de Mograine',
-    icon: 'spell_deathknight_classicon',
+    icon: 'spell-death-knight-class-icon',
     maxRank: 3,
     description: 'Aumenta un 45% el bonus del daño por golpe crítico de tus facultades Golpe sangriento, Golpe en el corazón, Golpe letal, Hervor de sangre.',
     row: 8,
@@ -213,7 +213,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Atracarse de sangre',
-    icon: 'spell_nature_reincarnation',
+    icon: 'spell-nature-reincarnation',
     maxRank: 5,
     description: 'Cuando tienes más del 75% de salud, infliges un 10% de daño más. Además, tus ataques ignoran hasta un 10% de la armadura de tu oponente en todo momento.',
     row: 9,
@@ -221,7 +221,7 @@ export const deathknightSangreTalents: WowTalent[] = [
   },
   {
     name: 'Arma de runa danzante',
-    icon: 'inv_sword_07',
+    icon: 'inv-sword-07',
     maxRank: 1,
     description: 'Invoca una segunda arma de runas que lucha sola durante 12 sec y realiza los mismos ataques que el caballero de la Muerte pero inflige y aplica un 50% menos de daño y sanación.',
     row: 10,
@@ -232,7 +232,7 @@ export const deathknightSangreTalents: WowTalent[] = [
 export const deathknightEscarchaTalents: WowTalent[] = [
   {
     name: 'Toque helado mejorado',
-    icon: 'spell_deathknight_icetouch',
+    icon: 'spell-death-knight-ice-touch',
     maxRank: 3,
     description: 'Tu hechizo Toque helado inflige un 15% de daño extra y tu Fiebre de Escarcha reduce la velocidad de ataque cuerpo a cuerpo y a distancia un 6% extra.',
     row: 0,
@@ -240,7 +240,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en poder rúnico',
-    icon: 'spell_arcane_arcane01',
+    icon: 'spell-arcane-arcane-01',
     maxRank: 2,
     description: 'Aumenta tu poder rúnico máximo 30 p.',
     row: 0,
@@ -248,7 +248,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Consistencia',
-    icon: 'spell_holy_devotion',
+    icon: 'spell-holy-devotion',
     maxRank: 5,
     description: 'Aumenta tu valor de armadura de objetos un 10% y reduce la duración de todos los efectos de ralentización de movimiento un 30%.',
     row: 0,
@@ -256,7 +256,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Alcance helado',
-    icon: 'spell_frost_manarecharge',
+    icon: 'spell-frost-manarecharge',
     maxRank: 2,
     description: 'Aumenta 10 m el alcance de tu Toque helado, Cadenas de hielo y Explosión aullante.',
     row: 1,
@@ -264,7 +264,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Hielo negro',
-    icon: 'spell_shadow_darkritual',
+    icon: 'spell-shadow-darkritual',
     maxRank: 5,
     description: 'Aumenta tu daño de Escarcha y de las Sombras un 10%.',
     row: 1,
@@ -272,7 +272,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Nervios de acero helado',
-    icon: 'ability_dualwield',
+    icon: 'ability-dualwield',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpear con armas cuerpo a cuerpo de una mano un 3% y aumenta el daño infligido por tus armas de mano izquierda un 25%.',
     row: 1,
@@ -280,7 +280,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Garras heladas',
-    icon: 'spell_deathknight_icytalons',
+    icon: 'spell-death-knight-icytalons',
     maxRank: 5,
     description: 'Parasitas calor de las víctimas de tu Fiebre de Escarcha, de modo que cuando su velocidad de ataque cuerpo a cuerpo se reduce, la tuya aumenta un 20% durante los próximos 20 s.',
     row: 2,
@@ -289,7 +289,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Exánime nato',
-    icon: 'spell_shadow_raisedead',
+    icon: 'spell-shadow-raisedead',
     maxRank: 1,
     description: 'Extrae energía profana para convertirte en un no-muerto durante 10 sec. Mientras eres un no-muerto, eres inmune a los efectos de embelesar, miedo y sueño.',
     row: 2,
@@ -297,7 +297,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Aniquilación',
-    icon: 'inv_weapon_hand_18',
+    icon: 'inv-weapon-hand-18',
     maxRank: 3,
     description: 'Aumenta un 3% la probabilidad de conseguir un golpe crítico con tus facultades especiales cuerpo a cuerpo. Además, hay un 100% de probabilidad de que tu hechizo Asolar inflija daño sin consumir ninguna enfermedad.',
     row: 2,
@@ -305,7 +305,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Máquina de matar',
-    icon: 'inv_sword_122',
+    icon: 'inv-sword-122',
     maxRank: 5,
     description: 'Tus ataques cuerpo a cuerpo tienen una probabilidad de hacer que tu siguiente Toque helado, Explosión aullante o Golpe de Escarcha aseste un golpe crítico. Este efecto ocurre con más frecuencia que con Máquina de matar (Rango 4).',
     row: 3,
@@ -313,7 +313,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Escalofrío de la tumba',
-    icon: 'spell_frost_frostshock',
+    icon: 'spell-frost-frostshock',
     maxRank: 2,
     description: 'Tu Toque helado, Cadenas de hielo, Explosión aullante y Asolar generan 5 p. de poder rúnico extra.',
     row: 3,
@@ -321,7 +321,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Invierno interminable',
-    icon: 'spell_shadow_twilight',
+    icon: 'spell-shadow-twilight',
     maxRank: 2,
     description: 'Tu fuerza aumenta un 4% y tu Helada mental ya no cuesta poder rúnico.',
     row: 3,
@@ -329,7 +329,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Placas de tinieblas gélidas',
-    icon: 'inv_chest_mail_04',
+    icon: 'inv-chest-mail-04',
     maxRank: 3,
     description: 'Reduce la probabilidad de que los ataques cuerpo a cuerpo te golpeen un 3%.',
     row: 4,
@@ -337,7 +337,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Putrefacción glacial',
-    icon: 'spell_nature_removedisease',
+    icon: 'spell-nature-removedisease',
     maxRank: 3,
     description: 'Los enemigos enfermos reciben un 20% más de daño de tus hechizos Toque helado, Explosión aullante y Golpe de Escarcha.',
     row: 4,
@@ -345,7 +345,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Escalofrío de muerte',
-    icon: 'spell_shadow_soulleech_2',
+    icon: 'spell-shadow-soulleech-2',
     maxRank: 1,
     description: 'Cuando se activa, provoca que tu siguiente Toque helado, Explosión aullante, Golpe de Escarcha o Asolar asesten un golpe crítico si se usan en 30 sec.',
     row: 4,
@@ -353,7 +353,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Garras heladas mejoradas',
-    icon: 'spell_deathknight_icytalons',
+    icon: 'spell-death-knight-icytalons',
     maxRank: 1,
     description: 'Aumenta la celeridad cuerpo a cuerpo de tu banda o grupo que se encuentran en un radio de 100 m en un 20% y aumenta tu celeridad un 5%.',
     row: 5,
@@ -362,7 +362,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Combate despiadado',
-    icon: 'inv_sword_112',
+    icon: 'inv-sword-112',
     maxRank: 2,
     description: 'Tus hechizos Toque helado, Explosión aullante, Asolar y Golpe de Escarcha infligen un 12% de daño adicional al golpear a objetivos que se encuentran por debajo del 35% de salud.',
     row: 5,
@@ -370,7 +370,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Helada blanca',
-    icon: 'spell_frost_freezingbreath',
+    icon: 'spell-frost-freezingbreath',
     maxRank: 3,
     description: 'Aumenta la probabilidad de golpe crítico con tu hechizo Toque helado y Asolar un 15% y el lanzamiento de Asolar tiene un 15% de probabilidades de reiniciar el tiempo de reutilización de Explosión aullante y de hacer que tu siguiente Explosión aullante no consuma runas.',
     row: 5,
@@ -378,7 +378,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Sabañones',
-    icon: 'spell_frost_wisp',
+    icon: 'spell-frost-wisp',
     maxRank: 3,
     description: 'Las víctimas de tu enfermedad Fiebre de Escarcha quedan congeladas, reduciendo su velocidad de movimiento un 50% durante 10 sec.',
     row: 6,
@@ -386,7 +386,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Frío hambriento',
-    icon: 'inv_staff_15',
+    icon: 'inv-staff-15',
     maxRank: 1,
     description: 'Elimina todo el calor la tierra que rodea al caballero de la Muerte. Los enemigos que se encuentren en un radio de 10 m quedan atrapados en hielo, impidiendo que puedan realizar ninguna acción durante 10 sec e infectándolos con Fiebre de Escarcha. Se considera que los enemigos están congelados, pero cualquier daño no infligido con enfermedades romperá el hielo.',
     row: 6,
@@ -394,7 +394,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Presencia de escarcha mejorada',
-    icon: 'spell_deathknight_frostpresence',
+    icon: 'spell-death-knight-frostpresence',
     maxRank: 2,
     description: 'En Presencia de sangre o Presencia profana retienes un 8% de aguante de Presencia de escarcha y el daño que recibas se reduce un 2% extra en Presencia de escarcha.',
     row: 6,
@@ -402,7 +402,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Amenaza de Thassarian',
-    icon: 'ability_dualwieldspecialization',
+    icon: 'ability-dualwieldspecialization',
     maxRank: 3,
     description: 'Con la doble empuñadura, tus facultades Golpe letal, Asolar, Golpe de peste, Golpe con runa, Golpe sangriento y Golpe de Escarcha tienen un 100% de probabilidad de infligir también daño con el arma de mano izquierda.',
     row: 7,
@@ -410,7 +410,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Sangre del norte',
-    icon: 'inv_weapon_shortblade_79',
+    icon: 'inv-weapon-shortblade-79',
     maxRank: 3,
     description: 'Aumenta el daño de Golpe sangriento y Golpe de Escarcha un 10%. Además, cuando golpeas con Golpe sangriento o Pestilencia, tienes un 100% de probabilidades de que la runa de sangre se convierta en una runa de muerte al activarse. Esta runa cuenta como un runa de sangre, de escarcha o profana.',
     row: 7,
@@ -418,7 +418,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Armadura inquebrantable',
-    icon: 'inv_armor_helm_plate_naxxramas_raidwarrior_c_01',
+    icon: 'inv-armor-helm-plate-naxxramas-raid-warrior-c-01',
     maxRank: 1,
     description: 'Refuerza tu armadura con una gruesa capa de hielo, aumenta tu armadura un 25% y aumenta tu fuerza un 20% durante 20 sec.',
     row: 7,
@@ -426,7 +426,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Aclimatación',
-    icon: 'spell_fire_elementaldevastation',
+    icon: 'spell-fire-elementaldevastation',
     maxRank: 3,
     description: 'Cuando te alcanza un hechizo, tienes un 30% de probabilidad de potenciar tu resistencia frente a ese tipo de magia durante 18 s. Se acumula hasta 3 veces.',
     row: 8,
@@ -434,7 +434,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Golpe de Escarcha',
-    icon: 'spell_deathknight_empowerruneblade2',
+    icon: 'spell-death-knight-empowerruneblade-2',
     maxRank: 1,
     description: 'Golpea instantáneamente al enemigo y le inflige un 55% de daño con arma más 48 p. de daño de Escarcha.',
     row: 8,
@@ -442,7 +442,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Astucia de Sanguino',
-    icon: 'inv-sword_53',
+    icon: 'inv-sword-53',
     maxRank: 3,
     description: 'Aumenta el bonus de daño por golpe crítico de tus facultades Golpe sangriento, Asolar, Explosión Aullante y Golpe de Escarcha un 45% y aumenta la duración de tu Entereza ligada al hielo 6 s.',
     row: 8,
@@ -450,7 +450,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Acechador de tundra',
-    icon: 'spell_nature_tranquility',
+    icon: 'spell-nature-tranquility',
     maxRank: 5,
     description: 'Tus hechizos y facultades infligen un 15% más de daño a los objetivos enfermos con Fiebre de Escarcha. También aumenta la pericia 5 p.',
     row: 9,
@@ -458,7 +458,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Explosión aullante',
-    icon: 'spell_frost_arcticwinds',
+    icon: 'spell-frost-arcticwinds',
     maxRank: 1,
     description: 'Golpea al objetivo con un viento helado que inflige 198 to 214 p. de daño de Escarcha a todos los enemigos en un radio de 10 m.',
     row: 10,
@@ -469,7 +469,7 @@ export const deathknightEscarchaTalents: WowTalent[] = [
 export const deathknightProfanoTalents: WowTalent[] = [
   {
     name: 'Golpes feroces',
-    icon: 'spell_deathknight_plaguestrike',
+    icon: 'spell-death-knight-plague-strike',
     maxRank: 2,
     description: 'Aumenta la probabilidad de golpe crítico un 6% y el bonus de daño de golpe crítico un 30% de tu Golpe de peste y Golpe de la Plaga.',
     row: 0,
@@ -477,7 +477,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Virulencia',
-    icon: 'spell_shadow_burningspirit',
+    icon: 'spell-shadow-burning-spirit',
     maxRank: 3,
     description: 'Aumenta la probabilidad de que golpees con tus hechizos un 3% y reduce la probabilidad de que se curen tus enfermedades de daño en el tiempo un 30%.',
     row: 0,
@@ -485,7 +485,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Anticipación',
-    icon: 'spell_nature_mirrorimage',
+    icon: 'spell-nature-mirrori-mage',
     maxRank: 5,
     description: 'Aumenta la probabilidad de esquivar un 5%.',
     row: 0,
@@ -493,7 +493,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Epidemia',
-    icon: 'spell_shadow_shadowwordpain',
+    icon: 'spell-shadow-shadowwordpain',
     maxRank: 2,
     description: 'Aumenta la duración de Peste de sangre y Fiebre de Escarcha 6 s.',
     row: 1,
@@ -501,7 +501,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Morbosidad',
-    icon: 'spell_shadow_deathanddecay',
+    icon: 'spell-shadow-deathanddecay',
     maxRank: 3,
     description: 'Aumenta el daño y la sanación de tu Espiral de la muerte un 15% y reduce el tiempo de reutilización de Muerte y descomposición 15 s.',
     row: 1,
@@ -509,7 +509,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Orden profana',
-    icon: 'spell_deathknight_strangulate',
+    icon: 'spell-death-knight-strangulate',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de Atracción letal 10 s.',
     row: 1,
@@ -517,7 +517,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Muerte voraz',
-    icon: 'spell_deathknight_gnaw_ghoul',
+    icon: 'spell-death-knight-gnaw-ghoul',
     maxRank: 3,
     description: 'Aumenta tu fuerza total un 3% y la contribución que consiguen tus necrófagos de tu fuerza y aguante un 60%.',
     row: 1,
@@ -525,7 +525,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Brote',
-    icon: 'spell_shadow_plaguecloud',
+    icon: 'spell-shadow-plaguecloud',
     maxRank: 3,
     description: 'Aumenta el daño infligido por Golpe de peste un 30% y por Golpe de la Plaga un 20%.',
     row: 2,
@@ -533,7 +533,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Necrosis',
-    icon: 'inv_weapon_shortblade_60',
+    icon: 'inv-weapon-shortblade-60',
     maxRank: 5,
     description: 'Tus ataques automáticos infligen un 20% de daño de las Sombras extra.',
     row: 2,
@@ -541,7 +541,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Deflagración de cadáver',
-    icon: 'ability_creature_disease_02',
+    icon: 'ability-creature-disease-02',
     maxRank: 1,
     description: 'Provoca que explote un cadáver o tu necrófago y que inflija 166 p. de daño de las Sombras a todos los enemigos en un radio de 10 m. Usará un cadáver cercano si no hay ninguno seleccionado. No afecta a los cadáveres elementales o mecánicos.',
     row: 2,
@@ -549,7 +549,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Sobre caballo bayo',
-    icon: 'spell_deathknight_summondeathcharger',
+    icon: 'spell-death-knight-summondeathcharger',
     maxRank: 2,
     description: 'Te vuelves tan difícil de detener como la mismísima muerte. La duración de todos los efectos de aturdimiento y miedo que se usen frente a ti se reduce un 20% y tu velocidad sobre montura aumenta un 20%. Esto no se acumula con otros efectos de aumento de velocidad de movimiento.',
     row: 3,
@@ -557,7 +557,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Hoja bañada en sangre',
-    icon: 'ability_criticalstrike',
+    icon: 'ability-critical-strike',
     maxRank: 3,
     description: 'Tus ataques automáticos tienen un 30% de probabilidad de asestar un Golpe bañado en sangre, que inflige el 25% de daño con arma más un 12.5% por enfermedad sobre el objetivo.',
     row: 3,
@@ -565,7 +565,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Noche de los muertos',
-    icon: 'spell_deathknight_armyofthedead',
+    icon: 'spell-death-knight-army-of-the-dead',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de Levantar a muerto 90 s y el tiempo de reutilización de Ejército de muertos 4 min. También reduce el daño que recibe tu mascota de los ataques de área de efecto de criaturas un 90%.',
     row: 3,
@@ -573,7 +573,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Añublo profano',
-    icon: 'spell_shadow_contagion',
+    icon: 'spell-shadow-contagion',
     maxRank: 1,
     description: 'Provoca que las víctimas de tu Espiral de la muerte se vean rodeadas por un espeluznante enjambre de insectos profanos y que reciban un 10% del daño infligido por la Espiral de la muerte durante 10 sec y evitando que las enfermedades de la víctima puedan disiparse.',
     row: 4,
@@ -581,7 +581,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Impuridad',
-    icon: 'spell_shadow_shadowandflame',
+    icon: 'spell-shadow-shadowand-flame',
     maxRank: 5,
     description: 'Tus hechizos reciben un 20% extra de beneficio de tu poder de ataque.',
     row: 4,
@@ -589,7 +589,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Réquiem',
-    icon: 'spell_shadow_shadesofdarkness',
+    icon: 'spell-shadow-shades-of-darkness',
     maxRank: 2,
     description: 'Tu Golpe letal, Golpe de peste, Golpe de la Plaga generan 5 p. de poder rúnico extra.',
     row: 4,
@@ -597,7 +597,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Profanación',
-    icon: 'spell_shadow_shadowfiend',
+    icon: 'spell-shadow-shadowfiend',
     maxRank: 2,
     description: 'Tus Golpes de peste y Golpes de la Plaga provocan el efecto Suelo profanado. Los objetivos dentro de la zona se ralentizan un 50% por los brazos de los muertos mientras permanecen sobre suelo profano. Dura 20 sec.',
     row: 5,
@@ -605,7 +605,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Supresión mágica',
-    icon: 'spell_shadow_antimagicshell',
+    icon: 'spell-shadow-antimagicshell',
     maxRank: 3,
     description: 'Recibes un 6% de daño menos de toda la magia. Además, tu Caparazón antimagia absorbe un 25% extra de daño con hechizos.',
     row: 5,
@@ -613,7 +613,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Siega',
-    icon: 'spell_shadow_shadetruesight',
+    icon: 'spell-shadow-shadetruesight',
     maxRank: 3,
     description: 'Al usar Golpe sangriento o Pestilencia, tienes un 100% de probabilidad de que la runa de sangre se convierta en runa de muerte al activarse. Las runas de muerte cuentan como runas de sangre, escarcha y profanas.',
     row: 5,
@@ -621,7 +621,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Maestro de los necrófagos',
-    icon: 'spell_shadow_animatedead',
+    icon: 'spell-shadow-animatedead',
     maxRank: 1,
     description: 'Reduce el tiempo de reutilización de Levantar a muerto 60 s y el necrófago que invoques con tu hechizo Levantar a muerto se considera tu mascota y queda bajo tu control. A diferencia de los necrófagos de los caballeros de la Muerte normales, tu mascota no tiene una duración limitada.',
     row: 5,
@@ -630,7 +630,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Desolación',
-    icon: 'spell_shadow_unholyfrenzy',
+    icon: 'spell-shadow-unholyfrenzy',
     maxRank: 5,
     description: 'Tus Golpes sangrientos provocan que inflijas un 5% de daño adicional con todos los ataques durante los próximos 20 sec.',
     row: 6,
@@ -638,7 +638,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Zona antimagia',
-    icon: 'spell_deathknight_antimagiczone',
+    icon: 'spell-death-knight-antimagiczone',
     maxRank: 1,
     description: 'Coloca una gran zona antimagia estática que reduce el daño con hechizos infligido a cualquier miembro de tu grupo o banda que se encuentre dentro un 75%. La zona antimagia dura 10 sec o hasta que absorbe (10000 + 2 * Attack power) p. de daño con hechizos.',
     row: 6,
@@ -647,7 +647,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Presencia profana mejorada',
-    icon: 'spell_deathknight_unholypresence',
+    icon: 'spell-death-knight-unholypresence',
     maxRank: 2,
     description: 'En Presencia de sangre o Presencia de escarcha, retienes un 15% de la velocidad de movimiento aumentada de Presencia profana y tus runas acaban su tiempo de reutilización un 10% más rápido en Presencia profana.',
     row: 6,
@@ -655,7 +655,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Furia de necrófago',
-    icon: 'ability_ghoulfrenzy',
+    icon: 'ability-ghoulfrenzy',
     maxRank: 1,
     description: 'Otorga a tu mascota un 25% de celeridad durante 30 sec y la sana un 60% de su salud mientras dure.',
     row: 6,
@@ -664,7 +664,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Fiebre de la cripta',
-    icon: 'spell_nature_nullifydisease',
+    icon: 'spell-nature-nullifydisease',
     maxRank: 3,
     description: 'Tus enfermedades también provocan Fiebre de la cripta, que aumenta el daño de enfermedad recibido por el objetivo un 30%.',
     row: 7,
@@ -672,7 +672,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Escudo óseo',
-    icon: 'inv_chest_leather_13',
+    icon: 'inv-chest-leather-13',
     maxRank: 1,
     description: '3 huesos giran alrededor del caballero de la Muerte. Mientras quede al menos un hueso, recibirá un 20% menos de daño de todo origen e infligirá un 2% más de daño en todos los ataques, hechizos y facultades. Cada ataque dañino que le impacte consumirá un hueso. Dura 5 min.',
     row: 7,
@@ -680,7 +680,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Peste vagante',
-    icon: 'spell_shadow_callofbone',
+    icon: 'spell-shadow-call-of-bone',
     maxRank: 3,
     description: 'Cuando tus enfermedades infligen daño a un enemigo, hay una probabilidad igual a tu probabilidad de golpe crítico cuerpo a cuerpo de que cause un 100% de daño adicional al objetivo y a todos los enemigos en un radio de 8 m. Este hechizo ignora a los objetivos que tengan efectos que se cancelen al infligir daño.',
     row: 8,
@@ -688,7 +688,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Pesteador de ébano',
-    icon: 'ability_creature_cursed_03',
+    icon: 'ability-creature-cursed-03',
     maxRank: 3,
     description: 'Tu fiebre de la cripta evoluciona en Peste de ébano, que aumenta el daño mágico recibido un 13% además de aumentar el daño recibido por enfermedad. Mejora tu probabilidad de golpe crítico con armas y hechizos un 3% en todo momento.',
     row: 8,
@@ -697,7 +697,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Golpe de la Plaga',
-    icon: 'spell_deathknight_scourgestrike',
+    icon: 'spell-death-knight-scourge-strike',
     maxRank: 1,
     description: 'Un golpe profano que inflige un 70% de daño con arma como daño físico más 238 p. Además, por cada una de tus enfermedades sobre el objetivo, infliges un 12% extra del daño físico infligido como daño de las Sombras.',
     row: 8,
@@ -705,7 +705,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Ira de Osahendido',
-    icon: 'inv_weapon_halberd14',
+    icon: 'inv-weapon-halberd-14',
     maxRank: 5,
     description: 'Tus hechizos y facultades infligen un 10% más de daño a los objetivos enfermos de Peste de sangre. También aumenta tu pericia 5 p.',
     row: 9,
@@ -713,7 +713,7 @@ export const deathknightProfanoTalents: WowTalent[] = [
   },
   {
     name: 'Invocar gárgola',
-    icon: 'ability_hunter_pet_bat',
+    icon: 'ability-hunter-pet-bat',
     maxRank: 1,
     description: 'Una gárgola sobrevuela la zona y bombardea al objetivo con daño de Naturaleza modificado por el poder de ataque del caballero de la Muerte. Dura 30 sec.',
     row: 10,

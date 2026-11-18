@@ -10,7 +10,7 @@ export const rogue: WowClass = {
   specs: [
     {
       slug: 'asesinato',
-      icon: 'rogue-asesinato',
+      icon: 'rogue-assassination',
       name: 'Asesinato',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -18,7 +18,7 @@ export const rogue: WowClass = {
     },
     {
       slug: 'combate',
-      icon: 'rogue-combate',
+      icon: 'rogue-combat',
       name: 'Combate',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -26,7 +26,7 @@ export const rogue: WowClass = {
     },
     {
       slug: 'sutileza',
-      icon: 'rogue-sutileza',
+      icon: 'rogue-subtlety',
       name: 'Sutileza',
       role: 'DPS',
       badges: [{ label: 'PARA NADA RECOMENDADO', tone: 'strong-no' }],

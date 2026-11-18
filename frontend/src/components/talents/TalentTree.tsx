@@ -39,6 +39,56 @@ const EDGE_OFFSET = 53
 const HEAD_LENGTH = 16
 const HEAD_HALF_WIDTH = 10
 
+const treeClassNames: Record<string, string> = {
+  'caballero-de-la-muerte': 'death-knight',
+  brujo: 'warlock',
+  cazador: 'hunter',
+  chaman: 'shaman',
+  druida: 'druid',
+  guerrero: 'warrior',
+  mago: 'mage',
+  paladin: 'paladin',
+  picaro: 'rogue',
+  sacerdote: 'priest',
+}
+
+const treeNames: Record<string, string> = {
+  afliccion: 'affliction',
+  arcano: 'arcane',
+  armas: 'arms',
+  asesinato: 'assassination',
+  bestias: 'beasts',
+  combate: 'combat',
+  demonologia: 'demonology',
+  destruccion: 'destruction',
+  disciplina: 'discipline',
+  elemental: 'elemental',
+  escarcha: 'frost',
+  equilibrio: 'balance',
+  ferocidad: 'ferocity',
+  feral: 'feral',
+  fuego: 'fire',
+  furia: 'fury',
+  guardian: 'guardian',
+  mejora: 'enhancement',
+  profano: 'unholy',
+  proteccion: 'protection',
+  punteria: 'marksmanship',
+  reprension: 'retribution',
+  restauracion: 'restoration',
+  sangre: 'blood',
+  sagrado: 'holy',
+  sombra: 'shadow',
+  sutileza: 'subtlety',
+  supervivencia: 'survival',
+}
+
+function treeBackground(classSlug: string, treeSlug: string) {
+  const className = treeClassNames[classSlug] ?? classSlug
+  const treeName = treeNames[treeSlug] ?? treeSlug
+  return `url(${import.meta.env.BASE_URL}talents/tree-${className}-${treeName}.jpg)`
+}
+
 function cellCenter(row: number, col: number) {
   return {
     x: col * (CELL + CELL_GAP) + CELL / 2,
@@ -174,7 +224,7 @@ export function TalentTree({
             key={tree.slug}
             style={
               {
-                '--tree-bg': `url(${import.meta.env.BASE_URL}talents/tree_${classSlug}_${tree.slug}.jpg)`,
+                '--tree-bg': treeBackground(classSlug, tree.slug),
               } as CSSProperties
             }
           >

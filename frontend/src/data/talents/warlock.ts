@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const warlockAfliccionTalents: WowTalent[] = [
   {
     name: 'Maldición de agonía mejorada',
-    icon: 'spell_shadow_curseofsargeras',
+    icon: 'spell-shadow-curse-of-sargeras',
     maxRank: 2,
     description: 'Aumenta el daño infligido con tu Maldición de agonía un 10%.',
     row: 0,
@@ -11,7 +11,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Supresión',
-    icon: 'spell_shadow_unsummonbuilding',
+    icon: 'spell-shadow-unsummonbuilding',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpear con hechizos un 3% y reduce el coste de maná de tus hechizos de aflicción un 6%.',
     row: 0,
@@ -19,7 +19,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Corrupción mejorada',
-    icon: 'spell_shadow_abominationexplosion',
+    icon: 'spell-shadow-abominationexplosion',
     maxRank: 5,
     description: 'Aumenta el daño infligido por tu hechizo Corrupción un 10% y aumenta la probabilidad de golpe crítico con tu Semilla de corrupción un 5%.',
     row: 0,
@@ -27,7 +27,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Maldición de debilidad mejorada',
-    icon: 'spell_shadow_curseofmannoroth',
+    icon: 'spell-shadow-curse-of-mannoroth',
     maxRank: 2,
     description: 'Aumenta la cantidad de poder de ataque que reduce tu Maldición de debilidad un 20%.',
     row: 1,
@@ -35,7 +35,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Drenar alma mejorado',
-    icon: 'spell_shadow_haunting',
+    icon: 'spell-shadow-haunting',
     maxRank: 2,
     description: 'Devuelve el 15% de tu nivel de maná máximo si matas al objetivo mientras drenas su alma. Además, tus hechizos de aflicción generan un 20% menos de amenaza.',
     row: 1,
@@ -43,7 +43,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Transfusión de vida mejorada',
-    icon: 'spell_shadow_burningspirit',
+    icon: 'spell-shadow-burning-spirit',
     maxRank: 2,
     description: 'Aumenta el maná generado por tu hechizo Transfusión de vida un 20%.',
     row: 1,
@@ -51,7 +51,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Succión de alma',
-    icon: 'spell_shadow_lifedrain02',
+    icon: 'spell-shadow-lifedrain-02',
     maxRank: 2,
     description: 'Aumenta la cantidad drenada por tus hechizos Drenar vida y Drenar alma un 6% extra por cada efecto de aflicción aplicado sobre el objetivo, hasta un máximo del 18% de efecto extra.',
     row: 1,
@@ -59,7 +59,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Miedo mejorado',
-    icon: 'spell_shadow_possession',
+    icon: 'spell-shadow-possession',
     maxRank: 2,
     description: 'Provoca que tu hechizo Miedo inflija una Pesadilla sobre el objetivo cuando el efecto de miedo acaba. El efecto de Pesadilla reduce la velocidad de movimiento del objetivo un 30% durante 5 sec.',
     row: 2,
@@ -67,7 +67,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Concentración vil',
-    icon: 'spell_shadow_fingerofdeath',
+    icon: 'spell-shadow-finger-of-death',
     maxRank: 3,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas Drenar vida, Drenar maná, Drenar alma, Aflicción inestable y Poseer un 70%.',
     row: 2,
@@ -75,7 +75,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Amplificar maldición',
-    icon: 'spell_shadow_contagion',
+    icon: 'spell-shadow-contagion',
     maxRank: 1,
     description: 'Reduce el tiempo de reutilización global de tus maldiciones 0.5 s.',
     row: 2,
@@ -83,7 +83,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Alcance macabro',
-    icon: 'spell_shadow_callofbone',
+    icon: 'spell-shadow-call-of-bone',
     maxRank: 2,
     description: 'Aumenta un 20% el alcance de tus hechizos de aflicción.',
     row: 3,
@@ -91,7 +91,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Ocaso',
-    icon: 'spell_shadow_twilight',
+    icon: 'spell-shadow-twilight',
     maxRank: 2,
     description: 'Da al hechizo de Corrupción y al de Drenar vida un 4% de probabilidad de hacerte entrar en estado de trance de las Sombras después de causarle daño a un oponente. El estado de trance de las Sombras reduce el tiempo de lanzamiento de tu próximo hechizo de Descarga de las Sombras un 100%.',
     row: 3,
@@ -99,7 +99,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Corrupción potenciada',
-    icon: 'spell_shadow_abominationexplosion',
+    icon: 'spell-shadow-abominationexplosion',
     maxRank: 3,
     description: 'Aumenta el daño de tu hechizo Corrupción una cantidad igual al 36% de tu poder con hechizos.',
     row: 3,
@@ -107,7 +107,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Abrazo de las Sombras',
-    icon: 'spell_shadow_shadowembrace',
+    icon: 'spell-shadow-shadowembrace',
     maxRank: 5,
     description: 'Tus hechizos Descarga de las Sombras y Poseer aplican el efecto Abrazo de las Sombras, que aumenta todo el daño periódico de las Sombras que infliges al objetivo un 5% y reduce toda la sanación periódica que le hacen al objetivo un 10%. Dura 12 sec. Se acumula hasta 3 veces.',
     row: 4,
@@ -115,7 +115,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Succionar vida',
-    icon: 'spell_shadow_requiem',
+    icon: 'spell-shadow-requiem',
     maxRank: 1,
     description: 'Cuando infliges daño con Corrupción, te sanas instantáneamente un 40 % del daño infligido. Además, los efectos de daño en el tiempo infligidos con tu Corrupción, Semilla de corrupción y Aflicción inestable aumentan un 5%.',
     row: 4,
@@ -123,7 +123,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Maldición de agotamiento',
-    icon: 'spell_shadow_grimward',
+    icon: 'spell-shadow-grim-ward',
     maxRank: 1,
     description: 'Reduce la velocidad de movimiento del objetivo un 30% durante 12 sec. Cada brujo solo puede tener una maldición activa sobre cada objetivo.',
     row: 4,
@@ -132,7 +132,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Manáfago mejorado',
-    icon: 'spell_shadow_summonfelhunter',
+    icon: 'spell-shadow-summonfel-hunter',
     maxRank: 2,
     description: 'Tu manáfago recupera un 8% de su maná máximo cada vez que golpea con su facultad Mordedura de las Sombras y el tiempo de reutilización de dicha facultad se reduce 4 s. Además, aumenta el efecto de Inteligencia vil de tu manáfago un 10%.',
     row: 5,
@@ -140,7 +140,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Maestría de las Sombras',
-    icon: 'spell_shadow_shadetruesight',
+    icon: 'spell-shadow-shadetruesight',
     maxRank: 5,
     description: 'Aumenta un 15% el daño infligido o el drenaje de vida de tus hechizos de las Sombras y de la facultad Mordedura de las Sombras de tu manáfago.',
     row: 5,
@@ -149,7 +149,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Erradicación',
-    icon: 'ability_warlock_eradication',
+    icon: 'ability-warlock-eradication',
     maxRank: 3,
     description: 'Cuando infliges daño con Corrupción, tienes un 6% de probabilidad de aumentar la velocidad de lanzamientos de hechizos un 20% durante 10 sec.',
     row: 6,
@@ -157,7 +157,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Contagio',
-    icon: 'spell_shadow_painfulafflictions',
+    icon: 'spell-shadow-painfulafflictions',
     maxRank: 5,
     description: 'Aumenta el daño de tus hechizos Maldición de agonía, Corrupción y Semilla de corrupción un 5% y reduce la probabilidad de que disipen tus hechizos de ayuda de aflicción y tus efectos de daño en el tiempo un 30% extra.',
     row: 6,
@@ -165,7 +165,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Pacto oscuro',
-    icon: 'spell_shadow_darkritual',
+    icon: 'spell-shadow-darkritual',
     maxRank: 1,
     description: 'Drena 305 p. de maná de tu demonio invocado y tú recibes el 100% del maná drenado.',
     row: 6,
@@ -173,7 +173,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Aullido de terror mejorado',
-    icon: 'spell_shadow_deathscream',
+    icon: 'spell-shadow-deathscream',
     maxRank: 2,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Aullido de terror 1.5 s.',
     row: 7,
@@ -181,7 +181,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Imprecación',
-    icon: 'spell_shadow_curseofachimonde',
+    icon: 'spell-shadow-curse-of-achimonde',
     maxRank: 3,
     description: 'Aumenta el daño con hechizos un 3% y aumenta la probabilidad de golpe crítico periódico de tus hechizos Corrupción y Aflicción inestable un 9%.',
     row: 7,
@@ -189,7 +189,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Abrazo de la Muerte',
-    icon: 'spell_shadow_deathsembrace',
+    icon: 'spell-shadow-deathsembrace',
     maxRank: 3,
     description: 'Aumenta la cantidad drenada por tu Drenar vida un 30% mientras tu salud está al 20% o menos y aumenta el daño infligido por tus hechizos de las Sombras un 12% cuando tu objetivo está al 35% o menos de salud.',
     row: 8,
@@ -197,7 +197,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Aflicción inestable',
-    icon: 'spell_shadow_unstableaffliction_3',
+    icon: 'spell-shadow-unstableaffliction-3',
     maxRank: 1,
     description: 'La energía de las Sombras destruye poco a poco al objetivo, inflige 550 p. de daño durante 15 sec. Además, si se disipa tu hechizo Aflicción inestable, el que lo haya disipado recibe 990 p. de daño y queda silenciado durante 5 sec. Un brujo solo puede un hechizo Aflicción inestable o Inmolar activo sobre un objetivo.',
     row: 8,
@@ -206,7 +206,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Pandemia',
-    icon: 'spell_shadow_unstableaffliction_2',
+    icon: 'spell-shadow-unstableaffliction-2',
     maxRank: 1,
     description: 'Otorga al daño periódico de tus hechizos Corrupción y Aflicción inestable la facultad de asestar un golpe crítico que inflija un 100% de daño aumentado y aumenta el bonus de daño de golpe crítico de tu hechizo Poseer un 100%.',
     row: 8,
@@ -215,7 +215,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Aflicción eterna',
-    icon: 'ability_warlock_everlastingaffliction',
+    icon: 'ability-warlock-everlastingaffliction',
     maxRank: 5,
     description: 'Los hechizos Corrupción y Aflicción inestable ganan un 5% extra de tu bonus de daño con hechizos y tus hechizos Drenar vida, Drenar alma, Descarga de las Sombras y Poseer tienen un 100% de probabilidad de reiniciar la duración del hechizo Corrupción en el objetivo.',
     row: 9,
@@ -223,7 +223,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
   },
   {
     name: 'Poseer',
-    icon: 'ability_warlock_haunt',
+    icon: 'ability-warlock-haunt',
     maxRank: 1,
     description: 'Envías un alma fantasmagórica al objetivo, infligiendo 405 to 473 p. de daño de las Sombras y aumentando un 20% todo el daño infligido por tus efectos de daño de las Sombras en el tiempo sobre el objetivo durante 12 sec. Cuando el hechizo Poseer se acaba o se disipa, el alma vuelve a ti y te sana un 100% de todo el daño infligido al objetivo.',
     row: 10,
@@ -234,7 +234,7 @@ export const warlockAfliccionTalents: WowTalent[] = [
 export const warlockDemonologiaTalents: WowTalent[] = [
   {
     name: 'Piedra de salud mejorada',
-    icon: 'inv_stone_04',
+    icon: 'inv-stone-04',
     maxRank: 2,
     description: 'Aumenta la salud recuperada por tu piedra de salud un 20%.',
     row: 0,
@@ -242,7 +242,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Diablillo mejorado',
-    icon: 'spell_shadow_summonimp',
+    icon: 'spell-shadow-summonimp',
     maxRank: 3,
     description: 'Aumenta un 30% el efecto del hechizo de Descarga de Fuego, el de Escudo de Fuego y el de Pacto de sangre de tu diablillo.',
     row: 0,
@@ -250,7 +250,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Abrazo demoníaco',
-    icon: 'spell_shadow_metamorphosis',
+    icon: 'spell-shadow-metamorphosis',
     maxRank: 3,
     description: 'Aumenta tu aguante total un 10%.',
     row: 0,
@@ -258,7 +258,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Sinergia vil',
-    icon: 'spell_shadow_felmending',
+    icon: 'spell-shadow-felmending',
     maxRank: 2,
     description: 'Tienes un 100% de probabilidad de sanar a tu mascota un 15% de la cantidad de daño con hechizos que infliges.',
     row: 0,
@@ -266,7 +266,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Cauce de salud mejorado',
-    icon: 'spell_shadow_lifedrain',
+    icon: 'spell-shadow-lifedrain',
     maxRank: 2,
     description: 'Aumenta la cantidad de salud transferida por tu hechizo Cauce de salud un 20% y reduce el coste de salud un 20%. Además, tu demonio invocado recibe un 30% menos de daño mientras está bajo el efecto de tu Cauce de salud.',
     row: 1,
@@ -274,7 +274,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Brutalidad demoníaca',
-    icon: 'spell_shadow_summonvoidwalker',
+    icon: 'spell-shadow-summonvoid-walker',
     maxRank: 3,
     description: 'Aumenta un 30% la efectividad de los hechizos Tormento, Consumir sombras, Sacrificio y Sufrimiento de tu abisario y aumenta el bonus de poder de ataque del efecto de Frenesí demoníaco de tu guardia vil un 3%.',
     row: 1,
@@ -282,7 +282,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Vitalidad vil',
-    icon: 'spell_holy_magicalsentry',
+    icon: 'spell-holy-magicalsentry',
     maxRank: 3,
     description: 'Aumenta el aguante y el intelecto de tu diablillo, abisario, súcubo, manáfago y guardia vil un 15% y aumenta tu salud y maná máximos un 3%.',
     row: 1,
@@ -290,7 +290,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Sayaad mejorado',
-    icon: 'spell_shadow_summonsuccubus',
+    icon: 'spell-shadow-summonsuccubus',
     maxRank: 3,
     description: 'Reduce el tiempo de lanzamiento de Seducción un 66% s y aumenta la duración de los hechizos Seducción e Invisibilidad inferior de tu súcubo un 30%.',
     row: 2,
@@ -298,7 +298,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Enlace de alma',
-    icon: 'spell_shadow_gathershadows',
+    icon: 'spell-shadow-gathershadows',
     maxRank: 1,
     description: 'Cuando está activo, el 20% de todo el daño recibido por el taumaturgo pasa al diablillo, abisario, súcubo, manáfago, guardia vil o demonio subyugado. Ese daño no se puede evitar. Dura mientras el demonio esté activo y controlado.',
     row: 2,
@@ -306,7 +306,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Dominación vil',
-    icon: 'spell_nature_removecurse',
+    icon: 'spell-nature-remove-curse',
     maxRank: 1,
     description: 'El tiempo de lanzamiento del siguiente hechizo para invocar a tu diablillo, abisario, súcubo, íncubo, manáfago o guardia vil se reduce en 5.5 s y su coste de maná en un 50%.',
     row: 2,
@@ -314,7 +314,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Égida demoníaca',
-    icon: 'spell_shadow_ragingscream',
+    icon: 'spell-shadow-ragingscream',
     maxRank: 3,
     description: 'Aumenta la efectividad de tus hechizos Armadura demoníaca y Armadura vil un 30%.',
     row: 2,
@@ -322,7 +322,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Poder profano',
-    icon: 'spell_shadow_shadowworddominate',
+    icon: 'spell-shadow-shadowworddominate',
     maxRank: 5,
     description: 'Aumenta el daño infligido por los ataques cuerpo a cuerpo de tu abisario, súcubo, íncubo, manáfago y guardia vil y el causado por la Descarga de Fuego de tu diablillo en un 20%.',
     row: 3,
@@ -331,7 +331,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro invocador',
-    icon: 'spell_shadow_impphaseshift',
+    icon: 'spell-shadow-impphaseshift',
     maxRank: 2,
     description: 'Reduce el tiempo de lanzamiento de los hechizos de invocación de tu diablillo, abisario, súcubo, íncubo, manáfago y guardia vil en 4 s y el coste de maná en un 40%.',
     row: 3,
@@ -340,7 +340,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Alimentar maná',
-    icon: 'spell_shadow_manafeed',
+    icon: 'spell-shadow-manafeed',
     maxRank: 1,
     description: 'Cuando obtienes maná con tus hechizos Drenar maná y Transfusión de vida, tu demonio invocado gana un 100% del maná que tú hayas obtenido.',
     row: 4,
@@ -349,7 +349,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro conjurador',
-    icon: 'inv_ammo_firetar',
+    icon: 'inv-ammo-firetar',
     maxRank: 2,
     description: 'Aumenta los índices de combate ganados mediante tu piedra de fuego y piedra de hechizo un 300%.',
     row: 4,
@@ -357,7 +357,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro demonólogo',
-    icon: 'spell_shadow_shadowpact',
+    icon: 'spell-shadow-shadowpact',
     maxRank: 5,
     description: 'Les da al brujo y al demonio invocado un efecto mientras el demonio está activo. Diablillo: Aumenta tu daño de Fuego un 5%, y aumenta la probabilidad de efecto crítico de tus hechizos de Fuego un 5%. Abisario: Reduce el daño físico recibido un 10%. Súcubo: Aumenta tu daño de las Sombras un 5%, y aumenta la probabilidad de efecto crítico de tus hechizos de las Sombras un 5%. Manáfago: Reduce todo el daño con hechizos recibido un 10%. Guardia vil: Aumenta todo el daño infligido un 5%, y reduce todo el daño recibido un 5%.',
     row: 5,
@@ -366,7 +366,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Núcleo de magma',
-    icon: 'ability_warlock_moltencore',
+    icon: 'ability-warlock-moltencore',
     maxRank: 3,
     description: 'Aumenta 9 segundos la duración de tu Inmolar y tienes un 12% de probabilidad de ganar el efecto Núcleo de magma cuando tu Corrupción inflija daño. El efecto Núcleo de magma potencia los 3 siguientes hechizos Incinerar o Fuego de alma que lances en 15 sec. Incinerar: Aumenta un 18% el daño infligido y reduce el tiempo de lanzamiento un 30%. Fuego de alma: Aumenta un 18% el daño infligido y aumenta la probabilidad de golpe crítico un 15%.',
     row: 5,
@@ -374,7 +374,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Temple demoníaco',
-    icon: 'spell_shadow_demonicfortitude',
+    icon: 'spell-shadow-demonicfortitude',
     maxRank: 3,
     description: 'Reduce la probabilidad de recibir un golpe crítico en ataques cuerpo a cuerpo y con hechizos un 3% y reduce todo el daño que tu demonio invocado recibe un 15%.',
     row: 6,
@@ -382,7 +382,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Potenciación demoníaca',
-    icon: 'ability_warlock_demonicempowerment',
+    icon: 'ability-warlock-demonicempowerment',
     maxRank: 1,
     description: 'Otorga Potenciación al demonio invocado del brujo. Diablillo: Aumenta la probabilidad de golpe crítico con hechizos del diablillo un 20% durante 30 sec. Abisario: Aumenta la salud del abisario un 20% y la amenaza que genera con los ataques y hechizos un 20% durante 20 sec. Súcubo e íncubo: Se desvanece instantáneamente, provocando que el demonio entre en un estado de invisibilidad mejorado. El efecto de desvanecimiento elimina todos los efectos de reducción del movimiento, frenado y aturdimientos del demonio. Manáfago: Disipa todos los efectos mágicos del manáfago. Guardia vil: Aumenta la velocidad de ataque del guardia vil un 20% y rompe todos los efectos de aturdimiento, frenado y reducción de movimiento, y vuelve a tu guardia vil inmune a ellos durante 15 sec.',
     row: 6,
@@ -391,7 +391,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Conocimiento demoníaco',
-    icon: 'spell_shadow_improvedvampiricembrace',
+    icon: 'spell-shadow-improvedvampiricembrace',
     maxRank: 3,
     description: 'Aumenta el daño con tus hechizos en una cantidad igual al 12% del total del aguante más intelecto de tu demonio activo.',
     row: 6,
@@ -399,7 +399,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Tácticas demoníacas',
-    icon: 'spell_shadow_demonictactics',
+    icon: 'spell-shadow-demonictactics',
     maxRank: 5,
     description: 'Aumenta la posibilidad de que asestéis un golpe crítico cuerpo a cuerpo y con hechizos tú y tu demonio invocado un 10%.',
     row: 7,
@@ -407,7 +407,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Exterminación',
-    icon: 'spell_fire_fireball02',
+    icon: 'spell-fire-fire-ball-02',
     maxRank: 2,
     description: 'Cuando lanzas tu Descarga de las Sombras, Incinerar o Fuego de alma sobre un objetivo que está al o por debajo del 35% de salud, el tiempo de lanzamiento de tu Fuego de alma se reduce un 40% durante 10 sec. Los Fuegos de alma lanzados bajo el efecto de Exterminación no cuestan fragmentos.',
     row: 7,
@@ -415,7 +415,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Tácticas demoníacas mejoradas',
-    icon: 'ability_warlock_improveddemonictactics',
+    icon: 'ability-warlock-improveddemonictactics',
     maxRank: 3,
     description: 'Aumenta la probabilidad de que tus demonios invocados den un golpe crítico igual al 30% de tus probabilidades de golpe crítico.',
     row: 8,
@@ -424,7 +424,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Invocar guardia vil',
-    icon: 'spell_shadow_summonfelguard',
+    icon: 'spell-shadow-summonfel-guard',
     maxRank: 1,
     description: 'Invoca a un guardia vil a las órdenes del brujo.',
     row: 8,
@@ -432,7 +432,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Némesis',
-    icon: 'spell_shadow_demonicempathy',
+    icon: 'spell-shadow-demonicempathy',
     maxRank: 3,
     description: 'Reduce el tiempo de reutilización de los hechizos Potenciación demoníaca, Metamorfosis y Dominación vil un 30%.',
     row: 8,
@@ -440,7 +440,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Pacto demoníaco',
-    icon: 'spell_shadow_demonicpact',
+    icon: 'spell-shadow-demonicpact',
     maxRank: 5,
     description: 'Aumenta tu daño con hechizos un 10%, y los golpes críticos de tu mascota aplican el efecto de Pacto demoníaco a los miembros de tu banda o grupo. Pacto demoníaco aumenta el poder con hechizos un 10% de tu daño con hechizos durante 45 sec. Este efecto tiene un tiempo de reutilización de 1 s. No funciona sobre demonios subyugados.',
     row: 9,
@@ -448,7 +448,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
   },
   {
     name: 'Metamorfosis',
-    icon: 'spell_shadow_demonform',
+    icon: 'spell-shadow-demon-form',
     maxRank: 1,
     description: 'Te transformas en un demonio durante 30 sec. Esta forma aumenta tu armadura un 600%, el daño un 20%, reduce la probabilidad de que los ataques cuerpo a cuerpo te impacten un 6% y reduce la duración de los efectos de aturdimiento y de frenado un 50%. Ganas facultades de demonio únicas además de tus facultades normales. Tiempo de reutilización: 3 min.',
     row: 10,
@@ -459,7 +459,7 @@ export const warlockDemonologiaTalents: WowTalent[] = [
 export const warlockDestruccionTalents: WowTalent[] = [
   {
     name: 'Descarga de las Sombras mejorada',
-    icon: 'spell_shadow_shadowbolt',
+    icon: 'spell-shadow-shadow-bolt',
     maxRank: 5,
     description: 'Aumenta el daño infligido por tu Descarga de las Sombras un 10% y tu Descarga de las Sombras tiene un 100% de probabilidad de hacer que el objetivo sea vulnerable a daño con hechizos, aumentando la probabilidad de golpe crítico con hechizos frente a este objetivo un 5%. El efecto dura 30 sec.',
     row: 0,
@@ -467,7 +467,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Aterrar',
-    icon: 'spell_shadow_deathpact',
+    icon: 'spell-shadow-deathpact',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tus hechizos Descarga de las Sombras, Descarga de caos e Inmolar 0.5 s y tu hechizo Fuego de alma 2 s.',
     row: 0,
@@ -475,7 +475,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Secuelas',
-    icon: 'spell_fire_fire',
+    icon: 'spell-fire-fire',
     maxRank: 2,
     description: 'Aumenta el daño periódico infligido por tu Inmolar un 6% y tu Conflagrar tiene un 100% de probabilidad de atontar al objetivo durante 5 sec.',
     row: 1,
@@ -483,7 +483,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Piel de arrabio',
-    icon: 'ability_mage_moltenarmor',
+    icon: 'ability-mage-molten-armor',
     maxRank: 3,
     description: 'Reduce todo el daño recibido un 6%.',
     row: 1,
@@ -491,7 +491,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Cataclismo',
-    icon: 'spell_fire_windsofwoe',
+    icon: 'spell-fire-winds-of-woe',
     maxRank: 3,
     description: 'Reduce el coste de maná de tus hechizos de Destrucción un 10%.',
     row: 1,
@@ -499,7 +499,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Poder demoníaco',
-    icon: 'spell_fire_firebolt',
+    icon: 'spell-fire-fire-bolt',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización del hechizo Latigazo doloroso de tu súcubo 6 s. y reduce el tiempo de lanzamiento del hechizo Descarga de Fuego de tu diablillo 0.50 s.',
     row: 2,
@@ -507,7 +507,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Quemadura de las Sombras',
-    icon: 'spell_shadow_scourgebuild',
+    icon: 'spell-shadow-scourgebuild',
     maxRank: 1,
     description: 'Revienta instantáneamente al objetivo e inflige 91 to 104 p. de daño de las Sombras. Si el objetivo muere en 5 sec por Quemadura de las Sombras y produce honor o experiencia, ganarás un fragmento de alma.',
     row: 2,
@@ -515,7 +515,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Ruina',
-    icon: 'spell_shadow_shadowwordpain',
+    icon: 'spell-shadow-shadowwordpain',
     maxRank: 5,
     description: 'Aumenta un 100% el bonus de daño por golpe crítico de tus hechizos de Destrucción y del hechizo Descarga de Fuego de tu diablillo.',
     row: 2,
@@ -523,7 +523,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Intensidad',
-    icon: 'spell_fire_lavaspawn',
+    icon: 'spell-fire-lavaspawn',
     maxRank: 2,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas o canalizas cualquier hechizo de destrucción un 70%.',
     row: 3,
@@ -531,7 +531,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Alcance destructivo',
-    icon: 'spell_shadow_corpseexplode',
+    icon: 'spell-shadow-corpseexplode',
     maxRank: 2,
     description: 'Aumenta el alcance de tus hechizos de destrucción un 20% y reduce la amenaza causada por tus hechizos de destrucción un 20%.',
     row: 3,
@@ -539,7 +539,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Dolor abrasador mejorado',
-    icon: 'spell_fire_soulburn',
+    icon: 'spell-fire-soulburn',
     maxRank: 3,
     description: 'Aumenta un 10% la probabilidad de golpe crítico de tu hechizo de Dolor abrasador.',
     row: 3,
@@ -547,7 +547,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Contragolpe',
-    icon: 'spell_fire_playingwithfire',
+    icon: 'spell-fire-playingwith-fire',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpe crítico con hechizos un 3% extra y te da un 25% de probabilidad cuando recibes un golpe físico para reducir el tiempo de lanzamiento de tu próximo hechizo Descarga de las Sombras o Incineración un 100%. Este efecto dura 8 sec y no podrá ocurrir más de una vez cada 8 segundos.',
     row: 4,
@@ -556,7 +556,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Inmolar mejorado',
-    icon: 'spell_fire_immolation',
+    icon: 'spell-fire-immolation',
     maxRank: 3,
     description: 'Aumenta un 30% el daño infligido por tu hechizo Inmolar.',
     row: 4,
@@ -564,7 +564,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Devastación',
-    icon: 'spell_fire_flameshock',
+    icon: 'spell-fire-flameshock',
     maxRank: 1,
     description: 'Aumenta un 5% la probabilidad de golpe crítico de tus hechizos de destrucción.',
     row: 4,
@@ -573,7 +573,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Protección abisal',
-    icon: 'spell_shadow_netherprotection',
+    icon: 'spell-shadow-netherprotection',
     maxRank: 3,
     description: 'Tras ser alcanzado por un hechizo, tienes un 30% de probabilidad de obtener Protección Abisal, reduciendo todo el daño infligido con hechizos de esa escuela un 30% durante 8 sec.',
     row: 5,
@@ -581,7 +581,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Tormenta de brasas',
-    icon: 'spell_fire_selfdestruct',
+    icon: 'spell-fire-self-destruct',
     maxRank: 5,
     description: 'Aumenta el daño infligido por tus hechizos de Fuego un 15% y reduce el tiempo de lanzamiento de Incinerar 0.25 s.',
     row: 5,
@@ -589,7 +589,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Conflagrar',
-    icon: 'spell_fire_fireball',
+    icon: 'spell-fire-fire-ball',
     maxRank: 1,
     description: 'Glifo de Conflagrar Provoca Consume un efecto Inmolar o Llama de las Sombras en un objetivo enemigo para infligir instantáneamente daño igual al 60% de tu Inmolar o de tu Llama de las Sombras e inflige un 40% de daño extra durante 6 sec.',
     row: 6,
@@ -598,7 +598,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Parasitar alma',
-    icon: 'spell_shadow_soulleech_3',
+    icon: 'spell-shadow-soulleech-3',
     maxRank: 3,
     description: 'Da a tus hechizos Descarga de las Sombras, Quemadura de las Sombras, Descarga de caos, Fuego de alma, Incinerar, Dolor abrasador y Conflagrar un 30% de probabilidad de devolver una cantidad de salud equivalente al 20% del daño infligido.',
     row: 6,
@@ -606,7 +606,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Piroclasma',
-    icon: 'spell_fire_volcano',
+    icon: 'spell-fire-volcano',
     maxRank: 3,
     description: 'Cuando infliges golpes críticos con Dolor abrasador o Conflagrar, tu daño con hechizos de Fuego y de las Sombras aumenta un 6% durante 10 sec.',
     row: 6,
@@ -614,7 +614,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Sombras y llamas',
-    icon: 'spell_shadow_shadowandflame',
+    icon: 'spell-shadow-shadowand-flame',
     maxRank: 5,
     description: 'Tus hechizos Descarga de las Sombras, Quemadura de las Sombras, Descarga de caos e Incinerar consiguen un 20% extra de tu bonus de efectos de daño con hechizos.',
     row: 7,
@@ -622,7 +622,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Parasitar alma mejorado',
-    icon: 'ability_warlock_improvedsoulleech',
+    icon: 'ability-warlock-improvedsoulleech',
     maxRank: 2,
     description: 'Tu efecto Parasitar alma también os restaura maná a ti y a tu demonio invocado por un valor igual al 2% del maná máximo y tiene un 100% de probabilidad de otorgar hasta a 10 miembros del grupo o banda regeneración de maná igual a un 1% del maná máximo cada 5 s. Dura 15 sec.',
     row: 7,
@@ -631,7 +631,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Explosión de humo',
-    icon: 'ability_warlock_backdraft',
+    icon: 'ability-warlock-backdraft',
     maxRank: 3,
     description: 'Cuando lanzas Conflagrar, el tiempo de lanzamiento y el tiempo de reutilización global de tus siguientes 3 hechizos de destrucción no canalizados y no instantáneos se reduce un 30%. Dura 15 sec.',
     row: 8,
@@ -640,7 +640,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Furia de las Sombras',
-    icon: 'spell_shadow_shadowfury',
+    icon: 'spell-shadow-shadow-fury',
     maxRank: 1,
     description: 'La Furia de las Sombras se desata, lo que inflige 357 to 422 p. de daño de las Sombras y aturde a todos los enemigos situados en un radio de 8 m durante 3 sec.',
     row: 8,
@@ -648,7 +648,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Diablillo potenciado',
-    icon: 'ability_warlock_empoweredimp',
+    icon: 'ability-warlock-empoweredimp',
     maxRank: 3,
     description: 'Aumenta el daño infligido por tu diablillo un 30% y todos los golpes críticos de tu diablillo tienen un 100% de probabilidad de aumentar tu probabilidad de golpe crítico con hechizos de tu siguiente hechizo un 100%. Este efecto dura 8 sec.',
     row: 8,
@@ -656,7 +656,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Fuego y azufre',
-    icon: 'ability_warlock_fireandbrimstone',
+    icon: 'ability-warlock-fireandbrimstone',
     maxRank: 5,
     description: 'Aumenta el daño infligido por tus hechizos Incinerar y Descarga de caos a objetivos afectados por tu Inmolar un 10%, y la probabilidad de asestar un golpe crítico de tu hechizo Conflagrar aumenta un 25%.',
     row: 9,
@@ -664,7 +664,7 @@ export const warlockDestruccionTalents: WowTalent[] = [
   },
   {
     name: 'Descarga de caos',
-    icon: 'ability_warlock_chaosbolt',
+    icon: 'ability-warlock-chaos-bolt',
     maxRank: 1,
     description: 'Lanza una descarga de fuego caótico al enemigo y le inflige 864 to 1089 p. de daño de Fuego. No se puede resistir Descarga de caos y atraviesa todos los efectos de absorción.',
     row: 10,

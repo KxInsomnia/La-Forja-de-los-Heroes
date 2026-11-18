@@ -10,7 +10,7 @@ export const warlock: WowClass = {
   specs: [
     {
       slug: 'afliccion',
-      icon: 'warlock-afliccion',
+      icon: 'warlock-affliction',
       name: 'Aflicción',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -18,7 +18,7 @@ export const warlock: WowClass = {
     },
     {
       slug: 'demonologia',
-      icon: 'warlock-demonologia',
+      icon: 'warlock-demonology',
       name: 'Demonología',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -26,7 +26,7 @@ export const warlock: WowClass = {
     },
     {
       slug: 'destruccion',
-      icon: 'warlock-destruccion',
+      icon: 'warlock-destruction',
       name: 'Destrucción',
       role: 'DPS',
       badges: [{ label: 'No recomendado pero viable', tone: 'situational' }],

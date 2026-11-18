@@ -10,7 +10,7 @@ export const hunter: WowClass = {
   specs: [
     {
       slug: 'bestias',
-      icon: 'hunter-bestias',
+      icon: 'hunter-beasts',
       name: 'Bestias',
       role: 'DPS',
       badges: [{ label: 'PARA NADA RECOMENDADO', tone: 'strong-no' }],
@@ -18,7 +18,7 @@ export const hunter: WowClass = {
     },
     {
       slug: 'punteria',
-      icon: 'hunter-punteria',
+      icon: 'hunter-marksmanship',
       name: 'Puntería',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -26,7 +26,7 @@ export const hunter: WowClass = {
     },
     {
       slug: 'supervivencia',
-      icon: 'hunter-supervivencia',
+      icon: 'hunter-survival',
       name: 'Supervivencia',
       role: 'DPS',
       badges: [

@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const shamanElementalTalents: WowTalent[] = [
   {
     name: 'Convección',
-    icon: 'spell_nature_wispsplode',
+    icon: 'spell-nature-wispsplode',
     maxRank: 5,
     description: 'Reduce el coste de maná de tus hechizos Choque, Descarga de relámpagos, Cadena de relámpagos, Ráfaga de lava y Corte de viento un 10%.',
     row: 0,
@@ -11,7 +11,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Conmoción',
-    icon: 'spell_fire_fireball',
+    icon: 'spell-fire-fire-ball',
     maxRank: 5,
     description: 'Aumenta un 5% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Tormenta de truenos, Ráfaga de lava y Choque.',
     row: 0,
@@ -19,7 +19,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Llamada de las llamas',
-    icon: 'spell_fire_immolation',
+    icon: 'spell-fire-immolation',
     maxRank: 3,
     description: 'Aumenta un 15% el daño infligido con tus Tótems de Fuego y Nova de Fuego, y el daño infligido por tu Ráfaga de lava un 6%.',
     row: 1,
@@ -27,7 +27,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Amparo elemental',
-    icon: 'spell_nature_spiritarmor',
+    icon: 'spell-nature-spirit-armor',
     maxRank: 3,
     description: 'Reduce todo el daño recibido un 6%.',
     row: 1,
@@ -35,7 +35,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Devastación elemental',
-    icon: 'spell_fire_elementaldevastation',
+    icon: 'spell-fire-elementaldevastation',
     maxRank: 3,
     description: 'Los críticos de tus hechizos ofensivos no periódicos aumentan tu probabilidad de asestar un golpe crítico con ataques cuerpo a cuerpo un 9% durante 10 sec.',
     row: 1,
@@ -43,7 +43,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Reverberación',
-    icon: 'spell_frost_frostward',
+    icon: 'spell-frost-frost-ward',
     maxRank: 5,
     description: 'Reduce el tiempo de reutilización de tus hechizos Choque y Corte de viento 1 s.',
     row: 2,
@@ -51,7 +51,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque elemental',
-    icon: 'spell_shadow_manaburn',
+    icon: 'spell-shadow-manaburn',
     maxRank: 1,
     description: 'Tras asestar un golpe crítico no periódico con hechizos de Fuego, Escarcha o Naturaleza, entras en un estado de Lanzamiento libre. El estado de Lanzamiento libre reduce el coste de maná de tus próximos 2 hechizos de daño o sanación un 40%.',
     row: 2,
@@ -59,7 +59,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Furia elemental',
-    icon: 'spell_fire_volcano',
+    icon: 'spell-fire-volcano',
     maxRank: 5,
     description: 'Aumenta un 100% el bonus de daño por golpe crítico de tu Tótem abrasador, de tu Tótem de magma y de tus hechizos de Fuego, Escarcha y Naturaleza.',
     row: 2,
@@ -67,7 +67,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Nova de Fuego mejorada',
-    icon: 'spell_fire_sealoffire',
+    icon: 'spell-fire-sealof-fire',
     maxRank: 2,
     description: 'Aumenta el daño infligido por tu Nova de Fuego un 20% y reduce el tiempo de reutilización 4 s.',
     row: 3,
@@ -75,7 +75,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Ojo de la tormenta',
-    icon: 'spell_shadow_soulleech_2',
+    icon: 'spell-shadow-soulleech-2',
     maxRank: 3,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas Descarga de relámpagos, Cadena de relámpagos, Ráfaga de lava y Maleficio un 70%.',
     row: 3,
@@ -83,7 +83,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Alcance elemental',
-    icon: 'spell_nature_stormreach',
+    icon: 'spell-nature-stormreach',
     maxRank: 2,
     description: 'Aumenta 6 m el alcance de tus hechizos de Descarga de relámpagos, Cadena de relámpagos, Nova de Fuego y Ráfaga de lava, aumenta el radio de tu hechizo Tormenta de truenos un 20% y aumenta el alcance de tu hechizo Choque de llamas 15 m.',
     row: 4,
@@ -91,7 +91,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Llamada del trueno',
-    icon: 'spell_nature_callstorm',
+    icon: 'spell-nature-call-storm',
     maxRank: 1,
     description: 'Aumenta un 5% extra la probabilidad de conseguir un golpe crítico con tus hechizos Descarga de relámpagos, Cadena de relámpagos y Tormenta de truenos.',
     row: 4,
@@ -100,7 +100,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Tormenta inexorable',
-    icon: 'spell_nature_unrelentingstorm',
+    icon: 'spell-nature-unrelenting-storm',
     maxRank: 3,
     description: 'Regenera maná en una cantidad equivalente al 12% de tu intelecto cada 5 s, incluso mientras lanzas hechizos.',
     row: 4,
@@ -108,7 +108,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Precisión elemental',
-    icon: 'spell_nature_elementalprecision_1',
+    icon: 'spell-nature-elementalprecision-1',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpear con tus hechizos de Fuego, Escarcha y de Naturaleza un 3% y reduce la amenaza causada por hechizos de Fuego, Escarcha y Naturaleza un 30%.',
     row: 5,
@@ -116,7 +116,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en relámpagos',
-    icon: 'spell_lightning_lightningbolt01',
+    icon: 'spell-lightning-lightning-bolt-01',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tus hechizos Descarga de relámpagos, Ráfaga de lava y Cadena de relámpagos 0.5 s.',
     row: 5,
@@ -125,7 +125,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Maestría elemental',
-    icon: 'spell_nature_wispheal',
+    icon: 'spell-nature-wispheal',
     maxRank: 1,
     description: 'Cuando se activa, tus próximos hechizos Descarga de relámpagos, Cadena de relámpagos o Ráfaga de lava se convierten en hechizos de lanzamiento instantáneo. Además, obtienes un 15% de celeridad con hechizos durante 15 sec. Maestría elemental comparte tiempo de reutilización con Presteza de la Naturaleza.',
     row: 6,
@@ -134,7 +134,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Tormenta, Tierra y Fuego',
-    icon: 'spell_shaman_stormearthfire',
+    icon: 'spell-shaman-stormearth-fire',
     maxRank: 3,
     description: 'Reduce el tiempo de reutilización de tu hechizo Cadena de relámpagos 2,5 s, el alcance de tu Tótem Nexo Terrestre también tiene un 100% de probabilidad de enraizar a los objetivos durante 5 sec al lanzarlo y el daño periódico infligido por tu Choque de llamas aumenta un 60%.',
     row: 6,
@@ -142,7 +142,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Ecos retumbantes',
-    icon: 'spell_fire_blueflamering',
+    icon: 'spell-fire-blueflamering',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tus hechizos Choque de llamas y Choque de Escarcha 2 s extra, aumenta el daño directo infligido por tus hechizos Choque de llamas y tu Choque de Escarcha un 20% extra.',
     row: 7,
@@ -150,7 +150,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Juramento elemental',
-    icon: 'spell_shaman_elementaloath',
+    icon: 'spell-shaman-elementaloath',
     maxRank: 2,
     description: 'Mientras está activo Lanzamiento libre de Enfoque elemental, infligirás un 10% más de daño con hechizos. Además, los miembros de tu grupo o banda en un radio de 100 m reciben un bonus de un 5% a su probabilidad de golpe crítico con hechizos.',
     row: 7,
@@ -159,7 +159,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Sobrecarga de relámpagos',
-    icon: 'spell_nature_lightningoverload',
+    icon: 'spell-nature-lightningoverload',
     maxRank: 3,
     description: 'Da a tus hechizos Descarga de relámpagos y Cadena de relámpagos un 33% de probabilidad de lanzar un segundo hechizo similar sobre el mismo objetivo sin ningún coste extra que inflige la mitad de daño y nada de amenaza.',
     row: 7,
@@ -167,7 +167,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Cambio astral',
-    icon: 'spell_shaman_astralshift',
+    icon: 'spell-shaman-astralshift',
     maxRank: 3,
     description: 'Mientras estés aturdido, asustado o silenciado, te desplazarás al plano astral, reduciendo todo el daño recibido un 30% durante todo el tiempo que el efecto se mantenga sobre ti.',
     row: 8,
@@ -175,7 +175,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Tótem de cólera',
-    icon: 'spell_fire_totemofwrath',
+    icon: 'spell-fire-totem-of-wrath',
     maxRank: 1,
     description: 'Invoca un Tótem de cólera con 5 p. de salud a los pies del taumaturgo. El tótem aumenta 100 p. el poder con hechizos a todos los miembros de la banda y grupo y aumenta la probabilidad de golpe crítico de todos los ataques un 3% frente a todos los enemigos en un radio de 40 m. Dura 5 min.',
     row: 8,
@@ -183,7 +183,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Flujos de lava',
-    icon: 'spell_shaman_lavaflow',
+    icon: 'spell-shaman-lavaflow',
     maxRank: 3,
     description: 'Aumenta el bonus de daño con golpe crítico de tu hechizo Ráfaga de lava un 24% y cuando se disipa tu Choque de llamas, tu velocidad de lanzamiento de hechizos aumenta un 30% durante 6 sec.',
     row: 8,
@@ -191,7 +191,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Chamanismo',
-    icon: 'spell_unused2',
+    icon: 'spell-unused-2',
     maxRank: 5,
     description: 'Tus hechizos Descarga de relámpagos y Cadena de relámpagos ganan un 20% extra y tu Ráfaga de lava un 25% extra de tu bonus de efectos de daño.',
     row: 9,
@@ -199,7 +199,7 @@ export const shamanElementalTalents: WowTalent[] = [
   },
   {
     name: 'Tormenta de truenos',
-    icon: 'spell_shaman_thunderstorm',
+    icon: 'spell-shaman-thunder-storm',
     maxRank: 1,
     description: 'Invoca una descarga de relámpagos que te energiza e inflige daño a los enemigos cercanos en un radio de 10 m. Te restaura un 8% de maná e inflige 566 to 644 p. de daño de Naturaleza a todos los enemigos cercanos y los lanza a 20 m. Este hechizo se puede usar mientras se está aturdido.',
     row: 10,
@@ -210,7 +210,7 @@ export const shamanElementalTalents: WowTalent[] = [
 export const shamanMejoraTalents: WowTalent[] = [
   {
     name: 'Tótems de mejoría',
-    icon: 'spell_nature_earthbindtotem',
+    icon: 'spell-nature-earthbind-totem',
     maxRank: 3,
     description: 'Aumenta un 15% el efecto de tu Tótem Lengua de Fuego y de tu Tótem Fuerza de la Tierra.',
     row: 0,
@@ -218,7 +218,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Trabazón con la Tierra',
-    icon: 'spell_nature_stoneclawtotem',
+    icon: 'spell-nature-stoneclaw-totem',
     maxRank: 2,
     description: 'Aumenta un 50% la salud de tu Tótem Garra de piedra y un 20% el radio de tu Tótem Nexo Terrestre. Además reduce el tiempo de reutilización de ambos tótems un 30%.',
     row: 0,
@@ -226,7 +226,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Conocimiento ancestral',
-    icon: 'spell_shadow_grimward',
+    icon: 'spell-shadow-grim-ward',
     maxRank: 5,
     description: 'Aumenta tu intelecto un 10%.',
     row: 0,
@@ -234,7 +234,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Tótems de guardián',
-    icon: 'spell_nature_stoneskintotem',
+    icon: 'spell-nature-stoneskin-totem',
     maxRank: 2,
     description: 'Aumenta la cantidad de daño que reduce tu Tótem Piel de piedra un 20% y reduce el tiempo de reutilización de tu Tótem derribador 2 s.',
     row: 1,
@@ -242,7 +242,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Golpes de trueno',
-    icon: 'ability_thunderbolt',
+    icon: 'ability-thunder-bolt',
     maxRank: 5,
     description: 'Mejora tu probabilidad de conseguir un golpe crítico con todos los hechizos y ataques un 5%.',
     row: 1,
@@ -250,7 +250,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Lobo fantasmal mejorado',
-    icon: 'spell_nature_spiritwolf',
+    icon: 'spell-nature-spiritwolf',
     maxRank: 2,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Lobo fantasmal 2 s.',
     row: 1,
@@ -258,7 +258,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Escudos mejorados',
-    icon: 'spell_nature_lightningshield',
+    icon: 'spell-nature-lightning-shield',
     maxRank: 3,
     description: 'Aumenta un 15% el daño infligido con tus orbes de Escudo de relámpagos, aumenta la cantidad de maná que ganas con tus orbes de Escudo de agua un 15% y aumenta la cantidad de sanación que hacen tus orbes de Escudo de tierra un 15%.',
     row: 1,
@@ -266,7 +266,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Armas elementales',
-    icon: 'spell_fire_flametounge',
+    icon: 'spell-fire-flametounge',
     maxRank: 3,
     description: 'Aumenta el daño infligido por el efecto de Arma Viento Furioso un 40%, aumenta el daño con hechizos de tu Arma Lengua de Fuego un 30% y aumenta el bonus de sanación de tu Arma de Vida terrestre un 30%.',
     row: 2,
@@ -274,7 +274,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque chamanístico',
-    icon: 'spell_nature_elementalabsorption',
+    icon: 'spell-nature-elementalabsorption',
     maxRank: 1,
     description: 'Reduce el coste de maná de tus hechizos de Choque un 45%.',
     row: 2,
@@ -282,7 +282,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Anticipación',
-    icon: 'spell_nature_mirrorimage',
+    icon: 'spell-nature-mirrori-mage',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de esquivar un 3% extra y reduce la duración de todos los efectos de desarmar que se usen frente a ti un 50%. No se acumula con otros efectos de reducción de duración de desarmar.',
     row: 2,
@@ -290,7 +290,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Aluvión',
-    icon: 'ability_ghoulfrenzy',
+    icon: 'ability-ghoulfrenzy',
     maxRank: 5,
     description: 'Aumenta tu velocidad de ataque un 30% en tus 3 próximos golpes después de asestar un golpe crítico.',
     row: 3,
@@ -299,7 +299,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Consistencia',
-    icon: 'spell_holy_devotion',
+    icon: 'spell-holy-devotion',
     maxRank: 5,
     description: 'Aumenta tu aguante un 10% y reduce la duración de los efectos de reducción del movimiento sobre ti un 30%.',
     row: 3,
@@ -307,7 +307,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Tótem Viento Furioso mejorado',
-    icon: 'spell_nature_windfury',
+    icon: 'spell-nature-wind-fury',
     maxRank: 2,
     description: 'Aumenta la celeridad cuerpo a cuerpo de tu Tótem Viento Furioso un 4%.',
     row: 4,
@@ -315,7 +315,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Armas de espíritu',
-    icon: 'ability_parry',
+    icon: 'ability-parry',
     maxRank: 1,
     description: 'Da la posibilidad de parar los ataques enemigos cuerpo a cuerpo y reduce la amenaza generada un 30%.',
     row: 4,
@@ -323,7 +323,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Maña mental',
-    icon: 'spell_nature_bloodlust',
+    icon: 'spell-nature-blood-lust',
     maxRank: 3,
     description: 'Aumenta tu poder de ataque un 100% de tu intelecto.',
     row: 4,
@@ -331,7 +331,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Ira desatada',
-    icon: 'spell_nature_unleashedrage',
+    icon: 'spell-nature-unleashed-rage',
     maxRank: 3,
     description: 'Aumenta tu pericia 9 p. y aumenta el poder de ataque de todos los miembros del grupo y la banda un 10% si se encuentran en un radio de 100 m del chamán.',
     row: 5,
@@ -339,7 +339,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en armas',
-    icon: 'ability_hunter_swiftstrike',
+    icon: 'ability-hunter-swift-strike',
     maxRank: 3,
     description: 'Aumenta un 10% el daño infligido con todas las armas.',
     row: 5,
@@ -347,7 +347,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Poder congelado',
-    icon: 'spell_fire_bluecano',
+    icon: 'spell-fire-bluecano',
     maxRank: 2,
     description: 'Aumenta un 10% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Latigazo de lava y Choque sobre los objetivos afectados por el efecto de tu ataque Estigma de Escarcha, y tu Choque de Escarcha tiene un 100% de probabilidad de paralizar al objetivo con Hielo durante 5 sec cuando se usa sobre objetivos a 15 m de ti o más.',
     row: 5,
@@ -355,7 +355,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en doble empuñadura',
-    icon: 'ability_dualwieldspecialization',
+    icon: 'ability-dualwieldspecialization',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpear con doble empuñadura un 6% extra.',
     row: 6,
@@ -364,7 +364,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Doble empuñadura',
-    icon: 'ability_dualwield',
+    icon: 'ability-dualwield',
     maxRank: 1,
     description: 'Permite que las armas de una mano y las armas de mano izquierda se equipen como armas de mano izquierda.',
     row: 6,
@@ -373,7 +373,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Golpe de tormenta',
-    icon: 'ability_shaman_stormstrike',
+    icon: 'ability-shaman-storm-strike',
     maxRank: 1,
     description: 'Ataque instantáneo con ambas armas. Además, las 4 fuentes siguientes de daño de Naturaleza infligidas al objetivo por el chamán aumentan un 20%. Dura 12 sec.',
     row: 6,
@@ -381,7 +381,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Choque estático',
-    icon: 'spell_shaman_staticshock',
+    icon: 'spell-shaman-staticshock',
     maxRank: 3,
     description: 'Tienes un 6% de probabilidad de golpear a tu objetivo con una carga de orbe de Escudo de relámpagos cuando infliges ataques y facultades cuerpo a cuerpo y aumenta el número de cargas de tu Escudo de relámpagos en 6.',
     row: 7,
@@ -389,7 +389,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Latigazo de lava',
-    icon: 'ability_shaman_lavalash',
+    icon: 'ability-shaman-lavalash',
     maxRank: 1,
     description: 'Cargas con lava el arma de tu mano izquierda e infliges instantáneamente un 100% de daño con arma con tu mano izquierda. El daño aumenta un 25% si tu arma de mano izquierda está encantada con Lengua de Fuego.',
     row: 7,
@@ -398,7 +398,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Golpe de tormenta mejorado',
-    icon: 'spell_shaman_improvedstormstrike',
+    icon: 'spell-shaman-improvedstorm-strike',
     maxRank: 2,
     description: 'Con Golpe de tormenta, tienes una probabilidad del 100% de que te otorgue un 20% de tu maná base.',
     row: 7,
@@ -407,7 +407,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Presura mental',
-    icon: 'spell_nature_mentalquickness',
+    icon: 'spell-nature-mentalquickness',
     maxRank: 3,
     description: 'Reduce el coste de maná de tus hechizos instantáneos de chamán un 6% y aumenta tu poder con hechizos en una cantidad igual al 30% de tu poder de ataque.',
     row: 8,
@@ -415,7 +415,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Ira del chamán',
-    icon: 'spell_nature_shamanrage',
+    icon: 'spell-nature-shaman-rage',
     maxRank: 1,
     description: 'Reduce todo el daño recibido un 30% y da a tus ataques cuerpo a cuerpo que infligen daño la probabilidad de regenerar maná igual al 15% de tu poder de ataque. Este hechizo se puede usar mientras se está aturdido. Dura 15 sec.',
     row: 8,
@@ -423,7 +423,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Poder terráneo',
-    icon: 'spell_nature_earthelemental_totem',
+    icon: 'spell-nature-earthelemental-totem',
     maxRank: 2,
     description: 'Tus pulsos de Tótem Nexo Terrestre tienen un 100% de probabilidad de eliminar todos los efectos de frenado sobre ti y sobre los objetivos amistosos cercanos. Tu Choque de tierra reduce la velocidad de ataque del enemigo un 10% extra.',
     row: 8,
@@ -431,7 +431,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Arma vorágine',
-    icon: 'spell_shaman_maelstromweapon',
+    icon: 'spell-shaman-maelstromweapon',
     maxRank: 5,
     description: 'Cuando infliges daño con un arma cuerpo a cuerpo, tienes la posibilidad (mayor que el rango 4) de reducir el tiempo de lanzamiento de tu siguiente hechizo de Descarga de relámpagos, Cadena de relámpagos, Ola de sanación inferior, Sanación en cadena, Ola de sanación o Maleficio un 20%. Se acumula hasta 5 veces. Dura 30 sec.',
     row: 9,
@@ -439,7 +439,7 @@ export const shamanMejoraTalents: WowTalent[] = [
   },
   {
     name: 'Espíritu feral',
-    icon: 'spell_shaman_feralspirit',
+    icon: 'spell-shaman-feral-spirit',
     maxRank: 1,
     description: 'Invoca 2 espíritus de lobo a las órdenes del chamán. Duran 45 sec.',
     row: 10,
@@ -450,7 +450,7 @@ export const shamanMejoraTalents: WowTalent[] = [
 export const shamanRestauracionTalents: WowTalent[] = [
   {
     name: 'Ola de sanación mejorada',
-    icon: 'spell_nature_magicimmunity',
+    icon: 'spell-nature-magicimmunity',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Ola de sanación 0.5 s.',
     row: 0,
@@ -458,7 +458,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque totémico',
-    icon: 'spell_nature_moonglow',
+    icon: 'spell-nature-moonglow',
     maxRank: 5,
     description: 'Reduce el coste de maná de tus tótems un 25%.',
     row: 0,
@@ -466,7 +466,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Reencarnación mejorada',
-    icon: 'spell_nature_reincarnation',
+    icon: 'spell-nature-reincarnation',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu hechizo Reencarnación 15 min. y aumenta un 20% extra la cantidad de salud y maná que recuperas cuando te reencarnas.',
     row: 1,
@@ -474,7 +474,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Gracia de sanación',
-    icon: 'spell_nature_healingtouch',
+    icon: 'spell-nature-healing-touch',
     maxRank: 3,
     description: 'Reduce la amenaza generada por tus hechizos de sanación un 15% y reduce las probabilidades de que tus hechizos de ayuda y tus efectos de daño en el tiempo se disipen un 30%.',
     row: 1,
@@ -482,7 +482,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque de las mareas',
-    icon: 'spell_frost_manarecharge',
+    icon: 'spell-frost-manarecharge',
     maxRank: 5,
     description: 'Reduce el coste de maná de tus hechizos de sanación un 5%.',
     row: 1,
@@ -490,7 +490,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Escudo de agua mejorado',
-    icon: 'ability_shaman_watershield',
+    icon: 'ability-shaman-water-shield',
     maxRank: 3,
     description: 'Tienes un 100% de probabilidad de obtener instantáneamente maná como si consumieras un orbe de Escudo de agua cuando ganas un efecto crítico por tus hechizos Ola de sanación o Mareas Vivas, un 60% de probabilidad cuando ganas un efecto crítico con tu hechizo Ola de sanación inferior y un 30% de probabilidad cuando ganas un efecto crítico con tu hechizo Sanación en cadena.',
     row: 2,
@@ -498,7 +498,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque de sanación',
-    icon: 'spell_nature_healingwavelesser',
+    icon: 'spell-nature-healingwavelesser',
     maxRank: 3,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas cualquier hechizo de sanación de chamán un 70%.',
     row: 2,
@@ -506,7 +506,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Fuerza de las mareas',
-    icon: 'spell_frost_frostbolt',
+    icon: 'spell-frost-frost-bolt',
     maxRank: 1,
     description: 'Aumenta un 60% la probabilidad de efecto crítico de tu Ola sanación de sanación, Ola de sanación inferior y Sanación en cadena. Cada sanación crítica reduce la probabilidad un 20%. Dura 20 sec.',
     row: 2,
@@ -514,7 +514,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Sanación ancestral',
-    icon: 'spell_nature_undyingstrength',
+    icon: 'spell-nature-undyingstrength',
     maxRank: 3,
     description: 'Reduce el daño físico recibido de tu objetivo un 10% durante 15 sec después de recibir un efecto crítico de uno de tus hechizos de sanación.',
     row: 2,
@@ -522,7 +522,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Tótems restauradores',
-    icon: 'spell_nature_manaregentotem',
+    icon: 'spell-nature-manaregen-totem',
     maxRank: 3,
     description: 'Aumenta un 20% el efecto de Tótem Fuente de maná y aumenta la cantidad sanada por tu Tótem Corriente de sanación un 45%.',
     row: 3,
@@ -530,7 +530,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Dominio de las mareas',
-    icon: 'spell_nature_tranquility',
+    icon: 'spell-nature-tranquility',
     maxRank: 5,
     description: 'Aumenta un 5% la probabilidad de efecto crítico de tus hechizos de sanación y de relámpago.',
     row: 3,
@@ -538,7 +538,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Camino de sanación',
-    icon: 'spell_nature_healingway',
+    icon: 'spell-nature-healingway',
     maxRank: 3,
     description: 'Aumenta la cantidad sanada por tu hechizo Ola de sanación un 25%.',
     row: 4,
@@ -546,7 +546,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Presteza de la Naturaleza',
-    icon: 'spell_nature_ravenform',
+    icon: 'spell-nature-raven-form',
     maxRank: 1,
     description: 'Cuando se activa, tu próximo hechizo de Naturaleza con un tiempo de lanzamiento de base inferior a 10 s se convertirá en un hechizo de lanzamiento instantáneo. Presteza de la Naturaleza comparte tiempo de reutilización con Maestría elemental.',
     row: 4,
@@ -554,7 +554,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Mente centrada',
-    icon: 'spell_nature_focusedmind',
+    icon: 'spell-nature-focusedmind',
     maxRank: 3,
     description: 'Reduce la duración de cualquier efecto de silenciamiento o interrupción que se use contra el chamán un 30%. Este efecto no se acumula con otros efectos similares.',
     row: 4,
@@ -562,7 +562,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Purificación',
-    icon: 'spell_frost_wizardmark',
+    icon: 'spell-frost-wizard-mark',
     maxRank: 5,
     description: 'Aumenta un 10% la efectividad de tus hechizos de sanación.',
     row: 5,
@@ -570,7 +570,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Guardián de la Naturaleza',
-    icon: 'spell_nature_natureguardian',
+    icon: 'spell-nature-natureguardian',
     maxRank: 5,
     description: 'Cada vez que recibas un ataque dañino que reduzca tu salud por debajo del 30%, tu salud máxima aumenta un 15% durante 10 sec y tu nivel de amenaza en el atacante se reduce. 30 s de tiempo de reutilización.',
     row: 6,
@@ -578,7 +578,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Tótem Marea de maná',
-    icon: 'spell_frost_summonwaterelemental',
+    icon: 'spell-frost-summonwaterelemental',
     maxRank: 1,
     description: 'Invoca un Tótem Marea de maná con un 10% de la salud del taumaturgo a los pies de este durante 12 s que restaura un 6 % del maná total cada 3 s a los miembros del grupo en un radio de 30 m.',
     row: 6,
@@ -587,7 +587,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Limpiar espíritu',
-    icon: 'ability_shaman_cleansespirit',
+    icon: 'ability-shaman-cleanse-spirit',
     maxRank: 1,
     description: 'Limpia el espíritu de un objetivo amistoso, disipando 1 efecto de veneno, 1 efecto de enfermedad y 1 efecto de maldición.',
     row: 6,
@@ -596,7 +596,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Bendición de los Eternos',
-    icon: 'spell_shaman_blessingofeternals',
+    icon: 'spell-shaman-blessing-of-eternals',
     maxRank: 2,
     description: 'Aumenta la probabilidad de efecto crítico de tus hechizos un 4% y aumenta la probabilidad de aplicar el efecto de sanación en el tiempo de Arma de Vida terrestre un 80% al objetivo cuando está al 35% de salud o menos.',
     row: 7,
@@ -604,7 +604,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Sanación en cadena mejorada',
-    icon: 'spell_nature_healingwavegreater',
+    icon: 'spell-nature-healingwavegreater',
     maxRank: 2,
     description: 'Aumenta la cantidad sanada por tu hechizo Sanación en cadena un 20%.',
     row: 7,
@@ -612,7 +612,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Bendición de la Naturaleza',
-    icon: 'spell_nature_natureblessing',
+    icon: 'spell-nature-natureblessing',
     maxRank: 3,
     description: 'Aumenta la sanación en una cantidad equivalente al 15% de tu intelecto.',
     row: 7,
@@ -620,7 +620,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Despertar ancestral',
-    icon: 'spell_shaman_ancestralawakening',
+    icon: 'spell-shaman-ancestralawakening',
     maxRank: 3,
     description: 'Cuando realizas sanación crítica con tu Ola de sanación, tu Ola de sanación inferior o Mareas Vivas, invocas a un espíritu ancestral para que te ayude, sana instantáneamente al objetivo amistoso de tu grupo o banda con el porcentaje de salud más bajo en un radio de 40 m un 30% de la cantidad de sanación realizada.',
     row: 8,
@@ -628,7 +628,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Escudo de tierra',
-    icon: 'spell_nature_skinofearth',
+    icon: 'spell-nature-skin-of-earth',
     maxRank: 1,
     description: 'Protege al objetivo con un escudo de tierra que reduce el tiempo perdido de lanzamiento o canalización cuando recibe daño un 30% y provoca que los ataques sanen al objetivo escudado 150 p. Este efecto solo puede tener lugar cada pocos segundos. 6 cargas. Dura 10 min. Escudo de tierra solo puede utilizarse con un objetivo a la vez y solo puede haber un escudo elemental activo a la vez sobre el objetivo.',
     row: 8,
@@ -636,7 +636,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Escudo de tierra mejorado',
-    icon: 'spell_nature_skinofearth',
+    icon: 'spell-nature-skin-of-earth',
     maxRank: 2,
     description: 'Aumenta la cantidad de cargas de tu Escudo de tierra en 2 y aumenta la sanación hecha por tu Escudo de tierra un 10%.',
     row: 8,
@@ -645,7 +645,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Maremotos',
-    icon: 'spell_shaman_tidalwaves',
+    icon: 'spell-shaman-tidalwaves',
     maxRank: 5,
     description: 'Tienes un 100% de probabilidad tras lanzar Sanación en cadena o Mareas Vivas de reducir el tiempo de lanzamiento de tu Ola de sanación un 30% y de aumentar la probabilidad de efecto crítico de tu Ola de sanación inferior un 25%, hasta que se lancen dos de tales hechizos. Además, tu Ola de sanación gana un 20% de tus efectos de bonus de sanación y tu Ola de sanación inferior gana un 10% de tus efectos de bonus de sanación.',
     row: 9,
@@ -653,7 +653,7 @@ export const shamanRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Mareas Vivas',
-    icon: 'spell_nature_riptide',
+    icon: 'spell-nature-riptide',
     maxRank: 1,
     description: 'Sana a un objetivo aliado 639 to 691 p. y luego 665 p. durante 15 sec. Tu próxima Sanación en cadena lanzada a ese objetivo principal en menos de 15 sec consumirá el efecto de sanación en el tiempo y aumentará el efecto de Sanación en cadena un 25%.',
     row: 10,

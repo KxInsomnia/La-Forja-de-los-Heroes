@@ -10,7 +10,7 @@ export const paladin: WowClass = {
   specs: [
     {
       slug: 'sagrado',
-      icon: 'paladin-sagrado',
+      icon: 'paladin-holy',
       name: 'Sagrado',
       role: 'Healer',
       recommended: true,
@@ -18,7 +18,7 @@ export const paladin: WowClass = {
     },
     {
       slug: 'proteccion',
-      icon: 'paladin-proteccion',
+      icon: 'paladin-protection',
       name: 'Protección',
       role: 'Tanque',
       recommended: true,
@@ -26,7 +26,7 @@ export const paladin: WowClass = {
     },
     {
       slug: 'reprension',
-      icon: 'paladin-reprension',
+      icon: 'paladin-retribution',
       name: 'Reprensión',
       role: 'DPS',
       recommended: true,

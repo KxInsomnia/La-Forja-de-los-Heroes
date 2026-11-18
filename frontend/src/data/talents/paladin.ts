@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const paladinSagradoTalents: WowTalent[] = [
   {
     name: 'Enfoque espiritual',
-    icon: 'spell_arcane_blink',
+    icon: 'spell-arcane-blink',
     maxRank: 5,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas Destello de luz y Luz sagrada un 70%.',
     row: 0,
@@ -11,7 +11,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Sellos del puro',
-    icon: 'ability_thunderbolt',
+    icon: 'ability-thunder-bolt',
     maxRank: 5,
     description: 'Aumenta un 15% el daño infligido con tu Sello de rectitud, Sello de venganza y Sello de Corrupción y sus efectos de Sentencia.',
     row: 0,
@@ -19,7 +19,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Luz de sanación',
-    icon: 'spell_holy_holybolt',
+    icon: 'spell-holy-holy-bolt',
     maxRank: 3,
     description: 'Aumenta la cantidad sanada por tu Luz Sagrada, Destello de Luz y la eficacia de Choque Sagrado un 12%.',
     row: 1,
@@ -27,7 +27,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Intelecto divino',
-    icon: 'spell_nature_sleep',
+    icon: 'spell-nature-sleep',
     maxRank: 5,
     description: 'Aumenta tu intelecto total un 10%.',
     row: 1,
@@ -35,7 +35,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Fe implacable',
-    icon: 'spell_holy_unyieldingfaith',
+    icon: 'spell-holy-unyieldingfaith',
     maxRank: 2,
     description: 'Reduce la duración de todos los efectos de miedo y desorientación un 30%.',
     row: 1,
@@ -43,7 +43,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en auras',
-    icon: 'spell_holy_auramastery',
+    icon: 'spell-holy-auramastery',
     maxRank: 1,
     description: 'Provoca que tu Aura de concentración haga inmunes a los efectos de Silencio e Interrumpir a todos los objetivos afectados y mejore el efecto del resto de las auras un 100%. Dura 6 sec.',
     row: 2,
@@ -51,7 +51,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Iluminación',
-    icon: 'spell_holy_greaterheal',
+    icon: 'spell-holy-greaterheal',
     maxRank: 5,
     description: 'Tras haber obtenido un efecto crítico con los hechizos de sanación Destello de Luz, Luz Sagrada o Choque Sagrado, tienes un 100% de probabilidad de ganar maná igual a un 30% del coste base del hechizo.',
     row: 2,
@@ -59,7 +59,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Imposición de manos mejorada',
-    icon: 'spell_holy_layonhands',
+    icon: 'spell-holy-lay-on-hands',
     maxRank: 2,
     description: 'Da al objetivo de tu hechizo Imposición de manos una reducción de un 20% de daño físico recibido durante 15 sec. Además, se reduce el tiempo de reutilización del hechizo Imposición de manos 4 min.',
     row: 2,
@@ -67,7 +67,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Aura de concentración mejorada',
-    icon: 'spell_holy_mindsooth',
+    icon: 'spell-holy-mindsooth',
     maxRank: 3,
     description: 'Aumenta el efecto de tu Aura de concentración un 15% extra y, mientras un Aura cualquiera esté activa, reduce la duración de cualquier efecto de interrupción y silenciamiento contra un miembro de un grupo afectado un 30%. La reducción de duración no se acumula con otros efectos.',
     row: 3,
@@ -75,7 +75,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Bendición de sabiduría mejorada',
-    icon: 'spell_holy_sealofwisdom',
+    icon: 'spell-holy-seal-of-wisdom',
     maxRank: 2,
     description: 'Aumenta un 20% el efecto de tu hechizo de Bendición de Sabiduría.',
     row: 3,
@@ -83,7 +83,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Manos benditas',
-    icon: 'ability_paladin_blessedhands',
+    icon: 'ability-paladin-blessedhands',
     maxRank: 2,
     description: 'Reduce el coste de maná de Mano de libertad, Mano de sacrificio y Mano de salvación un 30%, aumenta la efectividad de Mano de salvación un 100% y la efectividad de Mano de sacrificio un 10% extra.',
     row: 3,
@@ -91,7 +91,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Pureza de corazón',
-    icon: 'spell_holy_pureofheart',
+    icon: 'spell-holy-pure-of-heart',
     maxRank: 2,
     description: 'Reduce la duración de los efectos de maldiciones, enfermedades y venenos un 30%.',
     row: 4,
@@ -99,7 +99,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Favor divino',
-    icon: 'spell_holy_heal',
+    icon: 'spell-holy-heal',
     maxRank: 1,
     description: 'Cuando se activa, otorga al siguiente hechizo Destello de Luz, Luz Sagrada o Choque Sagrado una probabilidad de efecto crítico del 100%.',
     row: 4,
@@ -108,7 +108,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Luz santificada',
-    icon: 'spell_holy_healingaura',
+    icon: 'spell-holy-healing-aura',
     maxRank: 3,
     description: 'Aumenta la probabilidad de efecto crítico de tus hechizos Luz Sagrada y Choque Sagrado un 6%.',
     row: 4,
@@ -116,7 +116,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Poder purificador',
-    icon: 'spell_holy_purifyingpower',
+    icon: 'spell-holy-purifyingpower',
     maxRank: 2,
     description: 'Reduce el coste de maná de tus hechizos Limpiar, Purificar y Consagración un 10% y reduce el tiempo de reutilización de tus hechizos Exorcismo y Cólera Sagrada un 33%.',
     row: 5,
@@ -124,7 +124,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Poder Sagrado',
-    icon: 'spell_holy_power',
+    icon: 'spell-holy-power',
     maxRank: 5,
     description: 'Aumenta un 5% la probabilidad de efecto crítico de tus hechizos Sagrados.',
     row: 5,
@@ -132,7 +132,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Gracia de Luz',
-    icon: 'spell_holy_lightsgrace',
+    icon: 'spell-holy-lightsgrace',
     maxRank: 3,
     description: 'Da a tu hechizo Luz Sagrada un 100% de probabilidad de reducir el tiempo de lanzamiento de tu siguiente hechizo Luz Sagrada en 0.5 s. El efecto dura 15 sec.',
     row: 6,
@@ -140,7 +140,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Choque Sagrado',
-    icon: 'spell_holy_searinglight',
+    icon: 'spell-holy-searinglight',
     maxRank: 1,
     description: 'Golpea al objetivo con energía Sagrada, inflige 314 to 340 p. de daño Sagrado a un enemigo o sana 481 to 519 p. a un aliado.',
     row: 6,
@@ -149,7 +149,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Vida bendita',
-    icon: 'spell_holy_blessedlife',
+    icon: 'spell-holy-blessedlife',
     maxRank: 3,
     description: '10% de probabilidad de que todos los ataques que recibas te causen la mitad de daño.',
     row: 6,
@@ -157,7 +157,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Limpieza Sagrada',
-    icon: 'ability_paladin_sacredcleansing',
+    icon: 'ability-paladin-sacredcleansing',
     maxRank: 3,
     description: 'Tu hechizo Limpiar tiene un 30% de probabilidad de aumentar la resistencia del objetivo contra enfermedad, magia y veneno un 30% durante 10 sec.',
     row: 7,
@@ -165,7 +165,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Guía Sagrada',
-    icon: 'spell_holy_holyguidance',
+    icon: 'spell-holy-holyguidance',
     maxRank: 5,
     description: 'Aumenta tu poder con hechizos un 20% de tu intelecto total.',
     row: 7,
@@ -173,7 +173,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Iluminación divina',
-    icon: 'spell_holy_divineillumination',
+    icon: 'spell-holy-divineillumination',
     maxRank: 1,
     description: 'Reduce el coste de maná de todos los hechizos un 50% durante 15 sec.',
     row: 8,
@@ -181,7 +181,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Sentencias del puro',
-    icon: 'ability_paladin_judgementofthepure',
+    icon: 'ability-paladin-judgement-of-the-pure',
     maxRank: 5,
     description: 'Aumenta el daño infligido por tus hechizos de sello y de sentencia un 25% y tus hechizos de Sentencia aumentan tu celeridad de lanzamiento y cuerpo a cuerpo un 15% durante 1 min.',
     row: 8,
@@ -189,7 +189,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Infusión de Luz',
-    icon: 'ability_paladin_infusionoflight',
+    icon: 'ability-paladin-infusion-of-light',
     maxRank: 2,
     description: 'Tus golpes críticos con Choque Sagrado reducen el tiempo de lanzamiento de tu siguiente hechizo Destello de Luz 1.5 s o aumentan la probabilidad de crítico de tu próxima Luz Sagrada un 20%. Además, hacen que tu hechizo Destello de luz sane un 100% adicional durante 12 sec a los objetivos con Escudo sacro.',
     row: 9,
@@ -198,7 +198,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Sentencias iluminadas',
-    icon: 'ability_paladin_enlightenedjudgements',
+    icon: 'ability-paladin-enlightenedjudgements',
     maxRank: 2,
     description: 'Aumenta el alcance de tus hechizos de Sentencia de Luz y Sentencia de sabiduría 30 m y aumenta tu probabilidad de asestar un golpe un 4%.',
     row: 9,
@@ -206,7 +206,7 @@ export const paladinSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Señal de la Luz',
-    icon: 'ability_paladin_beaconoflight',
+    icon: 'ability-paladin-beacon-of-light',
     maxRank: 1,
     description: 'El objetivo se convierte en una Señal de la Luz para todos los miembros de tu grupo o banda que se encuentren en un radio de 60 m. Cualquier sanación que lances sobre miembros de tu grupo o banda sanará también a la señal un 100% de la cantidad sanada. Solo un objetivo puede ser la Señal de la Luz cada vez. Dura 1 min.',
     row: 10,
@@ -217,7 +217,7 @@ export const paladinSagradoTalents: WowTalent[] = [
 export const paladinProteccionTalents: WowTalent[] = [
   {
     name: 'Divinidad',
-    icon: 'spell_holy_blindingheal',
+    icon: 'spell-holy-blindingheal',
     maxRank: 5,
     description: 'Aumenta las sanaciones que realices y los efectos de sanación que recibas un 5%.',
     row: 0,
@@ -225,7 +225,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Fuerza divina',
-    icon: 'ability_golemthunderclap',
+    icon: 'ability-golemthunder-clap',
     maxRank: 5,
     description: 'Aumenta tu fuerza total un 15%.',
     row: 0,
@@ -233,7 +233,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Estoicismo',
-    icon: 'spell_holy_stoicism',
+    icon: 'spell-holy-stoicism',
     maxRank: 3,
     description: 'Reduce la duración de todos los efectos de aturdimiento un 30% extra y reduce un 30% extra la probabilidad de que disipen tus hechizos de ayuda y tus efectos de daño en el tiempo.',
     row: 1,
@@ -241,7 +241,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Favor del Guardián',
-    icon: 'spell_holy_sealofprotection',
+    icon: 'spell-holy-seal-of-protection',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu Mano de protección 2 min y aumenta la duración de tu Mano de libertad 4 s.',
     row: 1,
@@ -249,7 +249,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Anticipación',
-    icon: 'spell_magic_lesserinvisibilty',
+    icon: 'spell-magic-lesserinvisibilty',
     maxRank: 5,
     description: 'Aumenta tu probabilidad de esquivar un 5%.',
     row: 1,
@@ -257,7 +257,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Sacrificio divino',
-    icon: 'spell_holy_powerwordbarrier',
+    icon: 'spell-holy-powerwordbarrier',
     maxRank: 1,
     description: 'Un 30% de todo el daño recibido por los miembros del grupo en un radio de 30 m se redirige al paladín (hasta un máximo de un 40% de la salud del paladín multiplicado por el número de miembros del grupo). El daño que reduzca la salud del paladín por debajo del 20% romperá el efecto. Dura 10 sec.',
     row: 2,
@@ -265,7 +265,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Furia recta mejorada',
-    icon: 'spell_holy_sealoffury',
+    icon: 'spell-holy-sealof-fury',
     maxRank: 3,
     description: 'Mientras Furia recta está activo todo el daño recibido se reduce un 6%.',
     row: 2,
@@ -273,7 +273,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Consistencia',
-    icon: 'spell_holy_devotion',
+    icon: 'spell-holy-devotion',
     maxRank: 5,
     description: 'Aumenta tu valor de armadura de objetos un 10% y reduce la duración de todos los efectos de ralentización de movimiento un 30%.',
     row: 2,
@@ -281,7 +281,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Guardián divino',
-    icon: 'spell_holy_powerwordbarrier',
+    icon: 'spell-holy-powerwordbarrier',
     maxRank: 2,
     description: 'Cuando Sacrificio divino está activo, los miembros de tu grupo y banda que se encuentren en un radio de 30 m reciben un 20% menos de daño durante 6 sec. Además, aumenta la duración de tu Escudo sacro un 100% y la cantidad absorbida un 20%.',
     row: 3,
@@ -290,7 +290,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Martillo de justicia mejorado',
-    icon: 'spell_holy_sealofmight',
+    icon: 'spell-holy-seal-of-might',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu hechizo Martillo de justicia 20 s.',
     row: 3,
@@ -298,7 +298,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Aura de devoción mejorada',
-    icon: 'spell_holy_devotionaura',
+    icon: 'spell-holy-devotion-aura',
     maxRank: 3,
     description: 'Aumenta el bonus de la armadura de tu Aura de devoción un 50% y aumenta la cantidad sanada a cualquier objetivo afectado por tus auras un 6%.',
     row: 3,
@@ -306,7 +306,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Bendición de salvaguardia',
-    icon: 'spell_nature_lightningshield',
+    icon: 'spell-nature-lightning-shield',
     maxRank: 1,
     description: 'Da a un objetivo amistoso una Bendición que reduce el daño recibido de cualquier origen un 3% durante 10 min y que aumenta la fuerza y el aguante un 10%. Además, cuando el objetivo bloquea, para o esquiva un ataque cuerpo a cuerpo, el objetivo ganará un 2% del maná máximo. Los jugadores solo pueden tener una Bendición activa por paladín a la vez.',
     row: 4,
@@ -314,7 +314,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Expiación',
-    icon: 'spell_holy_blessingofstrength',
+    icon: 'spell-holy-blessing-of-strength',
     maxRank: 5,
     description: 'Proporciona un 10% de probabilidad, tras un bloqueo o haber recibido cualquier golpe dañino, de que tus siguientes 4 golpes con arma durante 8 sec generen un ataque extra.',
     row: 4,
@@ -322,7 +322,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Deber sagrado',
-    icon: 'spell_holy_divineintervention',
+    icon: 'spell-holy-divineintervention',
     maxRank: 2,
     description: 'Aumenta tu aguante total un 4%, reduce el tiempo de reutilización de tus hechizos Escudo divino y Protección divina 60 s.',
     row: 5,
@@ -330,7 +330,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en armas de una mano',
-    icon: 'inv_sword_20',
+    icon: 'inv-sword-20',
     maxRank: 3,
     description: 'Aumenta un 10% todo daño infligido al equipar un arma cuerpo a cuerpo de una mano.',
     row: 5,
@@ -338,7 +338,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Armonización espiritual',
-    icon: 'spell_holy_revivechampion',
+    icon: 'spell-holy-revivechampion',
     maxRank: 2,
     description: 'Facultad pasiva que proporciona maná al paladín cada vez que un jugador amistoso lo sana con hechizos. La cantidad de maná obtenida es equivalente al 10% del total de sanación recibida.',
     row: 6,
@@ -346,7 +346,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Escudo Sagrado',
-    icon: 'spell_holy_blessingofprotection',
+    icon: 'spell-holy-blessing-of-protection',
     maxRank: 1,
     description: 'Aumenta la probabilidad de bloquear un 30% durante 10 sec e inflige 79 p. de daño Sagrado por cada ataque bloqueado mientras está activo. Cada bloqueo consume una carga. 8 cargas.',
     row: 6,
@@ -355,7 +355,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Defensor candente',
-    icon: 'spell_holy_ardentdefender',
+    icon: 'spell-holy-ardentdefender',
     maxRank: 3,
     description: 'El daño que recibas que deje tu salud por debajo del 35% se reduce un 20%. Además, los ataques que normalmente te matarían, te sanarán hasta un 30% de tu salud total (cantidad de sanación basada en la defensa). Este efecto de sanación no puede ocurrir más de una vez cada 2 min.',
     row: 6,
@@ -363,7 +363,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Baluarte',
-    icon: 'ability_defend',
+    icon: 'ability-defend',
     maxRank: 3,
     description: 'Aumenta tu valor de bloqueo un 30% y los ataques cuerpo a cuerpo y a distancia que te alcancen tienen un 10% de probabilidad de aumentar tu probabilidad de bloqueo un 30%. Dura 10 sec o 5 bloqueos.',
     row: 7,
@@ -371,7 +371,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Pericia en combate',
-    icon: 'spell_holy_weaponmastery',
+    icon: 'spell-holy-weaponmastery',
     maxRank: 3,
     description: 'Aumenta tu pericia 6 p., tu aguante total y probabilidad de asestar un golpe crítico un 6%.',
     row: 7,
@@ -379,7 +379,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Tocado por la Luz',
-    icon: 'ability_paladin_touchedbylight',
+    icon: 'ability-paladin-touchedbylight',
     maxRank: 3,
     description: 'Aumenta tu poder con hechizos una cantidad igual al 60% de tu fuerza y aumenta la cantidad sanada por tus sanaciones críticas un 30%.',
     row: 8,
@@ -387,7 +387,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Escudo de vengador',
-    icon: 'spell_holy_avengersshield',
+    icon: 'spell-holy-avengers-shield',
     maxRank: 1,
     description: 'Lanza un escudo Sagrado al enemigo, inflige (440 + 0.07 * Spell power + 0.07 * Attack power)-(536 + 0.07 * Spell power + 0.07 * Attack power) p. de daño Sagrado y dejándolo atontado. A continuación salta a los enemigos cercanos. Afecta a 3 objetivos en total. Dura 10 sec.',
     row: 8,
@@ -396,7 +396,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Custodiado por la Luz',
-    icon: 'ability_paladin_gaurdedbythelight',
+    icon: 'ability-paladin-gaurdedbythelight',
     maxRank: 2,
     description: 'Reduce el daño con hechizos recibido un 6% y otorga un 100% de probabilidad de actualizar la duración de tu Súplica divina al golpear al enemigo. Además, tu hechizo Súplica divina tiene un 100% menos de probabilidad de ser disipado.',
     row: 8,
@@ -404,7 +404,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Escudo del templario',
-    icon: 'ability_paladin_shieldofthetemplar',
+    icon: 'ability-paladin-shield-of-the-templar',
     maxRank: 3,
     description: 'Reduce todo el daño recibido un 3% y otorga a tu Escudo de vengador un 100% de probabilidad de silenciar a todos los objetivos durante 3 sec.',
     row: 9,
@@ -413,7 +413,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Sentencias del justo',
-    icon: 'ability_paladin_judgementsofthejust',
+    icon: 'ability-paladin-judgements-of-the-just',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu Martillo de justicia 10 s, aumenta la duración del efecto de tu Sello de Justicia 1 s y tus hechizos de Sentencia también reducen la velocidad de ataque cuerpo a cuerpo del objetivo un 20%.',
     row: 9,
@@ -421,7 +421,7 @@ export const paladinProteccionTalents: WowTalent[] = [
   },
   {
     name: 'Martillo del honrado',
-    icon: 'ability_paladin_hammeroftherighteous',
+    icon: 'ability-paladin-hammer-of-the-righteous',
     maxRank: 1,
     description: 'Da un martillazo al objetivo actual y hasta a 2 objetivos cercanos más, inflige 4 veces el daño por segundo de tu mano derecha como daño sagrado.',
     row: 10,
@@ -432,7 +432,7 @@ export const paladinProteccionTalents: WowTalent[] = [
 export const paladinReprensionTalents: WowTalent[] = [
   {
     name: 'Desvío',
-    icon: 'ability_parry',
+    icon: 'ability-parry',
     maxRank: 5,
     description: 'Aumenta tu probabilidad de parar un 5%.',
     row: 0,
@@ -440,7 +440,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Oración',
-    icon: 'spell_frost_windwalkon',
+    icon: 'spell-frost-windwalkon',
     maxRank: 5,
     description: 'Reduce el coste de maná de todos tus hechizos instantáneos un 10%.',
     row: 0,
@@ -448,7 +448,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Sentencias mejoradas',
-    icon: 'spell_holy_righteousfury',
+    icon: 'spell-holy-righteous-fury',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tus hechizos de Sentencia 2 s.',
     row: 1,
@@ -456,7 +456,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Corazón del cruzado',
-    icon: 'spell_holy_holysmite',
+    icon: 'spell-holy-holy-smite',
     maxRank: 3,
     description: 'Además del efecto normal, tus hechizos de Sentencia también aumentarán la probabilidad de asestar un golpe crítico de todos los ataques que se hacen contra ese objetivo un 3% extra.',
     row: 1,
@@ -464,7 +464,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Bendición de poderío mejorada',
-    icon: 'spell_holy_fistofjustice',
+    icon: 'spell-holy-fist-of-justice',
     maxRank: 2,
     description: 'Aumenta un 25% el bonus de poder de ataque de tu Bendición de poderío.',
     row: 1,
@@ -472,7 +472,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Vindicación',
-    icon: 'spell_holy_vindication',
+    icon: 'spell-holy-vindication',
     maxRank: 2,
     description: 'Da a los ataques del paladín la posibilidad de reducir el poder de ataque del objetivo 574 p. durante 10 sec.',
     row: 2,
@@ -480,7 +480,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Convicción',
-    icon: 'spell_holy_retributionaura',
+    icon: 'spell-holy-retribution-aura',
     maxRank: 5,
     description: 'Aumenta la probabilidad de conseguir un golpe crítico con todos los hechizos y ataques un 5%.',
     row: 2,
@@ -488,7 +488,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Sello de orden',
-    icon: 'ability_warrior_innerrage',
+    icon: 'ability-warrior-inner-rage',
     maxRank: 1,
     description: 'Todos los ataques cuerpo a cuerpo infligen (0.36 * Mainhand weapon min damage)-(0.36 * Mainhand weapon max damage) p. de daño Sagrado extra. Si se usa con ataques o facultades que afectan a un único objetivo, este daño Sagrado extra alcanzará hasta a 2 objetivos extra. Dura 30 min. Al desatar la energía de este sello se juzgará al enemigo, inflige instantáneamente (0.19 * Mainhand weapon min damage + 0.08 * Attack power + 0.13 * Spell power)-(0.19 * Mainhand weapon max damage + 0.08 * Attack power + 0.13 * Spell power) p. de daño Sagrado.',
     row: 2,
@@ -496,7 +496,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Búsqueda de justicia',
-    icon: 'spell_holy_persuitofjustice',
+    icon: 'spell-holy-persuit-of-justice',
     maxRank: 2,
     description: 'Reduce un 50% la duración de todos los efectos de Desarmar y aumenta el movimiento y la velocidad de movimiento sobre la montura un 15%. No se acumula a otros efectos de aumento de velocidad de movimiento.',
     row: 2,
@@ -504,7 +504,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Ojo por ojo',
-    icon: 'spell_holy_eyeforaneye',
+    icon: 'spell-holy-eyeforaneye',
     maxRank: 2,
     description: 'Todos los críticos que recibas provocan que el atacante reciba un 10% del daño sufrido. El daño infligido por Ojo por ojo no superará el 50% del total de salud del paladín.',
     row: 3,
@@ -512,7 +512,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Santidad de batalla',
-    icon: 'spell_holy_holysmite',
+    icon: 'spell-holy-holy-smite',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de asestar un golpe crítico con todos los hechizos y ataques un 3% y aumenta el daño infligido con Exorcismo y Golpe del cruzado un 15%.',
     row: 3,
@@ -520,7 +520,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Cruzada',
-    icon: 'spell_holy_crusade',
+    icon: 'spell-holy-crusade',
     maxRank: 3,
     description: 'Aumenta todo el daño infligido un 3% y todo el daño infligido a humanoides, demonios, no-muertos y elementales un 3% extra.',
     row: 3,
@@ -528,7 +528,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en armas de dos manos',
-    icon: 'inv_hammer_04',
+    icon: 'inv-hammer-04',
     maxRank: 3,
     description: 'Aumenta un 6% el daño infligido con las armas cuerpo a cuerpo de dos manos.',
     row: 4,
@@ -536,7 +536,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Reprensión santificada',
-    icon: 'spell_holy_mindvision',
+    icon: 'spell-holy-mindvision',
     maxRank: 1,
     description: 'Aumenta el daño infligido por tu Aura de reprensión un 50% y todo el daño infligido por los objetivos amistosos afectados por cualquiera de tus Auras aumenta un 3%.',
     row: 4,
@@ -544,7 +544,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Venganza',
-    icon: 'ability_racial_avatar',
+    icon: 'ability-racial-avatar',
     maxRank: 3,
     description: 'Te da un 3% de bonus en el daño Sagrado y físico que causas durante 30 sec después de dar un golpe crítico con un golpe de arma, un hechizo o una facultad. Este efecto se acumula 3 veces.',
     row: 5,
@@ -553,7 +553,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Intención divina',
-    icon: 'spell_holy_divinepurpose',
+    icon: 'spell-holy-divinepurpose',
     maxRank: 2,
     description: 'Reduce un 4% la probabilidad de que te golpeen con hechizos y ataques a distancia y da a tu hechizo Mano de libertad un 100% de probabilidad de quitar los efectos de aturdimiento sobre el objetivo.',
     row: 5,
@@ -561,7 +561,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'El arte de la guerra',
-    icon: 'ability_paladin_artofwar',
+    icon: 'ability-paladin-art-of-war',
     maxRank: 2,
     description: 'Aumenta el daño de tus facultades Sentencia, Golpe de cruzado y Tormenta divina un 10% y cuando tus ataques cuerpo a cuerpo asestan un golpe crítico, el lanzamiento de tu siguiente Destello de luz o Exorcismo es instantáneo.',
     row: 6,
@@ -569,7 +569,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Arrepentimiento',
-    icon: 'spell_holy_prayerofhealing',
+    icon: 'spell-holy-prayer-of-healing',
     maxRank: 1,
     description: 'Pone al enemigo objetivo en estado de meditación incapacitándolo hasta 1 min y eliminando el efecto de Venganza recta. Cualquier daño despertará al objetivo. Solo funciona contra demonios, dragonantes, gigantes, humanoides y no-muertos.',
     row: 6,
@@ -577,7 +577,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Sentencias del sabio',
-    icon: 'ability_paladin_judgementofthewise',
+    icon: 'ability-paladin-judgement-of-the-wise',
     maxRank: 3,
     description: 'Tus hechizos dañinos de Sentencia tienen un 100% de probabilidad de otorgar el efecto Reposición hasta a 10 miembros del grupo o banda, regeneración de maná igual al 1% de su maná máximo cada 5 s durante 15 sec, y de otorgarte un 25% de tu maná base.',
     row: 6,
@@ -585,7 +585,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Fanatismo',
-    icon: 'spell_holy_fanaticism',
+    icon: 'spell-holy-fanaticism',
     maxRank: 3,
     description: 'Aumenta un 18% la probabilidad de golpe crítico de todas tus Sentencias capaces de obtener críticos y reduce la amenaza generada por todas las acciones un 30% excepto cuando estás bajo los efectos de Furia recta.',
     row: 7,
@@ -594,7 +594,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Cólera santificada',
-    icon: 'ability_paladin_sanctifiedwrath',
+    icon: 'ability-paladin-sanctifiedwrath',
     maxRank: 2,
     description: 'Aumenta la probabilidad de golpe crítico de Martillo de cólera un 50% y reduce el tiempo de reutilización de Cólera vengativa 60 s, y mientras estés bajo los efectos de Cólera vengativa el 50% de todo el daño infligido evita los efectos de reducción de daño.',
     row: 7,
@@ -602,7 +602,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Reprensión presta',
-    icon: 'ability_paladin_swiftretribution',
+    icon: 'ability-paladin-swiftretribution',
     maxRank: 3,
     description: 'Tus auras también aumentan la velocidad de ataque cuerpo a cuerpo, a distancia y de lanzamiento un 3%.',
     row: 8,
@@ -610,7 +610,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Golpe de cruzado',
-    icon: 'spell_holy_crusaderstrike',
+    icon: 'spell-holy-crusader-strike',
     maxRank: 1,
     description: 'Un golpe instantáneo que inflige un 75% de daño con arma.',
     row: 8,
@@ -618,7 +618,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Vaina de Luz',
-    icon: 'ability_paladin_sheathoflight',
+    icon: 'ability-paladin-sheath-of-light',
     maxRank: 3,
     description: 'Aumenta tu poder con hechizos una cantidad igual al 30% de tu poder de ataque y tus hechizos de sanación crítica sanan al objetivo un 60% de la cantidad sanada durante 12 segundos.',
     row: 8,
@@ -626,7 +626,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Venganza recta',
-    icon: 'ability_paladin_righteousvengeance',
+    icon: 'ability-paladin-righteousvengeance',
     maxRank: 3,
     description: 'Cuando tus hechizos Sentencia, Golpe de cruzado y Tormenta divina infligen un golpe crítico, tu objetivo recibe un 30% extra de daño durante 8 sec.',
     row: 9,
@@ -634,7 +634,7 @@ export const paladinReprensionTalents: WowTalent[] = [
   },
   {
     name: 'Tormenta divina',
-    icon: 'ability_paladin_divinestorm',
+    icon: 'ability-paladin-divine-storm',
     maxRank: 1,
     description: 'Un ataque instantáneo con arma que inflige un 110% de daño con arma hasta un total de 4 enemigos que se encuentren en un radio de 8 m. La Tormenta divina sana a hasta 3 miembros del grupo o banda con un total del 25% del daño infligido.',
     row: 10,

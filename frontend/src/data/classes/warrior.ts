@@ -10,7 +10,7 @@ export const warrior: WowClass = {
   specs: [
     {
       slug: 'armas',
-      icon: 'warrior-armas',
+      icon: 'warrior-arms',
       name: 'Armas',
       role: 'DPS',
       recommended: false,
@@ -18,7 +18,7 @@ export const warrior: WowClass = {
     },
     {
       slug: 'furia',
-      icon: 'warrior-furia',
+      icon: 'warrior-fury',
       name: 'Furia',
       role: 'DPS',
       recommended: true,
@@ -26,7 +26,7 @@ export const warrior: WowClass = {
     },
     {
       slug: 'proteccion',
-      icon: 'warrior-proteccion',
+      icon: 'warrior-protection',
       name: 'Protección',
       role: 'Tanque',
       recommended: false,

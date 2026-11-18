@@ -2,7 +2,7 @@ import type { WowClass } from '../../types/wow'
 
 export const deathknight: WowClass = {
   slug: 'caballero-de-la-muerte',
-  icon: 'deathknight',
+  icon: 'death-knight',
   name: 'Caballero de la muerte',
   color: '#c41e3a',
   description:
@@ -10,7 +10,7 @@ export const deathknight: WowClass = {
   specs: [
     {
       slug: 'sangre',
-      icon: 'deathknight-sangre',
+      icon: 'death-knight-blood',
       name: 'Sangre',
       role: 'Tanque',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -18,7 +18,7 @@ export const deathknight: WowClass = {
     },
     {
       slug: 'escarcha',
-      icon: 'deathknight-escarcha',
+      icon: 'death-knight-frost',
       name: 'Escarcha',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -26,7 +26,7 @@ export const deathknight: WowClass = {
     },
     {
       slug: 'profano',
-      icon: 'deathknight-profano',
+      icon: 'death-knight-unholy',
       name: 'Profano',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],

@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const druidEquilibrioTalents: WowTalent[] = [
   {
     name: 'Cólera de luz estelar',
-    icon: 'spell_nature_abolishmagic',
+    icon: 'spell-nature-abolishmagic',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tus hechizos Cólera y Fuego estelar 0.5 s.',
     row: 0,
@@ -11,7 +11,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Génesis',
-    icon: 'spell_arcane_arcane03',
+    icon: 'spell-arcane-arcane-03',
     maxRank: 5,
     description: 'Aumenta el daño y la sanación de tus efectos periódicos de sanación y daño con hechizos un 5%.',
     row: 0,
@@ -19,7 +19,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Resplandor lunar',
-    icon: 'spell_nature_sentinal',
+    icon: 'spell-nature-sentinal',
     maxRank: 3,
     description: 'Reduce el coste de maná de tus hechizos Fuego lunar, Fuego estelar, Cólera, Lluvia de estrellas, Toque de sanación, Nutrir, Recrecimiento y Rejuvenecimiento un 9%.',
     row: 1,
@@ -27,7 +27,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Majestuosidad de la Naturaleza',
-    icon: 'inv_staff_01',
+    icon: 'inv-staff-01',
     maxRank: 2,
     description: 'Aumenta un 4% la probabilidad de golpe crítico de tu Cólera, Fuego estelar, Lluvia de estrellas, Nutrir y Toque de sanación.',
     row: 1,
@@ -35,7 +35,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Fuego lunar mejorado',
-    icon: 'spell_nature_starfall',
+    icon: 'spell-nature-starfall',
     maxRank: 2,
     description: 'Aumenta un 10% la probabilidad de golpe crítico y el daño de tus hechizos de Fuego lunar.',
     row: 1,
@@ -43,7 +43,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Zarzas',
-    icon: 'spell_nature_thorns',
+    icon: 'spell-nature-thorns',
     maxRank: 3,
     description: 'Aumenta el daño infligido por tus hechizos Espinas y Raíces enredadoras un 75% y el daño de tus antárboles aumenta un 15%. Además, el daño de tus antárboles y los ataques que hagan contra ti mientras tienes Piel de corteza activa tienen un 15% de probabilidad de atontar al objetivo durante 3 s.',
     row: 2,
@@ -51,7 +51,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Gracia de la Naturaleza',
-    icon: 'spell_nature_naturesblessing',
+    icon: 'spell-nature-naturesblessing',
     maxRank: 3,
     description: 'Todos los golpes críticos no periódicos con hechizos tienen un 100% de probabilidad de concederte una bendición de la Naturaleza, que aumenta tu velocidad de lanzamiento de hechizos un 20% durante 3 sec.',
     row: 2,
@@ -60,7 +60,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Esplendor de la Naturaleza',
-    icon: 'spell_nature_natureguardian',
+    icon: 'spell-nature-natureguardian',
     maxRank: 1,
     description: 'Aumenta la duración de tu Fuego lunar y Rejuvenecimiento 3 s, tu Recrecimiento 6 s, y tu Flor de vida y Enjambre de insectos 2 s.',
     row: 2,
@@ -69,7 +69,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Alcance de la Naturaleza',
-    icon: 'spell_nature_naturetouchgrow',
+    icon: 'spell-nature-naturetouchgrow',
     maxRank: 2,
     description: 'Aumenta el alcance de tus hechizos de Equilibrio y de tu facultad Fuego feérico (Feral) un 20% y reduce la amenaza generada por tus hechizos de Equilibrio un 30%.',
     row: 2,
@@ -77,7 +77,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Venganza',
-    icon: 'spell_nature_purge',
+    icon: 'spell-nature-purge',
     maxRank: 5,
     description: 'Aumenta un 100% el bonus de daño de golpe crítico con tus hechizos de Fuego estelar, Fuego lunar, Cólera y Lluvia de estrellas.',
     row: 3,
@@ -85,7 +85,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque celestial',
-    icon: 'spell_arcane_starfire',
+    icon: 'spell-arcane-star-fire',
     maxRank: 3,
     description: 'Reduce el retroceso de los ataques dañinos mientras lanzas Fuego estelar, Hibernar y Huracán un 70% y aumenta tu celeridad con hechizos total un 3%.',
     row: 3,
@@ -93,7 +93,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Guía de la Luna',
-    icon: 'ability_druid_lunarguidance',
+    icon: 'ability-druid-lunarguidance',
     maxRank: 3,
     description: 'Aumenta tu poder con hechizos un 12% de tu intelecto total.',
     row: 4,
@@ -101,7 +101,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Enjambre de insectos',
-    icon: 'spell_nature_insectswarm',
+    icon: 'spell-nature-insectswarm',
     maxRank: 1,
     description: 'El objetivo enemigo es rodeado de insectos, lo que reduce su probabilidad de golpear un 3% e inflige 144 p. de daño de Naturaleza durante 12 sec.',
     row: 4,
@@ -109,7 +109,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Enjambre de insectos mejorado',
-    icon: 'spell_nature_insectswarm',
+    icon: 'spell-nature-insectswarm',
     maxRank: 3,
     description: 'Aumenta el daño que infliges con tu hechizo Cólera a los objetivos afectados con Enjambre de insectos un 3% y aumenta la probabilidad de golpe crítico de tu hechizo Fuego estelar un 3% sobre los objetivos afectados por tu hechizo Fuego lunar.',
     row: 4,
@@ -118,7 +118,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Estado onírico',
-    icon: 'ability_druid_dreamstate',
+    icon: 'ability-druid-dreamstate',
     maxRank: 3,
     description: 'Regenera maná en una cantidad equivalente al 10% de tu intelecto cada 5 s, incluso mientras lanzas hechizos.',
     row: 5,
@@ -126,7 +126,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Furia de luna',
-    icon: 'spell_nature_moonglow',
+    icon: 'spell-nature-moonglow',
     maxRank: 3,
     description: 'Aumenta un 10% el daño infligido con tus hechizos de Fuego estelar, Fuego lunar y Cólera.',
     row: 5,
@@ -134,7 +134,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Equilibrio de poder',
-    icon: 'ability_druid_balanceofpower',
+    icon: 'ability-druid-balance-of-power',
     maxRank: 2,
     description: 'Aumenta tu probabilidad de golpear con todos los hechizos un 4% y reduce el daño recibido por todos los hechizos un 6%.',
     row: 5,
@@ -142,7 +142,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Forma de lechúcico lunar',
-    icon: 'spell_nature_forceofnature',
+    icon: 'spell-nature-force-of-nature',
     maxRank: 1,
     description: 'Cambia a forma de lechúcico lunar. Mientras estás bajo esta forma, la contribución a la armadura de los objetos aumenta un 370%, el daño recibido durante el aturdimiento se reduce un 15% y todo el grupo y los miembros de banda en un radio de 100 m aumentan un 5% su probabilidad de crítico con hechizos. Durante esta forma, los golpes críticos a un solo objetivo regeneran un 2% de tu maná total al instante. Durante la forma de lechúcico lunar no se pueden lanzar hechizos de sanación o de resurrección. Al cambiar de forma, el taumaturgo se libera de los efectos de polimorfia y de reducción de movimiento.',
     row: 6,
@@ -150,7 +150,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Forma de lechúcico lunar mejorada',
-    icon: 'ability_druid_improvedmoonkinform',
+    icon: 'ability-druid-improvedmoonkin-form',
     maxRank: 3,
     description: 'Tu Aura de lechúcico lunar también provoca que los objetivos afectados ganen un 3% de celeridad y que tú ganes un 30% de tu espíritu como daño con hechizos extra.',
     row: 6,
@@ -159,7 +159,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Fuego feérico mejorado',
-    icon: 'spell_nature_faeriefire',
+    icon: 'spell-nature-faerie-fire',
     maxRank: 3,
     description: 'Tu hechizo Fuego feérico también aumenta un 3% la probabilidad de que el objetivo sea alcanzado por ataques con hechizos y aumenta tu probabilidad de golpe crítico de tus hechizos dañinos un 3% sobre objetivos afectados por Fuego feérico.',
     row: 6,
@@ -167,7 +167,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Frenesí de buhíco',
-    icon: 'ability_druid_owlkinfrenzy',
+    icon: 'ability-druid-owlkinfrenzy',
     maxRank: 3,
     description: 'Los ataques que hagan contra ti mientras estés bajo Forma de lechúcico lunar tienen un 15% de probabilidad de provocar que entres en Frenesí, lo que aumenta tu daño un 10%. Provoca que seas inmune al retroceso mientras lanzas hechizos de Equilibrio y restaura un 2% del maná base cada 2 s. Dura 10 sec.',
     row: 7,
@@ -176,7 +176,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Cólera de Cenarius',
-    icon: 'ability_druid_twilightswrath',
+    icon: 'ability-druid-twilightswrath',
     maxRank: 5,
     description: 'Tu hechizo Fuego estelar gana un 20% extra y tu Cólera un 10% extra de tu bonus de efectos de daño.',
     row: 7,
@@ -184,7 +184,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Eclipse',
-    icon: 'ability_druid_eclipse',
+    icon: 'ability-druid-eclipse',
     maxRank: 3,
     description: 'Cuando infliges daño crítico con Fuego estelar, tienes un 100% de probabilidad de aumentar el daño infligido con Cólera un 40%. Cuando infliges daño crítico con Cólera, tienes un 60% de aumentar tu probabilidad de golpe crítico con Fuego estelar un 40%. Cada efecto dura 15 sec y ambos tienen 30 s de tiempo de reutilización. Los dos efectos no pueden ocurrir de forma simultánea.',
     row: 8,
@@ -192,7 +192,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Tifón',
-    icon: 'ability_druid_typhoon',
+    icon: 'ability-druid-typhoon',
     maxRank: 1,
     description: 'Invocas un violento Tifón que inflige 400 p. de daño de Naturaleza al entrar en contacto con objetivos hostiles, los derriba y los atonta durante 6 sec.',
     row: 8,
@@ -201,7 +201,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Fuerza de la Naturaleza',
-    icon: 'ability_druid_forceofnature',
+    icon: 'ability-druid-force-of-nature',
     maxRank: 1,
     description: 'Invoca a 3 antárboles que atacan objetivos enemigos durante 30 sec.',
     row: 8,
@@ -209,7 +209,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Viento huracanado',
-    icon: 'ability_druid_galewinds',
+    icon: 'ability-druid-galewinds',
     maxRank: 2,
     description: 'Aumenta un 30% el daño infligido por tus hechizos Huracán y Tifón, y aumenta 4 m. el alcance de tu hechizo Ciclón.',
     row: 8,
@@ -217,7 +217,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Tierra y Luna',
-    icon: 'ability_druid_earthandsky',
+    icon: 'ability-druid-earthandsky',
     maxRank: 3,
     description: 'Tus hechizos Cólera y Fuego estelar tienen un 100% de probabilidad de aplicar el efecto de Tierra y Luna que aumenta el daño con hechizos recibido un 13% durante 12 sec. También aumenta tu daño con hechizos un 6%.',
     row: 9,
@@ -225,7 +225,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
   },
   {
     name: 'Lluvia de estrellas',
-    icon: 'ability_druid_starfall',
+    icon: 'ability-druid-starfall',
     maxRank: 1,
     description: 'Invocas un aluvión de estrellas del cielo sobre todos los objetivos en un radio de 30 m del taumaturgo, cada una inflige 145 to 167 p. de daño Arcano. También inflige 26 p. de daño Arcano extra a todos los demás objetivos a 5 m del objetivo enemigo. Máximo 20 estrellas. Dura 10 sec. Cambiar de forma o montar cancelan el efecto. Cualquier efecto que provoque que pierdas el control de tu personaje suprimirá el efecto de Lluvia de estrellas.',
     row: 10,
@@ -236,7 +236,7 @@ export const druidEquilibrioTalents: WowTalent[] = [
 export const druidFeralTalents: WowTalent[] = [
   {
     name: 'Ferocidad',
-    icon: 'ability_hunter_pet_hyena',
+    icon: 'ability-hunter-pet-hyena',
     maxRank: 5,
     description: 'Reduce el coste de tus facultades Magullar, Flagelo, Zarpa, Arañazo y Destrozar 5 p. de ira o energía.',
     row: 0,
@@ -244,7 +244,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Agresión feral',
-    icon: 'ability_druid_demoralizingroar',
+    icon: 'ability-druid-demoralizingroar',
     maxRank: 5,
     description: 'Aumenta la reducción del poder de ataque de tu Rugido desmoralizador un 40% y el daño de tu Mordedura feroz un 15%.',
     row: 0,
@@ -252,7 +252,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Instinto feral',
-    icon: 'ability_ambush',
+    icon: 'ability-ambush',
     maxRank: 3,
     description: 'Aumenta un 30% el daño infligido por tu facultad Flagelo y reduce la probabilidad que tienen tus enemigos de detectarte mientras acechas.',
     row: 1,
@@ -260,7 +260,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Furia cruel',
-    icon: 'ability_druid_ravage',
+    icon: 'ability-druid-ravage',
     maxRank: 2,
     description: 'Aumenta un 20% el daño infligido por tus facultades Zarpa, Arañazo, Destrozar (felino), Destrozar (oso) y Magullar.',
     row: 1,
@@ -268,7 +268,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Pellejo grueso',
-    icon: 'inv_misc_pelt_bear_03',
+    icon: 'inv-misc-pelt-bear-03',
     maxRank: 3,
     description: 'Aumenta tu valor de armadura por objetos de tela y cuero un 10%.',
     row: 1,
@@ -276,7 +276,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Presteza feral',
-    icon: 'spell_nature_spiritwolf',
+    icon: 'spell-nature-spiritwolf',
     maxRank: 2,
     description: 'Aumenta tu velocidad de movimiento un 30% mientras estés en forma felina y aumenta tu probabilidad de esquivar mientras estés en forma felina, forma de oso y forma de oso temible un 4%.',
     row: 2,
@@ -284,7 +284,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Instintos de supervivencia',
-    icon: 'ability_druid_tigersroar',
+    icon: 'ability-druid-tigersroar',
     maxRank: 1,
     description: 'Cuando se activa, esta facultad otorga temporalmente el 30% de tu salud máxima durante 20 sec mientras estás bajo Forma de oso, Forma felina o Forma de oso temible. Perderás la salud cuando se acabe el efecto.',
     row: 2,
@@ -292,7 +292,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Garras afiladas',
-    icon: 'inv_misc_monsterclaw_04',
+    icon: 'inv-misc-monsterclaw-04',
     maxRank: 3,
     description: 'Aumenta la probabilidad de conseguir un golpe crítico mientras estés en forma de oso, oso temible o felina un 6%.',
     row: 2,
@@ -300,7 +300,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Ataques trituradores',
-    icon: 'spell_shadow_vampiricaura',
+    icon: 'spell-shadow-vampiric-aura',
     maxRank: 2,
     description: 'Reduce el coste de energía de tu facultad Triturar 18 p. y el coste de ira de facultad Lacerar 2 p.',
     row: 3,
@@ -308,7 +308,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Golpes depredadores',
-    icon: 'ability_hunter_pet_cat',
+    icon: 'ability-hunter-pet-cat',
     maxRank: 3,
     description: 'Aumenta tu poder de ataque cuerpo a cuerpo en las formas felina, de oso y de oso temible un 150% de tu nivel y un 20% de cualquier poder de ataque de tu arma equipada. Además, tus remates tienen un 20% de probabilidad por punto de combo de que tu siguiente hechizo de Naturaleza con tiempo de lanzamiento de base inferior a 10 s sea instantáneo.',
     row: 3,
@@ -316,7 +316,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Furia primigenia',
-    icon: 'ability_racial_cannibalize',
+    icon: 'ability-racial-cannibalize',
     maxRank: 2,
     description: 'Te da un 100% de probabilidad de ganar 5 p. de ira extra siempre que consigas un golpe crítico cuando tengas forma de oso o de oso temible. Y tus golpes críticos cuando tienes forma felina que añaden p. de combo tienen un 100% de probabilidad de añadir un punto de combo extra.',
     row: 3,
@@ -325,7 +325,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Precisión primigenia',
-    icon: 'ability_druid_primalprecision',
+    icon: 'ability-druid-primalprecision',
     maxRank: 2,
     description: 'Aumenta tu pericia 10 p. y se te devuelve el 80% de coste de energía de un remate si no impacta en el objetivo.',
     row: 3,
@@ -334,7 +334,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Impacto brutal',
-    icon: 'ability_druid_bash',
+    icon: 'ability-druid-bash',
     maxRank: 2,
     description: 'Aumenta 1 s la duración de aturdimiento de tus facultades Azote y Abalanzarse y reduce el tiempo de reutilización de Azote 30 s.',
     row: 4,
@@ -342,7 +342,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Carga feral',
-    icon: 'ability_hunter_pet_bear',
+    icon: 'ability-hunter-pet-bear',
     maxRank: 1,
     description: 'Enseña Carga feral (oso) y Carga feral (felino). Carga feral (oso): Provoca que cargues contra un enemigo, inmovilizándolo e interrumpiendo el lanzamiento de cualquier hechizo durante 4 sec. Esta facultad se puede usar bajo Forma de oso y Forma de oso temible. 15 s de tiempo de reutilización. Carga feral (felino): Provoca que saltes detrás de un enemigo y lo atontes durante 3 sec. 30 s de tiempo de reutilización.',
     row: 4,
@@ -350,7 +350,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Instinto de nutrición',
-    icon: 'ability_druid_healinginstincts',
+    icon: 'ability-druid-healinginstincts',
     maxRank: 2,
     description: 'Aumenta tus hechizos de sanación hasta el 70% de tu agilidad y aumenta la sanación que te hacen un 20% mientras estás bajo Forma felina.',
     row: 4,
@@ -358,7 +358,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Reacción natural',
-    icon: 'ability_bullrush',
+    icon: 'ability-bullrush',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de esquivar mientras estás en Forma de oso o Forma de oso temible un 6% y regeneras 3 p. de ira cada vez que esquivas bajo Forma de oso o Forma de oso temible.',
     row: 5,
@@ -366,7 +366,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Corazón de lo Salvaje',
-    icon: 'spell_holy_blessingofagility',
+    icon: 'spell-holy-blessing-of-agility',
     maxRank: 5,
     description: 'Aumenta tu intelecto un 20%. Además, mientras estés en forma de oso o de oso temible, tu aguante aumentará un 10% y mientras estés en forma felina, tu poder de ataque aumentará un 10%.',
     row: 5,
@@ -375,7 +375,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Supervivencia del más fuerte',
-    icon: 'ability_druid_enrage',
+    icon: 'ability-druid-en-rage',
     maxRank: 3,
     description: 'Aumenta todos los atributos un 6%, reduce la probabilidad de que los ataques cuerpo a cuerpo te inflijan daño crítico un 6%, y aumenta un 33% la armadura por objetos de tela y cuero mientras estés en forma de oso y forma de oso temible.',
     row: 5,
@@ -383,7 +383,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Líder de la manada',
-    icon: 'spell_nature_unyeildingstamina',
+    icon: 'spell-nature-unyeildingstamina',
     maxRank: 1,
     description: 'Cuando estás en forma felina, de oso o de oso temible, Líder de la manada aumenta un 5% la probabilidad de golpe crítico cuerpo a cuerpo y a distancia de los miembros del grupo en un radio de 100 m.',
     row: 6,
@@ -391,7 +391,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Líder de la manada mejorado',
-    icon: 'spell_nature_unyeildingstamina',
+    icon: 'spell-nature-unyeildingstamina',
     maxRank: 2,
     description: 'Tu facultad Líder de la manada también provoca que los objetivos afectados se sanen un 4% de su salud total cuando asestan un golpe crítico cuerpo a cuerpo o a distancia. El efecto de sanación no se puede repetir más de una vez en 6 s. Además, ganas un 8% de tu maná máximo cuando te beneficias de esta sanación.',
     row: 6,
@@ -400,7 +400,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Tenacidad primigenia',
-    icon: 'ability_druid_primaltenacity',
+    icon: 'ability-druid-primaltenacity',
     maxRank: 3,
     description: 'Reduce la duración de los efectos de miedo un 30%, reduce todo el daño recibido mientras estás aturdido en Forma felina un 30%.',
     row: 6,
@@ -408,7 +408,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Protector de la manada',
-    icon: 'ability_druid_challangingroar',
+    icon: 'ability-druid-challangingroar',
     maxRank: 3,
     description: 'Aumenta tu poder de ataque un 6% y reduce el daño que recibes un 12% mientras estás bajo Forma de oso o Forma de oso temible.',
     row: 7,
@@ -417,7 +417,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Instintos depredadores',
-    icon: 'ability_druid_predatoryinstincts',
+    icon: 'ability-druid-predatoryinstincts',
     maxRank: 3,
     description: 'Mientras estás en forma felina, aumenta el daño de tus golpes críticos en combate cuerpo a cuerpo un 10% y reduce el daño recibido de los ataques de efecto de área un 30%.',
     row: 7,
@@ -425,7 +425,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Heridas infectadas',
-    icon: 'ability_druid_infectedwound',
+    icon: 'ability-druid-infectedwound',
     maxRank: 3,
     description: 'Tus ataques Triturar, Magullar y Destrozar infligen Herida infectada al objetivo. Herida infectada reduce un 50% la velocidad de movimiento del objetivo y un 20% la velocidad de ataque. Dura 12 sec.',
     row: 7,
@@ -433,7 +433,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Rey de la selva',
-    icon: 'ability_druid_kingofthejungle',
+    icon: 'ability-druid-king-of-the-jungle',
     maxRank: 3,
     description: 'Mientras usas tu facultad Enfurecer en forma de oso o forma de oso temible, tu daño aumenta un 15% y tu facultad Furia del tigre también restaura instantáneamente 60 p. de energía. Además, el coste de maná de la forma de oso, forma felina y forma de oso temible se reduce un 60%.',
     row: 8,
@@ -441,7 +441,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Destrozar',
-    icon: 'ability_druid_mangle2',
+    icon: 'ability-druid-mangle-2',
     maxRank: 1,
     description: 'Destroza al enemigo y le inflige daño provocando que el objetivo reciba daño extra de los efectos de sangrado durante 1 min. Esta facultad se puede usar en forma felina y de oso temible.',
     row: 8,
@@ -450,7 +450,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Destrozar mejorado',
-    icon: 'ability_druid_mangle2',
+    icon: 'ability-druid-mangle-2',
     maxRank: 3,
     description: 'Reduce el tiempo de reutilización de tu facultad Destrozar (oso) 1.5 s y reduce el coste de energía de tu facultad Destrozar (felino) 6 p.',
     row: 8,
@@ -459,7 +459,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Desgarrar y romper',
-    icon: 'ability_druid_primalagression',
+    icon: 'ability-druid-primalagression',
     maxRank: 5,
     description: 'Aumenta el daño infligido por tus ataques con Magullar y Triturar sobre objetivos sangrantes un 20%, y aumenta la probabilidad de golpe crítico de tu Mordedura feroz sobre los objetivos sangrantes un 25%.',
     row: 9,
@@ -467,7 +467,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Sangre primigenia',
-    icon: 'ability_druid_rake',
+    icon: 'ability-druid-rake',
     maxRank: 1,
     description: 'Otorga al daño periódico de tus hechizos Lacerar y Destripar la facultad de golpe crítico.',
     row: 9,
@@ -476,7 +476,7 @@ export const druidFeralTalents: WowTalent[] = [
   },
   {
     name: 'Rabia',
-    icon: 'ability_druid_berserk',
+    icon: 'ability-druid-berserk',
     maxRank: 1,
     description: 'Cuando se activa, esta facultad provoca que tu facultad Destrozar (oso) golpee hasta a 3 objetivos, no tiene tiempo de reutilización y reduce el coste de energía de tus facultades de forma felina un 50%. Dura 15 sec. No puedes usar Furia del tigre mientras Rabia está activa. Elimina el efecto de miedo y te hace inmune a miedo mientras dura.',
     row: 10,
@@ -487,7 +487,7 @@ export const druidFeralTalents: WowTalent[] = [
 export const druidRestauracionTalents: WowTalent[] = [
   {
     name: 'Marca de lo Salvaje mejorada',
-    icon: 'spell_nature_regeneration',
+    icon: 'spell-nature-regeneration',
     maxRank: 2,
     description: 'Aumenta un 40% el efecto de tus hechizos Don de lo Salvaje y Marca de lo Salvaje y aumenta todos tus atributos totales un 2%.',
     row: 0,
@@ -495,7 +495,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque de la Naturaleza',
-    icon: 'spell_nature_healingwavegreater',
+    icon: 'spell-nature-healingwavegreater',
     maxRank: 3,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas los hechizos Toque de sanación, Cólera, Raíces enredadoras, Ciclón, Nutrir, Recrecimiento o Tranquilidad un 70%.',
     row: 0,
@@ -503,7 +503,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Furor',
-    icon: 'spell_holy_blessingofstamina',
+    icon: 'spell-holy-blessing-of-stamina',
     maxRank: 5,
     description: 'Te da un 100% de probabilidad de ganar 10 p. de ira cuando cambias a Forma de oso y de oso temible y guardas hasta 100 p. de energía cuando cambias a forma felina, y aumenta tu intelecto total cuando estás bajo Forma de lechúcico lunar un 10%.',
     row: 0,
@@ -511,7 +511,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Naturalista',
-    icon: 'spell_nature_healingtouch',
+    icon: 'spell-nature-healing-touch',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Toque de sanación 0.5 s y aumenta el daño que causas con ataques físicos bajo todas las formas un 10%.',
     row: 1,
@@ -519,7 +519,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Sutileza',
-    icon: 'ability_eyeoftheowl',
+    icon: 'ability-eye-of-the-owl',
     maxRank: 3,
     description: 'Reduce la amenaza generada por tus hechizos de restauración un 30% y reduce la probabilidad de que tus hechizos de ayuda, Fuego lunar y Enjambre de insectos sean disipados un 30%.',
     row: 1,
@@ -527,7 +527,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Cambio de forma natural',
-    icon: 'spell_nature_wispsplode',
+    icon: 'spell-nature-wispsplode',
     maxRank: 3,
     description: 'Reduce el coste de maná de todos los hechizos de cambio de forma un 30%.',
     row: 1,
@@ -535,7 +535,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Intensidad',
-    icon: 'spell_frost_windwalkon',
+    icon: 'spell-frost-windwalkon',
     maxRank: 3,
     description: 'Permite que un 50% de la regeneración de maná continúe mientras lanzas hechizos y provoca que tu facultad Enfurecer genere instantáneamente 10 p. de ira.',
     row: 2,
@@ -543,7 +543,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Augurio de claridad',
-    icon: 'spell_nature_crystalball',
+    icon: 'spell-nature-crystal-ball',
     maxRank: 1,
     description: 'Cada hechizo de sanación y daño y cada ataque automático del druida tiene la posibilidad de hacer que el taumaturgo entre en estado de Lanzamiento libre. El estado de Lanzamiento libre reduce el coste de maná, el de ira o el de energía de tu próximo hechizo de daño, hechizo de sanación o facultad ofensiva un 100%.',
     row: 2,
@@ -551,7 +551,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Maestro en cambio de forma',
-    icon: 'ability_druid_mastershapeshifter',
+    icon: 'ability-druid-mastershapeshifter',
     maxRank: 2,
     description: 'Otorga un efecto que dura mientras el druida esté bajo la forma respectiva. Forma de oso: Aumenta el daño físico un 4%. Forma felina: Aumenta la probabilidad de asestar un golpe crítico un 4%. Forma de lechúcico lunar: Aumenta el daño con hechizos un 4%. Forma de árbol de vida: Aumenta la sanación un 4%.',
     row: 2,
@@ -560,7 +560,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Espíritu sosegado',
-    icon: 'spell_holy_elunesgrace',
+    icon: 'spell-holy-elunesgrace',
     maxRank: 5,
     description: 'Reduce el coste de maná de tus hechizos Toque de sanación, Nutrir y Tranquilidad un 10%.',
     row: 3,
@@ -568,7 +568,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Rejuvenecimiento mejorado',
-    icon: 'spell_nature_rejuvenation',
+    icon: 'spell-nature-rejuvenation',
     maxRank: 3,
     description: 'Aumenta un 15% el efecto de tu hechizo de Rejuvenecimiento.',
     row: 3,
@@ -576,7 +576,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Presteza de la Naturaleza',
-    icon: 'spell_nature_ravenform',
+    icon: 'spell-nature-raven-form',
     maxRank: 1,
     description: 'Cuando se activa, tu próximo hechizo de Naturaleza con un tiempo de lanzamiento de base inferior a 10 s se convertirá en un hechizo de lanzamiento instantáneo.',
     row: 4,
@@ -585,7 +585,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Don de la Naturaleza',
-    icon: 'spell_nature_protectionformnature',
+    icon: 'spell-nature-protectionformnature',
     maxRank: 5,
     description: 'Aumenta los efectos de tus hechizos de sanación un 10%.',
     row: 4,
@@ -593,7 +593,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Tranquilidad mejorada',
-    icon: 'spell_nature_tranquility',
+    icon: 'spell-nature-tranquility',
     maxRank: 2,
     description: 'Reduce la amenaza causada por Tranquilidad un 100% y reduce el tiempo de reutilización un 60%.',
     row: 4,
@@ -601,7 +601,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Toque potenciado',
-    icon: 'ability_druid_empoweredtouch',
+    icon: 'ability-druid-empowered-touch',
     maxRank: 2,
     description: 'Tu hechizo Toque de sanación gana un 40% extra y tu hechizo Nutrir gana un 20% extra del bonus de tus efectos de sanación.',
     row: 5,
@@ -609,7 +609,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Obsequio de la Naturaleza',
-    icon: 'spell_nature_resistnature',
+    icon: 'spell-nature-resistnature',
     maxRank: 5,
     description: 'Aumenta un 25% la probabilidad de efecto crítico de tus hechizos de Recrecimiento y Nutrición.',
     row: 5,
@@ -618,7 +618,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Espíritu vivo',
-    icon: 'spell_nature_giftofthewaterspirit',
+    icon: 'spell-nature-gift-of-the-water-spirit',
     maxRank: 3,
     description: 'Aumenta tu espíritu total un 15%.',
     row: 6,
@@ -626,7 +626,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Alivio presto',
-    icon: 'inv_relics_idolofrejuvenation',
+    icon: 'inv-relics-idol-of-rejuvenation',
     maxRank: 1,
     description: 'Consume el efecto de los hechizos Rejuvenecimiento o Recrecimiento de un objetivo amistoso y lo sana al instante en una cantidad equivalente a 12 s de Rejuvenecimiento o 18 s de Recrecimiento.',
     row: 6,
@@ -635,7 +635,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Perfección natural',
-    icon: 'ability_druid_naturalperfection',
+    icon: 'ability-druid-naturalperfection',
     maxRank: 3,
     description: 'Tu probabilidad de golpe crítico con todos los hechizos aumenta un 3% y los golpes críticos frente a ti te dan el efecto de Perfección natural que reduce todo el daño recibido un 4%. Se acumula hasta 3. Dura 8 sec.',
     row: 6,
@@ -643,7 +643,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Rejuvenecimiento potenciado',
-    icon: 'ability_druid_empoweredrejuvination',
+    icon: 'ability-druid-empoweredrejuvination',
     maxRank: 5,
     description: 'El efecto de bonus de sanación de tus hechizos de sanación en el tiempo aumenta un 20%.',
     row: 7,
@@ -651,7 +651,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Semilla viviente',
-    icon: 'ability_druid_giftoftheearthmother',
+    icon: 'ability-druid-gift-of-the-earthmother',
     maxRank: 3,
     description: 'Cuando haces una sanación crítica a tu objetivo con Alivio presto, Recrecimiento, Nutrir o Toque de sanación, tienes un 100% de probabilidad de plantar una semilla viviente en el objetivo por un 30% de la cantidad sanada. La semilla viviente florecerá cuando ataquen al objetivo. Dura 15 sec.',
     row: 7,
@@ -659,7 +659,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Revitalizar',
-    icon: 'ability_druid_replenish',
+    icon: 'ability-druid-replenish',
     maxRank: 3,
     description: 'Tus hechizos Rejuvenecimiento y Crecimiento salvaje tienen un 15% de probabilidad de restaurar 8 p. de energía, 4 p. de ira, un 1% de maná o 16 p. de poder rúnico por pulso.',
     row: 8,
@@ -667,7 +667,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Árbol de vida',
-    icon: 'ability_druid_treeoflife',
+    icon: 'ability-druid-tree-of-life',
     maxRank: 1,
     description: 'Reduce el coste de maná de tus hechizos de sanación en el tiempo un 20% y otorga la facultad de cambiar de forma a Árbol de vida. Mientras estás bajo esta forma, la sanación recibida aumenta un 6% de todos los miembros del grupo o banda en un radio de 100 m. Solo puedes lanzar hechizos de restauración además de los hechizos Estimular, Piel de corteza, Trabazón con la Naturaleza y Espinas. El acto de cambiar de forma libera al taumaturgo de los efectos de reducción de movimiento y polimorfia.',
     row: 8,
@@ -676,7 +676,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Árbol de vida mejorado',
-    icon: 'ability_druid_improvedtreeform',
+    icon: 'ability-druid-improvedtree-form',
     maxRank: 3,
     description: 'Aumenta la contribución a tu armadura de objetos mientras estás bajo Forma de árbol de vida un 200% y aumenta el poder con hechizos de sanación un 15% de tu espíritu mientras estás bajo Forma de árbol de vida.',
     row: 8,
@@ -685,7 +685,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Piel de corteza mejorada',
-    icon: 'spell_nature_stoneclawtotem',
+    icon: 'spell-nature-stoneclaw-totem',
     maxRank: 2,
     description: 'Otorga un 160% de armadura extra por objetos de tela y cuero mientras estés bajo Forma de viaje o no estés bajo cambio de forma, aumenta la reducción de daño otorgada por tu hechizo Piel de corteza un 10% y reduce la probabilidad de que se disipe tu Piel de corteza un 70%.',
     row: 9,
@@ -693,7 +693,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Don de la Madre Tierra',
-    icon: 'ability_druid_manatree',
+    icon: 'ability-druid-manatree',
     maxRank: 5,
     description: 'Aumenta un 10% tu celeridad con hechizos total y reduce un 10% tu tiempo de reutilización global al lanzar Flor de vida.',
     row: 9,
@@ -701,7 +701,7 @@ export const druidRestauracionTalents: WowTalent[] = [
   },
   {
     name: 'Crecimiento salvaje',
-    icon: 'ability_druid_flourish',
+    icon: 'ability-druid-flourish',
     maxRank: 1,
     description: 'Sana [98 * 7 * ( ( ( ( 1 ) ) ) )] p. a un máximo de 5 miembros del grupo o banda amistosos en un radio de 15 m del objetivo durante 7 sec. La cantidad sanada se aplica con rapidez al principio y va disminuyendo a medida que Crecimiento salvaje surte efecto.',
     row: 10,

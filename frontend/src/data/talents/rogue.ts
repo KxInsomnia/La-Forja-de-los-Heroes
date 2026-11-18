@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const rogueAsesinatoTalents: WowTalent[] = [
   {
     name: 'Eviscerar mejorado',
-    icon: 'ability_rogue_eviscerate',
+    icon: 'ability-rogue-eviscerate',
     maxRank: 3,
     description: 'Aumenta un 20% el daño infligido con tu facultad Eviscerar.',
     row: 0,
@@ -11,7 +11,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Ataques sin remordimientos',
-    icon: 'ability_fiegndead',
+    icon: 'ability-fiegndead',
     maxRank: 2,
     description: 'Tras haber matado a un oponente que aporte experiencia u honor, proporciona un 40% más de probabilidad de obtener un golpe crítico en tu siguiente Golpe siniestro, Hemorragia, Puñalada, Mutilar, Emboscada o Golpe fantasmal. Dura 20 sec.',
     row: 0,
@@ -19,7 +19,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Malicia',
-    icon: 'ability_racial_bloodrage',
+    icon: 'ability-racial-blood-rage',
     maxRank: 5,
     description: 'Aumenta la probabilidad de conseguir un golpe crítico un 5%.',
     row: 0,
@@ -27,7 +27,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Crueldad',
-    icon: 'ability_druid_disembowel',
+    icon: 'ability-druid-disembowel',
     maxRank: 3,
     description: 'Da a tus golpes de remate un 60% de probabilidad de añadir 1 punto de combo a tu objetivo.',
     row: 1,
@@ -35,7 +35,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Salpicón de sangre',
-    icon: 'ability_rogue_bloodsplatter',
+    icon: 'ability-rogue-bloodsplatter',
     maxRank: 2,
     description: 'Aumenta el daño infligido por tus facultades Garrote y Ruptura un 30%.',
     row: 1,
@@ -43,7 +43,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Heridas perforadoras',
-    icon: 'ability_backstab',
+    icon: 'ability-backstab',
     maxRank: 3,
     description: 'Aumenta un 30% la probabilidad de golpe crítico de tu facultad Puñalada y la probabilidad de golpe crítico de tu facultad Mutilar un 15%.',
     row: 1,
@@ -51,7 +51,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Vigor',
-    icon: 'spell_nature_earthbindtotem',
+    icon: 'spell-nature-earthbind-totem',
     maxRank: 1,
     description: 'Aumenta tu energía máxima 10 p.',
     row: 2,
@@ -59,7 +59,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Exponer armadura mejorado',
-    icon: 'ability_warrior_riposte',
+    icon: 'ability-warrior-riposte',
     maxRank: 2,
     description: 'Reduce el coste de energía de tu facultad Exponer armadura 10 p.',
     row: 2,
@@ -67,7 +67,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Letalidad',
-    icon: 'ability_criticalstrike',
+    icon: 'ability-critical-strike',
     maxRank: 5,
     description: 'Aumenta el bonus de daño por golpe crítico de todas tus facultades que generen puntos de combo que no requieren sigilo un 30%.',
     row: 2,
@@ -76,7 +76,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Venenos inmundos',
-    icon: 'ability_rogue_feigndeath',
+    icon: 'ability-rogue-feign-death',
     maxRank: 3,
     description: 'Aumenta el daño infligido con tus venenos y tu facultad Envenenar un 20% y proporciona a tus venenos de daño en el tiempo un 30% extra de probabilidad de resistir los efectos disipadores.',
     row: 3,
@@ -84,7 +84,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Venenos mejorados',
-    icon: 'ability_poisons',
+    icon: 'ability-poisons',
     maxRank: 5,
     description: 'Aumenta la posibilidad de aplicar Veneno mortal al objetivo un 20% y la frecuencia de aplicar Veneno instantáneo a tu objetivo un 50%.',
     row: 3,
@@ -92,7 +92,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Pies de galgo',
-    icon: 'ability_rogue_fleetfooted',
+    icon: 'ability-rogue-fleetfooted',
     maxRank: 2,
     description: 'Reduce la duración de todos los efectos de reducción de movimiento un 30% y aumenta tu velocidad de movimiento un 15%. No se acumula con otros efectos de aumento de la velocidad de movimiento.',
     row: 4,
@@ -100,7 +100,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Sangre fría',
-    icon: 'spell_ice_lament',
+    icon: 'spell-ice-lament',
     maxRank: 1,
     description: 'Cuando se activa, aumenta la probabilidad de golpe crítico de tu siguiente facultad ofensiva un 100%.',
     row: 4,
@@ -108,7 +108,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Golpe en los riñones mejorado',
-    icon: 'ability_rogue_kidneyshot',
+    icon: 'ability-rogue-kidney-shot',
     maxRank: 3,
     description: 'Los objetivos afectados por Golpe a los riñones reciben un 9% más de daño.',
     row: 4,
@@ -116,7 +116,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Recuperación presurosa',
-    icon: 'ability_rogue_quickrecovery',
+    icon: 'ability-rogue-quickrecovery',
     maxRank: 2,
     description: 'Todos los efectos de sanación sobre ti aumentan un 20%. Además, tus remates te devuelven un 80% de su coste de energía si no alcanzan al objetivo.',
     row: 4,
@@ -124,7 +124,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Sellar destino',
-    icon: 'spell_shadow_chilltouch',
+    icon: 'spell-shadow-chill-touch',
     maxRank: 5,
     description: 'Tus golpes críticos de facultades que añaden p. de combo tienen un 100% de probabilidad de añadir un punto de combo extra.',
     row: 5,
@@ -133,7 +133,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Asesinar',
-    icon: 'spell_shadow_deathscream',
+    icon: 'spell-shadow-deathscream',
     maxRank: 2,
     description: 'Aumenta todo el daño infligido un 4%.',
     row: 5,
@@ -141,7 +141,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Brebaje letal',
-    icon: 'ability_rogue_deadlybrew',
+    icon: 'ability-rogue-deadlybrew',
     maxRank: 2,
     description: 'Cuando aplicas un veneno instantáneo, hiriente o de aturdimiento mental a un objetivo, tienes un 100% de probabilidad de aplicar Veneno entorpecedor.',
     row: 6,
@@ -149,7 +149,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Exterminar',
-    icon: 'ability_hunter_rapidkilling',
+    icon: 'ability-hunter-rapidkilling',
     maxRank: 1,
     description: 'Mientras estás en sigilo y durante 20 segundos después de que se desactive el modo sigilo, regeneras un 30% de energía extra.',
     row: 6,
@@ -157,7 +157,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Impasibilidad',
-    icon: 'ability_rogue_deadenednerves',
+    icon: 'ability-rogue-deadenednerves',
     maxRank: 3,
     description: 'Reduce todo el daño recibido un 6%.',
     row: 6,
@@ -165,7 +165,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Ataques centrados',
-    icon: 'ability_rogue_focusedattacks',
+    icon: 'ability-rogue-focusedattacks',
     maxRank: 3,
     description: 'Tus golpes críticos cuerpo a cuerpo tienen un 100% de probabilidad de darte 2 p. de energía.',
     row: 7,
@@ -173,7 +173,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Descubrir debilidad',
-    icon: 'ability_rogue_findweakness',
+    icon: 'ability-rogue-findweakness',
     maxRank: 3,
     description: 'Daño de facultad ofensiva aumentado un 6%.',
     row: 7,
@@ -181,7 +181,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Maestro envenenador',
-    icon: 'ability_creature_poison_06',
+    icon: 'ability-creature-poison-06',
     maxRank: 3,
     description: 'Aumenta un 3% la probabilidad de golpe crítico de todos los ataques efectuados contra cualquier objetivo al que hayas envenenado, reduce un 50% la duración de todos los efectos de veneno aplicados sobre ti y otorga a Envenenar un 100% de probabilidad de no consumir Veneno mortal.',
     row: 8,
@@ -189,7 +189,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Mutilar',
-    icon: 'ability_rogue_shadowstrikes',
+    icon: 'ability-rogue-shadowstrikes',
     maxRank: 1,
     description: 'Ataque instantáneo con ambas armas que inflige 100 % de daño con arma más 44 p. adicionales con cada arma. El daño aumenta un 20% frente a objetivos envenenados. Da 2 p. de combo.',
     row: 8,
@@ -198,7 +198,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Ganar ventaja',
-    icon: 'ability_rogue_turnthetables',
+    icon: 'ability-rogue-turnthetables',
     maxRank: 3,
     description: 'Cuando algún miembro de tu grupo o banda bloquee, esquive o pare un ataque, tu probabilidad de dar un golpe crítico con todos los movimientos de combo aumenta un 6% durante 8 sec.',
     row: 8,
@@ -206,7 +206,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Acortar',
-    icon: 'ability_rogue_cuttothechase',
+    icon: 'ability-rogue-cut-to-the-chase',
     maxRank: 5,
     description: 'Tus facultades Eviscerar y Envenenar tienen un 100% de probabilidad de actualizar la duración de tu Hacer picadillo a su máximo de 5 p. de combo.',
     row: 9,
@@ -214,7 +214,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
   },
   {
     name: 'Hambre de sangre',
-    icon: 'ability_rogue_hungerforblood',
+    icon: 'ability-rogue-hungerforblood',
     maxRank: 1,
     description: 'Te pones iracundo, aumentando todo el daño infligido un 5%. Requiere un efecto de sangrado para activarse en el objetivo. Dura 1 min.',
     row: 10,
@@ -225,7 +225,7 @@ export const rogueAsesinatoTalents: WowTalent[] = [
 export const rogueCombateTalents: WowTalent[] = [
   {
     name: 'Gubia mejorada',
-    icon: 'ability_gouge',
+    icon: 'ability-gouge',
     maxRank: 3,
     description: 'Aumenta 1.5 s la duración de tu facultad Gubia.',
     row: 0,
@@ -233,7 +233,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Golpe siniestro mejorado',
-    icon: 'spell_shadow_ritualofsacrifice',
+    icon: 'spell-shadow-ritual-of-sacrifice',
     maxRank: 2,
     description: 'Reduce el coste de energía de tu facultad Golpe siniestro 5 p.',
     row: 0,
@@ -241,7 +241,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en doble empuñadura',
-    icon: 'ability_dualwield',
+    icon: 'ability-dualwield',
     maxRank: 5,
     description: 'Aumenta un 50% el daño infligido con tu arma secundaria.',
     row: 0,
@@ -249,7 +249,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Hacer picadillo mejorado',
-    icon: 'ability_rogue_slicedice',
+    icon: 'ability-rogue-slicedice',
     maxRank: 2,
     description: 'Aumenta un 50% la duración de tu facultad Hacer picadillo.',
     row: 1,
@@ -257,7 +257,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Desvío',
-    icon: 'ability_parry',
+    icon: 'ability-parry',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de parar un 6%.',
     row: 1,
@@ -265,7 +265,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Precisión',
-    icon: 'ability_marksmanship',
+    icon: 'ability-marksmanship',
     maxRank: 5,
     description: 'Aumenta tu probabilidad de golpear con armas y ataques con venenos un 5%.',
     row: 1,
@@ -273,7 +273,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Robustez',
-    icon: 'spell_shadow_shadowward',
+    icon: 'spell-shadow-shadow-ward',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tus facultades Sprint y Evasión 60 s y aumenta tu aguante total un 4%.',
     row: 2,
@@ -281,7 +281,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Contestación',
-    icon: 'ability_warrior_challange',
+    icon: 'ability-warrior-challange',
     maxRank: 1,
     description: 'Un golpe que se activa tras haber parado el ataque de un oponente. Este ataque inflige un 150% de daño con arma y ralentiza su velocidad de ataque cuerpo a cuerpo un 20% durante 30 sec. Otorga 1 p. de combo.',
     row: 2,
@@ -290,7 +290,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Combate próximo',
-    icon: 'inv_weapon_shortblade_05',
+    icon: 'inv-weapon-shortblade-05',
     maxRank: 5,
     description: 'Aumenta la probabilidad de conseguir un golpe crítico con dagas y armas de puño un 5%.',
     row: 2,
@@ -299,7 +299,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Patada mejorada',
-    icon: 'ability_kick',
+    icon: 'ability-kick',
     maxRank: 2,
     description: 'Da a tu facultad Patada un 100% de probabilidad de silenciar el objetivo durante 2 sec.',
     row: 3,
@@ -307,7 +307,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Sprint mejorado',
-    icon: 'ability_rogue_sprint',
+    icon: 'ability-rogue-sprint',
     maxRank: 2,
     description: 'Da 100% de probabilidad de eliminar todos los efectos de reducción de movimiento cuando activas tu facultad Sprint.',
     row: 3,
@@ -315,7 +315,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Reflejos de relámpago',
-    icon: 'spell_nature_invisibilty',
+    icon: 'spell-nature-invisibilty',
     maxRank: 3,
     description: 'Aumenta la probabilidad de esquivar un 6% y te otorga un 10% de celeridad cuerpo a cuerpo.',
     row: 3,
@@ -323,7 +323,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Agresión',
-    icon: 'ability_racial_avatar',
+    icon: 'ability-racial-avatar',
     maxRank: 5,
     description: 'Aumenta un 15% el daño infligido con tus facultades Golpe siniestro, Puñalada y Eviscerar.',
     row: 3,
@@ -331,7 +331,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en mazas',
-    icon: 'inv_mace_01',
+    icon: 'inv-mace-01',
     maxRank: 5,
     description: 'Tus ataques con mazas ignoran hasta el 15% de la armadura de tu oponente.',
     row: 4,
@@ -339,7 +339,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Aluvión de acero',
-    icon: 'ability_warrior_punishingblow',
+    icon: 'ability-warrior-punishing-blow',
     maxRank: 1,
     description: 'Aumenta tu velocidad de ataque un 20%. Además, los ataques alcanzan a un enemigo cercano extra. Dura 15 sec.',
     row: 4,
@@ -347,7 +347,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Cortar y rebanar',
-    icon: 'inv_sword_27',
+    icon: 'inv-sword-27',
     maxRank: 5,
     description: 'Te da un 5% de probabilidad de conseguir un ataque extra sobre el mismo objetivo después de infligirle daño con tu espada o hacha.',
     row: 4,
@@ -355,7 +355,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Experiencia con armas',
-    icon: 'spell_holy_blessingofstrength',
+    icon: 'spell-holy-blessing-of-strength',
     maxRank: 2,
     description: 'Aumenta tu pericia 10 p.',
     row: 5,
@@ -364,7 +364,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Malabares cortantes',
-    icon: 'ability_rogue_bladetwisting',
+    icon: 'ability-rogue-bladetwi-sting',
     maxRank: 2,
     description: 'Aumenta el daño infligido por tu Golpe siniestro y Puñalada un 10% y tus ataques cuerpo a cuerpo que inflijan daño tienen un 10% de probabilidad de atontar al objetivo durante 8 sec.',
     row: 5,
@@ -372,7 +372,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Vitalidad',
-    icon: 'ability_warrior_revenge',
+    icon: 'ability-warrior-revenge',
     maxRank: 3,
     description: 'Aumenta tu índice de regeneración de energía un 25%.',
     row: 6,
@@ -380,7 +380,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Subidón de adrenalina',
-    icon: 'spell_shadow_shadowworddominate',
+    icon: 'spell-shadow-shadowworddominate',
     maxRank: 1,
     description: 'Aumenta tu velocidad de regeneración de energía un 100% durante 15 sec.',
     row: 6,
@@ -388,7 +388,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Nervios de acero',
-    icon: 'ability_rogue_nervesofsteel',
+    icon: 'ability-rogue-nerves-of-steel',
     maxRank: 2,
     description: 'Reduce el daño recibido mientras estás afectado por los efectos de aturdimiento y miedo un 30%.',
     row: 6,
@@ -396,7 +396,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en lanzamiento',
-    icon: 'ability_rogue_throwingspecialization',
+    icon: 'ability-rogue-throwingspecialization',
     maxRank: 2,
     description: 'Aumenta el alcance de Lanzar y Lanzamiento mortal 4 m y le da a tu facultad Lanzamiento mortal un 100% de probabilidad de interrumpir al objetivo durante 3 sec.',
     row: 7,
@@ -404,7 +404,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Potencia de combate',
-    icon: 'inv_weapon_shortblade_38',
+    icon: 'inv-weapon-shortblade-38',
     maxRank: 5,
     description: 'Le da a tus ataques cuerpo a cuerpo de la mano izquierda que acierten una probabilidad de un 20% de generar 15 p. de energía.',
     row: 7,
@@ -412,7 +412,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Ventaja desleal',
-    icon: 'ability_rogue_unfairadvantage',
+    icon: 'ability-rogue-unfairadvantage',
     maxRank: 2,
     description: 'Cuando esquivas un ataque obtienes Ventaja desleal, que devuelve el golpe infligiendo un 100% del daño de tu arma principal. Esto no puede tener lugar más de una vez por segundo.',
     row: 8,
@@ -420,7 +420,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Ataques por sorpresa',
-    icon: 'ability_rogue_surpriseattack',
+    icon: 'ability-rogue-surpriseattack',
     maxRank: 1,
     description: 'Tus remates ya no se pueden esquivar, y el daño infligido por tus facultades Golpe siniestro, Puñalada, Puyazo, Hemorragia y Gubia aumenta un 10%.',
     row: 8,
@@ -429,7 +429,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Combate salvaje',
-    icon: 'ability_creature_disease_03',
+    icon: 'ability-creature-disease-03',
     maxRank: 2,
     description: 'Aumenta tu poder de ataque total un 4% y todo el daño físico infligido a los enemigos que has envenenado aumenta un 4%.',
     row: 8,
@@ -437,7 +437,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Abusar de los débiles',
-    icon: 'ability_rogue_preyontheweak',
+    icon: 'ability-rogue-preyontheweak',
     maxRank: 5,
     description: 'Tu daño con golpes críticos aumenta un 20% cuando el objetivo tiene menos salud que tú (como porcentaje de salud total).',
     row: 9,
@@ -445,7 +445,7 @@ export const rogueCombateTalents: WowTalent[] = [
   },
   {
     name: 'Asesinato múltiple',
-    icon: 'ability_rogue_murderspree',
+    icon: 'ability-rogue-murderspree',
     maxRank: 1,
     description: 'Camina entre las sombras de un enemigo a otro en un radio de 10 m, atacando a un enemigo cada 0,5 segundos con ambas armas hasta realizar 5 asaltos y aumenta todo el daño infligido un 20% mientras dure. Se puede golpear al mismo objetivo varias veces. No alcanza a objetivos invisibles o en sigilo.',
     row: 10,
@@ -456,7 +456,7 @@ export const rogueCombateTalents: WowTalent[] = [
 export const rogueSutilezaTalents: WowTalent[] = [
   {
     name: 'Golpes despiadados',
-    icon: 'ability_warrior_decisivestrike',
+    icon: 'ability-warrior-decisive-strike',
     maxRank: 5,
     description: 'Tus remates tienen un 20% de probabilidad por cada punto de combo de restaurar 25 p. de energía.',
     row: 0,
@@ -464,7 +464,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro del engaño',
-    icon: 'spell_shadow_charm',
+    icon: 'spell-shadow-charm',
     maxRank: 3,
     description: 'Reduce la probabilidad que tienen los enemigos de detectarte cuando estás en modo sigilo. Es más efectivo que Maestro del engaño (Rango 2).',
     row: 0,
@@ -472,7 +472,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Oportunidad',
-    icon: 'ability_warrior_warcry',
+    icon: 'ability-warrior-war-cry',
     maxRank: 2,
     description: 'Aumenta el daño infligido con tus facultades Puñalada, Garrote, Mutilar y Emboscada un 20%.',
     row: 0,
@@ -480,7 +480,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Prestidigitación',
-    icon: 'ability_rogue_feint',
+    icon: 'ability-rogue-feint',
     maxRank: 2,
     description: 'Reduce la probabilidad de recibir un golpe crítico de ataques cuerpo a cuerpo y a distancia un 2% y aumenta la reducción de amenaza de tu facultad Amago en un 20%.',
     row: 1,
@@ -488,7 +488,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Jugarreta',
-    icon: 'ability_sap',
+    icon: 'ability-sap',
     maxRank: 2,
     description: 'Aumenta el rango de tus facultades Ceguera y Porrazo 5 m y reduce el coste de energía de tus facultades Ceguera y Porrazo un 50%.',
     row: 1,
@@ -496,7 +496,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Camuflaje',
-    icon: 'ability_stealth',
+    icon: 'ability-stealth',
     maxRank: 3,
     description: 'Aumenta tu velocidad en sigilo un 15% y reduce el tiempo de regeneración de tu facultad Sigilo en 6 s.',
     row: 1,
@@ -504,7 +504,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Elusión',
-    icon: 'spell_magic_lesserinvisibilty',
+    icon: 'spell-magic-lesserinvisibilty',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tus facultades Esfumarse y Ceguera 60 s y de tu facultad Capa de las Sombras 30 s.',
     row: 2,
@@ -512,7 +512,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Golpe fantasmal',
-    icon: 'spell_shadow_curse',
+    icon: 'spell-shadow-curse',
     maxRank: 1,
     description: 'Un golpe que inflige un 125% de daño con arma (un 180% si se lleva equipada una daga) y aumenta un 15% tu probabilidad de esquivar durante 7 sec. Otorga 1 p. de combo.',
     row: 2,
@@ -520,7 +520,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Espadas dentadas',
-    icon: 'inv_sword_17',
+    icon: 'inv-sword-17',
     maxRank: 3,
     description: 'Provoca que tus ataques ignoren hasta un 9% de armadura de tu objetivo y aumenta el daño infligido por tu facultad Ruptura un 30%.',
     row: 2,
@@ -528,7 +528,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Establecer',
-    icon: 'spell_nature_mirrorimage',
+    icon: 'spell-nature-mirrori-mage',
     maxRank: 3,
     description: 'Te otorga un 100% de probabilidad de añadir 1 punto de combo a tu objetivo tras esquivar su ataque o resistir por completo uno de sus hechizos. Esto no puede ocurrir más de una vez por segundo.',
     row: 3,
@@ -536,7 +536,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Iniciativa',
-    icon: 'spell_shadow_fumble',
+    icon: 'spell-shadow-fumble',
     maxRank: 3,
     description: 'Te da un 100% de probabilidad de añadir 1 p. de combo extra a tu objetivo cuando usas tus facultades de Golpe bajo, Emboscada o Garrote.',
     row: 3,
@@ -544,7 +544,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Emboscada mejorada',
-    icon: 'ability_rogue_ambush',
+    icon: 'ability-rogue-ambush',
     maxRank: 2,
     description: 'Aumenta un 50% la probabilidad de golpe crítico de tu facultad Emboscada.',
     row: 3,
@@ -552,7 +552,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Sentidos agudizados',
-    icon: 'ability_ambush',
+    icon: 'ability-ambush',
     maxRank: 2,
     description: 'Aumenta tu Detección de sigilo y reduce la probabilidad de que seas alcanzado por hechizos y ataques a distancia un 4%. Más efectivo que Sentidos agudizados (Rango 1).',
     row: 4,
@@ -560,7 +560,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Preparación',
-    icon: 'spell_shadow_antishadow',
+    icon: 'spell-shadow-antishadow',
     maxRank: 1,
     description: 'Cuando se activa, termina inmediatamente el tiempo de reutilización de tus facultades Evasión, Sprint, Esfumarse, Sangre fría y Paso de las Sombras.',
     row: 4,
@@ -568,7 +568,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Trabajos sucios',
-    icon: 'spell_shadow_summonsuccubus',
+    icon: 'spell-shadow-summonsuccubus',
     maxRank: 2,
     description: 'Reduce el coste de energía de tu facultad Golpe bajo y Garrote 20 p. Además, tus facultades especiales provocan un 20% más de daño frente a objetivos por debajo del 35% de salud.',
     row: 4,
@@ -576,7 +576,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Hemorragia',
-    icon: 'spell_shadow_lifedrain',
+    icon: 'spell-shadow-lifedrain',
     maxRank: 1,
     description: 'Un golpe instantáneo que inflige un 110% de daño con arma (un 160% si se lleva equipada una daga) y le provoca al objetivo una hemorragia, lo que aumenta cualquier daño físico infligido al objetivo hasta 13 . Dura 15 sec o hasta que se utilizan 10 cargas. Otorga 1 p. de combo.',
     row: 4,
@@ -585,7 +585,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro de la sutileza',
-    icon: 'ability_rogue_masterofsubtlety',
+    icon: 'ability-rogue-master-of-subtlety',
     maxRank: 3,
     description: 'Los ataques realizados mientras estás en modo sigilo y durante los 6 s posteriores a abandonar el modo sigilo infligen un 10% extra de daño.',
     row: 5,
@@ -593,7 +593,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Letalidad',
-    icon: 'inv_weapon_crossbow_11',
+    icon: 'inv-weapon-crossbow-11',
     maxRank: 5,
     description: 'Aumenta tu poder de ataque un 10%.',
     row: 5,
@@ -601,7 +601,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Sombras envolventes',
-    icon: 'ability_rogue_envelopingshadows',
+    icon: 'ability-rogue-envelopingshadows',
     maxRank: 3,
     description: 'Reduce el daño recibido por los ataques de área de efecto un 30%.',
     row: 6,
@@ -609,7 +609,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Premeditación',
-    icon: 'spell_shadow_possession',
+    icon: 'spell-shadow-possession',
     maxRank: 1,
     description: 'Al usarlo añade 2 p. de combo a tu objetivo. Tienes que añadir o utilizar los puntos de combo en 20 sec o se perderán.',
     row: 6,
@@ -618,7 +618,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Burlar a la muerte',
-    icon: 'ability_rogue_cheatdeath',
+    icon: 'ability-rogue-cheatdeath',
     maxRank: 3,
     description: 'Tienes un 100% de probabilidad de que cualquier ataque capaz de acabar con tu vida te reduzca en su lugar a un 10% de tu salud máxima. Además, cualquier daño recibido se reducirá hasta un 90% durante 3 sec (modificado por el temple). Este efecto solo ocurre una vez por minuto.',
     row: 6,
@@ -626,7 +626,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Llamada siniestra',
-    icon: 'ability_rogue_sinistercalling',
+    icon: 'ability-rogue-sinistercalling',
     maxRank: 5,
     description: 'Aumenta tu agilidad total un 15% y aumenta el porcentaje de bonus de daño de Puñalada y de Hemorragia un 10% adicional.',
     row: 7,
@@ -635,7 +635,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Acecho',
-    icon: 'ability_rogue_waylay',
+    icon: 'ability-rogue-waylay',
     maxRank: 2,
     description: 'Los golpes que asestes con Emboscada y con Puñalada tienen un 100% de probabilidad de desequilibrar a un objetivo, aumentar el tiempo entre sus ataques cuerpo a cuerpo y a distancia un 20% y reducir su velocidad de movimiento un 50% durante 8 sec.',
     row: 7,
@@ -643,7 +643,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Honor entre ladrones',
-    icon: 'ability_rogue_honoramongstthieves',
+    icon: 'ability-rogue-honoramongstthieves',
     maxRank: 3,
     description: 'Cuando alguien de tu grupo asesta un golpe crítico con una facultad o hechizo de daño o de sanación, tienes un 100% de probabilidad de ganar un punto de combo en tu objetivo actual. Este efecto no puede tener lugar más de una vez cada segundo.',
     row: 8,
@@ -651,7 +651,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Paso de las Sombras',
-    icon: 'ability_rogue_shadowstep',
+    icon: 'ability-rogue-shadowstep',
     maxRank: 1,
     description: 'Intenta dar un paso en las sombras y reaparecer detrás de tu enemigo y aumenta la velocidad de movimiento un 70% durante 3 sec. El daño de tu siguiente facultad aumenta un 20% y la amenaza generada se reduce un 50%. Dura 10 sec.',
     row: 8,
@@ -659,7 +659,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Artimañas',
-    icon: 'ability_rogue_wrongfullyaccused',
+    icon: 'ability-rogue-wrongfullyaccused',
     maxRank: 2,
     description: 'Reduce 10 s el tiempo de reutilización y 10 p. el coste de energía de tus facultades Secretos del oficio, Distraer y Paso de las Sombras y reduce 3 min. el tiempo de reutilización de Preparación.',
     row: 8,
@@ -667,7 +667,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Matanza desde las Sombras',
-    icon: 'ability_rogue_slaughterfromtheshadows',
+    icon: 'ability-rogue-slaughter-from-the-shadows',
     maxRank: 5,
     description: 'Reduce el coste de energía de tus facultades Puñalada y Emboscada 20 p. y el coste de energía de tu Hemorragia 5 p., y aumenta todo el daño infligido un 5%.',
     row: 9,
@@ -675,7 +675,7 @@ export const rogueSutilezaTalents: WowTalent[] = [
   },
   {
     name: 'Danza de las Sombras',
-    icon: 'ability_rogue_shadowdance',
+    icon: 'ability-rogue-shadowdance',
     maxRank: 1,
     description: 'Entras en la Danza de las Sombras durante 6 sec, que permite el uso de las facultades Porrazo, Garrote, Emboscada, Golpe bajo, Premeditación, Robar y Desactivar trampa aunque no estés en sigilo.',
     row: 10,

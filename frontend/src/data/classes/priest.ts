@@ -10,7 +10,7 @@ export const priest: WowClass = {
   specs: [
     {
       slug: 'disciplina',
-      icon: 'priest-disciplina',
+      icon: 'priest-discipline',
       name: 'Disciplina',
       role: 'Healer',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -18,7 +18,7 @@ export const priest: WowClass = {
     },
     {
       slug: 'sagrado',
-      icon: 'priest-sagrado',
+      icon: 'priest-holy',
       name: 'Sagrado',
       role: 'Healer',
       badges: [{ label: 'No recomendado pero viable', tone: 'situational' }],
@@ -26,7 +26,7 @@ export const priest: WowClass = {
     },
     {
       slug: 'sombra',
-      icon: 'priest-sombra',
+      icon: 'priest-shadow',
       name: 'Sombra',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],

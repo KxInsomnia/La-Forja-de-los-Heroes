@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const priestDisciplinaTalents: WowTalent[] = [
   {
     name: 'Voluntad inquebrantable',
-    icon: 'spell_magic_magearmor',
+    icon: 'spell-magic-mage-armor',
     maxRank: 5,
     description: 'Reduce la duración de los efectos de aturdimiento, miedo y silencio sobre ti un 30% extra.',
     row: 0,
@@ -11,7 +11,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Disciplinas gemelas',
-    icon: 'spell_holy_sealofvengeance',
+    icon: 'spell-holy-seal-of-vengeance',
     maxRank: 5,
     description: 'Aumenta el daño y la sanación infligidos por tus hechizos instantáneos un 5%.',
     row: 0,
@@ -19,7 +19,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Resolución silenciosa',
-    icon: 'spell_nature_manaregentotem',
+    icon: 'spell-nature-manaregen-totem',
     maxRank: 3,
     description: 'Reduce la amenaza generada por tus hechizos Sagrados y de Disciplina un 20% y reduce la probabilidad de que tus hechizos de ayuda y tus efectos de daño en el tiempo sean disipados un 30%.',
     row: 1,
@@ -27,7 +27,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Fuego interno mejorado',
-    icon: 'spell_holy_innerfire',
+    icon: 'spell-holy-inner-fire',
     maxRank: 3,
     description: 'Aumenta el efecto de tu hechizo Fuego interno un 45% y aumenta el número total de cargas hasta 12.',
     row: 1,
@@ -35,7 +35,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Palabra de poder mejorada: entereza',
-    icon: 'spell_holy_wordfortitude',
+    icon: 'spell-holy-wordfortitude',
     maxRank: 2,
     description: 'Aumenta un 30% el efecto de tus hechizos Palabra de poder: Entereza y Rezo de entereza y aumenta tu aguante total un 4%.',
     row: 1,
@@ -43,7 +43,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Martirio',
-    icon: 'spell_nature_tranquility',
+    icon: 'spell-nature-tranquility',
     maxRank: 2,
     description: 'Te da un 100% de probabilidad de ganar el efecto de Lanzamiento enfocado que dura 6 sec después de ser víctima de un golpe crítico cuerpo a cuerpo o a distancia. El efecto de Lanzamiento enfocado reduce el retroceso sufrido por los ataques dañinos mientras lanzas hechizos de sacerdote y disminuye la duración de los efectos de interrupción un 20%.',
     row: 1,
@@ -51,7 +51,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Meditación',
-    icon: 'spell_nature_sleep',
+    icon: 'spell-nature-sleep',
     maxRank: 3,
     description: 'Permite que un 50% de la regeneración de maná continúe mientras lanzas hechizos.',
     row: 2,
@@ -59,7 +59,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque interno',
-    icon: 'spell_frost_windwalkon',
+    icon: 'spell-frost-windwalkon',
     maxRank: 1,
     description: 'Cuando se activa, reduce un 100% el coste de maná de tu próximo hechizo y aumenta la probabilidad de efecto crítico un 25% si el hechizo lo permite.',
     row: 2,
@@ -67,7 +67,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Palabra de poder mejorada: escudo',
-    icon: 'spell_holy_powerwordshield',
+    icon: 'spell-holy-powerword-shield',
     maxRank: 3,
     description: 'Aumenta la absorción de daño de tu Palabra de poder: escudo un 15%.',
     row: 2,
@@ -75,7 +75,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Absolución',
-    icon: 'spell_holy_absolution',
+    icon: 'spell-holy-absolution',
     maxRank: 3,
     description: 'Reduce el coste de maná de tus hechizos Disipar magia, Curar enfermedad, Suprimir enfermedad y Disipación en masa un 15%.',
     row: 3,
@@ -83,7 +83,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Agilidad mental',
-    icon: 'ability_hibernation',
+    icon: 'ability-hibernation',
     maxRank: 3,
     description: 'Reduce el coste de maná de tus hechizos instantáneos un 10%.',
     row: 3,
@@ -91,7 +91,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Quemadura de maná mejorada',
-    icon: 'spell_shadow_manaburn',
+    icon: 'spell-shadow-manaburn',
     maxRank: 2,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Quemar maná 1 s.',
     row: 3,
@@ -99,7 +99,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Escudo reflectante',
-    icon: 'spell_holy_powerwordshield',
+    icon: 'spell-holy-powerword-shield',
     maxRank: 2,
     description: 'Reflecta el 45% del daño que amortiguas con tu Palabra de poder: escudo hacia el atacante. Este daño no causa amenaza.',
     row: 4,
@@ -107,7 +107,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Fuerza mental',
-    icon: 'spell_nature_enchantarmor',
+    icon: 'spell-nature-enchant-armor',
     maxRank: 5,
     description: 'Aumenta tu intelecto total un 15%.',
     row: 4,
@@ -115,7 +115,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Amparo de alma',
-    icon: 'spell_holy_pureofheart',
+    icon: 'spell-holy-pure-of-heart',
     maxRank: 1,
     description: 'Reduce el tiempo de reutilización de tu facultad Palabra de poder: escudo un 4 s, y reduce el coste de maná de tu Palabra de poder: escudo un 15%.',
     row: 4,
@@ -124,7 +124,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Poder enfocado',
-    icon: 'spell_shadow_focusedpower',
+    icon: 'spell-shadow-focusedpower',
     maxRank: 2,
     description: 'Aumenta el daño y sanación de tus hechizos un 4%. Además, el tiempo de lanzamiento de tu Disipación en masa se reduce 1 s.',
     row: 5,
@@ -132,7 +132,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Esclarecimiento',
-    icon: 'spell_arcane_mindmastery',
+    icon: 'spell-arcane-mindmastery',
     maxRank: 3,
     description: 'Aumenta tu espíritu total un 6% y aumenta tu celeridad con hechizos un 6%.',
     row: 5,
@@ -140,7 +140,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Voluntad centrada',
-    icon: 'spell_arcane_focusedpower',
+    icon: 'spell-arcane-focusedpower',
     maxRank: 3,
     description: 'Aumenta la probabilidad del efecto crítico de tus hechizos un 3% y tras recibir un golpe crítico, ganas el efecto de Voluntad centrada, reduciendo todo el daño recibido un 4% y aumentando los efectos de sanación sobre ti un 5%. Se acumula hasta 3 veces. Dura 8 sec.',
     row: 6,
@@ -148,7 +148,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Infusión de poder',
-    icon: 'spell_holy_powerinfusion',
+    icon: 'spell-holy-powerinfusion',
     maxRank: 1,
     description: 'Imbuye energía al objetivo, lo que aumenta su velocidad de lanzamiento de hechizos un 20% y reduce el coste de maná de todos los hechizos un 20%. Dura 15 sec.',
     row: 6,
@@ -157,7 +157,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Sanación relámpago mejorada',
-    icon: 'spell_holy_chastise',
+    icon: 'spell-holy-chastise',
     maxRank: 3,
     description: 'Reduce el coste de maná de tu Sanación relámpago un 15% y aumenta la probabilidad de efecto crítico de tu Sanación relámpago un 10% sobre los objetivos amistosos con salud igual o menor del 50%.',
     row: 6,
@@ -165,7 +165,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Esperanza renovada',
-    icon: 'spell_holy_holyprotection',
+    icon: 'spell-holy-holyprotection',
     maxRank: 2,
     description: 'Aumenta la probabilidad de efecto crítico de tus hechizos Sanación relámpago, Sanación superior y Penitencia (Sanación) un 4% sobre los objetivos afectados por el efecto Alma debilitada y tienes un 100% de probabilidad de reducir todo el daño recibido un 3% durante 1 min de todos los objetivos amistosos del grupo o banda cuando lanzas Palabra de poder: escudo. Este efecto tiene un tiempo de reutilización de 2 s.',
     row: 7,
@@ -173,7 +173,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Éxtasis',
-    icon: 'spell_holy_rapture',
+    icon: 'spell-holy-rapture',
     maxRank: 3,
     description: 'Cuando se absorbe o disipa completamente tu Palabra de poder: escudo, te energizas al instante con un 2,5% de tu maná total y tienes un 100% de probabilidad de energizar al objetivo escudado con un 2% del maná total, 8 p. de ira, 16 p. de energía o 32 p. de poder rúnico. Este efecto solo puede ocurrir una vez cada 12 sec.',
     row: 7,
@@ -181,7 +181,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Aspiración',
-    icon: 'spell_holy_aspiration',
+    icon: 'spell-holy-aspiration',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tus hechizos Enfoque interno, Infusión de poder, Supresión de dolor y Penitencia un 20%.',
     row: 7,
@@ -189,7 +189,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Égida divina',
-    icon: 'spell_holy_devineaegis',
+    icon: 'spell-holy-devineaegis',
     maxRank: 3,
     description: 'Las sanaciones críticas crean un escudo protector sobre el objetivo, que absorbe el 30% de la cantidad sanada. Dura 12 sec.',
     row: 8,
@@ -197,7 +197,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Supresión de dolor',
-    icon: 'spell_holy_painsupression',
+    icon: 'spell-holy-painsupression',
     maxRank: 1,
     description: 'Reduce instantáneamente la amenaza de un objetivo amigo un 5%, reduce todo el daño recibido un 40% y aumenta la resistencia a la disipación un 65% durante 8 sec.',
     row: 8,
@@ -205,7 +205,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Gracia',
-    icon: 'spell_holy_hopeandgrace',
+    icon: 'spell-holy-hopeandgrace',
     maxRank: 2,
     description: 'Tus hechizos Sanación relámpago, Sanación superior y Penitencia tienen un 100% de probabilidad de bendecir al objetivo con Gracia, que aumenta toda la sanación recibida del sacerdote un 3%. Este efecto se acumula hasta 3 veces. El efecto dura 15 sec. Gracia solo puede activarse en un objetivo a la vez.',
     row: 8,
@@ -213,7 +213,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Tiempo prestado',
-    icon: 'spell_holy_borrowedtime',
+    icon: 'spell-holy-borrowedtime',
     maxRank: 5,
     description: 'Otorga un 25% de celeridad con hechizos de tu siguiente hechizo tras lanzar tu Palabra de poder: escudo y aumenta la cantidad absorbida por tu Palabra de poder: escudo igual al 40% de tu poder con hechizos.',
     row: 9,
@@ -221,7 +221,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
   },
   {
     name: 'Penitencia',
-    icon: 'spell_holy_penance',
+    icon: 'spell-holy-penance',
     maxRank: 1,
     description: 'Lanza una salva de luz Sagrada al objetivo, inflige 240 p. de daño Sagrado a un enemigo, o 670 to 756 p. de sanación a un aliado de forma instantánea y cada 1 s durante 2 sec.',
     row: 10,
@@ -232,7 +232,7 @@ export const priestDisciplinaTalents: WowTalent[] = [
 export const priestSagradoTalents: WowTalent[] = [
   {
     name: 'Enfoque de sanación',
-    icon: 'spell_holy_healingfocus',
+    icon: 'spell-holy-healingfocus',
     maxRank: 2,
     description: 'Reduce el retroceso sufrido por los ataques dañinos mientras lanzas cualquier hechizo de sanación un 70%.',
     row: 0,
@@ -240,7 +240,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Renovar mejorado',
-    icon: 'spell_holy_renew',
+    icon: 'spell-holy-renew',
     maxRank: 3,
     description: 'Aumenta la cantidad sanada por tu hechizo Renovar un 15%.',
     row: 0,
@@ -248,7 +248,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Especialización Sagrada',
-    icon: 'spell_holy_sealofsalvation',
+    icon: 'spell-holy-seal-of-salvation',
     maxRank: 5,
     description: 'Aumenta un 5% la probabilidad de efecto crítico de tus hechizos Sagrados.',
     row: 0,
@@ -256,7 +256,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Amparo de hechizos',
-    icon: 'spell_holy_spellwarding',
+    icon: 'spell-holy-spellwarding',
     maxRank: 5,
     description: 'Reduce el daño con hechizos recibido un 10%.',
     row: 1,
@@ -264,7 +264,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Furia divina',
-    icon: 'spell_holy_sealofwrath',
+    icon: 'spell-holy-seal-of-wrath',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tus hechizos Punición, Fuego Sagrado, Sanar y Sanación superior 0.5 s.',
     row: 1,
@@ -272,7 +272,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Rezo desesperado',
-    icon: 'spell_holy_restoration',
+    icon: 'spell-holy-restoration',
     maxRank: 1,
     description: 'Sana instantáneamente al taumaturgo 263 to 325 p.',
     row: 2,
@@ -280,7 +280,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Recuperación bendita',
-    icon: 'spell_holy_blessedrecovery',
+    icon: 'spell-holy-blessedrecovery',
     maxRank: 3,
     description: 'Tras haber recibido un golpe crítico cuerpo a cuerpo o a distancia, Recuperación bendita te sana un 15% del daño recibido durante 6 sec. Los golpes críticos extra recibidos durante el efecto aumentan la sanación recibida.',
     row: 2,
@@ -288,7 +288,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Inspiración',
-    icon: 'spell_holy_layonhands',
+    icon: 'spell-holy-lay-on-hands',
     maxRank: 3,
     description: 'Reduce el daño físico recibido de tu objetivo un 10% durante 15 sec después de recibir un efecto crítico de tus hechizos Sanación relámpago, Sanación, Sanación superior, Sanación conjunta, Penitencia, Rezo de alivio, Rezo de sanación o Círculo de sanación.',
     row: 2,
@@ -296,7 +296,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Alcance Sagrado',
-    icon: 'spell_holy_purify',
+    icon: 'spell-holy-purify',
     maxRank: 2,
     description: 'Aumenta un 20% el alcance de tu hechizo Punición y Fuego Sagrado, así como el radio de tu Rezo de sanación, Nova Sagrada, Himno divino y Círculo de sanación.',
     row: 3,
@@ -304,7 +304,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Sanación mejorada',
-    icon: 'spell_holy_heal02',
+    icon: 'spell-holy-heal-02',
     maxRank: 3,
     description: 'Reduce el coste de maná de tus hechizos Sanación inferior, Sanar, Sanación superior, Himno divino y Penitencia un 15%.',
     row: 3,
@@ -312,7 +312,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Luz abrasadora',
-    icon: 'spell_holy_searinglightpriest',
+    icon: 'spell-holy-searinglight-priest',
     maxRank: 2,
     description: 'Aumenta un 10% el daño infligido con tus hechizos Punición, Fuego Sagrado, Nova Sagrada y Penitencia.',
     row: 3,
@@ -321,7 +321,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Rezos de sanación',
-    icon: 'spell_holy_prayerofhealing02',
+    icon: 'spell-holy-prayer-of-healing-02',
     maxRank: 2,
     description: 'Reduce el coste de maná de tus hechizos Rezo de sanación y Rezo de alivio un 20%.',
     row: 4,
@@ -329,7 +329,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Espíritu redentor',
-    icon: 'inv_enchant_essenceeternallarge',
+    icon: 'inv-enchant-essenceeternallarge',
     maxRank: 1,
     description: 'Aumenta el espíritu total un 5% y al morir, el sacerdote se convierte en el Espíritu redentor durante 15 sec. No se puede mover ni atacar, ni recibir ataques de ningún hechizo o efecto. Puede lanzar hechizos de sanación sin coste. El sacerdote muere al terminar el efecto.',
     row: 4,
@@ -337,7 +337,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Guía espiritual',
-    icon: 'spell_holy_spiritualguidence',
+    icon: 'spell-holy-spiritualguidence',
     maxRank: 5,
     description: 'Aumenta el poder con hechizos hasta un 25% de tu espíritu total.',
     row: 4,
@@ -345,7 +345,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Oleada de luz',
-    icon: 'spell_holy_surgeoflight',
+    icon: 'spell-holy-surge-of-light',
     maxRank: 2,
     description: 'Tus hechizos con resultado crítico tienen un 50% de probabilidad de que el siguiente hechizo Punición o Sanación relámpago sean instantáneos y no consuman maná, aunque no conseguirán un golpe crítico. El efecto dura 10 sec.',
     row: 5,
@@ -353,7 +353,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Sanación espiritual',
-    icon: 'spell_nature_moonglow',
+    icon: 'spell-nature-moonglow',
     maxRank: 5,
     description: 'Aumenta la cantidad sanada por tus hechizos de sanación un 10%.',
     row: 5,
@@ -361,7 +361,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Concentración Sagrada',
-    icon: 'spell_holy_fanaticism',
+    icon: 'spell-holy-fanaticism',
     maxRank: 3,
     description: 'Tu regeneración de maná de espíritu aumenta un 50% durante 8 sec tras una sanación crítica con Sanación relámpago, Sanación superior, Sanación conjunta o Renovar potenciado.',
     row: 6,
@@ -369,7 +369,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Pozo de Luz',
-    icon: 'spell_holy_summonlightwell',
+    icon: 'spell-holy-summonlightwell',
     maxRank: 1,
     description: 'Crea un Pozo de Luz Sagrado. Los jugadores amistosos pueden hacer clic en el Pozo de Luz para recuperar 801 p. de salud durante 6 sec. Los ataques que se hagan contra ti que sean iguales al 30% de tu salud total cancelarán el efecto. El Pozo de Luz dura 3 min o 10 cargas.',
     row: 6,
@@ -378,7 +378,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Temple bendito',
-    icon: 'spell_holy_blessedresillience',
+    icon: 'spell-holy-blessedresillience',
     maxRank: 3,
     description: 'Aumenta un 3% la efectividad de tus hechizos de sanación y los golpes críticos que recibas tienen un 60% de probabilidad de evitar que recibas un golpe crítico durante 6 sec.',
     row: 6,
@@ -386,7 +386,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Cuerpo y mente',
-    icon: 'spell_holy_symbolofhope',
+    icon: 'spell-holy-symbol-of-hope',
     maxRank: 2,
     description: 'Cuando lanzas Palabra de poder: escudo, aumentas la velocidad de movimiento del objetivo un 60% durante 4 sec, y tienes un 100% de probabilidad cuando lanzas Suprimir enfermedad sobre ti de eliminar también un efecto de veneno además de las enfermedades.',
     row: 7,
@@ -394,7 +394,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Sanación potenciada',
-    icon: 'spell_holy_greaterheal',
+    icon: 'spell-holy-greaterheal',
     maxRank: 5,
     description: 'Tu Sanación superior gana un 40% extra y tu Sanación relámpago y Sanación conjunta ganan un 20% extra del bonus de tus efectos de sanación.',
     row: 7,
@@ -402,7 +402,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Serendipia',
-    icon: 'spell_holy_serendipity',
+    icon: 'spell-holy-serendipity',
     maxRank: 3,
     description: 'Cuando sanas con Sanación conjunta o Sanación relámpago, el tiempo de lanzamiento de tu siguiente Sanación superior o Rezo de sanación se reduce un 12%. Se acumula hasta 3 veces. Dura 20 sec.',
     row: 7,
@@ -410,7 +410,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Renovar potenciado',
-    icon: 'ability_paladin_infusionoflight',
+    icon: 'ability-paladin-infusion-of-light',
     maxRank: 3,
     description: 'Tu hechizo Renovar gana un 15% del bonus de tus efectos de sanación, y también sanará instantáneamente al objetivo un 15% del efecto periódico total.',
     row: 8,
@@ -418,7 +418,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Círculo de sanación',
-    icon: 'spell_holy_circleofrenewal',
+    icon: 'spell-holy-circle-of-renewal',
     maxRank: 1,
     description: 'Sana 347 to 383 p. hasta a Glifo de Círculo de sanación 6 5 miembros del grupo o banda amistosos en un radio de 15 m del objetivo.',
     row: 8,
@@ -426,7 +426,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Prueba de fe',
-    icon: 'spell_holy_testoffaith',
+    icon: 'spell-holy-test-of-faith',
     maxRank: 3,
     description: 'Aumenta un 12% la sanación sobre los objetivos amistosos con salud igual o menor del 50%.',
     row: 8,
@@ -434,7 +434,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Divina providencia',
-    icon: 'spell_holy_divineprovidence',
+    icon: 'spell-holy-divineprovidence',
     maxRank: 5,
     description: 'Aumenta la cantidad de sanación realizada por Círculo de sanación, Sanación conjunta, Nova Sagrada, Rezo de sanación, Himno divino y Rezo de alivio un 10% y reduce un 30% el tiempo de reutilización de tu Rezo de alivio.',
     row: 9,
@@ -442,7 +442,7 @@ export const priestSagradoTalents: WowTalent[] = [
   },
   {
     name: 'Espíritu guardián',
-    icon: 'spell_holy_guardianspirit',
+    icon: 'spell-holy-guardian-spirit',
     maxRank: 1,
     description: 'Invoca un espíritu guardián que vela por el objetivo amistoso. El espíritu aumenta la sanación que recibe el objetivo un 40% y evita que el objetivo muera sacrificándose. Este sacrificio acaba con el efecto pero sana al objetivo un 50% de su salud máxima. Dura 10 sec.',
     row: 10,
@@ -453,7 +453,7 @@ export const priestSagradoTalents: WowTalent[] = [
 export const priestSombraTalents: WowTalent[] = [
   {
     name: 'Transfusión de espíritu',
-    icon: 'spell_shadow_requiem',
+    icon: 'spell-shadow-requiem',
     maxRank: 3,
     description: 'Proporciona un 100% de probabilidad de obtener un 100% de bonus de espíritu tras matar a un objetivo que te aporte experiencia u honor. Mientras dura, el índice de regeneración de tu maná será del 83% mientras lanzas hechizos. Dura 15 sec.',
     row: 0,
@@ -461,7 +461,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Transfusión de espíritu mejorada',
-    icon: 'spell_shadow_requiem',
+    icon: 'spell-shadow-requiem',
     maxRank: 2,
     description: 'Los golpes críticos de tu Explosión mental y Palabra de las Sombras: muerte tienen un 100% de probabilidad y los golpes críticos de tu Tortura mental tienen un 50% de probabilidad de aumentar tu espíritu total un 10%. Mientras dure, tu maná se regenerará en un índice del 33% mientras lanzas hechizos. Dura 8 sec.',
     row: 0,
@@ -470,7 +470,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Oscuridad',
-    icon: 'spell_shadow_twilight',
+    icon: 'spell-shadow-twilight',
     maxRank: 5,
     description: 'Aumenta el daño con tus hechizos de las Sombras un 10%.',
     row: 0,
@@ -478,7 +478,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Afinidad de las Sombras',
-    icon: 'spell_shadow_shadowward',
+    icon: 'spell-shadow-shadow-ward',
     maxRank: 3,
     description: 'Reduce la amenaza generada por tus hechizos de las Sombras un 25% y recibes un 15% de tu maná de base cuando disipan tus hechizos Palabra de las Sombras: dolor o Toque vampírico.',
     row: 1,
@@ -486,7 +486,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Palabra de las Sombras: dolor mejorada',
-    icon: 'spell_shadow_shadowwordpain',
+    icon: 'spell-shadow-shadowwordpain',
     maxRank: 2,
     description: 'Aumenta un 6% el daño de tu hechizo Palabra de las Sombras: dolor.',
     row: 1,
@@ -494,7 +494,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque de las Sombras',
-    icon: 'spell_shadow_burningspirit',
+    icon: 'spell-shadow-burning-spirit',
     maxRank: 3,
     description: 'Aumenta la probabilidad de que golpees con tus hechizos de las Sombras un 3% y reduce el coste de maná de tus hechizos de las Sombras un 6%.',
     row: 1,
@@ -502,7 +502,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Alarido psíquico mejorado',
-    icon: 'spell_shadow_psychicscream',
+    icon: 'spell-shadow-psychicscream',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu hechizo Alarido psíquico 4 s.',
     row: 2,
@@ -510,7 +510,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Explosión mental mejorada',
-    icon: 'spell_shadow_unholyfrenzy',
+    icon: 'spell-shadow-unholyfrenzy',
     maxRank: 5,
     description: 'Reduce el tiempo de reutilización de tu hechizo Explosión mental 2.5 s y con Forma de las Sombras tu Explosión mental también tiene un 100% de probabilidad de reducir todas las sanaciones realizadas al objetivo un 20% durante 10 sec.',
     row: 2,
@@ -518,7 +518,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Tortura mental',
-    icon: 'spell_shadow_siphonmana',
+    icon: 'spell-shadow-siphonmana',
     maxRank: 1,
     description: 'Ofusca la mente del objetivo con energía de las Sombras, lo que le inflige 45 p. de daño de las Sombras durante 3 sec y ralentiza su velocidad de movimiento un 50%.',
     row: 2,
@@ -526,7 +526,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Sombras veladas',
-    icon: 'spell_magic_lesserinvisibilty',
+    icon: 'spell-magic-lesserinvisibilty',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu facultad Desvanecerse 6 s. y el de tu facultad Maligno de las Sombras 2 min.',
     row: 3,
@@ -534,7 +534,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Alcance de las Sombras',
-    icon: 'spell_shadow_chilltouch',
+    icon: 'spell-shadow-chill-touch',
     maxRank: 2,
     description: 'Aumenta un 20% el alcance de tus hechizos ofensivos de las Sombras.',
     row: 3,
@@ -542,7 +542,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Tejido de las Sombras',
-    icon: 'spell_shadow_blackplague',
+    icon: 'spell-shadow-blackplague',
     maxRank: 3,
     description: 'Tus hechizos de daño de las Sombras tienen un 100% de probabilidad de aumentar el daño de las Sombras que infliges un 2% durante 15 sec. Se acumula hasta 5 veces.',
     row: 3,
@@ -550,7 +550,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Silencio',
-    icon: 'spell_shadow_impphaseshift',
+    icon: 'spell-shadow-impphaseshift',
     maxRank: 1,
     description: 'Silencia al objetivo impidiendo que lance hechizos durante 5 sec. El lanzamiento de hechizos de las víctimas no-jugadoras también se interrumpirá durante 3 sec.',
     row: 4,
@@ -559,7 +559,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Abrazo vampírico',
-    icon: 'spell_shadow_unsummonbuilding',
+    icon: 'spell-shadow-unsummonbuilding',
     maxRank: 1,
     description: 'Te llena con el abrazo de energía de las Sombras que provoca que te sanes un 15% y que otros miembros del grupo se sanen un 3% de cualquier daño con hechizos de las Sombras que inflijas a un objetivo durante 30 min.',
     row: 4,
@@ -567,7 +567,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Abrazo vampírico mejorado',
-    icon: 'spell_shadow_improvedvampiricembrace',
+    icon: 'spell-shadow-improvedvampiricembrace',
     maxRank: 2,
     description: 'Aumenta un 67% la sanación recibida mediante Abrazo vampírico.',
     row: 4,
@@ -576,7 +576,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Mente centrada',
-    icon: 'spell_nature_focusedmind',
+    icon: 'spell-nature-focusedmind',
     maxRank: 3,
     description: 'Reduce el coste de maná de tu Explosión mental, Control mental, Tortura mental y Abrasamiento mental un 15%.',
     row: 4,
@@ -584,7 +584,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Fundir mente',
-    icon: 'spell_shadow_skull',
+    icon: 'spell-shadow-skull',
     maxRank: 2,
     description: 'Aumenta la probabilidad de golpe crítico de Explosión mental, Tortura mental y Abrasamiento mental un 4% y aumenta la probabilidad de golpe crítico periódico de tus hechizos Toque Vampírico, Peste devoradora y Palabra de las Sombras: dolor un 6%.',
     row: 5,
@@ -592,7 +592,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Peste devoradora mejorada',
-    icon: 'spell_shadow_devouringplague',
+    icon: 'spell-shadow-devouringplague',
     maxRank: 3,
     description: 'Aumenta el daño periódico infligido por tu Peste devoradora un 15% y cuando lanzas Peste Devoradora infliges al instante daño igual al 30% de su efecto periódico total.',
     row: 5,
@@ -600,7 +600,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Forma de las Sombras',
-    icon: 'spell_shadow_shadowform',
+    icon: 'spell-shadow-shadow-form',
     maxRank: 1,
     description: 'Adoptas la forma de las Sombras, aumentando el daño de las Sombras que infliges un 15% y reduciendo todo el daño recibido un 15% y la amenaza generada un 30%. Sin embargo, no puedes lanzar hechizos Sagrados mientras estés en esta forma excepto Curar enfermedad y Suprimir enfermedad. Otorga al daño periódico de tus hechizos Palabra de las Sombras: dolor, Peste devoradora y Toque vampírico la facultad de asestar un golpe crítico que inflija un 100% de daño aumentado y hace que Peste devoradora y Toque vampírico se beneficien de celeridad.',
     row: 6,
@@ -609,7 +609,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Poder de las Sombras',
-    icon: 'spell_shadow_shadowpower',
+    icon: 'spell-shadow-shadowpower',
     maxRank: 5,
     description: 'Aumenta el bonus de daño de golpe crítico de tus hechizos Explosión Mental, Tortura mental y Palabra de las Sombras: muerte un 100%.',
     row: 6,
@@ -617,7 +617,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Forma de las Sombras mejorada',
-    icon: 'spell_shadow_summonvoidwalker',
+    icon: 'spell-shadow-summonvoid-walker',
     maxRank: 2,
     description: 'Tu facultad Desvanecer ahora tiene un 100% de probabilidad de eliminar todos los efectos de reducción de movimiento cuando los usas bajo Forma de las Sombras, y reduce el tiempo de lanzamiento o canalización perdido al recibir daño un 70% al lanzar cualquier hechizo de las Sombras mientras estés en Forma de las Sombras.',
     row: 7,
@@ -626,7 +626,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Infortunio',
-    icon: 'spell_shadow_misery',
+    icon: 'spell-shadow-misery',
     maxRank: 3,
     description: 'Tus hechizos Palabra de las Sombras: dolor, Tortura mental y Toque vampírico también aumentan la probabilidad de golpe con hechizos dañinos un 3%, dura 24 sec y aumenta el beneficio del poder con hechizos ganado por tu Explosión mental, Tortura mental y Abrasamiento mental un 15%.',
     row: 7,
@@ -634,7 +634,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Horror psíquico',
-    icon: 'spell_shadow_psychichorrors',
+    icon: 'spell-shadow-psychichorrors',
     maxRank: 1,
     description: 'Aterrorizas al objetivo y provocas que tiemble de horror durante 3 sec y que tire las armas de mano principal y a distancia durante 10 sec.',
     row: 8,
@@ -642,7 +642,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Toque vampírico',
-    icon: 'spell_holy_stoicism',
+    icon: 'spell-holy-stoicism',
     maxRank: 1,
     description: 'Inflige 450 p. de daño de las Sombras durante 15 sec a tu objetivo y provoca que hasta 10 miembros de la banda o grupo ganen un 1% de su maná máximo cada 5 s cuando infliges daño con Explosión mental. Además, si el Toque vampírico se disipa causará 720 p. de daño al objetivo afectado.',
     row: 8,
@@ -651,7 +651,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Dolor y sufrimiento',
-    icon: 'spell_shadow_painandsuffering',
+    icon: 'spell-shadow-painandsuffering',
     maxRank: 3,
     description: 'Tu Tortura mental tiene un 100% de probabilidad de restablecer la duración de tu Palabra de las Sombras: dolor sobre el objetivo y reduce el daño que recibes de tu propia Palabra de las Sombras: muerte un 30%.',
     row: 8,
@@ -659,7 +659,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Fe distorsionada',
-    icon: 'spell_shadow_mindtwisting',
+    icon: 'spell-shadow-mindtwi-sting',
     maxRank: 5,
     description: 'Aumenta tu poder con hechizos un 20% de tu espíritu total y el daño que inflige tu Tortura mental y Explosión mental aumenta un 10% si tu objetivo está afectado por tu Palabra de las Sombras: dolor.',
     row: 9,
@@ -667,7 +667,7 @@ export const priestSombraTalents: WowTalent[] = [
   },
   {
     name: 'Dispersión',
-    icon: 'spell_shadow_dispersion',
+    icon: 'spell-shadow-dispersion',
     maxRank: 1,
     description: 'Te conviertes en energía de las Sombras pura y reduces todo el daño recibido un 90%. No puedes atacar ni lanzar hechizos, pero regeneras un 6% de maná cada 1 s durante 6 sec. Dispersión se puede lanzar mientras estás aturdido, asustado o silenciado, quita todos los efectos de frenado y de reducción del movimiento al lanzarlo y te hace inmune a ellos mientras dura.',
     row: 10,

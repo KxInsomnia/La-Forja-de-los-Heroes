@@ -10,7 +10,7 @@ export const druid: WowClass = {
   specs: [
     {
       slug: 'equilibrio',
-      icon: 'druid-equilibrio',
+      icon: 'druid-balance',
       name: 'Equilibrio',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -34,7 +34,7 @@ export const druid: WowClass = {
     },
     {
       slug: 'restauracion',
-      icon: 'druid-restauracion',
+      icon: 'druid-restoration',
       name: 'Restauración',
       role: 'Healer',
       badges: [{ label: 'Recomendado', tone: 'yes' }],

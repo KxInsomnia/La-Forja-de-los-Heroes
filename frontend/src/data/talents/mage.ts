@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const mageArcanoTalents: WowTalent[] = [
   {
     name: 'Sutileza Arcana',
-    icon: 'spell_holy_dispelmagic',
+    icon: 'spell-holy-dispelmagic',
     maxRank: 2,
     description: 'Reduce la probabilidad de que disipen tus hechizos de ayuda y efectos de daño en el tiempo un 30% y reduce la amenaza causada por tus hechizos Arcanos un 40%.',
     row: 0,
@@ -11,7 +11,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Enfoque Arcano',
-    icon: 'spell_holy_devotion',
+    icon: 'spell-holy-devotion',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpear y reduce el coste de maná de tus hechizos Arcanos un 3%.',
     row: 0,
@@ -19,7 +19,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Estabilidad Arcana',
-    icon: 'spell_nature_starfall',
+    icon: 'spell-nature-starfall',
     maxRank: 5,
     description: 'Reduce el retroceso sufrido de los ataques de daño mientras lanzas Misiles Arcanos y Explosión Arcana un 100%.',
     row: 0,
@@ -27,7 +27,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Entereza Arcana',
-    icon: 'spell_arcane_arcaneresilience',
+    icon: 'spell-arcane-arcaneresilience',
     maxRank: 3,
     description: 'Aumenta tu armadura en un valor equivalente al 150% de tu intelecto.',
     row: 1,
@@ -35,7 +35,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Amortiguación mágica',
-    icon: 'spell_nature_astralrecalgroup',
+    icon: 'spell-nature-astralrecalgroup',
     maxRank: 2,
     description: 'Aumenta todas las resistencias 1 p. por nivel y provoca que todos los hechizos que resistas por completo restauren el 2% del total de tu maná. 1 segundo de tiempo de reutilización.',
     row: 1,
@@ -43,7 +43,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Concentración Arcana',
-    icon: 'spell_shadow_manaburn',
+    icon: 'spell-shadow-manaburn',
     maxRank: 5,
     description: 'Te da un 10% de probabilidad de entrar en estado de Lanzamiento libre después de que cualquier hechizo de daño alcance un objetivo. El estado de Lanzamiento libre reduce el coste de maná de tu próximo hechizo de daño un 100%.',
     row: 1,
@@ -51,7 +51,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Armonización mágica',
-    icon: 'spell_nature_abolishmagic',
+    icon: 'spell-nature-abolishmagic',
     maxRank: 2,
     description: 'Aumenta el alcance de tus hechizos Arcanos 6 m y el efecto de tus hechizos Amplificar magia y Atenuar magia un 50%.',
     row: 2,
@@ -59,7 +59,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Impacto de hechizo',
-    icon: 'spell_nature_wispsplode',
+    icon: 'spell-nature-wispsplode',
     maxRank: 3,
     description: 'Aumenta un 6% extra el daño de tu Deflagración Arcana, Explosión Arcana, Ola explosiva, Explosión de Fuego, Agostar, Bola de Fuego, Lanza de hielo y Cono de frío.',
     row: 2,
@@ -67,7 +67,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Estudiante de la mente',
-    icon: 'ability_mage_studentofthemind',
+    icon: 'ability-mage-student-of-the-mind',
     maxRank: 3,
     description: 'Aumenta tu espíritu total un 10%.',
     row: 2,
@@ -75,7 +75,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Enfocar magia',
-    icon: 'spell_arcane_studentofmagic',
+    icon: 'spell-arcane-student-of-magic',
     maxRank: 1,
     description: 'Aumenta la probabilidad del objetivo de asestar un golpe crítico con hechizos un 3%. Cuando el objetivo asesta un golpe crítico, aumenta la probabilidad del taumaturgo de asestar golpes críticos con hechizos un 3% durante 10 sec. No se puede lanzar sobre sí mismo.',
     row: 2,
@@ -83,7 +83,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Protección Arcana',
-    icon: 'spell_shadow_detectlesserinvisibility',
+    icon: 'spell-shadow-detectlesserinvisibility',
     maxRank: 2,
     description: 'Reduce la pérdida de maná por punto de daño recibido cuando el Escudo de maná está activo un 33% y aumenta la resistencia otorgada por Armadura de mago un 50%.',
     row: 3,
@@ -91,7 +91,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Contrahechizo mejorado',
-    icon: 'spell_frost_iceshock',
+    icon: 'spell-frost-iceshock',
     maxRank: 2,
     description: 'Tu contrahechizo también silenciará al objetivo durante 4 sec.',
     row: 3,
@@ -99,7 +99,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Meditación Arcana',
-    icon: 'spell_shadow_siphonmana',
+    icon: 'spell-shadow-siphonmana',
     maxRank: 3,
     description: 'Permite que un 50% de la regeneración de maná continúe mientras lanzas hechizos.',
     row: 3,
@@ -107,7 +107,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Torturar a los débiles',
-    icon: 'ability_mage_tormentoftheweak',
+    icon: 'ability-mage-torment-of-the-weak',
     maxRank: 3,
     description: 'Tus facultades Descarga de Escarcha, Bola de Fuego, Descarga de Pirofrío, Piroexplosión, Misiles Arcanos, Explosión Arcana y Tromba Arcana infligen un 12% más de daño sobre los objetivos frenados o ralentizados.',
     row: 3,
@@ -115,7 +115,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Traslación mejorada',
-    icon: 'spell_arcane_blink',
+    icon: 'spell-arcane-blink',
     maxRank: 2,
     description: 'Reduce el coste de maná de Traslación un 50% y durante 4 sec después de lanzarlo se reduce la probabilidad de que te alcancen todos los ataques y hechizos un 30%.',
     row: 4,
@@ -123,7 +123,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Presencia mental',
-    icon: 'spell_nature_enchantarmor',
+    icon: 'spell-nature-enchant-armor',
     maxRank: 1,
     description: 'Cuando se activa, tu próximo hechizo de mago con un tiempo de lanzamiento inferior a 10 s se convertirá en un hechizo de lanzamiento instantáneo.',
     row: 4,
@@ -131,7 +131,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Mente Arcana',
-    icon: 'spell_shadow_charm',
+    icon: 'spell-shadow-charm',
     maxRank: 5,
     description: 'Aumenta tu intelecto total un 15%.',
     row: 4,
@@ -139,7 +139,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Capa centelleante',
-    icon: 'spell_arcane_prismaticcloak',
+    icon: 'spell-arcane-prismaticcloak',
     maxRank: 3,
     description: 'Reduce el daño recibido un 6% y reduce el tiempo de desvanecimiento de tu Invisibilidad 3 s.',
     row: 5,
@@ -147,7 +147,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Inestabilidad Arcana',
-    icon: 'spell_shadow_teleport',
+    icon: 'spell-shadow-teleport',
     maxRank: 3,
     description: 'Aumenta el daño infligido con tus hechizos y la probabilidad de conseguir un golpe crítico un 3%.',
     row: 5,
@@ -156,7 +156,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Potencia Arcana',
-    icon: 'spell_arcane_arcanepotency',
+    icon: 'spell-arcane-arcanepotency',
     maxRank: 2,
     description: 'Aumenta la probabilidad de golpe crítico de tu siguiente hechizo dañino un 30% tras ganar Lanzamiento libre o Presencia mental.',
     row: 5,
@@ -165,7 +165,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Potenciación Arcana',
-    icon: 'spell_nature_starfall',
+    icon: 'spell-nature-starfall',
     maxRank: 3,
     description: 'Aumenta el daño infligido por tu hechizo Misiles Arcanos en una cantidad igual al 45% de tu poder con hechizos y el daño de tu Explosión Arcana un 9% de tu poder con hechizos. Además, aumenta el daño de todos los miembros del grupo y de la banda que se encuentren en un radio de 100 m en un 3%.',
     row: 6,
@@ -173,7 +173,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Poder Arcano',
-    icon: 'spell_nature_lightning',
+    icon: 'spell-nature-lightning',
     maxRank: 1,
     description: 'Cuando se activa, tus hechizos causarán un 20% más de daño y el coste de maná aumentará un 20%. Dura 15 sec.',
     row: 6,
@@ -182,7 +182,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Absorción de encantador',
-    icon: 'ability_mage_incantersabsorbtion',
+    icon: 'ability-mage-incantersabsorbtion',
     maxRank: 3,
     description: 'Cuando tu Escudo de maná, Resguardo contra la Escarcha, Resguardo contra el Fuego o Barrera de hielo absorben daño, tu daño con hechizos aumenta un 15% de la cantidad absorbida durante 10 sec.',
     row: 6,
@@ -190,7 +190,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Corrientes Arcanas',
-    icon: 'ability_mage_potentspirit',
+    icon: 'ability-mage-potent-spirit',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tus hechizos Presencia mental, Poder Arcano e Invisibilidad un 30% y el tiempo de reutilización de tu hechizo Evocación 2 min.',
     row: 7,
@@ -199,7 +199,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Maestría mental',
-    icon: 'spell_arcane_mindmastery',
+    icon: 'spell-arcane-mindmastery',
     maxRank: 5,
     description: 'Aumenta el poder con hechizos hasta un 15% de tu intelecto total.',
     row: 7,
@@ -207,7 +207,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Ralentizar',
-    icon: 'spell_nature_slow',
+    icon: 'spell-nature-slow',
     maxRank: 1,
     description: 'Reduce la velocidad de movimiento del objetivo un 60%, aumenta el tiempo entre los ataques a distancia un 60% y aumenta el tiempo de lanzamiento un 30%. Dura 15 sec. Ralentizar solo puede estar activo en un único objetivo a la vez.',
     row: 8,
@@ -215,7 +215,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Tromba de misiles',
-    icon: 'ability_mage_missilebarrage',
+    icon: 'ability-mage-missilebar-rage',
     maxRank: 5,
     description: 'Da a tu Explosión Arcana un 40% de probabilidad, y a tu Tromba Arcana, Bola de Fuego, Descarga de Escarcha y Descarga de Pirofrío un 20% de probabilidad de reducir la duración canalizada de tus siguientes Misiles Arcanos 2.5 s, reduce el coste de maná un 100% y se dispararán misiles cada 0,5 s.',
     row: 8,
@@ -223,7 +223,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Presencia viento abisal',
-    icon: 'ability_mage_netherwindpresence',
+    icon: 'ability-mage-netherwindpresence',
     maxRank: 3,
     description: 'Aumenta tu celeridad con hechizos un 6%.',
     row: 9,
@@ -231,7 +231,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Poder con hechizos',
-    icon: 'spell_arcane_arcanetorrent',
+    icon: 'spell-arcane-arcanetorrent',
     maxRank: 2,
     description: 'Aumenta el bonus de daño de golpe crítico de todos los hechizos un 50%.',
     row: 9,
@@ -239,7 +239,7 @@ export const mageArcanoTalents: WowTalent[] = [
   },
   {
     name: 'Tromba Arcana',
-    icon: 'ability_mage_arcanebarrage',
+    icon: 'ability-mage-arcanebar-rage',
     maxRank: 1,
     description: 'Lanza varios misiles al objetivo enemigo, infligiéndole 401 to 485 p. de daño Arcano.',
     row: 10,
@@ -250,7 +250,7 @@ export const mageArcanoTalents: WowTalent[] = [
 export const mageFuegoTalents: WowTalent[] = [
   {
     name: 'Explosión de Fuego mejorada',
-    icon: 'spell_fire_fireball',
+    icon: 'spell-fire-fire-ball',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu hechizo Explosión de Fuego 2 s.',
     row: 0,
@@ -258,7 +258,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Incineración',
-    icon: 'spell_fire_flameshock',
+    icon: 'spell-fire-flameshock',
     maxRank: 3,
     description: 'Aumenta la probabilidad de golpe crítico de tus hechizos Explosión de Fuego, Agostar, Explosión Arcana y Cono de frío un 6%.',
     row: 0,
@@ -266,7 +266,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Bola de Fuego mejorada',
-    icon: 'spell_fire_flamebolt',
+    icon: 'spell-fire-flame-bolt',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Bola de Fuego 0.5 s.',
     row: 0,
@@ -274,7 +274,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Ignición',
-    icon: 'spell_fire_incinerate',
+    icon: 'spell-fire-incinerate',
     maxRank: 5,
     description: 'Tus golpes críticos de hechizos de daño de Fuego hacen que el objetivo arda un 40% extra del daño del hechizo durante 4 sec.',
     row: 1,
@@ -282,7 +282,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Determinación ardiente',
-    icon: 'spell_fire_totemofwrath',
+    icon: 'spell-fire-totem-of-wrath',
     maxRank: 2,
     description: 'Al ser interrumpido o silenciado tienes un 100% de probabilidad de hacerte inmune a la siguiente mecánica de interrupción o de silencio. Dura 20 sec.',
     row: 1,
@@ -290,7 +290,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Mundo en llamas',
-    icon: 'ability_mage_worldinflames',
+    icon: 'ability-mage-worldinflames',
     maxRank: 3,
     description: 'Aumenta un 6% la probabilidad de golpe crítico de tu hechizo Piroexplosión, Fogonazo, Ola explosiva, Aliento de dragón, Bomba viva, Ventisca y Deflagración Arcana.',
     row: 1,
@@ -298,7 +298,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Lanzar llamas',
-    icon: 'spell_fire_flare',
+    icon: 'spell-fire-flare',
     maxRank: 2,
     description: 'Aumenta 6 m el alcance de todos tus hechizos de Fuego excepto Descarga de Pirofrío.',
     row: 2,
@@ -306,7 +306,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Impacto',
-    icon: 'spell_fire_meteorstorm',
+    icon: 'spell-fire-meteor-storm',
     maxRank: 3,
     description: 'Da a tus hechizos dañinos un 10% de probabilidad de que tu próxima Explosión de Fuego aturda al objetivo durante 2 sec.',
     row: 2,
@@ -314,7 +314,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Piroexplosión',
-    icon: 'spell_fire_fireball02',
+    icon: 'spell-fire-fire-ball-02',
     maxRank: 1,
     description: 'Lanza una inmensa roca ígnea que inflige 148 to 195 p. de daño de Fuego y 56 p. de daño de Fuego extra durante 12 sec.',
     row: 2,
@@ -322,7 +322,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Alma ardiente',
-    icon: 'spell_fire_fire',
+    icon: 'spell-fire-fire',
     maxRank: 2,
     description: 'Reduce el retroceso de los ataques dañinos mientras lanzas hechizos de Fuego un 70% y reduce la amenaza causada por tus hechizos de Fuego un 20%.',
     row: 2,
@@ -330,7 +330,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Agostar mejorado',
-    icon: 'spell_fire_soulburn',
+    icon: 'spell-fire-soulburn',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de golpe crítico con Agostar, Bola de Fuego y Descarga de Pirofrío un 3% extra y tus hechizos de daño Agostar tienen un 100% de probabilidad de volver al objetivo vulnerable al daño con hechizos, aumentado la probabilidad de golpe crítico con hechizos frente a ese objetivo un 5% y dura 30 sec.',
     row: 3,
@@ -338,7 +338,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Escudos de arrabio',
-    icon: 'spell_fire_firearmor',
+    icon: 'spell-fire-fire-armor',
     maxRank: 2,
     description: 'Provoca que tus hechizos Resguardo contra el Fuego y Resguardo contra la Escarcha tengan un 30% de probabilidad de reflejar el hechizo resguardado mientras permanecen activos. Además, tu Armadura de arrabio tiene el 100% de probabilidad de afectar los ataques a distancia y de hechizos.',
     row: 3,
@@ -346,7 +346,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Maestro de los elementos',
-    icon: 'spell_fire_masterofelements',
+    icon: 'spell-fire-master-of-elements',
     maxRank: 3,
     description: 'Tus golpes críticos de hechizos te devuelven el 30% de su coste de maná base.',
     row: 3,
@@ -354,7 +354,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Jugando con Fuego',
-    icon: 'spell_fire_playingwithfire',
+    icon: 'spell-fire-playingwith-fire',
     maxRank: 3,
     description: 'Aumenta el daño con hechizos infligido un 3% y el daño con hechizos recibido un 3%.',
     row: 4,
@@ -362,7 +362,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Masa crítica',
-    icon: 'spell_nature_wispheal',
+    icon: 'spell-nature-wispheal',
     maxRank: 3,
     description: 'Aumenta un 6% la probabilidad de golpe crítico de tus hechizos de Fuego.',
     row: 4,
@@ -370,7 +370,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Ola explosiva',
-    icon: 'spell_holy_excorcism_02',
+    icon: 'spell-holy-excorcism-02',
     maxRank: 1,
     description: 'El taumaturgo irradia una ola de llamas que inflige 160 to 192 p. de daño de Fuego a todos los enemigos a los que alcance la ola, los repele y los atonta durante 6 sec.',
     row: 4,
@@ -379,7 +379,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Velocidad llameante',
-    icon: 'spell_fire_burningspeed',
+    icon: 'spell-fire-burningspeed',
     maxRank: 2,
     description: 'Te da un 10% de probabilidad de aumentar tu velocidad de movimiento un 50% y de eliminar todos los efectos de reducción del movimiento al recibir un golpe en un ataque cuerpo a cuerpo o a distancia. El efecto dura 8 sec.',
     row: 5,
@@ -387,7 +387,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Poder de Fuego',
-    icon: 'spell_fire_immolation',
+    icon: 'spell-fire-immolation',
     maxRank: 5,
     description: 'Aumenta un 10% el daño infligido por tus hechizos de Fuego.',
     row: 5,
@@ -395,7 +395,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Pirómano',
-    icon: 'spell_fire_burnout',
+    icon: 'spell-fire-burnout',
     maxRank: 3,
     description: 'Aumenta la probabilidad de golpe crítico un 3% y permite que continúe un 50% de tu regeneración de maná mientras lanzas hechizos.',
     row: 6,
@@ -403,7 +403,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Combustión',
-    icon: 'spell_fire_sealoffire',
+    icon: 'spell-fire-sealof-fire',
     maxRank: 1,
     description: 'Cuando se activa, este hechizo aumenta tu bonus de daño con golpe crítico con hechizos de daño de Fuego un 50%, y provoca que cada uno de tus golpes con hechizos de daño de Fuego aumente tu probabilidad de golpe crítico con hechizos de daño de Fuego un 10%. El efecto dura hasta que asestes 3 golpes críticos no periódicos con hechizos de Fuego.',
     row: 6,
@@ -412,7 +412,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Furia de arrabio',
-    icon: 'spell_fire_moltenblood',
+    icon: 'spell-fire-moltenblood',
     maxRank: 2,
     description: 'Aumenta el daño de todos los hechizos que lances contra objetivos que tengan menos del 35% de salud un 12%.',
     row: 6,
@@ -420,7 +420,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Restitución ígnea',
-    icon: 'ability_mage_fierypayback',
+    icon: 'ability-mage-fierypayback',
     maxRank: 2,
     description: 'Cuando estás por debajo del 35% de salud, todo el daño recibido se reduce un 20% El tiempo de lanzamiento de tu hechizo Piroexplosión se reduce 3.5 s, mientras que el tiempo de reutilización aumenta 5 s. Además, los ataques cuerpo a cuerpo y a distancia que recibas tienen una probabilidad del 10% de desarmar las armas de mano principal y a distancia del atacante.',
     row: 7,
@@ -428,7 +428,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Fuego potenciado',
-    icon: 'spell_fire_flamebolt',
+    icon: 'spell-fire-flame-bolt',
     maxRank: 3,
     description: 'Aumenta el daño de tus hechizos Bola de Fuego, Descarga de Pirofrío y Piroexplosión una cantidad igual al 15% de tu poder con hechizos. Además, cada vez que tu talento Ignición inflige daño, tienes un 100% de probabilidad de recuperar un 2% de tu maná base.',
     row: 7,
@@ -436,7 +436,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Acelerador de ignición',
-    icon: 'ability_mage_firestarter',
+    icon: 'ability-mage-firestarter',
     maxRank: 2,
     description: 'Tus hechizos dañinos Ola explosiva y Aliento de dragón tienen un 100% de probabilidad de provocar que tu siguiente hechizo Fogonazo sea de lanzamiento instantáneo y no cueste maná. Dura 10 sec.',
     row: 8,
@@ -445,7 +445,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Aliento de dragón',
-    icon: 'inv_misc_head_dragon_01',
+    icon: 'inv-misc-head-dragon-01',
     maxRank: 1,
     description: 'Los objetivos situados en un cono frente al taumaturgo reciben 382 to 442 p. de daño de Fuego y quedan desorientados y enraizados durante 5 sec. Cualquier ataque directo que inflija daño reanimará a los objetivos. Desactiva tu ataque cuando se usa.',
     row: 8,
@@ -454,7 +454,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Buena racha',
-    icon: 'ability_mage_hotstreak',
+    icon: 'ability-mage-hotstreak',
     maxRank: 3,
     description: 'Cada vez que asestes 2 golpes críticos con hechizos no periódicos con Bola de Fuego, Explosión de Fuego, Agostar, Bomba viva o Descarga de Pirofrío, tienes un 100% de probabilidad de que el próximo Piroexplosión que lances en 10 sec sea de lanzamiento instantáneo.',
     row: 8,
@@ -462,7 +462,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Consunción',
-    icon: 'ability_mage_burnout',
+    icon: 'ability-mage-burnout',
     maxRank: 5,
     description: 'Aumenta tu bonus de daño crítico con hechizos con todos los hechizos un 50% pero cada golpe crítico no periódico que asestas cuesta un 5% extra del coste de hechizo.',
     row: 9,
@@ -470,7 +470,7 @@ export const mageFuegoTalents: WowTalent[] = [
   },
   {
     name: 'Bomba viva',
-    icon: 'ability_mage_livingbomb',
+    icon: 'ability-mage-livingbomb',
     maxRank: 1,
     description: 'El objetivo se convierte en una bomba viva y recibe 612 p. de daño de Fuego durante 12 sec. Después de 12 sec o cuando se disipa el hechizo el objetivo explota, inflige 306 p. de daño de Fuego a todos los enemigos en un radio de 10 m.',
     row: 10,
@@ -481,7 +481,7 @@ export const mageFuegoTalents: WowTalent[] = [
 export const mageEscarchaTalents: WowTalent[] = [
   {
     name: 'Mordedura de Escarcha',
-    icon: 'spell_frost_frostarmor',
+    icon: 'spell-frost-frost-armor',
     maxRank: 3,
     description: 'Da a tus efectos de enfriamiento un 15% de probabilidad de congelar el objetivo durante 5 sec.',
     row: 0,
@@ -489,7 +489,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Descarga de Escarcha mejorada',
-    icon: 'spell_frost_frostbolt02',
+    icon: 'spell-frost-frost-bolt-02',
     maxRank: 5,
     description: 'Reduce el tiempo de lanzamiento de tu hechizo Descarga de Escarcha 0.5 s.',
     row: 0,
@@ -497,7 +497,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Témpanos de hielo',
-    icon: 'spell_frost_icefloes',
+    icon: 'spell-frost-icefloes',
     maxRank: 3,
     description: 'Reduce el tiempo de reutilización de tus hechizos Nova de Escarcha, Bloque de hielo y Venas heladas un 20%.',
     row: 0,
@@ -505,7 +505,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Fragmentos de hielo',
-    icon: 'spell_frost_iceshard',
+    icon: 'spell-frost-iceshard',
     maxRank: 3,
     description: 'Aumenta un 100% el bonus de daño por golpe crítico con tus hechizos de Escarcha.',
     row: 1,
@@ -513,7 +513,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Amparo de Escarcha',
-    icon: 'spell_frost_frostward',
+    icon: 'spell-frost-frost-ward',
     maxRank: 2,
     description: 'Aumenta un 50% la armadura y las resistencias de tu hechizo Armadura de Escarcha y Armadura de hielo. Además, le da a tu Resguardo contra la Escarcha y a tu Resguardo contra el Fuego un 30% de probabilidad de anular el hechizo de daño resguardado y de restaurar maná igual al daño infligido.',
     row: 1,
@@ -521,7 +521,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Precisión',
-    icon: 'spell_ice_magicdamage',
+    icon: 'spell-ice-magicda-mage',
     maxRank: 3,
     description: 'Reduce el coste de maná y aumenta la probabilidad de que golpees con hechizos un 3%.',
     row: 1,
@@ -529,7 +529,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Escarcha permanente',
-    icon: 'spell_frost_wisp',
+    icon: 'spell-frost-wisp',
     maxRank: 3,
     description: 'Aumenta 3 s la duración de tus efectos de enfriamiento, reduce un 10% extra la velocidad del objetivo y reduce la sanación recibida del objetivo un 20%.',
     row: 1,
@@ -537,7 +537,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Hielo penetrante',
-    icon: 'spell_frost_frostbolt',
+    icon: 'spell-frost-frost-bolt',
     maxRank: 3,
     description: 'Aumenta un 6% el daño infligido con tus hechizos de Escarcha.',
     row: 2,
@@ -545,7 +545,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Venas heladas',
-    icon: 'spell_frost_coldhearted',
+    icon: 'spell-frost-coldhearted',
     maxRank: 1,
     description: 'Acelera tu lanzamiento de hechizos, aumenta la velocidad con la que lanzas hechizos un 20% y reduce el retraso sufrido por los ataques dañinos mientras lanzas hechizos un 100%. Dura 20 sec.',
     row: 2,
@@ -553,7 +553,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Ventisca mejorada',
-    icon: 'spell_frost_icestorm',
+    icon: 'spell-frost-ice-storm',
     maxRank: 3,
     description: 'Añade un efecto de enfriamiento al hechizo Ventisca. Este efecto disminuye la velocidad de movimiento un 50%. Dura 1.50 sec.',
     row: 2,
@@ -561,7 +561,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Alcance ártico',
-    icon: 'spell_shadow_darkritual',
+    icon: 'spell-shadow-darkritual',
     maxRank: 2,
     description: 'Aumenta un 20% el alcance de tus hechizos Descarga de Escarcha, Lanza de hielo, Congelación profunda y Ventisca, así como el radio de tus hechizos Nova de Escarcha y Cono de frío.',
     row: 3,
@@ -569,7 +569,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Canalización de Escarcha',
-    icon: 'spell_frost_stun',
+    icon: 'spell-frost-stun',
     maxRank: 3,
     description: 'Reduce el coste de maná de todos tus hechizos un 10% y reduce la amenaza causada por tus hechizos de Escarcha un 10%.',
     row: 3,
@@ -577,7 +577,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Trizar',
-    icon: 'spell_frost_frostshock',
+    icon: 'spell-frost-frostshock',
     maxRank: 3,
     description: 'Aumenta un 50% la probabilidad de golpe crítico con todos tus hechizos lanzados contra objetivos congelados.',
     row: 3,
@@ -585,7 +585,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Mordedura de frío',
-    icon: 'spell_frost_wizardmark',
+    icon: 'spell-frost-wizard-mark',
     maxRank: 1,
     description: 'Cuando se activa, este hechizo elimina el tiempo de reutilización de todos los hechizos de Escarcha que hayas lanzado recientemente.',
     row: 4,
@@ -593,7 +593,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Cono de frío mejorado',
-    icon: 'spell_frost_glacier',
+    icon: 'spell-frost-glacier',
     maxRank: 3,
     description: 'Aumenta un 35% el daño infligido con tu hechizo Cono de frío.',
     row: 4,
@@ -601,7 +601,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Núcleo helado',
-    icon: 'spell_frost_frozencore',
+    icon: 'spell-frost-frozencore',
     maxRank: 3,
     description: 'Reduce el daño recibido de todos los hechizos un 6%.',
     row: 4,
@@ -609,7 +609,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Frío como el hielo',
-    icon: 'ability_mage_coldasice',
+    icon: 'ability-mage-coldasice',
     maxRank: 2,
     description: 'Reduce un 20% el tiempo de reutilización de tus hechizos Mordedura de frío, Barrera de hielo e Invocar a elemental de agua.',
     row: 5,
@@ -618,7 +618,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Escalofrío invernal',
-    icon: 'spell_frost_chillingblast',
+    icon: 'spell-frost-chilling-blast',
     maxRank: 3,
     description: 'Aumenta la probabilidad de asestar golpe crítico con Descarga de Escarcha un 3% extra y da a tus hechizos de daño de Escarcha un 100% de probabilidad de aplicar el efecto de Escalofrío invernal, que aumenta un 1% la probabilidad de que los hechizos asesten un golpe crítico al objetivo durante 15 sec. Se acumula hasta 5 veces.',
     row: 5,
@@ -626,7 +626,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Barrera destrozada',
-    icon: 'ability_mage_shattershield',
+    icon: 'ability-mage-shatter-shield',
     maxRank: 2,
     description: 'Otorga a tu hechizo Barrera de hielo un 100% de probabilidades de congelar a todos los objetivos que se encuentren en un radio de 10 m durante 8 sec cuando se destruye.',
     row: 6,
@@ -635,7 +635,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Barrera de hielo',
-    icon: 'spell_ice_lament',
+    icon: 'spell-ice-lament',
     maxRank: 1,
     description: 'Te protege instantáneamente con un escudo que amortigua 455 p. de daño. Dura 1 min. Mientras el escudo esté activo, el daño no retrasará el lanzamiento de hechizos.',
     row: 6,
@@ -644,7 +644,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Vientos árticos',
-    icon: 'spell_frost_arcticwinds',
+    icon: 'spell-frost-arcticwinds',
     maxRank: 5,
     description: 'Aumenta todo el daño de Escarcha que infliges un 5% y reduce la probabilidad de ser golpeado en ataques cuerpo a cuerpo o a distancia un 5%.',
     row: 6,
@@ -652,7 +652,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Descarga de Escarcha potenciada',
-    icon: 'spell_frost_frostbolt02',
+    icon: 'spell-frost-frost-bolt-02',
     maxRank: 2,
     description: 'Aumenta el daño de tu hechizo Descarga de Escarcha una cantidad igual al 10% de tu poder con hechizos y reduce su tiempo de lanzamiento 0.2 s.',
     row: 7,
@@ -660,7 +660,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Dedos de Escarcha',
-    icon: 'ability_mage_wintersgrasp',
+    icon: 'ability-mage-wintersgrasp',
     maxRank: 2,
     description: 'Da a tus efectos de Escalofrío un 15% de probabilidad de otorgarte el efecto de Dedos de Escarcha, que hace que tus siguientes 2 hechizos sobre el objetivo actúen como si el objetivo estuviera congelado. Dura 15 sec.',
     row: 7,
@@ -668,7 +668,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Congelación cerebral',
-    icon: 'ability_mage_brainfreeze',
+    icon: 'ability-mage-brainfreeze',
     maxRank: 3,
     description: 'Tus hechizos de daño de Escarcha con efectos escalofriantes tienen un 15% de probabilidad de que tu siguiente Bola de Fuego o Descarga de Pirofrío sea de lanzamiento instantáneo y que no cueste maná.',
     row: 8,
@@ -676,7 +676,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Invocar elemental de agua',
-    icon: 'spell_frost_summonwaterelemental_2',
+    icon: 'spell-frost-summonwaterelemental-2',
     maxRank: 1,
     description: 'Invoca un elemental de agua que lucha por el taumaturgo durante 45 sec.',
     row: 8,
@@ -684,7 +684,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Invierno duradero',
-    icon: 'spell_frost_summonwaterelemental_2',
+    icon: 'spell-frost-summonwaterelemental-2',
     maxRank: 3,
     description: 'Aumenta la duración de tu hechizo Invocar a elemental de agua 15 s y tu hechizo Descarga de Escarcha tiene un 100% de probabilidad de otorgar a hasta 10 miembros del grupo o la banda una regeneración de maná equivalente al 1% de su maná máximo cada 5 segundos durante 15 sec. Este efecto solo ocurre una vez cada 6 s.',
     row: 8,
@@ -693,7 +693,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Helado hasta los huesos',
-    icon: 'ability_mage_chilledtothebone',
+    icon: 'ability-mage-chilled-to-the-bone',
     maxRank: 5,
     description: 'Aumenta el daño provocado por tus hechizos Descarga de Escarcha, Descarga de Pirofrío y Lanza de hielo un 5% y reduce la velocidad de movimiento de todos los objetivos congelados un 10% extra.',
     row: 9,
@@ -701,7 +701,7 @@ export const mageEscarchaTalents: WowTalent[] = [
   },
   {
     name: 'Congelación profunda',
-    icon: 'ability_mage_deepfreeze',
+    icon: 'ability-mage-deepfreeze',
     maxRank: 1,
     description: 'Aturde al objetivo durante 5 sec. Solo se puede usar en objetivos congelados. Inflige de [1469 * ( ( ( ( 1 ) ) ) * ( 1 ) )] a [1741 * ( ( ( ( 1 ) ) ) * ( 1 ) )] p. de daño a los objetivos inmunes de forma permanente al aturdimiento.',
     row: 10,

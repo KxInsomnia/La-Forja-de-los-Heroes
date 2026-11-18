@@ -10,7 +10,7 @@ export const mage: WowClass = {
   specs: [
     {
       slug: 'arcano',
-      icon: 'mage-arcano',
+      icon: 'mage-arcane',
       name: 'Arcano',
       role: 'DPS',
       badges: [{ label: 'No recomendado pero viable', tone: 'situational' }],
@@ -18,7 +18,7 @@ export const mage: WowClass = {
     },
     {
       slug: 'fuego',
-      icon: 'mage-fuego',
+      icon: 'mage-fire',
       name: 'Fuego',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -26,7 +26,7 @@ export const mage: WowClass = {
     },
     {
       slug: 'escarcha',
-      icon: 'mage-escarcha',
+      icon: 'mage-frost',
       name: 'Escarcha',
       role: 'DPS',
       badges: [{ label: 'PARA NADA RECOMENDADO', tone: 'strong-no' }],

@@ -42,38 +42,38 @@ const armsGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Desgarrar',
-    icon: 'ability_gouge',
+    icon: 'ability-gouge',
     description: 'Aumenta 6 s la duración de tu Desgarrar.',
   },
   {
     type: 'major',
     name: 'Glifo de Golpe Mortal',
-    icon: 'ability_warrior_savageblow',
+    icon: 'ability-warrior-savage-blow',
     description: 'Aumenta un 10% el daño de tu Golpe mortal.',
   },
   {
     type: 'major',
     name: 'Glifo de Ejecutar',
-    icon: 'inv_sword_48',
+    icon: 'inv-sword-48',
     description:
       'Tu facultad Ejecutar inflige daño como si tuvieras 10 p. de ira extra.',
   },
   {
     type: 'minor',
     name: 'Glifo de Orden',
-    icon: 'ability_warrior_rallyingcry',
+    icon: 'ability-warrior-rallying-cry',
     description: 'Aumenta 2 min la duración de tu Grito de orden.',
   },
   {
     type: 'minor',
     name: 'Glifo de Atronar',
-    icon: 'ability_thunderclap',
+    icon: 'ability-thunder-clap',
     description: 'Aumenta 2 m el radio de tu Atronar.',
   },
   {
     type: 'minor',
     name: 'Glifo de Cargar',
-    icon: 'ability_warrior_charge',
+    icon: 'ability-warrior-charge',
     description: 'Aumenta 5 m el alcance de tu Cargar.',
   },
 ]
@@ -95,20 +95,20 @@ const furyGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Torbellino',
-    icon: 'ability_whirlwind',
+    icon: 'ability-whirlwind',
     description: 'Reduce el tiempo de reutilización de tu facultad Torbellino 2 s.',
   },
   {
     type: 'major',
     name: 'Glifo de Golpe Heroico',
-    icon: 'ability_rogue_ambush',
+    icon: 'ability-rogue-ambush',
     description:
       'Ganas 10 de ira cuando infliges golpe crítico con tu facultad Golpe heroico.',
   },
   {
     type: 'major',
     name: 'Glifo de Ejecutar',
-    icon: 'inv_sword_48',
+    icon: 'inv-sword-48',
     description:
       'Tu facultad Ejecutar inflige daño como si tuvieras 10 p. de ira extra. Úsalo en single target con ArPen capeado.',
     badge: '3 opciones',
@@ -116,19 +116,19 @@ const furyGlyphs: WowGlyphSlot[] = [
     options: [
       {
         name: 'Glifo de Ejecutar',
-        icon: 'inv_sword_48',
+        icon: 'inv-sword-48',
         description:
           'Tu facultad Ejecutar inflige daño como si tuvieras 10 p. de ira extra. Úsalo en single target con ArPen capeado.',
       },
       {
         name: 'Glifo de Desgarrar',
-        icon: 'ability_gouge',
+        icon: 'ability-gouge',
         description:
           'Aumenta 6 s la duración de tu Desgarrar. Úsalo en single target sin ArPen capeado.',
       },
       {
         name: 'Glifo de Rajar',
-        icon: 'ability_warrior_cleave',
+        icon: 'ability-warrior-cleave',
         description:
           'Aumenta en 1 el número de objetivos que golpeas con Rajar.',
       },
@@ -137,19 +137,19 @@ const furyGlyphs: WowGlyphSlot[] = [
   {
     type: 'minor',
     name: 'Glifo de Batalla',
-    icon: 'ability_warrior_battleshout',
+    icon: 'ability-warrior-battle-shout',
     description: 'Aumenta 2 min la duración de tu Grito de batalla.',
   },
   {
     type: 'minor',
     name: 'Glifo de Orden',
-    icon: 'ability_warrior_rallyingcry',
+    icon: 'ability-warrior-rallying-cry',
     description: 'Aumenta 2 min la duración de tu Grito de orden.',
   },
   {
     type: 'minor',
     name: 'Glifo de Ira Sangrienta',
-    icon: 'ability_racial_bloodrage',
+    icon: 'ability-racial-blood-rage',
     description: 'Reduce un 100% el coste de salud de tu habilidad Ira sangrienta.',
   },
 ]
@@ -161,30 +161,30 @@ const furyRotation: WowRotation = {
       steps: [
         {
           label: 'Torbellino',
-          icons: ['ability_whirlwind'],
+          icons: ['ability-whirlwind'],
         },
         {
           label: 'Sed de Sangre',
-          icons: ['spell_nature_bloodlust'],
+          icons: ['spell-nature-blood-lust'],
         },
         {
           label: 'Embate',
           note: 'Solo si tienes el proc de Oleada de sangre.',
-          icons: ['ability_warrior_decisivestrike'],
+          icons: ['ability-warrior-decisive-strike'],
         },
         {
           label: 'Hender Armadura',
           note: 'Hasta 5 acumulaciones y mantenlo activo.',
-          icons: ['ability_warrior_sunder'],
+          icons: ['ability-warrior-sunder'],
         },
         {
           label: 'Ejecutar',
-          icons: ['inv_sword_48'],
+          icons: ['inv-sword-48'],
         },
         {
           label: 'Golpe heroico',
           note: 'Spammealo siempre que tengas más de 50 de ira.',
-          icons: ['ability_rogue_ambush'],
+          icons: ['ability-rogue-ambush'],
         },
       ],
     },
@@ -204,40 +204,40 @@ const protectionGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Bloqueo',
-    icon: 'inv_shield_05',
+    icon: 'inv-shield-05',
     description:
       'Aumenta un 10% tu valor de bloqueo durante 10 s después de usar Golpe con escudo.',
   },
   {
     type: 'major',
     name: 'Glifo de Vigilancia',
-    icon: 'ability_warrior_vigilance',
+    icon: 'ability-warrior-vigilance',
     description:
       'Tu habilidad Vigilancia transfiere un 5% adicional de la amenaza de tu objetivo.',
   },
   {
     type: 'major',
     name: 'Glifo de Devastar',
-    icon: 'inv_sword_11',
+    icon: 'inv-sword-11',
     description:
       'Tu habilidad Devastar aplica ahora 2 acumulaciones de Desgarrar armadura.',
   },
   {
     type: 'minor',
     name: 'Glifo de Atronar',
-    icon: 'ability_thunderclap',
+    icon: 'ability-thunder-clap',
     description: 'Aumenta 2 m el radio de tu habilidad Atronar.',
   },
   {
     type: 'minor',
     name: 'Glifo de Batalla',
-    icon: 'ability_warrior_battleshout',
+    icon: 'ability-warrior-battle-shout',
     description: 'Aumenta 2 min la duración de tu Grito de batalla.',
   },
   {
     type: 'minor',
     name: 'Glifo de Orden',
-    icon: 'ability_warrior_rallyingcry',
+    icon: 'ability-warrior-rallying-cry',
     description: 'Aumenta 2 min la duración de tu Grito de orden.',
   },
 ]
@@ -246,40 +246,40 @@ const paladinProtectionGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Sello de venganza',
-    icon: 'spell_holy_sealofvengeance',
+    icon: 'spell-holy-seal-of-vengeance',
     description:
       'Tu Sello de venganza o Sello de corrupción otorga 10 de pericia mientras está activo.',
   },
   {
     type: 'major',
     name: 'Glifo de Súplica divina',
-    icon: 'spell_holy_aspiration',
+    icon: 'spell-holy-aspiration',
     description:
       'Mientras Súplica divina está activa, recibes un 3% menos de daño de todas las fuentes.',
   },
   {
     type: 'major',
     name: 'Glifo de Sentencia',
-    icon: 'spell_holy_righteousfury',
+    icon: 'spell-holy-righteous-fury',
     badge: '3 opciones',
     description:
       'Tus Sentencias infligen un 10% más de daño; úsalo para daño y amenaza extra.',
     options: [
       {
         name: 'Glifo de Sentencia',
-        icon: 'spell_holy_righteousfury',
+        icon: 'spell-holy-righteous-fury',
         description:
           'Tus Sentencias infligen un 10% más de daño; úsalo para daño y amenaza extra.',
       },
       {
         name: 'Glifo de Defensa recta',
-        icon: 'inv_shoulder_37',
+        icon: 'inv-shoulder-37',
         description:
           'Aumenta un 8% la probabilidad de que tu Defensa recta funcione en cada objetivo; recomendado si no tienes el golpe capeado.',
       },
       {
         name: 'Glifo de Salvación',
-        icon: 'spell_holy_sealofsalvation',
+        icon: 'spell-holy-seal-of-salvation',
         description:
           'Cuando lanzas Mano de salvación sobre ti, reduces un 20% el daño recibido; da defensa extra, pero puede ser peligroso si no tienes buen agro.',
       },
@@ -288,21 +288,21 @@ const paladinProtectionGlyphs: WowGlyphSlot[] = [
   {
     type: 'minor',
     name: 'Glifo de Imposición de manos',
-    icon: 'spell_holy_layonhands',
+    icon: 'spell-holy-lay-on-hands',
     description:
       'Reduce 5 min el tiempo de reutilización de tu Imposición de manos.',
   },
   {
     type: 'minor',
     name: 'Glifo de Captar no-muertos',
-    icon: 'spell_holy_senseundead',
+    icon: 'spell-holy-sense-undead',
     description:
       'Mientras Captar no-muertos está activo, infliges un 1% más de daño a los no-muertos.',
   },
   {
     type: 'minor',
     name: 'Glifo de Bendición de Reyes',
-    icon: 'spell_magic_magearmor',
+    icon: 'spell-magic-mage-armor',
     description:
       'Reduce un 50% el coste de maná de tu Bendición de Reyes y de tu Bendición superior de Reyes.',
   },
@@ -312,20 +312,20 @@ const retributionGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Sello de venganza',
-    icon: 'spell_holy_sealofvengeance',
+    icon: 'spell-holy-seal-of-vengeance',
     description:
       'Tu Sello de venganza o Sello de corrupción otorga 10 de pericia mientras está activo.',
   },
   {
     type: 'major',
     name: 'Glifo de Sentencia',
-    icon: 'spell_holy_righteousfury',
+    icon: 'spell-holy-righteous-fury',
     description: 'Tus Sentencias infligen un 10% más de daño.',
   },
   {
     type: 'major',
     name: 'Glifo de Consagración',
-    icon: 'spell_holy_innerfire',
+    icon: 'spell-holy-inner-fire',
     badge: '2 opciones',
     featured: true,
     description:
@@ -333,13 +333,13 @@ const retributionGlyphs: WowGlyphSlot[] = [
     options: [
       {
         name: 'Glifo de Consagración',
-        icon: 'spell_holy_innerfire',
+        icon: 'spell-holy-inner-fire',
         description:
           'Aumenta 2 s la duración y el tiempo de reutilización de tu Consagración.',
       },
       {
         name: 'Glifo de Exorcismo',
-        icon: 'spell_holy_excorcism_02',
+        icon: 'spell-holy-excorcism-02',
         description: 'Aumenta un 20% el daño de tu Exorcismo.',
       },
     ],
@@ -347,21 +347,21 @@ const retributionGlyphs: WowGlyphSlot[] = [
   {
     type: 'minor',
     name: 'Glifo de Captar no-muertos',
-    icon: 'spell_holy_senseundead',
+    icon: 'spell-holy-sense-undead',
     description:
       'Mientras Captar no-muertos está activo, infliges un 1% más de daño a los no-muertos.',
   },
   {
     type: 'minor',
     name: 'Glifo de Imposición de manos',
-    icon: 'spell_holy_layonhands',
+    icon: 'spell-holy-lay-on-hands',
     description:
       'Reduce 5 min el tiempo de reutilización de tu Imposición de manos.',
   },
   {
     type: 'minor',
     name: 'Glifo de Bendición de poderío',
-    icon: 'spell_holy_fistofjustice',
+    icon: 'spell-holy-fist-of-justice',
     description:
       'Aumenta 20 min la duración de tu Bendición de poderío cuando la lanzas sobre ti.',
   },
@@ -374,34 +374,34 @@ const retributionRotation: WowRotation = {
       steps: [
         {
           label: 'Sentencia',
-          icons: ['spell_holy_righteousfury'],
+          icons: ['spell-holy-righteous-fury'],
         },
         {
           label: 'Tormenta divina',
-          icons: ['ability_paladin_divinestorm'],
+          icons: ['ability-paladin-divine-storm'],
         },
         {
           label: 'Martillo de cólera',
           note: 'Si está disponible.',
-          icons: ['ability_thunderclap'],
+          icons: ['ability-thunder-clap'],
         },
         {
           label: 'Golpe de cruzado',
-          icons: ['spell_holy_crusaderstrike'],
+          icons: ['spell-holy-crusader-strike'],
         },
         {
           label: 'Consagración',
           note: 'El orden cambia dependiendo del glifo que llevas.',
-          icons: ['spell_holy_innerfire'],
+          icons: ['spell-holy-inner-fire'],
         },
         {
           label: 'Exorcismo',
           note: 'El orden cambia dependiendo del glifo que llevas.',
-          icons: ['spell_holy_excorcism_02'],
+          icons: ['spell-holy-excorcism-02'],
         },
         {
           label: 'Cólera sagrada',
-          icons: ['spell_holy_excorcism'],
+          icons: ['spell-holy-excorcism'],
         },
       ],
     },
@@ -515,20 +515,20 @@ const protectionRotation: WowRotation = {
       steps: [
         {
           label: 'Revancha',
-          icons: ['ability_warrior_revenge'],
+          icons: ['ability-warrior-revenge'],
         },
         {
           label: 'Embate con Escudo',
-          icons: ['inv_shield_05'],
+          icons: ['inv-shield-05'],
         },
         {
           label: 'Devastar',
-          icons: ['inv_sword_11'],
+          icons: ['inv-sword-11'],
         },
         {
           label: 'Golpe heroico',
           note: 'Spammealo siempre que tengas más de 50 de ira.',
-          icons: ['ability_rogue_ambush'],
+          icons: ['ability-rogue-ambush'],
         },
       ],
     },
@@ -543,46 +543,46 @@ const paladinProtectionRotation: WowRotation = {
         {
           label: 'Escudo sacro',
           note: 'Siempre activo, preferiblemente antes de iniciar el combate.',
-          icons: ['ability_paladin_blessedmending'],
+          icons: ['ability-paladin-blessedmending'],
         },
         {
           label: 'Escudo sagrado',
           note: 'Siempre activo, preferiblemente antes del combate y mantenerlo.',
-          icons: ['spell_holy_blessingofprotection'],
+          icons: ['spell-holy-blessing-of-protection'],
         },
         {
           label: 'Súplica divina',
           note: 'Siempre activa, preferiblemente antes del combate y a partir de ahí se irá renovando con cada golpe.',
-          icons: ['spell_holy_aspiration'],
+          icons: ['spell-holy-aspiration'],
         },
         {
           label: 'Martillo del honrado',
-          icons: ['ability_paladin_hammeroftherighteous'],
+          icons: ['ability-paladin-hammer-of-the-righteous'],
         },
         {
           label: 'Escudo de rectitud',
-          icons: ['ability_paladin_shieldofvengeance'],
+          icons: ['ability-paladin-shield-of-vengeance'],
         },
         {
           label: 'Martillo de cólera',
           note: 'Si está disponible.',
-          icons: ['ability_thunderclap'],
+          icons: ['ability-thunder-clap'],
         },
         {
           label: 'Escudo de vengador',
-          icons: ['spell_holy_avengersshield'],
+          icons: ['spell-holy-avengers-shield'],
         },
         {
           label: 'Sentencia',
-          icons: ['spell_holy_righteousfury'],
+          icons: ['spell-holy-righteous-fury'],
         },
         {
           label: 'Consagración',
-          icons: ['spell_holy_innerfire'],
+          icons: ['spell-holy-inner-fire'],
         },
         {
           label: 'Cólera sagrada',
-          icons: ['spell_holy_excorcism'],
+          icons: ['spell-holy-excorcism'],
         },
       ],
     },
@@ -591,19 +591,19 @@ const paladinProtectionRotation: WowRotation = {
       steps: [
         {
           label: 'Martillo del honrado',
-          icons: ['ability_paladin_hammeroftherighteous'],
+          icons: ['ability-paladin-hammer-of-the-righteous'],
         },
         {
           label: 'Consagración',
-          icons: ['spell_holy_innerfire'],
+          icons: ['spell-holy-inner-fire'],
         },
         {
           label: 'Escudo de vengador',
-          icons: ['spell_holy_avengersshield'],
+          icons: ['spell-holy-avengers-shield'],
         },
         {
           label: 'Cólera sagrada',
-          icons: ['spell_holy_excorcism'],
+          icons: ['spell-holy-excorcism'],
         },
       ],
     },
@@ -613,7 +613,7 @@ const paladinProtectionRotation: WowRotation = {
 const protectionTips: WowBuildTip[] = [
   {
     text: 'Si nadie tiene un reductor de AP añade y manten Grito desmoralizador a tu rotacion',
-    icons: ['ability_warrior_warcry'],
+    icons: ['ability-warrior-war-cry'],
     link: {
       label: 'Mas info sobre debuffs aqui',
       to: '/general/debuffs',
@@ -621,7 +621,7 @@ const protectionTips: WowBuildTip[] = [
   },
   {
     text: 'Si nadie tiene un reductor de velocidad de ataque añade y manten atronar a tu rotacion',
-    icons: ['ability_thunderclap'],
+    icons: ['ability-thunder-clap'],
     link: {
       label: 'Mas info sobre debuffs aqui',
       to: '/general/debuffs',
@@ -643,41 +643,41 @@ const holyGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Luz Sagrada',
-    icon: 'spell_holy_holybolt',
+    icon: 'spell-holy-holy-bolt',
     description:
       'Tu Luz Sagrada concede el 10% de su curación hasta 5 objetivos amistosos en 8 m del objetivo inicial.',
   },
   {
     type: 'major',
     name: 'Glifo de Señal de Luz',
-    icon: 'ability_paladin_beaconoflight',
+    icon: 'ability-paladin-beacon-of-light',
     description: 'Aumenta 30 s la duración de tu Señal de Luz.',
   },
   {
     type: 'major',
     name: 'Glifo de Sello de sabiduría',
-    icon: 'spell_holy_righteousnessaura',
+    icon: 'spell-holy-righteousness-aura',
     description:
       'Cuando Sello de sabiduría está activo, el coste de tus hechizos de sanación se reduce un 5%.',
   },
   {
     type: 'minor',
     name: 'Glifo de Imposición de manos',
-    icon: 'spell_holy_layonhands',
+    icon: 'spell-holy-lay-on-hands',
     description:
       'Reduce 5 min el tiempo de reutilización de tu Imposición de manos.',
   },
   {
     type: 'minor',
     name: 'Glifo de Bendición de Sabiduría',
-    icon: 'spell_holy_sealofwisdom',
+    icon: 'spell-holy-seal-of-wisdom',
     description:
       'Aumenta 20 min la duración de tu Bendición de Sabiduría cuando la lanzas sobre ti.',
   },
   {
     type: 'minor',
     name: 'Glifo de Bendición de Reyes',
-    icon: 'spell_magic_magearmor',
+    icon: 'spell-magic-mage-armor',
     description:
       'Reduce un 50% el coste de maná de tu Bendición de Reyes y de tu Bendición superior de Reyes.',
   },
@@ -698,27 +698,27 @@ const holyRotation: WowRotation = {
         {
           label: 'Señal de Luz',
           note: 'Mantener en el tanque principal.',
-          icons: ['ability_paladin_beaconoflight'],
+          icons: ['ability-paladin-beacon-of-light'],
         },
         {
           label: 'Luz Sagrada',
           note: 'Hechizo principal.',
-          icons: ['spell_holy_holybolt'],
+          icons: ['spell-holy-holy-bolt'],
         },
         {
           label: 'Escudo sacro',
           note: 'Mantener en el tanque que no sea paladín.',
-          icons: ['ability_paladin_blessedmending'],
+          icons: ['ability-paladin-blessedmending'],
         },
         {
           label: 'Choque sagrado',
           note: 'Cura de emergencia.',
-          icons: ['spell_holy_searinglight'],
+          icons: ['spell-holy-searinglight'],
         },
         {
           label: 'Destello de Luz',
           note: 'No recomendado en bandas.',
-          icons: ['spell_holy_flashheal'],
+          icons: ['spell-holy-flashheal'],
         },
       ],
     },
@@ -728,15 +728,15 @@ const holyRotation: WowRotation = {
 const holyTips: WowBuildTip[] = [
   {
     text: 'Acostúmbrate a usar Súplica divina en tiempos muertos donde no se requiera mucha curación, o combínala con un amplificador de heal o un abalorio para mitigar la reducción de curación.',
-    icons: ['spell_holy_aspiration'],
+    icons: ['spell-holy-aspiration'],
   },
   {
     text: 'En tiempos muertos también golpea siempre que puedas con ataques básicos: con el Sello de sabiduría y la Sentencia del sabio regenerarás maná decentemente.',
-    icons: ['spell_holy_righteousnessaura'],
+    icons: ['spell-holy-righteousness-aura'],
   },
   {
     text: 'No dependas de la Sentencia de Luz para curar. Si hay otro paladín que la lanza, usa otra sentencia solo para activar tu buff de Sentencias del puro.',
-    icons: ['spell_holy_righteousfury'],
+    icons: ['spell-holy-righteous-fury'],
   },
   {
     text: 'Aprender a predecir el daño te hará un mejor heal.',
@@ -756,34 +756,34 @@ const armsRotation: WowRotation = {
         {
           label: 'Desgarrar',
           note: 'Manténlo activo siempre.',
-          icons: ['ability_gouge'],
+          icons: ['ability-gouge'],
         },
         {
           label: 'Abrumar',
           note: 'Úsalo cada vez que esté disponible.',
-          icons: ['ability_meleedamage'],
+          icons: ['ability-meleeda-mage'],
         },
         {
           label: 'Ejecutar',
-          icons: ['inv_sword_48'],
+          icons: ['inv-sword-48'],
         },
         {
           label: 'Golpe mortal',
-          icons: ['ability_warrior_savageblow'],
+          icons: ['ability-warrior-savage-blow'],
         },
         {
           label: 'Hender Armadura',
           note: 'Hasta 5 acumulaciones y mantenlo activo.',
-          icons: ['ability_warrior_sunder'],
+          icons: ['ability-warrior-sunder'],
         },
         {
           label: 'Embate',
-          icons: ['ability_warrior_decisivestrike'],
+          icons: ['ability-warrior-decisive-strike'],
         },
         {
           label: 'Golpe heroico',
           note: 'Spammealo siempre que tengas más de 50 de ira.',
-          icons: ['ability_rogue_ambush'],
+          icons: ['ability-rogue-ambush'],
         },
       ],
     },
@@ -792,16 +792,16 @@ const armsRotation: WowRotation = {
       steps: [
         {
           label: 'Golpes de barrido + Filotormenta',
-          icons: ['ability_rogue_slicedice', 'ability_warrior_bladestorm'],
+          icons: ['ability-rogue-slicedice', 'ability-warrior-blade-storm'],
         },
         {
           label: 'Rajar',
-          icons: ['ability_warrior_cleave'],
+          icons: ['ability-warrior-cleave'],
         },
         {
           label: 'Atronar',
           note: 'Con más de 5 objetivos, va antes de Rajar.',
-          icons: ['ability_thunderclap'],
+          icons: ['ability-thunder-clap'],
         },
       ],
     },
@@ -845,38 +845,38 @@ const hunterBestiasGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Cólera de las bestias',
-    icon: 'ability_druid_ferociousbite',
+    icon: 'ability-druid-ferocious-bite',
     description: 'Reduce 20 s el tiempo de reutilización de tu Cólera de las bestias.',
   },
   {
     type: 'major',
     name: 'Glifo de Trampa explosiva',
-    icon: 'spell_fire_selfdestruct',
+    icon: 'spell-fire-self-destruct',
     description: 'El daño periódico de tu Trampa explosiva puede ser golpe crítico.',
   },
   {
     type: 'major',
     name: 'Glifo de Disparo firme',
-    icon: 'ability_hunter_steadyshot',
+    icon: 'ability-hunter-steady-shot',
     description:
       'Aumenta un 10% el daño de tu Disparo firme si tienes una picadura sobre el objetivo.',
   },
   {
     type: 'minor',
     name: 'Glifo de Fingir muerte',
-    icon: 'ability_rogue_feigndeath',
+    icon: 'ability-rogue-feign-death',
     description: 'Reduce 5 s el tiempo de reutilización de tu Fingir muerte.',
   },
   {
     type: 'minor',
     name: 'Glifo de Aliviar mascota',
-    icon: 'ability_hunter_mendpet',
+    icon: 'ability-hunter-mend-pet',
     description: 'Aumenta ligeramente la felicidad de tu mascota con Aliviar mascota.',
   },
   {
     type: 'minor',
     name: 'Glifo de Revivir mascota',
-    icon: 'ability_hunter_beastsoothe',
+    icon: 'ability-hunter-beast-soothe',
     description: 'Reduce a cero el retroceso al lanzar Revivir mascota.',
   },
 ]
@@ -885,19 +885,19 @@ const hunterPunteriaGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Picadura de serpiente',
-    icon: 'ability_hunter_quickshot',
+    icon: 'ability-hunter-quick-shot',
     description: 'Aumenta 6 s la duración de tu Picadura de serpiente.',
   },
   {
     type: 'major',
     name: 'Glifo de Disparo de quimera',
-    icon: 'ability_hunter_chimerashot2',
+    icon: 'ability-hunter-chimera-shot-2',
     description: 'Reduce 1 s el tiempo de reutilización de tu Disparo de quimera.',
   },
   {
     type: 'major',
     name: 'Glifo de Disparo firme',
-    icon: 'ability_hunter_steadyshot',
+    icon: 'ability-hunter-steady-shot',
     description:
       'Aumenta un 10% el daño infligido por Disparo firme cuando el objetivo está afectado por Picadura de serpiente.',
     badge: '3 opciones',
@@ -905,20 +905,20 @@ const hunterPunteriaGlyphs: WowGlyphSlot[] = [
     options: [
       {
         name: 'Glifo de Disparo firme',
-        icon: 'ability_hunter_steadyshot',
+        icon: 'ability-hunter-steady-shot',
         description:
           'Aumenta un 10% el daño infligido por Disparo firme cuando el objetivo está afectado por Picadura de serpiente.',
         reason: 'Para la build de Build principal',
       },
       {
         name: 'Glifo de Trampa explosiva',
-        icon: 'spell_fire_selfdestruct',
+        icon: 'spell-fire-self-destruct',
         description: 'El daño periódico de tu Trampa explosiva puede ser golpe crítico.',
         reason: 'Para la build de Trap weaving',
       },
       {
         name: 'Glifo de Marca del cazador',
-        icon: 'ability_hunter_snipershot',
+        icon: 'ability-hunter-sniper-shot',
         description: 'Aumenta un 20% el bonus de poder de ataque de tu Marca del cazador.',
         reason: 'Para la build de Hunter Mark',
       },
@@ -927,19 +927,19 @@ const hunterPunteriaGlyphs: WowGlyphSlot[] = [
   {
     type: 'minor',
     name: 'Glifo de Fingir muerte',
-    icon: 'ability_rogue_feigndeath',
+    icon: 'ability-rogue-feign-death',
     description: 'Reduce 5 s el tiempo de reutilización de tu Fingir muerte.',
   },
   {
     type: 'minor',
     name: 'Glifo de Aliviar mascota',
-    icon: 'ability_hunter_mendpet',
+    icon: 'ability-hunter-mend-pet',
     description: 'Aumenta ligeramente la felicidad de tu mascota con Aliviar mascota.',
   },
   {
     type: 'minor',
     name: 'Glifo de Revivir mascota',
-    icon: 'ability_hunter_beastsoothe',
+    icon: 'ability-hunter-beast-soothe',
     description: 'Reduce a cero el retroceso al lanzar Revivir mascota.',
   },
 ]
@@ -977,34 +977,34 @@ const hunterBestiasRotation: WowRotation = {
         {
           label: 'Marca del cazador',
           note: 'Antes del combate.',
-          icons: ['ability_hunter_snipershot'],
+          icons: ['ability-hunter-sniper-shot'],
         },
         {
           label: 'Matar',
           note: 'A CD, no comparte GCD.',
-          icons: ['ability_hunter_killcommand'],
+          icons: ['ability-hunter-kill-command'],
         },
         {
           label: 'Disparo mortal',
           note: 'Siempre que esté disponible.',
-          icons: ['ability_hunter_assassinate2'],
+          icons: ['ability-hunter-assassinate-2'],
         },
         {
           label: 'Picadura de serpiente',
           note: 'Mantener activo.',
-          icons: ['ability_hunter_quickshot'],
+          icons: ['ability-hunter-quick-shot'],
         },
         {
           label: 'Multidisparo',
-          icons: ['ability_upgrademoonglaive'],
+          icons: ['ability-upgrademoonglaive'],
         },
         {
           label: 'Disparo Arcano',
-          icons: ['ability_impalingbolt'],
+          icons: ['ability-impaling-bolt'],
         },
         {
           label: 'Disparo firme',
-          icons: ['ability_hunter_steadyshot'],
+          icons: ['ability-hunter-steady-shot'],
         },
       ],
     },
@@ -1015,37 +1015,37 @@ const hunterPunteriaRotationSteps = [
   {
     label: 'Marca del cazador',
     note: 'Antes del combate.',
-    icons: ['ability_hunter_snipershot'],
+    icons: ['ability-hunter-sniper-shot'],
   },
   {
     label: 'Disparo mortal',
-    icons: ['ability_hunter_assassinate2'],
+    icons: ['ability-hunter-assassinate-2'],
   },
   {
     label: 'Picadura de serpiente + Matar + Disparo Silenciador',
     note: 'Puedes lanzar los 3 a la vez ya que no comparten GCD y la picadura se mantiene con tu Disparo de quimera.',
     icons: [
-      'ability_hunter_quickshot',
-      'ability_hunter_killcommand',
-      'ability_theblackarrow',
+      'ability-hunter-quick-shot',
+      'ability-hunter-kill-command',
+      'ability-theblack-arrow',
     ],
   },
   {
     label: 'Disparo de quimera',
-    icons: ['ability_hunter_chimerashot2'],
+    icons: ['ability-hunter-chimera-shot-2'],
   },
   {
     label: 'Disparo de puntería',
-    icons: ['inv_spear_07'],
+    icons: ['inv-spear-07'],
   },
   {
     label: 'Disparo firme',
-    icons: ['ability_hunter_steadyshot'],
+    icons: ['ability-hunter-steady-shot'],
   },
   {
     label: 'Disparo Arcano',
     note: 'Solo si necesitas moverte mientras pegas y todas las habilidades de arriba no están disponibles.',
-    icons: ['ability_impalingbolt'],
+    icons: ['ability-impaling-bolt'],
   },
 ]
 
@@ -1067,7 +1067,7 @@ const hunterPunteriaTrapRotation: WowRotation = {
         {
           label: 'Trampa explosiva',
           note: 'Si usas la build Trap weaving.',
-          icons: ['spell_fire_selfdestruct'],
+          icons: ['spell-fire-self-destruct'],
         },
         ...hunterPunteriaRotationSteps.slice(5),
       ],
@@ -1111,37 +1111,37 @@ const hunterSupervivenciaGlyphs: WowGlyphSlot[] = [
   {
     type: 'major',
     name: 'Glifo de Disparo explosivo',
-    icon: 'ability_hunter_explosiveshot',
+    icon: 'ability-hunter-explosive-shot',
     description: 'Aumenta un 4% la probabilidad de golpe crítico de tu Disparo explosivo.',
   },
   {
     type: 'major',
     name: 'Glifo de Trampa explosiva',
-    icon: 'spell_fire_selfdestruct',
+    icon: 'spell-fire-self-destruct',
     description: 'El daño periódico de tu Trampa explosiva puede ser golpe crítico.',
   },
   {
     type: 'major',
     name: 'Glifo de Disparo Mortal',
-    icon: 'ability_hunter_assassinate2',
+    icon: 'ability-hunter-assassinate-2',
     description: 'Reduce 6 s el tiempo de reutilización de tu Disparo mortal.',
   },
   {
     type: 'minor',
     name: 'Glifo de Fingir muerte',
-    icon: 'ability_rogue_feigndeath',
+    icon: 'ability-rogue-feign-death',
     description: 'Reduce 5 s el tiempo de reutilización de tu Fingir muerte.',
   },
   {
     type: 'minor',
     name: 'Glifo de Aliviar mascota',
-    icon: 'ability_hunter_mendpet',
+    icon: 'ability-hunter-mend-pet',
     description: 'Aumenta ligeramente la felicidad de tu mascota con Aliviar mascota.',
   },
   {
     type: 'minor',
     name: 'Glifo de Revivir mascota',
-    icon: 'ability_hunter_beastsoothe',
+    icon: 'ability-hunter-beast-soothe',
     description: 'Reduce a cero el retroceso al lanzar Revivir mascota.',
   },
 ]
@@ -1165,27 +1165,27 @@ const hunterSupervivenciaRotation: WowRotation = {
       steps: [
         {
           label: 'Disparo mortal',
-          icons: ['ability_hunter_assassinate2'],
+          icons: ['ability-hunter-assassinate-2'],
         },
         {
           label: 'Disparo explosivo',
-          icons: ['ability_hunter_explosiveshot'],
+          icons: ['ability-hunter-explosive-shot'],
         },
         {
           label: 'Trampa explosiva o Flecha negra',
-          icons: ['spell_fire_selfdestruct', 'spell_shadow_painspike'],
+          icons: ['spell-fire-self-destruct', 'spell-shadow-pain-spike'],
         },
         {
           label: 'Mantener Picadura de serpiente',
-          icons: ['ability_hunter_quickshot'],
+          icons: ['ability-hunter-quick-shot'],
         },
         {
           label: 'Multidisparo',
-          icons: ['ability_upgrademoonglaive'],
+          icons: ['ability-upgrademoonglaive'],
         },
         {
           label: 'Disparo firme',
-          icons: ['ability_hunter_steadyshot'],
+          icons: ['ability-hunter-steady-shot'],
         },
       ],
     },
@@ -1205,7 +1205,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
     talents: [
       {
         name: 'Reflejos de cobra',
-        icon: '136040',
+        icon: 'talent-icon-136040',
         maxRank: 2,
         description:
           'Aumenta un 30% la velocidad de ataque de tu mascota, pero cada ataque inflige menos daño.',
@@ -1215,7 +1215,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Carrerilla',
-        icon: '132120',
+        icon: 'talent-icon-132120',
         maxRank: 1,
         description: 'Aumenta un 80% la velocidad de movimiento de tu mascota durante 16 s.',
         row: 0,
@@ -1224,7 +1224,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Gran aguante',
-        icon: '136112',
+        icon: 'talent-icon-136112',
         maxRank: 3,
         description: 'Aumenta el aguante total de tu mascota un 4/8/12%.',
         row: 0,
@@ -1233,7 +1233,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Armadura natural',
-        icon: '136094',
+        icon: 'talent-icon-136094',
         maxRank: 2,
         description: 'Aumenta la armadura de tu mascota un 5/10%.',
         row: 0,
@@ -1242,7 +1242,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Agazapar mejorado',
-        icon: '132118',
+        icon: 'talent-icon-132118',
         maxRank: 2,
         description:
           'Reduce un 50/100% la penalización de velocidad de movimiento cuando tu mascota se agazapa.',
@@ -1252,7 +1252,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Sanguinario',
-        icon: '132139',
+        icon: 'talent-icon-132139',
         maxRank: 2,
         description:
           'Los ataques de tu mascota tienen un 10/20% de probabilidad de aumentar su felicidad un 5% y curarla un 5% de su salud.',
@@ -1262,7 +1262,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Collera con pinchos',
-        icon: '133309',
+        icon: 'talent-icon-133309',
         maxRank: 3,
         description: 'Tu mascota inflige un 3/6/9% más de daño con todos sus ataques.',
         row: 1,
@@ -1271,7 +1271,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Velocidad de jabalí',
-        icon: '132184',
+        icon: 'talent-icon-132184',
         maxRank: 1,
         description: 'Aumenta un 30% la velocidad de movimiento de tu mascota.',
         row: 1,
@@ -1280,7 +1280,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Desvieje de la manada',
-        icon: '237401',
+        icon: 'talent-icon-237401',
         maxRank: 3,
         description:
           'Cuando Mordedura, Zarpa o Bofetada de tu mascota es un golpe crítico, tú y tu mascota infligís un 3% más de daño durante 10 s.',
@@ -1290,7 +1290,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Corazón de león',
-        icon: '132486',
+        icon: 'talent-icon-132486',
         maxRank: 2,
         description:
           'Reduce un 15/30% la duración de los efectos de aturdimiento y miedo contra tu mascota.',
@@ -1300,7 +1300,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Cargar',
-        icon: '132183',
+        icon: 'talent-icon-132183',
         maxRank: 1,
         description:
           'Tu mascota carga contra un enemigo, lo inmoviliza durante 1 s y aumenta un 25% el poder de ataque de su siguiente ataque cuerpo a cuerpo.',
@@ -1310,7 +1310,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Corazón del fénix',
-        icon: '134373',
+        icon: 'talent-icon-134373',
         maxRank: 1,
         description:
           'Cuando tu mascota muere, resucita con un 10% de su salud. No puede ocurrir más de una vez cada 10 min.',
@@ -1321,7 +1321,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Picadura de araña',
-        icon: '132196',
+        icon: 'talent-icon-132196',
         maxRank: 3,
         description: 'Aumenta un 3/6/9% el bono de daño crítico de tu mascota.',
         row: 3,
@@ -1331,7 +1331,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Gran resistencia',
-        icon: '136085',
+        icon: 'talent-icon-136085',
         maxRank: 3,
         description:
           'Tu mascota recibe un 3/6/9% menos de daño de Arcano, Fuego, Escarcha, Naturaleza y Sombras.',
@@ -1342,7 +1342,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Rabioso',
-        icon: '236149',
+        icon: 'talent-icon-236149',
         maxRank: 1,
         description:
           'Tu mascota entra en un frenesí asesino que aumenta su poder de ataque un 5%. Sus ataques tienen un 50% de probabilidad de aumentarlo un 5% adicional, hasta 5 acumulaciones. Dura 20 s.',
@@ -1352,7 +1352,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Lame tus heridas',
-        icon: '132179',
+        icon: 'talent-icon-132179',
         maxRank: 1,
         description:
           'Tu mascota se detiene a lamer sus heridas y se cura un 100% de su salud total durante 5 s mientras canaliza.',
@@ -1362,7 +1362,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Llamada de lo Salvaje',
-        icon: '236159',
+        icon: 'talent-icon-236159',
         maxRank: 1,
         description:
           'Tu mascota ruge y aumenta un 10% el poder de ataque cuerpo a cuerpo y a distancia de todos los miembros del grupo en 40 m. Dura 20 s.',
@@ -1373,7 +1373,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Ataque de tiburón',
-        icon: '133921',
+        icon: 'talent-icon-133921',
         maxRank: 2,
         description: 'Tu mascota inflige un 6% más de daño con todos sus ataques.',
         row: 5,
@@ -1382,7 +1382,7 @@ function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
       },
       {
         name: 'Caza salvaje',
-        icon: '237377',
+        icon: 'talent-icon-237377',
         maxRank: 2,
         description:
           'Aumenta un 40% la contribución de aguante y un 30% la de poder de ataque que tu mascota recibe de ti.',
@@ -1422,14 +1422,14 @@ const hunterPetFerocity20 = hunterPetFerocityTree({
 
 const hunterPetWolf16: WowPetBuild = {
   name: 'Lobo',
-  icon: '132203',
+  icon: 'talent-icon-132203',
   description: 'La mejor mascota para cazador es el lobo.',
   tree: hunterPetFerocity16,
 }
 
 const hunterPetWolf20: WowPetBuild = {
   name: 'Lobo',
-  icon: '132203',
+  icon: 'talent-icon-132203',
   description: 'La mejor mascota para cazador es el lobo.',
   tree: hunterPetFerocity20,
 }
@@ -1458,12 +1458,12 @@ function createPlaceholderGlyphs(): WowGlyphSlot[] {
   })
 
   return [
-    glyph('major', 'inv_glyph_majorwarrior'),
-    glyph('major', 'inv_glyph_majorwarrior'),
-    glyph('major', 'inv_glyph_majorwarrior'),
-    glyph('minor', 'inv_glyph_minorwarrior'),
-    glyph('minor', 'inv_glyph_minorwarrior'),
-    glyph('minor', 'inv_glyph_minorwarrior'),
+    glyph('major', 'inv-glyph-major-warrior'),
+    glyph('major', 'inv-glyph-major-warrior'),
+    glyph('major', 'inv-glyph-major-warrior'),
+    glyph('minor', 'inv-glyph-minor-warrior'),
+    glyph('minor', 'inv-glyph-minor-warrior'),
+    glyph('minor', 'inv-glyph-minor-warrior'),
   ]
 }
 

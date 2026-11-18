@@ -3,7 +3,7 @@ import type { WowTalent } from '../../types/wow'
 export const hunterBestiasTalents: WowTalent[] = [
   {
     name: 'Aspecto del halcón mejorado',
-    icon: 'spell_nature_ravenform',
+    icon: 'spell-nature-raven-form',
     maxRank: 5,
     description: 'Mientras están activos los aspectos del halcón o dracohalcón, los ataques a distancia normales tienen un 10% de probabilidad de aumentar la velocidad de ataque a distancia un 15% durante 12 sec.',
     row: 0,
@@ -11,7 +11,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Adiestramiento en robustez',
-    icon: 'spell_nature_reincarnation',
+    icon: 'spell-nature-reincarnation',
     maxRank: 5,
     description: 'Mejora la salud de tu mascota un 10% y tu salud total un 5%.',
     row: 0,
@@ -19,7 +19,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Fuego enfocado',
-    icon: 'ability_hunter_silenthunter',
+    icon: 'ability-hunter-silent-hunter',
     maxRank: 2,
     description: 'Todo el daño que infliges aumenta un 2% mientras que tu mascota esté activa y la probabilidad de golpe crítico de las facultades especiales de tu mascota aumenta un 20% mientras Matar está activo.',
     row: 1,
@@ -27,7 +27,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Aspecto del mono mejorado',
-    icon: 'ability_hunter_aspectofthemonkey',
+    icon: 'ability-hunter-aspect-of-the-monkey',
     maxRank: 3,
     description: 'Aumenta el bonus de esquivar de tu Aspecto del mono y Aspecto del dracohalcón un 6%.',
     row: 1,
@@ -35,7 +35,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Pellejo grueso',
-    icon: 'inv_misc_pelt_bear_03',
+    icon: 'inv-misc-pelt-bear-03',
     maxRank: 3,
     description: 'Aumenta el índice de armadura de tus mascotas un 20% y la contribución de los objetos a tu armadura un 10%.',
     row: 1,
@@ -43,7 +43,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Revivir mascota mejorado',
-    icon: 'ability_hunter_beastsoothe',
+    icon: 'ability-hunter-beast-soothe',
     maxRank: 2,
     description: 'Reduce el tiempo de lanzamiento de Revivir mascota 6 s., reduce el coste de maná un 40% y aumenta la salud con la que tu mascota revive un 30% adicional.',
     row: 1,
@@ -51,7 +51,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Encontrar camino',
-    icon: 'ability_mount_jungletiger',
+    icon: 'ability-mount-jungletiger',
     maxRank: 2,
     description: 'Aumenta un 8% el bonus de velocidad de tu Aspecto del guepardo y de tu Aspecto de la manada y aumenta tu velocidad sobre montura un 10%. El aumento de velocidad de movimiento sobre montura no se acumula con otros efectos.',
     row: 2,
@@ -59,7 +59,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en Aspectos',
-    icon: 'ability_hunter_aspectmastery',
+    icon: 'ability-hunter-aspectmastery',
     maxRank: 1,
     description: 'Aspecto de la víbora: reduce la penalización de daño un 10%. Aspecto del mono: reduce el daño que te inflijan mientras está activo un 5%. Aspecto del halcón: aumenta el bonus de poder de ataque un 30%. Aspecto del dracohalcón: combina el bonus de Aspecto del mono y del halcón.',
     row: 2,
@@ -67,7 +67,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Furia desatada',
-    icon: 'ability_bullrush',
+    icon: 'ability-bullrush',
     maxRank: 5,
     description: 'Aumenta un 15% el daño infligido por tus mascotas.',
     row: 2,
@@ -75,7 +75,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Aliviar mascota mejorado',
-    icon: 'ability_hunter_mendpet',
+    icon: 'ability-hunter-mend-pet',
     maxRank: 2,
     description: 'Reduce el coste de maná de tu hechizo Aliviar mascota un 20% y le da un 50% de probabilidad de limpiar la mascota de los efectos de 1 maldición, enfermedad, magia o veneno en cada pulso.',
     row: 3,
@@ -83,7 +83,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Ferocidad',
-    icon: 'inv_misc_monsterclaw_04',
+    icon: 'inv-misc-monsterclaw-04',
     maxRank: 5,
     description: 'Aumenta un 10% la probabilidad de golpe crítico de tu mascota.',
     row: 3,
@@ -91,7 +91,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Vínculo de espíritu',
-    icon: 'ability_druid_demoralizingroar',
+    icon: 'ability-druid-demoralizingroar',
     maxRank: 2,
     description: 'Cuando tu mascota esté activa, regeneraréis el 2% de salud total cada 10 s y aumenta la sanación realizada a ti y a tu mascota un 10%.',
     row: 4,
@@ -99,7 +99,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Intimidación',
-    icon: 'ability_devour',
+    icon: 'ability-devour',
     maxRank: 1,
     description: 'Ordena a tu mascota que intimide al objetivo, inflige una gran cantidad de amenaza y aturde al objetivo durante 3 sec. Dura 15 sec.',
     row: 4,
@@ -107,7 +107,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Disciplina de las bestias',
-    icon: 'spell_nature_abolishmagic',
+    icon: 'spell-nature-abolishmagic',
     maxRank: 2,
     description: 'Aumenta un 100% la regeneración de enfoque de tus mascotas.',
     row: 4,
@@ -115,7 +115,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Cuidador de animales',
-    icon: 'ability_hunter_animalhandler',
+    icon: 'ability-hunter-animalhandler',
     maxRank: 2,
     description: 'Aumenta el poder de ataque de tu mascota un 10% y aumenta la duración del efecto de tu facultad Llamada de maestro 6 s.',
     row: 5,
@@ -123,7 +123,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Frenesí',
-    icon: 'inv_misc_monsterclaw_03',
+    icon: 'inv-misc-monsterclaw-03',
     maxRank: 5,
     description: 'Da a tu mascota un 100% probabilidad de aumentar un 30% su velocidad de ataque durante 8 sec después de asestar un golpe crítico.',
     row: 5,
@@ -132,7 +132,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Inspiración feroz',
-    icon: 'ability_hunter_ferociousinspiration',
+    icon: 'ability-hunter-ferociousinspiration',
     maxRank: 3,
     description: 'El daño de todos los miembros del grupo y banda aumenta un 3% en un radio de 100 metros de tu mascota. Además, aumenta el daño infligido por Disparo Arcano y Disparo firme un 9%.',
     row: 6,
@@ -140,7 +140,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Cólera de las bestias',
-    icon: 'ability_druid_ferociousbite',
+    icon: 'ability-druid-ferocious-bite',
     maxRank: 1,
     description: 'Pone iracunda a tu mascota para que cause un 50% de daño extra durante 10 sec. Mientras está iracunda, la bestia no siente piedad, remordimiento ni miedo y no se detendrá a no ser que la maten.',
     row: 6,
@@ -149,7 +149,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Reflejos felinos',
-    icon: 'ability_hunter_catlikereflexes',
+    icon: 'ability-hunter-catlikereflexes',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de esquivar un 3% y la probabilidad de tu mascota de esquivar un 9% extra. Además, reduce el tiempo de reutilización de tu facultad Matar 30 s.',
     row: 6,
@@ -157,7 +157,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Vigorización',
-    icon: 'ability_hunter_invigeration',
+    icon: 'ability-hunter-invigeration',
     maxRank: 2,
     description: 'Cuando tu mascota inflija un golpe crítico con una facultad especial, tendrás un 100% de probabilidad de regenerar instantáneamente un 1% de maná.',
     row: 7,
@@ -166,7 +166,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Presteza de la serpiente',
-    icon: 'ability_hunter_serpentswiftness',
+    icon: 'ability-hunter-serpentswiftness',
     maxRank: 5,
     description: 'Aumenta la velocidad de ataque en combate a distancia un 20% y la velocidad de ataque cuerpo a cuerpo de tu mascota un 20%.',
     row: 7,
@@ -174,7 +174,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Longevidad',
-    icon: 'ability_hunter_longevity',
+    icon: 'ability-hunter-longevity',
     maxRank: 3,
     description: 'Reduce el tiempo de reutilización de tu Cólera de las bestias, Intimidación y facultades especiales de mascota un 30%.',
     row: 8,
@@ -182,7 +182,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Bestia interna',
-    icon: 'ability_hunter_beastwithin',
+    icon: 'ability-hunter-beastwithin',
     maxRank: 1,
     description: 'Aumenta todo el daño que infliges un 10% y cuando tu mascota está bajo los efectos de Cólera de las bestias, tú también te pones iracundo, infliges un 10% de daño extra y reduces el coste de maná de todos los hechizos un 50% durante 10 sec. Mientras estás iracundo no sientes ni pena ni remordimientos ni miedo y no te pueden detener a menos que te maten.',
     row: 8,
@@ -191,7 +191,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Golpes de cobra',
-    icon: 'ability_hunter_cobrastrikes',
+    icon: 'ability-hunter-cobrastrikes',
     maxRank: 3,
     description: 'Cuando asestas un golpe crítico con Disparo Arcano, Disparo firme o Disparo mortal, tienes un 60% de probabilidad de provocar que los 2 próximos ataques especiales de tu mascota sean golpes críticos.',
     row: 8,
@@ -200,7 +200,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Almas gemelas',
-    icon: 'ability_hunter_separationanxiety',
+    icon: 'ability-hunter-separationanxiety',
     maxRank: 5,
     description: 'Aumenta un 20% el daño de tu mascota y tu velocidad de movimiento y la de tu mascota un 10% mientras tu mascota esté activa. Esto no se acumula con otros efectos de aumento de velocidad de movimiento.',
     row: 9,
@@ -208,7 +208,7 @@ export const hunterBestiasTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en bestias',
-    icon: 'ability_hunter_beastmastery',
+    icon: 'ability-hunter-beastmastery',
     maxRank: 1,
     description: 'Dominas el arte del Adiestramiento de bestias y aprendes la facultad de domesticar mascotas exóticas, sumando 4 p. a la cantidad total de p. de habilidad con mascotas.',
     row: 10,
@@ -219,7 +219,7 @@ export const hunterBestiasTalents: WowTalent[] = [
 export const hunterPunteriaTalents: WowTalent[] = [
   {
     name: 'Disparo de conmoción mejorado',
-    icon: 'spell_frost_stun',
+    icon: 'spell-frost-stun',
     maxRank: 2,
     description: 'Aumenta la duración del efecto de atontamiento de tu Disparo de conmoción 2 s.',
     row: 0,
@@ -227,7 +227,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Puntería centrada',
-    icon: 'ability_hunter_focusedaim',
+    icon: 'ability-hunter-focusedaim',
     maxRank: 3,
     description: 'Reduce el retroceso sufrido de los ataques dañinos mientras lanzas Disparo firme un 70% y aumenta tu probabilidad de golpe un 3%.',
     row: 0,
@@ -235,7 +235,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparos letales',
-    icon: 'ability_searingarrow',
+    icon: 'ability-searingarrow',
     maxRank: 5,
     description: 'Aumenta la probabilidad de conseguir un golpe crítico con todas las armas a distancia un 5%.',
     row: 0,
@@ -243,7 +243,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Afinar la puntería',
-    icon: 'ability_hunter_zenarchery',
+    icon: 'ability-hunter-zenarchery',
     maxRank: 3,
     description: 'Aumenta tu poder de ataque a distancia en una cantidad igual a un 100% del total de tu intelecto.',
     row: 1,
@@ -251,7 +251,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Marca del cazador mejorada',
-    icon: 'ability_hunter_snipershot',
+    icon: 'ability-hunter-sniper-shot',
     maxRank: 3,
     description: 'Aumenta el bonus de poder de ataque otorgado por tu facultad Marca del cazador un 30% y reduce el coste de maná de tu facultad Marca del cazador un 100%.',
     row: 1,
@@ -259,7 +259,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparos mortales',
-    icon: 'ability_piercedamage',
+    icon: 'ability-pierceda-mage',
     maxRank: 5,
     description: 'Aumenta el bonus de daño de golpe crítico de tus facultades a distancia un 30%.',
     row: 1,
@@ -267,7 +267,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'A la yugular',
-    icon: 'ability_hunter_goforthethroat',
+    icon: 'ability-hunter-go-for-the-throat',
     maxRank: 2,
     description: 'Tus golpes críticos a distancia provocan que tu mascota genere 50 p. de enfoque.',
     row: 2,
@@ -275,7 +275,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo Arcano mejorado',
-    icon: 'ability_impalingbolt',
+    icon: 'ability-impaling-bolt',
     maxRank: 3,
     description: 'Aumenta el daño que inflige tu Disparo Arcano un 15%.',
     row: 2,
@@ -283,7 +283,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo de puntería',
-    icon: 'inv_spear_07',
+    icon: 'inv-spear-07',
     maxRank: 1,
     description: 'Un disparo de puntería que aumenta el daño a distancia 5 p. y reduce la sanación del objetivo un 50%. Dura 10 sec.',
     row: 2,
@@ -292,7 +292,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Matanza rápida',
-    icon: 'ability_hunter_rapidkilling',
+    icon: 'ability-hunter-rapidkilling',
     maxRank: 2,
     description: 'Reduce el tiempo de reutilización de tu Fuego rápido en 2 min. Además, tras matar a un oponente que reporta experiencia u honor, tu siguiente Disparo de puntería, Disparo Arcano o Disparo de quimera inflige un 20% de daño extra. Dura 20 sec.',
     row: 2,
@@ -300,7 +300,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Picaduras mejoradas',
-    icon: 'ability_hunter_quickshot',
+    icon: 'ability-hunter-quick-shot',
     maxRank: 3,
     description: 'Aumenta un 30% el daño infligido con Picadura de serpiente y Picadura de dracoleón, y un 30% el maná drenado por Picadura de víbora. Además, reduce un 30% la probabilidad de que los efectos de daño en el tiempo de Picadura se disipen.',
     row: 3,
@@ -308,7 +308,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Eficacia',
-    icon: 'spell_frost_wizardmark',
+    icon: 'spell-frost-wizard-mark',
     maxRank: 5,
     description: 'Reduce el coste de maná de tus disparos y picaduras un 15%.',
     row: 3,
@@ -316,7 +316,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Tromba de conmoción',
-    icon: 'spell_arcane_starfire',
+    icon: 'spell-arcane-star-fire',
     maxRank: 2,
     description: 'Los ataques de Disparo de quimera y Multidisparo que alcancen al objetivo tienen un 100% de probabilidad de atontar al objetivo durante 4 sec.',
     row: 4,
@@ -324,7 +324,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disposición',
-    icon: 'ability_hunter_readiness',
+    icon: 'ability-hunter-readiness',
     maxRank: 1,
     description: 'Cuando se activa, termina inmediatamente el tiempo de reutilización de tus otras facultades de cazador, excepto Cólera de las bestias.',
     row: 4,
@@ -332,7 +332,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Tromba',
-    icon: 'ability_upgrademoonglaive',
+    icon: 'ability-upgrademoonglaive',
     maxRank: 3,
     description: 'Aumenta un 12% el daño infligido con tus hechizos Multidisparo, Disparo de puntería y Salva.',
     row: 4,
@@ -340,7 +340,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Experiencia en combate',
-    icon: 'ability_hunter_combatexperience',
+    icon: 'ability-hunter-combatexperience',
     maxRank: 2,
     description: 'Aumenta tu agilidad y tu intelecto totales un 4%.',
     row: 5,
@@ -348,7 +348,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Especialización en armas a distancia',
-    icon: 'inv_weapon_rifle_06',
+    icon: 'inv-weapon-rifle-06',
     maxRank: 3,
     description: 'Aumenta un 5% el daño infligido con las armas a distancia.',
     row: 5,
@@ -356,7 +356,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparos perforadores',
-    icon: 'ability_hunter_piercingshots',
+    icon: 'ability-hunter-piercingshots',
     maxRank: 3,
     description: 'Tus golpes críticos con Disparo de puntería, Disparo firme y Disparo de quimera hacen sangrar al objetivo un 30% del daño infligido durante 8 sec.',
     row: 6,
@@ -364,7 +364,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Aura de disparo certero',
-    icon: 'ability_trueshot',
+    icon: 'ability-true-shot',
     maxRank: 1,
     description: 'Aumenta el poder de ataque de los miembros del grupo y banda en un radio de 100 m un 10%. Dura until cancelled.',
     row: 6,
@@ -373,7 +373,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Tromba mejorada',
-    icon: 'ability_upgrademoonglaive',
+    icon: 'ability-upgrademoonglaive',
     maxRank: 3,
     description: 'Aumenta la probabilidad de golpe crítico de tus facultades Multidisparo y Disparo de puntería un 12% y reduce el retroceso sufrido de los ataques dañinos mientras canalizas Salva un 100%.',
     row: 6,
@@ -382,7 +382,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro Tirador',
-    icon: 'ability_hunter_mastermarksman',
+    icon: 'ability-hunter-mastermarksman',
     maxRank: 5,
     description: 'Aumenta tu probabilidad de golpe crítico un 5% y reduce el coste de maná de tu Disparo firme, Disparo de puntería y Disparo de quimera un 25%.',
     row: 7,
@@ -390,7 +390,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Recuperación rápida',
-    icon: 'ability_hunter_rapidregeneration',
+    icon: 'ability-hunter-rapidregeneration',
     maxRank: 2,
     description: 'Ganas un 4% de tu maná cada 3 s mientras estás bajo el efecto de Fuego rápido, y ganas el 2% de tu maná cada 2 s durante 6 sec cuando ganas Matanza rápida.',
     row: 7,
@@ -398,7 +398,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Carcaj salvaje',
-    icon: 'ability_hunter_wildquiver',
+    icon: 'ability-hunter-wildquiver',
     maxRank: 3,
     description: 'Tienes un 12% de probabilidad de lanzar un disparo adicional cuando inflijas daño con tu disparo automático, que inflige un 80% de daño de Naturaleza con arma. Carcaj salvaje no consume munición.',
     row: 8,
@@ -406,7 +406,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo silenciador',
-    icon: 'ability_theblackarrow',
+    icon: 'ability-theblack-arrow',
     maxRank: 1,
     description: 'Un disparo que provoca un 50% de daño con arma y silencia al objetivo durante 3 sec. El lanzamiento de hechizos de las víctimas no-jugadoras también se interrumpirá durante 3 sec.',
     row: 8,
@@ -415,7 +415,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo firme mejorado',
-    icon: 'ability_hunter_improvedsteadyshot',
+    icon: 'ability-hunter-improvedsteady-shot',
     maxRank: 3,
     description: 'Los impactos de tu Disparo firme tienen un 15% de probabilidad de aumentar el daño infligido por tu siguiente Disparo de puntería, Disparo Arcano o Disparo de quimera un 15% y de reducir el coste de maná de tu siguiente Disparo de puntería, Disparo Arcano o Disparo de quimera un 20%.',
     row: 8,
@@ -423,7 +423,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Marcado para morir',
-    icon: 'ability_hunter_assassinate',
+    icon: 'ability-hunter-assassinate',
     maxRank: 5,
     description: 'Aumenta el daño infligido con tus disparos y con las facultades especiales de tu mascota a los objetivos marcados un 5% y aumenta el bonus de daño de golpe crítico de tu Disparo de puntería, Disparo Arcano, Disparo firme, Disparo mortal y Disparo de quimera un 10%.',
     row: 9,
@@ -431,7 +431,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo de quimera',
-    icon: 'ability_hunter_chimerashot2',
+    icon: 'ability-hunter-chimera-shot-2',
     maxRank: 1,
     description: 'Infliges un 125% de daño con arma, actualizando la Picadura actual de tu objetivo y activando un efecto: Picadura de serpiente: inflige instantáneamente un 40% del daño infligido por tu Picadura de serpiente. Picadura de víbora: restaura instantáneamente el 60% de la cantidad de maná drenada por tu Picadura de víbora. Picadura de escórpido: Intenta desarmar al objetivo durante 10 segundos. Este efecto solo puede ocurrir una vez por minuto.',
     row: 10,
@@ -442,7 +442,7 @@ export const hunterPunteriaTalents: WowTalent[] = [
 export const hunterSupervivenciaTalents: WowTalent[] = [
   {
     name: 'Rastreo mejorado',
-    icon: 'ability_hunter_improvedtracking',
+    icon: 'ability-hunter-improvedtracking',
     maxRank: 5,
     description: 'Mientras rastreas bestias, demonios, dragonantes, elementales, gigantes, humanoides y no-muertos, todo el daño que el cazador inflija a este tipo de criaturas aumenta un 5%.',
     row: 0,
@@ -450,7 +450,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Ojo de halcón',
-    icon: 'ability_townwatch',
+    icon: 'ability-townwatch',
     maxRank: 3,
     description: 'Aumenta 6 m el alcance de tus armas a distancia.',
     row: 0,
@@ -458,7 +458,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Golpes crueles',
-    icon: 'ability_racial_bloodrage',
+    icon: 'ability-racial-blood-rage',
     maxRank: 2,
     description: 'Aumenta un 20% la probabilidad de conseguir un golpe crítico con el Golpe de raptor, Mordedura de mangosta y Contraataque.',
     row: 0,
@@ -466,7 +466,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Pies de plomo',
-    icon: 'ability_kick',
+    icon: 'ability-kick',
     maxRank: 3,
     description: 'Reduce la duración de los efectos de reducción de movimiento un 30%.',
     row: 1,
@@ -474,7 +474,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Atrapar',
-    icon: 'spell_nature_stranglevines',
+    icon: 'spell-nature-stranglevines',
     maxRank: 3,
     description: 'Cuando tu Trampa de Escarcha o tu Trampa de culebras están activadas atrapas a todos los objetivos afectados, impidiendo que se muevan durante 4 sec.',
     row: 1,
@@ -482,7 +482,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Maestría en trampas',
-    icon: 'ability_ensnare',
+    icon: 'ability-ensnare',
     maxRank: 3,
     description: 'Trampa de Escarcha y Trampa congelante: Aumenta la duración un 30%. Trampa de Inmolación, Trampa explosiva y Flecha negra: Aumenta el daño periódico infligido un 30%. Trampa con culebras: Aumenta el número de culebras invocadas en 6.',
     row: 1,
@@ -490,7 +490,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Instintos de supervivencia',
-    icon: 'ability_hunter_survivalinstincts',
+    icon: 'ability-hunter-survivalinstincts',
     maxRank: 2,
     description: 'Reduce todo el daño recibido un 4% y aumenta la probabilidad de golpe crítico de tu Disparo Arcano, Disparo firme y Disparo explosivo un 4%.',
     row: 1,
@@ -498,7 +498,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Superviviente',
-    icon: 'spell_shadow_twilight',
+    icon: 'spell-shadow-twilight',
     maxRank: 5,
     description: 'Aumenta tu aguante un 10%.',
     row: 2,
@@ -506,7 +506,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo de dispersión',
-    icon: 'ability_golemstormbolt',
+    icon: 'ability-golem-storm-bolt',
     maxRank: 1,
     description: 'Un disparo a corta distancia que inflige un 50% de daño con arma y desorienta al objetivo durante 4 sec. Cualquier daño infligido con posterioridad anulará su efecto. Desactiva tu ataque al ser utilizado.',
     row: 2,
@@ -514,7 +514,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Desvío',
-    icon: 'ability_parry',
+    icon: 'ability-parry',
     maxRank: 3,
     description: 'Aumenta tu probabilidad de parar un 3% y reduce la duración de todos los efectos de desarme que se usen contra ti un 50%. No se acumula con otros efectos de reducción de duración de desarme.',
     row: 2,
@@ -522,7 +522,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Tácticas de supervivencia',
-    icon: 'ability_rogue_feigndeath',
+    icon: 'ability-rogue-feign-death',
     maxRank: 2,
     description: 'Reduce la probabilidad de que tu facultad Fingir muerte y todos los hechizos de trampa sean resistidos un 4% y reduce el tiempo de reutilización de tu facultad Separación 4 s.',
     row: 2,
@@ -530,7 +530,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'TNT',
-    icon: 'inv_misc_bomb_05',
+    icon: 'inv-misc-bomb-05',
     maxRank: 3,
     description: 'Aumenta el daño infligido por tu Disparo explosivo, Trampa explosiva, Flecha negra y Trampa de inmolación un 6%.',
     row: 3,
@@ -538,7 +538,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Bloquear y cargar',
-    icon: 'ability_hunter_lockandload',
+    icon: 'ability-hunter-lockandload',
     maxRank: 3,
     description: 'Tienes un 100% de probabilidad cuando atrapas a un objetivo con Trampa congelante, Flecha congelante y Trampa de Escarcha y un 6% de probabilidad cuando le causas daño periódico con tu Trampa de inmolación, Trampa explosiva o Flecha negra de que tus 2 Disparos Arcanos o Disparos explosivos siguientes no tengan tiempo de reutilización, no cuesten maná y no consuman munición. Este efecto tiene un tiempo de reutilización de 22 s.',
     row: 3,
@@ -546,7 +546,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Cazador contra fauna',
-    icon: 'ability_hunter_huntervswild',
+    icon: 'ability-hunter-huntervswild',
     maxRank: 3,
     description: 'Te aumenta a ti y a tu mascota el poder de ataque y poder de ataque a distancia una cantidad igual al 30% de tu aguante total.',
     row: 4,
@@ -555,7 +555,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Instinto asesino',
-    icon: 'spell_holy_blessingofstamina',
+    icon: 'spell-holy-blessing-of-stamina',
     maxRank: 3,
     description: 'Aumenta un 3% tu probabilidad de conseguir un golpe crítico con todos los ataques.',
     row: 4,
@@ -563,7 +563,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Contraataque',
-    icon: 'ability_warrior_challange',
+    icon: 'ability-warrior-challange',
     maxRank: 1,
     description: 'Un golpe que se activa tras haber parado el ataque de un oponente. Este ataque inflige (Attack power * 0.2 + 48) p. de daño e inmoviliza al objetivo durante 5 sec. No se puede bloquear, esquivar ni parar el contraataque.',
     row: 4,
@@ -572,7 +572,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Reflejos de relámpago',
-    icon: 'spell_nature_invisibilty',
+    icon: 'spell-nature-invisibilty',
     maxRank: 5,
     description: 'Aumenta tu agilidad un 15%.',
     row: 5,
@@ -580,7 +580,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Inventiva',
-    icon: 'ability_hunter_resourcefulness',
+    icon: 'ability-hunter-resourcefulness',
     maxRank: 3,
     description: 'Reduce el coste de maná de todas las trampas, facultades cuerpo a cuerpo y Flecha negra un 60% y reduce el tiempo de reutilización de todas las trampas y Flecha negra 6 s.',
     row: 5,
@@ -588,7 +588,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Exponer debilidad',
-    icon: 'ability_rogue_findweakness',
+    icon: 'ability-rogue-findweakness',
     maxRank: 3,
     description: 'Tus golpes críticos a distancia tienen un 100% de probabilidad de otorgarte Exponer debilidad. Exponer debilidad aumenta tu poder de ataque un 25% de tu agilidad durante 7 sec.',
     row: 6,
@@ -597,7 +597,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Picadura de dracoleón',
-    icon: 'inv_spear_02',
+    icon: 'inv-spear-02',
     maxRank: 1,
     description: 'Un disparo punzante que duerme al objetivo durante 30 sec. Cualquier daño infligido con posterioridad anulará su efecto. Cuando el objetivo se despierta, la picadura provoca 300 p. de daño de Naturaleza durante 6 sec. Un cazador solo puede tener una picadura activa a la vez sobre un mismo objetivo.',
     row: 6,
@@ -606,7 +606,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Emoción de la caza',
-    icon: 'ability_hunter_thrillofthehunt',
+    icon: 'ability-hunter-thrill-of-the-hunt',
     maxRank: 3,
     description: 'Te da un 100% de probabilidad de recuperar un 40% del coste de maná de cualquier disparo cuando asesta un golpe crítico.',
     row: 6,
@@ -614,7 +614,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Maestro táctico',
-    icon: 'ability_hunter_mastertactitian',
+    icon: 'ability-hunter-mastertactitian',
     maxRank: 5,
     description: 'Tus ataques a distancia efectivos tienen un 10% de probabilidad de aumentar tu probabilidad de asestar un golpe crítico con todos los ataques un 10% durante 8 sec.',
     row: 7,
@@ -622,7 +622,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Picaduras ponzoñosas',
-    icon: 'ability_hunter_potentvenom',
+    icon: 'ability-hunter-potentvenom',
     maxRank: 3,
     description: 'Si se disipa Picadura de dracoleón, quien lo disipa se ve afectado por Picadura de dracoleón durante un 50% de la duración restante y aumenta todo el daño infligido por ti a los objetivos afectados por Picadura de serpiente un 3%.',
     row: 7,
@@ -631,7 +631,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Sin escapatoria',
-    icon: 'ability_hunter_pointofnoescape',
+    icon: 'ability-hunter-point-of-noescape',
     maxRank: 2,
     description: 'Aumenta la probabilidad de golpe crítico de todos tus ataques sobre objetivos afectados por tu Trampa de Escarcha, Trampa congelante y Flecha congelante un 6%.',
     row: 8,
@@ -639,7 +639,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Flecha negra',
-    icon: 'spell_shadow_painspike',
+    icon: 'spell-shadow-pain-spike',
     maxRank: 1,
     description: 'Dispara una flecha negra al objetivo, aumenta todo el daño que inflijas al objetivo un 6% e inflige (Ranged attack power * 0.1 + 157 * 5) p. de daño de las Sombras durante 15 sec. Flecha negra comparte tiempo de reutilización con los hechizos de trampa.',
     row: 8,
@@ -647,7 +647,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Instrucción de francotirador',
-    icon: 'ability_hunter_longshots',
+    icon: 'ability-hunter-longshots',
     maxRank: 3,
     description: 'Aumenta la probabilidad de golpe crítico de tu facultad Disparo mortal un 15% y mientras estés quieto durante 6 s, obtienes Instrucción de francotirador que aumenta el daño infligido por tu Disparo firme, Disparo de puntería, Flecha negra y Disparo explosivo un 6% durante 15 sec.',
     row: 8,
@@ -655,7 +655,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Grupo de caza',
-    icon: 'ability_hunter_huntingparty',
+    icon: 'ability-hunter-huntingparty',
     maxRank: 3,
     description: 'Aumenta tu agilidad total un 3% extra y tus golpes críticos con Disparo Arcano, Disparo explosivo y Disparo firme tienen un 100% de probabilidad de otorgar a hasta 10 miembros del grupo o banda regeneración de maná igual al 1% del maná máximo cada 5 s. Dura 15 sec.',
     row: 9,
@@ -664,7 +664,7 @@ export const hunterSupervivenciaTalents: WowTalent[] = [
   },
   {
     name: 'Disparo explosivo',
-    icon: 'ability_hunter_explosiveshot',
+    icon: 'ability-hunter-explosive-shot',
     maxRank: 1,
     description: 'Lanzas una carga explosiva al objetivo, que inflige (Ranged attack power * 0.14 + 144)-(Ranged attack power * 0.14 + 172) p. de daño de Fuego. La carga golpeará al objetivo cada segundo durante 2 sec adicionales.',
     row: 10,

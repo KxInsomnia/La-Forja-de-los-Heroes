@@ -18,7 +18,7 @@ export const shaman: WowClass = {
     },
     {
       slug: 'mejora',
-      icon: 'shaman-mejora',
+      icon: 'shaman-enhancement',
       name: 'Mejora',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
@@ -26,7 +26,7 @@ export const shaman: WowClass = {
     },
     {
       slug: 'restauracion',
-      icon: 'shaman-restauracion',
+      icon: 'shaman-restoration',
       name: 'Restauración',
       role: 'Healer',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
