@@ -2,12 +2,18 @@ import { BackLink } from '../components/ui/BackLink'
 
 interface ComingSoonPageProps {
   title: string
+  backTo?: string
+  backLabel?: string
 }
 
-export function ComingSoonPage({ title }: ComingSoonPageProps) {
+export function ComingSoonPage({
+  title,
+  backTo,
+  backLabel,
+}: ComingSoonPageProps) {
   return (
     <section className="content-page">
-      <BackLink />
+      <BackLink to={backTo} label={backLabel} />
       <div className="coming-soon">
         <p className="coming-soon__badge">En trabajo</p>
         <h1 className="content-page__title">{title}</h1>

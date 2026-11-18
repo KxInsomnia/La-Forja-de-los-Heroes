@@ -10,6 +10,8 @@ import '../../styles/talent-tree.css'
 
 interface TalentTreeProps {
   trees: WowTalentTree[]
+  classSlug: string
+  highlightAll?: boolean
 }
 
 interface TalentTooltip {
@@ -92,7 +94,7 @@ function buildArrow(from: { x: number; y: number }, to: { x: number; y: number }
   }
 }
 
-function buildLinks(talents: WowTalent[]): TreeLinks {
+function buildLinks(talents: WowTalent[], highlightAll: boolean): TreeLinks {
   const maxRow = talents.reduce((max, talent) => Math.max(max, talent.row), 0)
   const byPosition = new Map(
     talents.map((talent) => [`${talent.row}-${talent.col}`, talent]),
@@ -111,7 +113,8 @@ function buildLinks(talents: WowTalent[]): TreeLinks {
         id: `${requirement.row}-${requirement.col}-${talent.row}-${talent.col}`,
         ...arrow,
         muted:
-          (source?.points ?? 0) === 0 || (talent.points ?? 0) === 0,
+          !highlightAll &&
+          ((source?.points ?? 0) === 0 || (talent.points ?? 0) === 0),
       })
     }
   }
@@ -123,7 +126,11 @@ function buildLinks(talents: WowTalent[]): TreeLinks {
   }
 }
 
-export function TalentTree({ trees }: TalentTreeProps) {
+export function TalentTree({
+  trees,
+  classSlug,
+  highlightAll = false,
+}: TalentTreeProps) {
   const [tooltip, setTooltip] = useState<TalentTooltip | null>(null)
 
   useEffect(() => {
@@ -155,7 +162,11 @@ export function TalentTree({ trees }: TalentTreeProps) {
   return (
     <div className="talent-trees">
       {trees.map((tree) => {
-        const links = buildLinks(tree.talents)
+        const links = buildLinks(tree.talents, highlightAll)
+        const spentPoints = tree.talents.reduce(
+          (total, talent) => total + (talent.points ?? 0),
+          0,
+        )
 
         return (
           <div
@@ -163,14 +174,14 @@ export function TalentTree({ trees }: TalentTreeProps) {
             key={tree.slug}
             style={
               {
-                '--tree-bg': `url(${import.meta.env.BASE_URL}talents/tree_warrior_${tree.slug}.jpg)`,
+                '--tree-bg': `url(${import.meta.env.BASE_URL}talents/tree_${classSlug}_${tree.slug}.jpg)`,
               } as CSSProperties
             }
           >
             <div className="talent-tree__header">
               <p className="talent-tree__title">{tree.name}</p>
               <p className="talent-tree__count">
-                {tree.talents.length} talentos
+                {spentPoints} {spentPoints === 1 ? 'punto' : 'puntos'}
               </p>
             </div>
 
@@ -204,7 +215,9 @@ export function TalentTree({ trees }: TalentTreeProps) {
                   const points = talent.points ?? 0
                   const state =
                     points === 0
-                      ? 'talent-node--empty'
+                      ? highlightAll
+                        ? ''
+                        : 'talent-node--empty'
                       : points >= talent.maxRank
                         ? 'talent-node--max'
                         : 'talent-node--partial'

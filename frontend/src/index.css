@@ -17,6 +17,16 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   min-height: 100svh;
@@ -70,7 +80,7 @@ body::before {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background: rgba(5, 8, 15, 0.9);
+  background: #060a12;
   border-bottom: 1px solid rgba(124, 196, 250, 0.12);
 }
 

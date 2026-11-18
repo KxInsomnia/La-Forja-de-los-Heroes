@@ -2,6 +2,7 @@ import type { WowClass } from '../../types/wow'
 
 export const paladin: WowClass = {
   slug: 'paladin',
+  icon: 'paladin',
   name: 'Paladín',
   color: '#f58cba',
   description:
@@ -9,21 +10,27 @@ export const paladin: WowClass = {
   specs: [
     {
       slug: 'sagrado',
+      icon: 'paladin-sagrado',
       name: 'Sagrado',
       role: 'Healer',
-      buildCount: 0,
+      recommended: true,
+      buildCount: 1,
     },
     {
       slug: 'proteccion',
+      icon: 'paladin-proteccion',
       name: 'Protección',
       role: 'Tanque',
-      buildCount: 0,
+      recommended: true,
+      buildCount: 1,
     },
     {
       slug: 'reprension',
+      icon: 'paladin-reprension',
       name: 'Reprensión',
       role: 'DPS',
-      buildCount: 0,
+      recommended: true,
+      buildCount: 2,
     },
   ],
 }

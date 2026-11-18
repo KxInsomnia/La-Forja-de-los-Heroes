@@ -11,6 +11,9 @@ export function Navbar() {
         La Forja de los Héroes
       </Link>
       <nav className="navbar__nav" aria-label="Navegación principal">
+        <NavLink className={navLinkClass} to="/general">
+          General
+        </NavLink>
         <NavLink className={navLinkClass} to="/pve">
           Guías PvE
         </NavLink>

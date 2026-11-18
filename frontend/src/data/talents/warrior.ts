@@ -57,7 +57,7 @@ export const warriorArmsTalents: WowTalent[] = [
     icon: 'inv_sword_05',
     maxRank: 2,
     description:
-      'Aumenta un 50% la probabilidad de golpe crítico de tu Revés.',
+      'Aumenta un 50% la probabilidad de golpe crítico de tu Abrumar.',
     row: 2,
     col: 0,
   },
@@ -102,7 +102,7 @@ export const warriorArmsTalents: WowTalent[] = [
     icon: 'ability_rogue_hungerforblood',
     maxRank: 3,
     description:
-      'Cuando tu Desgarrar inflige daño, tienes un 100% de probabilidad de poder usar Revés durante 9 s. 1 carga. Este efecto no puede ocurrir más de una vez cada 6 s.',
+      'Cuando tu Desgarrar inflige daño, tienes un 100% de probabilidad de poder usar Abrumar durante 9 s. 1 carga. Este efecto no puede ocurrir más de una vez cada 6 s.',
     row: 3,
     col: 2,
   },
@@ -229,7 +229,7 @@ export const warriorArmsTalents: WowTalent[] = [
     icon: 'ability_warrior_unrelentingassault',
     maxRank: 2,
     description:
-      'Reduce 4 s el tiempo de reutilización de tus habilidades Revés y Represalia y aumenta un 20% el daño de ambas. Además, si golpeas a un jugador con Revés mientras está lanzando un hechizo, su daño mágico y sanación se reducen un 50% durante 6 s.',
+      'Reduce 4 s el tiempo de reutilización de tus habilidades Abrumar y Represalia y aumenta un 20% el daño de ambas. Además, si golpeas a un jugador con Abrumar mientras está lanzando un hechizo, su daño mágico y sanación se reducen un 50% durante 6 s.',
     row: 7,
     col: 2,
   },
@@ -290,11 +290,11 @@ export const warriorFuryTalents: WowTalent[] = [
     col: 0,
   },
   {
-    name: 'Voz atronadora',
+    name: 'Voz retumbante',
     icon: 'spell_nature_purge',
     maxRank: 2,
     description:
-      'Aumenta un 50% el área de efecto y la duración de tu Grito de batalla, Grito desmoralizador y Grito de mando.',
+      'Aumenta un 50% el área de efecto y la duración de tu Grito de batalla, Grito desmoralizador y Grito de orden.',
     row: 0,
     col: 1,
   },
@@ -353,11 +353,11 @@ export const warriorFuryTalents: WowTalent[] = [
     col: 2,
   },
   {
-    name: 'Presencia de mando',
+    name: 'Presencia de orden',
     icon: 'spell_nature_focusedmind',
     maxRank: 5,
     description:
-      'Aumenta un 25% el bonus de poder de ataque cuerpo a cuerpo de tu Grito de batalla y el bonus de salud de tu Grito de mando.',
+      'Aumenta un 25% el bonus de poder de ataque cuerpo a cuerpo de tu Grito de batalla y el bonus de salud de tu Grito de orden.',
     row: 2,
     col: 3,
   },
@@ -477,7 +477,7 @@ export const warriorFuryTalents: WowTalent[] = [
     col: 3,
   },
   {
-    name: 'Ira heroica',
+    name: 'Furia heroica',
     icon: 'ability_heroicleap',
     maxRank: 1,
     description:

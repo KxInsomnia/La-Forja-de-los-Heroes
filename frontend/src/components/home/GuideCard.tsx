@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/guide-card.css'
 
-type GuideVariant = 'pve' | 'pvp' | 'raid'
+type GuideVariant = 'general' | 'pve' | 'pvp' | 'raid' | 'buffs' | 'debuffs'
 
 interface GuideCardProps {
   to: string
@@ -15,6 +15,60 @@ interface GuideCardProps {
 }
 
 function GuideIcon({ variant }: { variant: GuideVariant }) {
+  if (variant === 'general') {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v16H6.5A2.5 2.5 0 0 0 4 21.5z" />
+        <path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H19" />
+        <path d="M9 7h6" />
+      </svg>
+    )
+  }
+
+  if (variant === 'buffs') {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 19V5" />
+        <path d="m6 11 6-6 6 6" />
+        <path d="M5 20h14" />
+      </svg>
+    )
+  }
+
+  if (variant === 'debuffs') {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 5v14" />
+        <path d="m6 13 6 6 6-6" />
+        <path d="M5 4h14" />
+      </svg>
+    )
+  }
+
   if (variant === 'pve') {
     return (
       <svg
