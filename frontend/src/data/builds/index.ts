@@ -1112,6 +1112,9 @@ const retributionStats: WowStatRow[] = [
 const hunterBestiasNotice =
   'A pesar de que esta spec es la mejor para subir de nivel y cuando estás fresh 80, a medida que te armas, Supervivencia y Puntería comienzan a superarla por mucho.'
 
+const hunterSupervivenciaNotice =
+  'Supervivencia es una especialización exigente: para maximizar el daño, casi siempre tendrás que recurrir al trap weaving, ya que Trampa explosiva inflige mucho más daño que Flecha negra.'
+
 const hunterBestiasStats: WowStatRow[] = [
   { label: 'Índice de golpe', value: '8%' },
 ]
@@ -1678,6 +1681,71 @@ const rogueCombatTips: WowBuildTip[] = [
   },
 ]
 
+const rogueSutilezaNotice =
+  'Esta especialización está pensada para PvP; en PvE su diferencia de daño con las otras especialidades del Pícaro es bastante notable.'
+
+const rogueSutilezaStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '11%' },
+  { label: 'Pericia', value: '26/26' },
+  {
+    label: 'Penetración de armadura (ArPen) · Soft cap',
+    value: '722 (51.57%)',
+  },
+  {
+    label: 'Penetración de armadura (ArPen) · Hard cap',
+    value: '1400 (100%)',
+  },
+]
+
+const rogueSutilezaGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Ruptura',
+    icon: 'ability-rogue-rupture',
+    description: 'Aumenta 4 s la duración de Ruptura.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Eviscerar',
+    icon: 'ability-rogue-eviscerate',
+    description: 'Aumenta un 10% la probabilidad de golpe crítico de Eviscerar.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Secretos del oficio',
+    icon: 'ability-rogue-tricks-of-the-trade',
+    description:
+      'El bono de daño y la redirección de amenaza de Secretos del oficio duran 4 s más.',
+  },
+  ...rogueAsesinatoGlyphs.filter((glyph) => glyph.type === 'minor'),
+]
+
+const rogueSutilezaRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Mantener Hacer picadillo',
+          icons: ['ability-rogue-slicedice'],
+        },
+        {
+          label: 'Mantener Ruptura',
+          icons: ['ability-rogue-rupture'],
+        },
+        {
+          label: 'Eviscerar',
+          icons: ['ability-rogue-eviscerate'],
+        },
+        {
+          label: 'Hemorragia',
+          icons: ['spell-shadow-lifedrain'],
+        },
+      ],
+    },
+  ],
+}
+
 function hunterPetFerocityTree(points: Record<string, number>): WowTalentTree {
   return {
     slug: 'ferocidad',
@@ -1956,6 +2024,7 @@ function createBuild(
     priorityGroups?: WowStatPriorityGroup[]
     glyphs?: WowGlyphSlot[]
     notice?: string
+    noticeTone?: 'warning' | 'danger'
     rotation?: WowRotation
     rotationNotice?: string | WowRotationNotice
     tips?: (string | WowBuildTip)[]
@@ -1972,6 +2041,7 @@ function createBuild(
     priority: options.priority,
     priorityGroups: options.priorityGroups,
     notice: options.notice,
+    noticeTone: options.noticeTone,
     rotation: options.rotation,
     rotationNotice: options.rotationNotice,
     tips: options.tips,
@@ -1993,6 +2063,7 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
     const isHunterSupervivencia = isHunter && specSlug === 'supervivencia'
     const isRogueAsesinato = classSlug === 'picaro' && specSlug === 'asesinato'
     const isRogueCombate = classSlug === 'picaro' && specSlug === 'combate'
+    const isRogueSutileza = classSlug === 'picaro' && specSlug === 'sutileza'
     const isDruidRestoration =
       classSlug === 'druida' && specSlug === 'restauracion'
     const isDruidFeralDps = classSlug === 'druida' && specSlug === 'feral'
@@ -2017,7 +2088,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
               ? rogueAsesinatoStats
               : isRogueCombate
                 ? rogueCombatStats
-                : isRetribution
+                : isRogueSutileza
+                  ? rogueSutilezaStats
+                  : isRetribution
                 ? retributionStats
                 : isArms
                   ? armsStats
@@ -2067,7 +2140,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
               ? rogueAsesinatoRotation
               : isRogueCombate
                 ? rogueCombatRotation
-                : isPaladinProtection
+                : isRogueSutileza
+                  ? rogueSutilezaRotation
+                  : isPaladinProtection
                 ? paladinProtectionRotation
                 : isRetribution
                   ? retributionRotation
@@ -2129,7 +2204,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                   ? rogueAsesinatoGlyphs
                   : isRogueCombate
                     ? rogueCombatGlyphs
-                    : isPaladinProtection
+                    : isRogueSutileza
+                      ? rogueSutilezaGlyphs
+                      : isPaladinProtection
                     ? paladinProtectionGlyphs
                     : isRetribution
                       ? retributionGlyphs
@@ -2144,15 +2221,21 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
           ? armsNotice
           : isHunterBestias
             ? hunterBestiasNotice
-            : isProtection
-              ? protectionNotice
-              : undefined,
+            : isHunterSupervivencia
+              ? hunterSupervivenciaNotice
+              : isRogueSutileza
+                ? rogueSutilezaNotice
+                : isProtection
+                  ? protectionNotice
+                  : undefined,
+        noticeTone: isRogueSutileza ? 'danger' : undefined,
         rotation: buildRotation,
         rotationNotice:
           isHunterPunteria ||
           isHunterSupervivencia ||
           isRogueAsesinato ||
-          isRogueCombate
+          isRogueCombate ||
+          isRogueSutileza
             ? undefined
             : buildRotation
             ? isFury && variant.label.includes('Overpower')

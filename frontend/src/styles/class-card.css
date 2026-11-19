@@ -222,19 +222,6 @@
   color: #f2f8ff;
 }
 
-.class-card__count {
-  margin-left: auto;
-  flex: none;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--class-color) 26%, transparent);
-  background: color-mix(in srgb, var(--class-color) 10%, transparent);
-  color: color-mix(in srgb, var(--class-color) 70%, white);
-  font-size: 0.65rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
 .class-card__roles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -415,10 +402,6 @@
 
   .class-card__header {
     padding: 1.25rem;
-  }
-
-  .class-card__count {
-    display: none;
   }
 
   .class-card__roles {

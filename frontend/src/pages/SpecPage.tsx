@@ -93,7 +93,12 @@ export function SpecPage() {
       </p>
       <h1 className="spec-page__title">{spec.name}</h1>
       {activeBuild?.notice && (
-        <div className="spec-notice" role="note">
+        <div
+          className={`spec-notice${
+            activeBuild.noticeTone === 'danger' ? ' spec-notice--danger' : ''
+          }`}
+          role="note"
+        >
           <p className="spec-notice__title">
             Antes de elegir esta especialización
           </p>

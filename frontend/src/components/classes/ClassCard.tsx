@@ -45,9 +45,6 @@ export function ClassCard({ wowClass }: ClassCardProps) {
           <p className="class-card__kicker">Clase</p>
           <h2 className="class-card__name">{wowClass.name}</h2>
         </div>
-        <span className="class-card__count">
-          {wowClass.specs.length} especialidades
-        </span>
       </header>
 
       <div className="class-card__roles">

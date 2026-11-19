@@ -125,6 +125,17 @@
   box-shadow: inset 0 0 1.5rem rgba(255, 110, 40, 0.06);
 }
 
+.spec-notice--danger {
+  border-color: rgba(255, 77, 77, 0.5);
+  border-left-color: #ff4d4d;
+  background: linear-gradient(
+    90deg,
+    rgba(210, 38, 38, 0.22),
+    rgba(255, 77, 77, 0.06)
+  );
+  box-shadow: inset 0 0 1.5rem rgba(255, 60, 60, 0.12);
+}
+
 .spec-notice__title {
   margin: 0 0 0.35rem;
   color: #ffb07a;
@@ -139,6 +150,14 @@
   color: #f1d4bd;
   font-size: 0.88rem;
   line-height: 1.6;
+}
+
+.spec-notice--danger .spec-notice__title {
+  color: #ffb3b3;
+}
+
+.spec-notice--danger .spec-notice__text {
+  color: #ffd9d9;
 }
 
 .spec-page__sections {
