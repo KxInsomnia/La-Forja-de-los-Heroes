@@ -867,7 +867,7 @@ const druidRestorationRotation: WowRotation = {
 
 const druidRestorationTips: WowBuildTip[] = [
   {
-    text: 'Siempre mantente spamneando Rejuvenecimiento en la banda, es tu hechizo principal de curación.',
+    text: 'Siempre mantente spameando Rejuvenecimiento en la banda, es tu hechizo principal de curación.',
     icons: ['spell-nature-rejuvenation'],
   },
   {
@@ -884,6 +884,141 @@ const druidRestorationTips: WowBuildTip[] = [
   },
 ]
 
+const druidferalDpsGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Triturar (o Flebotomia)',
+    icon: 'spell_shadow_vampiricaura',
+    description: 'Cada vez que usas Triturar, la duración de Destripar se extiende 2 segundos en el objetivo, hasta un máximo de 6 segundos.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Destripar',
+    icon: 'ability_ghoulfrenzy',
+    description:
+      'Aumenta la duración de tu facultad Destripar en 4 segundos.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Rugido Salvaje',
+    icon: 'ability_druid_skinteeth',
+    description:
+      'Tu facultad Rugido salvaje otorga una bonificación adicional del 3% al daño infligido. ',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Renacer desahogado',
+    icon: 'spell-nature-reincarnation',
+    description: 'Tu hechizo Renacer ya no necesita un componente.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de lo Salvaje',
+    icon: 'spell-nature-gift-of-the-wild',
+    description:
+      'Coste de maná de tus hechizos Marca de lo Salvaje y Don de lo Salvaje reducido un 50%.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Carrerilla',
+    icon: 'ability-druid-dash',
+    description: 'Reduce un 20% el tiempo de reutilización de tu facultad Carrerilla.',
+  },
+]
+
+const druidferalDpsPriorityGroups: WowStatPriorityGroup[] = [
+  {
+    title: 'ORDEN DE PRIORIDAD DE ESTADÍSTICAS',
+    stats: [
+      'Cap de Índice de golpe',
+      'Cap de Pericia',
+      'Hard Cap de ArPen',
+      'Crítico = Agilidad',
+      'Soft Cap de ArPen',
+      'Celeridad',
+    ],
+  },
+]
+
+const druidferalDpsStats: WowStatRow[] = [
+  {
+    label: 'Índice de golpe',
+    value: '8%',
+  },
+  {
+    label: 'Pericia',
+    value: '26',
+  },
+  {
+    label: 'Penetracion de Armadura (ArPen) · Soft cap',
+    value: '722 (51.57%)',
+  },
+  {
+    label: 'Penetracion de Armadura (ArPen) · Hard cap',
+    value: '1400 (100%)',
+  }
+]
+
+const druidferalDpsRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Prioridad',
+      steps: [
+        {
+          label: 'Mantener Rugido Salvaje activo',
+          note: 'Siempre activo, aunque sea con 1 punto de combo.',
+          icons: ['ability-druid-skinteeth'],
+        },
+        {
+          label: 'Mantener Destripar activo',
+          note: 'Siempre con 5 puntos de combo.',
+          icons: ['ability-ghoulfrenzy'],
+        },
+        {
+          label: 'Mantener Arañazo activo',
+          icons: ['ability-druid-disembowel'],
+        },
+        {
+          label: 'Triturar',
+          note: 'Filler principal, generador de puntos de combo.',
+          icons: ['spell-shadow-vampiric-aura'],
+        },
+        {
+          label: 'Destrozar',
+          icons: ['ability-druid-mangle-2'],
+        },
+        {
+          label: 'Mordedura Feroz',
+          note: 'Usar siempre con 5 puntos de combo, es un arma de doble filo, puede subir mucho tu dps o hacerlo decaer.',
+          icons: ['ability-druid-ferocious-bite'],
+        },
+      ],
+    },
+  ],
+}
+
+const druidferalDpsTips: WowBuildTip[] = [
+  {
+    text: 'Nunca dejes caer tu Rugido Salvaje, es tu buff de daño más importante.',
+    icons: ['ability-druid-skinteeth'],
+  },
+  {
+    text: '8-7 Segundos antes del pull, lanza tu Don de lo Salvaje para tener Lanzamiento libre.',
+    icons: ['spell-nature-regeneration', 'spell-nature-crystal-ball'],
+  },
+  {
+    text: 'Usa siempre Destripar y Mordedura Feroz con 5 puntos de combo.',
+    icons: ['ability-ghoulfrenzy', 'ability-druid-ferocious-bite'],
+  },
+  {
+    text: 'Usa tu Furia del Tigre en momentos clave de la rotación.',
+    icons: ['ability-mount-jungletiger'],
+  },
+  {
+    text: 'Usa tu Mordedura Feroz con cuidado, no dejes caer tu rugido o destripar por usar una mordedura.',
+    icons: ['ability-druid-ferocious-bite', 'ability-druid-skinteeth', 'ability-ghoulfrenzy'],
+  },
+]
 
 const armsNotice =
   'Armas es una gran opción para subir de nivel y cuando eres fresh 80 con equipo bajo. Pero en cuanto pasas a un equipo decente (GS 3.500+), Furia comienza a ganar mayor daño en PvE. Si ya estás en ese punto, cambiar a Furia te dará mucho más rendimiento.'
@@ -1860,12 +1995,15 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
     const isRogueCombate = classSlug === 'picaro' && specSlug === 'combate'
     const isDruidRestoration =
       classSlug === 'druida' && specSlug === 'restauracion'
+    const isDruidFeralDps = classSlug === 'druida' && specSlug === 'feral'
     const isHoly = classSlug === 'paladin' && specSlug === 'sagrado'
     const isPaladinProtection =
       classSlug === 'paladin' && specSlug === 'proteccion'
     const isRetribution =
       classSlug === 'paladin' && specSlug === 'reprension'
-    const stats = isDruidRestoration
+    const stats = isDruidFeralDps
+      ? druidferalDpsStats
+      : isDruidRestoration
       ? druidRestorationStats
       : isHoly
         ? []
@@ -1888,7 +2026,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                     : tankSpecs.has(specSlug)
                       ? tankStats
                       : dpsStats
-    const baseTips = isDruidRestoration
+    const baseTips = isDruidFeralDps
+      ? druidferalDpsTips
+      : isDruidRestoration
       ? druidRestorationTips
       : isHoly
         ? holyTips
@@ -1911,7 +2051,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                     : isRetribution
                       ? retributionTips
                       : undefined
-    const rotation = isDruidRestoration
+    const rotation = isDruidFeralDps
+      ? druidferalDpsRotation
+      : isDruidRestoration
       ? druidRestorationRotation
       : isHoly
         ? holyRotation
@@ -1958,7 +2100,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                   : isArms || isFury
                   ? armsPriority
                   : undefined,
-        priorityGroups: isDruidRestoration
+        priorityGroups: isDruidFeralDps
+          ? druidferalDpsPriorityGroups
+          : isDruidRestoration
           ? druidRestorationPriorityGroups
           : isHunterBestias
             ? hunterBestiasPriorityGroups
@@ -1969,7 +2113,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             : isRetribution
               ? retributionPriorityGroups
               : undefined,
-        glyphs: isDruidRestoration
+        glyphs: isDruidFeralDps
+          ? druidferalDpsGlyphs
+          : isDruidRestoration
           ? druidRestorationGlyphs
           : isHoly
             ? holyGlyphs
