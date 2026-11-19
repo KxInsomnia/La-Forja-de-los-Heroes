@@ -438,6 +438,17 @@
   );
 }
 
+.rotation-group--divider {
+  grid-column: 1 / -1;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.rotation-group--divider .rotation-group__title {
+  margin-bottom: 0;
+}
+
 .rotation-group__title {
   margin: 0 0 0.9rem;
   color: color-mix(in srgb, var(--class-color, #7cc4fa) 70%, white);

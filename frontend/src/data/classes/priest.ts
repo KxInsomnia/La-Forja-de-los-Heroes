@@ -14,7 +14,7 @@ export const priest: WowClass = {
       name: 'Disciplina',
       role: 'Healer',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
-      buildCount: 3,
+      buildCount: 1,
     },
     {
       slug: 'sagrado',
@@ -30,7 +30,7 @@ export const priest: WowClass = {
       name: 'Sombra',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
-      buildCount: 1,
+      buildCount: 2,
     },
   ],
 }

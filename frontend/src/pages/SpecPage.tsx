@@ -92,19 +92,6 @@ export function SpecPage() {
         {wowClass.name} · {roleLabels[spec.role]}
       </p>
       <h1 className="spec-page__title">{spec.name}</h1>
-      {activeBuild?.notice && (
-        <div
-          className={`spec-notice${
-            activeBuild.noticeTone === 'danger' ? ' spec-notice--danger' : ''
-          }`}
-          role="note"
-        >
-          <p className="spec-notice__title">
-            Antes de elegir esta especialización
-          </p>
-          <p className="spec-notice__text">{activeBuild.notice}</p>
-        </div>
-      )}
       {spec.description && (
         <p className="spec-page__desc">{spec.description}</p>
       )}
@@ -158,6 +145,39 @@ export function SpecPage() {
               </div>
             )}
           </div>
+          {activeBuild?.notice && (
+            <div
+              className={`spec-notice${
+                activeBuild.noticeTone === 'danger' ? ' spec-notice--danger' : ''
+              }`}
+              role="note"
+            >
+              <p className="spec-notice__title">
+                {activeBuild.noticeTitle ??
+                  'Antes de elegir esta especialización'}
+              </p>
+              <div className="spec-notice__body">
+                {activeBuild.noticeIcons && activeBuild.noticeIcons.length > 0 && (
+                  <span className="spec-notice__icons" aria-hidden="true">
+                    {activeBuild.noticeIcons.map((icon) => (
+                      <img
+                        key={icon}
+                        src={`${import.meta.env.BASE_URL}${
+                          icon.includes('/') ? icon : `talents/${icon}.jpg`
+                        }`}
+                        alt=""
+                        width={20}
+                        height={20}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ))}
+                  </span>
+                )}
+                <p className="spec-notice__text">{activeBuild.notice}</p>
+              </div>
+            </div>
+          )}
           <TalentTree
             trees={talentTrees}
             classSlug={wowClass.slug}

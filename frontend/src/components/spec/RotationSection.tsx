@@ -71,40 +71,45 @@ export function RotationSection({
 
       <div className="rotation-groups">
         {rotation.groups.map((group) => (
-          <div className="rotation-group" key={group.title}>
+          <div
+            className={`rotation-group${group.steps.length === 0 ? ' rotation-group--divider' : ''}`}
+            key={group.title}
+          >
             <h3 className="rotation-group__title">{group.title}</h3>
-            <ol className="rotation-list">
-              {group.steps.map((step, index) => (
-                <li className="rotation-step" key={step.label}>
-                  <span className="rotation-step__index" aria-hidden="true">
-                    {index + 1}
-                  </span>
-                  <div className="rotation-step__body">
-                    <div className="rotation-step__head">
-                      {step.icons && step.icons.length > 0 && (
-                        <span className="rotation-step__icons" aria-hidden="true">
-                          {step.icons.map((icon) => (
-                            <img
-                              key={icon}
-                              src={`${import.meta.env.BASE_URL}talents/${icon}.jpg`}
-                              alt=""
-                              width={24}
-                              height={24}
-                              loading="lazy"
-                              decoding="async"
-                            />
-                          ))}
-                        </span>
+            {group.steps.length > 0 && (
+              <ol className="rotation-list">
+                {group.steps.map((step, index) => (
+                  <li className="rotation-step" key={step.label}>
+                    <span className="rotation-step__index" aria-hidden="true">
+                      {index + 1}
+                    </span>
+                    <div className="rotation-step__body">
+                      <div className="rotation-step__head">
+                        {step.icons && step.icons.length > 0 && (
+                          <span className="rotation-step__icons" aria-hidden="true">
+                            {step.icons.map((icon) => (
+                              <img
+                                key={icon}
+                                src={`${import.meta.env.BASE_URL}talents/${icon}.jpg`}
+                                alt=""
+                                width={24}
+                                height={24}
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            ))}
+                          </span>
+                        )}
+                        <span className="rotation-step__label">{step.label}</span>
+                      </div>
+                      {step.note && (
+                        <span className="rotation-step__note">{step.note}</span>
                       )}
-                      <span className="rotation-step__label">{step.label}</span>
                     </div>
-                    {step.note && (
-                      <span className="rotation-step__note">{step.note}</span>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ol>
+                  </li>
+                ))}
+              </ol>
+            )}
           </div>
         ))}
       </div>

@@ -508,6 +508,16 @@ const paladinProtectionPriorityGroups: WowStatPriorityGroup[] = [
   },
 ]
 
+const deathKnightBloodPriorityGroups: WowStatPriorityGroup[] =
+  paladinProtectionPriorityGroups.map((group) =>
+    group.title === 'Daño/Aggro'
+      ? {
+          ...group,
+          stats: [...group.stats.slice(0, -2), 'Crítico', 'Celeridad'],
+        }
+      : group,
+  )
+
 const protectionRotation: WowRotation = {
   groups: [
     {
@@ -1095,6 +1105,711 @@ const dpsStats: WowStatRow[] = [
   'Índice de golpe crítico',
   'Índice de celeridad',
 ].map((label) => ({ label }))
+
+const priestDisciplinaStats: WowStatRow[] = [
+  { label: 'Celeridad', value: '154', note: 'Cap de celeridad' },
+]
+
+const priestDisciplinaPriority = [
+  'Poder con Hechizos (SP)',
+  'Cap Celeridad',
+  'Intelecto',
+  'Crítico',
+  'MP5',
+  'Spirit',
+]
+
+const priestDisciplinaGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Palabra de poder: escudo',
+    icon: 'spell-holy-powerword-shield',
+    description: 'Tu Palabra de poder: escudo también sana al objetivo un 20% de la cantidad absorbida.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Penitencia',
+    icon: 'spell-holy-penance',
+    description: 'Reduce el tiempo de reutilización de Penitencia 2 s.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Rezo de sanación',
+    icon: 'spell-holy-prayer-of-healing-02',
+    description: 'Tu hechizo Rezo de sanación también sana un 20% adicional de su sanación inicial durante 6s.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Maligno de las Sombras',
+    icon: 'spell-shadow-shadowfiend',
+    description: 'Recibes un 5% de tu maná máximo si tu maligno de las Sombras muere a causa del daño.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Entereza',
+    icon: 'spell-holy-wordfortitude',
+    description: 'Reduce un 50% el coste de maná de tus hechizos Palabra de poder: entereza y rezo de entereza.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Levitar',
+    icon: 'spell-holy-lay-on-hands',
+    description: 'Levitar ya no requiere un componente.',
+  },
+]
+
+const priestDisciplinaRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Palabra de poder: escudo',
+          note: 'Hechizo principal.',
+          icons: ['spell-holy-powerword-shield'],
+        },
+        {
+          label: 'Penitencia',
+          icons: ['spell-holy-penance'],
+        },
+        {
+          label: 'Sanación relámpago',
+          icons: ['spell-holy-flashheal'],
+        },
+        {
+          label: 'Sanación conjunta',
+          note: 'Solo si tú y otro objetivo necesitan curación.',
+          icons: ['spell-holy-blindingheal'],
+        },
+        {
+          label: 'Renovar',
+          note: 'Muy rara vez; solo cuando no tienes nada que curar o escudear. Puedes ponerlo en el tanque.',
+          icons: ['spell-holy-renew'],
+        },
+      ],
+    },
+    {
+      title: 'Multitarget',
+      steps: [
+        {
+          label: 'Palabra de poder: escudo',
+          note: 'Hechizo principal.',
+          icons: ['spell-holy-powerword-shield'],
+        },
+        {
+          label: 'Rezo de alivio',
+          icons: ['spell-holy-prayer-of-mending'],
+        },
+        {
+          label: 'Rezo de sanación',
+          icons: ['spell-holy-prayer-of-healing-02'],
+        },
+      ],
+    },
+  ],
+}
+
+const priestDisciplinaTips: WowBuildTip[] = [
+  {
+    text: 'En algunos casos debes poner escudos (escudear) varios segundos antes de que empiece el combate, dándote una ventaja abismal sobre otros sanadores.',
+    icons: ['spell-holy-powerword-shield'],
+  },
+]
+
+const priestSagradoStats: WowStatRow[] = []
+
+const priestSagradoPriority = [
+  'Celeridad',
+  'Poder con Hechizos (SP)',
+  'Espíritu',
+  'Intelecto',
+  'Crítico',
+  'MP5',
+]
+
+const priestSagradoGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Círculo de sanación',
+    icon: 'spell-holy-circle-of-renewal',
+    description: 'Tu hechizo Círculo de sanación sana a un objetivo adicional.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Rezo de sanación',
+    icon: 'spell-holy-prayer-of-healing-02',
+    description: 'Tu hechizo Rezo de sanación también sana un 20% adicional de su sanación inicial durante 6s.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Ángel Guardián',
+    icon: 'spell-holy-guardian-spirit',
+    badge: '2 opciones',
+    description:
+      'Si Ángel Guardián dura todo su tiempo sin activarse, su tiempo de reutilización se reduce a 1 min.',
+    featured: true,
+    options: [
+      {
+        name: 'Glifo de Ángel Guardián',
+        icon: 'spell-holy-guardian-spirit',
+        description:
+          'Si Ángel Guardián dura todo su tiempo sin activarse, su tiempo de reutilización se reduce a 1 min.',
+      },
+      {
+        name: 'Glifo de Palabra de poder: escudo',
+        icon: 'spell-holy-powerword-shield',
+        description:
+          'Tu Palabra de poder: escudo también sana al objetivo un 20% de la cantidad absorbida.',
+      },
+    ],
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Maligno de las Sombras',
+    icon: 'spell-shadow-shadowfiend',
+    description: 'Recibes un 5% de tu maná máximo si tu maligno de las Sombras muere a causa del daño.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Entereza',
+    icon: 'spell-holy-wordfortitude',
+    description: 'Reduce un 50% el coste de maná de tus hechizos Palabra de poder: entereza y rezo de entereza.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Levitar',
+    icon: 'spell-holy-lay-on-hands',
+    description: 'Levitar ya no requiere un componente.',
+  },
+]
+
+const priestSagradoRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Rezo de alivio',
+          icons: ['spell-holy-prayer-of-mending'],
+        },
+        {
+          label: 'Renovar',
+          icons: ['spell-holy-renew'],
+        },
+        {
+          label: 'Sanación relámpago',
+          icons: ['spell-holy-flashheal'],
+        },
+        {
+          label: 'Sanación superior',
+          icons: ['spell-holy-greaterheal'],
+        },
+        {
+          label: 'Palabra de poder: escudo',
+          icons: ['spell-holy-powerword-shield'],
+        },
+      ],
+    },
+    {
+      title: 'Multitarget',
+      steps: [
+        {
+          label: 'Rezo de alivio',
+          icons: ['spell-holy-prayer-of-mending'],
+        },
+        {
+          label: 'Círculo de sanación',
+          icons: ['spell-holy-circle-of-renewal'],
+        },
+        {
+          label: 'Renovar',
+          icons: ['spell-holy-renew'],
+        },
+        {
+          label: 'Rezo de sanación',
+          icons: ['spell-holy-prayer-of-healing-02'],
+        },
+        {
+          label: 'Palabra de poder: escudo',
+          icons: ['spell-holy-powerword-shield'],
+        },
+      ],
+    },
+  ],
+}
+
+const priestSombraStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '11%' },
+  { label: 'Índice de celeridad', value: '1269' },
+]
+
+const priestSombraPriority = [
+  'Cap Golpe',
+  'Poder con Hechizos (SP)',
+  'Celeridad',
+  'Crítico',
+  'Espíritu',
+]
+
+const priestSombraGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Sombra',
+    icon: 'spell-shadow-shadow-form',
+    description:
+      'Mientras estés en Forma de las Sombras, tus golpes críticos no periódicos aumentan tu poder con hechizos un 30% de tu espíritu durante 10 s.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Tortura mental',
+    icon: 'spell-shadow-siphonmana',
+    description:
+      'Aumenta el daño de Tortura mental un 10% si el objetivo tiene Palabra de las Sombras: dolor activa.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Palabra de las Sombras: muerte',
+    icon: 'spell-shadow-demonicfortitude',
+    description:
+      'Los objetivos por debajo del 35% de salud reciben un 10% de daño adicional de tu Palabra de las Sombras: muerte.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Maligno de las Sombras',
+    icon: 'spell-shadow-shadowfiend',
+    description: 'Recibes un 5% de tu maná máximo si tu maligno de las Sombras muere a causa del daño.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Entereza',
+    icon: 'spell-holy-wordfortitude',
+    description: 'Reduce un 50% el coste de maná de tus hechizos Palabra de poder: entereza y rezo de entereza.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Levitar',
+    icon: 'spell-holy-lay-on-hands',
+    description: 'Levitar ya no requiere un componente.',
+  },
+]
+
+const priestSombraRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Rotación',
+      steps: [
+        {
+          label: 'Mantener Toque vampírico',
+          icons: ['spell-holy-stoicism'],
+        },
+        {
+          label: 'Mantener Peste devoradora',
+          icons: ['spell-shadow-devouringplague'],
+        },
+        {
+          label: 'Mantener Palabra de las Sombras: dolor',
+          note: 'Se mantiene con Tortura mental, así que solo tíralo una vez.',
+          icons: ['spell-shadow-shadowwordpain'],
+        },
+        {
+          label: 'Explosión mental',
+          icons: ['spell-shadow-unholyfrenzy'],
+        },
+        {
+          label: 'Tortura mental',
+          icons: ['spell-shadow-siphonmana'],
+        },
+        {
+          label: 'Palabra de las Sombras: muerte',
+          note: 'Solo si necesitas moverte y tu Peste devoradora tiene más de 6 segundos de duración restante.',
+          icons: ['spell-shadow-demonicfortitude'],
+        },
+      ],
+    },
+  ],
+}
+
+const priestSombraMindFlayRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Rotación',
+      steps: [
+        {
+          label: 'Mantener Toque vampírico',
+          icons: ['spell-holy-stoicism'],
+        },
+        {
+          label: 'Mantener Peste devoradora',
+          icons: ['spell-shadow-devouringplague'],
+        },
+        {
+          label: 'Mantener Palabra de las Sombras: dolor',
+          note: 'Se mantiene con Tortura mental, así que solo tíralo una vez.',
+          icons: ['spell-shadow-shadowwordpain'],
+        },
+        {
+          label: 'Tortura mental',
+          icons: ['spell-shadow-siphonmana'],
+        },
+        {
+          label: 'Palabra de las Sombras: muerte',
+          note: 'Solo si necesitas moverte y tu Peste devoradora tiene más de 6 segundos de duración restante.',
+          icons: ['spell-shadow-demonicfortitude'],
+        },
+      ],
+    },
+  ],
+}
+
+const priestSombraMindFlayNotice =
+  'Esta build debe usarse en cuanto tengas 4 piezas de Tier 10 de Sombras y en esta build se deja de utilizar por completo la explosión mental.'
+
+const deathKnightMinorGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'minor',
+    name: 'Glifo de Levantar no muerto',
+    icon: 'spell-shadow-animatedead',
+    description: 'Levantar no muerto ya no requiere un componente.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Pestilencia',
+    icon: 'spell-shadow-plaguecloud',
+    description: 'Aumenta 5 m el radio de Pestilencia.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Transfusión de sangre',
+    icon: 'spell-death-knight-bloodtap',
+    description: 'Transfusión de sangre ya no causa daño.',
+  },
+]
+
+const deathKnightBloodGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Enfermedad',
+    icon: 'spell-shadow-plaguecloud',
+    description:
+      'Pestilencia ahora refresca la duración de las enfermedades y sus efectos secundarios en tu objetivo principal hasta su duración máxima.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Sangre vampírica',
+    icon: 'spell-shadow-lifedrain',
+    description: 'Aumenta la duración de Sangre vampírica 5 s.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Golpe rúnico',
+    icon: 'spell-death-knight-darkconviction',
+    description: 'Aumenta la probabilidad de golpe crítico de Golpe rúnico un 10%.',
+  },
+  ...deathKnightMinorGlyphs,
+]
+
+const deathKnightBloodRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Toque helado para Fiebre de Escarcha',
+          icons: [
+            'spell-death-knight-ice-touch',
+            'spell-death-knight-frostfever',
+          ],
+        },
+        {
+          label: 'Golpe de peste para Peste de Sangre',
+          icons: [
+            'spell-death-knight-empowerruneblade',
+            'spell-death-knight-bloodplague',
+          ],
+        },
+        {
+          label: 'Pestilencia',
+          note: 'gracias al glifo esta habilidad renueva las pestes anterior mencionadas',
+          icons: ['spell-shadow-plaguecloud'],
+        },
+        {
+          label: 'Golpe rúnico',
+          note: 'Spammearlo siempre que tengas 40 o más de poder rúnico.',
+          icons: ['spell-death-knight-darkconviction'],
+        },
+      ],
+    },
+    {
+      title: 'A partir de aquí, la rotación se divide en dos ramas: más agro o más daño/curación',
+      steps: [],
+    },
+    {
+      title: 'Unitarget — Más agro',
+      steps: [
+        {
+          label: 'Spam Toque helado',
+          note: 'Puedes usar Transfusión de sangre y/o Potenciar arma de runas para lanzar más Toques helados.',
+          icons: [
+            'spell-death-knight-ice-touch',
+            'spell-death-knight-bloodtap',
+            'inv-sword-62',
+          ],
+        },
+        {
+          label: 'Golpe de peste',
+          icons: ['spell-death-knight-empowerruneblade'],
+        },
+        {
+          label: 'Golpe sangriento',
+          icons: ['spell-death-knight-death-strike'],
+        },
+      ],
+    },
+    {
+      title: 'Unitarget — Más daño/curación',
+      steps: [
+        {
+          label: 'Golpe letal',
+          note: 'Puedes usar Potenciar arma de runas para lanzar más Golpes letales, pero cuidado de no perder las pestes.',
+          icons: [
+            'spell-death-knight-butcher-2',
+            'inv-sword-62',
+          ],
+        },
+        {
+          label: 'Golpe sangriento',
+          icons: ['spell-death-knight-death-strike'],
+        },
+      ],
+    },
+    {
+      title: 'Multitarget',
+      steps: [
+        {
+          label: 'Muerte y Descomposición (DnD)',
+          icons: ['spell-shadow-deathanddecay'],
+        },
+        {
+          label: 'Toque helado',
+          icons: ['spell-death-knight-ice-touch'],
+        },
+        {
+          label: 'Golpe de peste',
+          icons: ['spell-death-knight-empowerruneblade'],
+        },
+        {
+          label: 'Pestilencia',
+          icons: ['spell-shadow-plaguecloud'],
+        },
+        {
+          label: 'Hervor de sangre',
+          icons: ['spell-death-knight-bloodboil'],
+        },
+      ],
+    },
+  ],
+}
+
+const deathKnightFrostStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '5%' },
+  { label: 'Índice de golpe Hechizos', value: '11%' },
+  { label: 'Pericia', value: '26/26' },
+  {
+    label: 'Penetración de armadura (ArPen) · Soft cap',
+    value: '722 (51.57%)',
+  },
+  {
+    label: 'Penetración de armadura (ArPen) · Hard cap',
+    value: '1400 (100%)',
+  },
+]
+
+const deathKnightFrostPriority = [
+  'Cap Golpe',
+  'Hard Cap ArPen',
+  'Cap Pericia',
+  'Fuerza',
+  'Crítico',
+  'Cap Golpe Hechizos',
+  'Soft Cap Arpen',
+  'Celeridad',
+]
+
+const deathKnightFrostGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Asolar',
+    icon: 'spell-death-knight-class-icon',
+    description: 'Aumenta un 25% el daño de tu facultad Asolar.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Golpe de Escarcha',
+    icon: 'spell-death-knight-empowerruneblade-2',
+    description: 'Reduce el coste de tu Golpe de Escarcha en 8 de poder rúnico.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Enfermedad',
+    icon: 'spell-shadow-plaguecloud',
+    description:
+      'Pestilencia ahora refresca la duración de las enfermedades y sus efectos secundarios en tu objetivo principal hasta su duración máxima.',
+  },
+  ...deathKnightMinorGlyphs,
+]
+
+const deathKnightFrostRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Toque helado para Fiebre de Escarcha',
+          icons: [
+            'spell-death-knight-ice-touch',
+            'spell-death-knight-frostfever',
+          ],
+        },
+        {
+          label: 'Golpe de peste para Peste de Sangre',
+          icons: [
+            'spell-death-knight-empowerruneblade',
+            'spell-death-knight-bloodplague',
+          ],
+        },
+        {
+          label: 'Pestilencia',
+          note: 'gracias al glifo esta habilidad renueva las pestes anterior mencionadas',
+          icons: ['spell-shadow-plaguecloud'],
+        },
+        {
+          label: 'Asolar',
+          icons: ['spell-death-knight-class-icon'],
+        },
+        {
+          label: 'Golpe de Escarcha (Con el buff de Máquina de matar)',
+          icons: [
+            'spell-death-knight-empowerruneblade-2',
+            'inv-sword-122',
+          ],
+        },
+        {
+          label: 'Explosión aullante (Si tienes el efecto de Niebla congelante)',
+          icons: [
+            'spell-frost-arcticwinds',
+            'spell-frost-freezingbreath',
+          ],
+        },
+        {
+          label: 'Golpe de Escarcha (Sin el buff de máquina de matar)',
+          icons: ['spell-death-knight-empowerruneblade-2'],
+        },
+        {
+          label: 'Golpe sangriento',
+          icons: ['spell-death-knight-death-strike'],
+        },
+      ],
+    },
+  ],
+}
+
+const deathKnightUnholyStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '8%' },
+  { label: 'Índice de golpe Hechizos', value: '11%' },
+  { label: 'Pericia', value: '26' },
+]
+
+const deathKnightUnholyPriority = [
+  'Cap Golpe',
+  'Fuerza',
+  'Celeridad',
+  'Crítico',
+  'ArPen',
+  'Cap Golpe Hechizos',
+  'ArPen',
+  'Cap Pericia',
+]
+
+const deathKnightUnholyGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Muerte oscura',
+    icon: 'spell-shadow-deathcoil',
+    description: 'Aumenta un 15% el daño de tu Espiral de la muerte.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo del necrófago',
+    icon: 'ability_ghoulfrenzy',
+    description: 'Tu necrófago recibe un 40% adicional de tu fuerza y aguante.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Toque helado',
+    icon: 'spell-death-knight-ice-touch',
+    description: 'Fiebre de Escarcha inflige un 20% más de daño.',
+    badge: '2 opciones',
+    featured: true,
+    options: [
+      {
+        name: 'Glifo de Toque helado',
+        icon: 'spell-death-knight-ice-touch',
+        description: 'Fiebre de Escarcha inflige un 20% más de daño.',
+        reason: 'Para la build de Build principal',
+      },
+      {
+        name: 'Glifo de Muerte y descomposición',
+        icon: 'spell-shadow-deathanddecay',
+        description: 'Aumenta un 20% el daño de Muerte y Descomposición.',
+        reason: 'Para la build de Dual Wielding',
+      },
+    ],
+  },
+  ...deathKnightMinorGlyphs,
+]
+
+const deathKnightUnholyRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Toque helado para mantener Fiebre de Escarcha',
+          icons: [
+            'spell-death-knight-ice-touch',
+            'spell-death-knight-frostfever',
+          ],
+        },
+        {
+          label: 'Golpe de peste para mantener Peste de sangre',
+          icons: [
+            'spell-death-knight-empowerruneblade',
+            'spell-death-knight-bloodplague',
+          ],
+        },
+        {
+          label: 'Golpe sangriento para mantener Desolación',
+          icons: ['spell-death-knight-death-strike', 'spell-shadow-unholyfrenzy'],
+        },
+        {
+          label: 'Golpe de la Plaga',
+          icons: ['spell-death-knight-scourge-strike'],
+        },
+        {
+          label: 'Espiral de la muerte',
+          icons: ['spell-shadow-deathcoil'],
+        },
+      ],
+    },
+  ],
+}
+
+const deathKnightUnholyTips: WowBuildTip[] = [
+  {
+    text: 'Invocar Gárgola es el hechizo más poderoso del Profano por lo que deberás lanzarlo (normalmente al inicio) cuando tengas el mayor número de buffs posibles que aumenten tu Celeridad y Poder de ataque o Fuerza.',
+    icons: ['ability-hunter-pet-bat'],
+  },
+]
 
 const tankStats: WowStatRow[] = [
   { label: 'Índice de defensa', value: '540' },
@@ -1720,6 +2435,16 @@ const rogueSutilezaGlyphs: WowGlyphSlot[] = [
   ...rogueAsesinatoGlyphs.filter((glyph) => glyph.type === 'minor'),
 ]
 
+const rogueSutilezaPriority = [
+  'Cap Golpe',
+  'Cap Pericia',
+  'Hard Cap ArPen',
+  'Agilidad = Poder de Ataque (AP)',
+  'Soft Cap Arpen',
+  'Crítico',
+  'Celeridad',
+]
+
 const rogueSutilezaRotation: WowRotation = {
   groups: [
     {
@@ -2024,6 +2749,8 @@ function createBuild(
     priorityGroups?: WowStatPriorityGroup[]
     glyphs?: WowGlyphSlot[]
     notice?: string
+    noticeTitle?: string
+    noticeIcons?: string[]
     noticeTone?: 'warning' | 'danger'
     rotation?: WowRotation
     rotationNotice?: string | WowRotationNotice
@@ -2041,6 +2768,8 @@ function createBuild(
     priority: options.priority,
     priorityGroups: options.priorityGroups,
     notice: options.notice,
+    noticeTitle: options.noticeTitle,
+    noticeIcons: options.noticeIcons,
     noticeTone: options.noticeTone,
     rotation: options.rotation,
     rotationNotice: options.rotationNotice,
@@ -2072,6 +2801,15 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
       classSlug === 'paladin' && specSlug === 'proteccion'
     const isRetribution =
       classSlug === 'paladin' && specSlug === 'reprension'
+    const isPriestDisciplina =
+      classSlug === 'sacerdote' && specSlug === 'disciplina'
+    const isPriestSagrado =
+      classSlug === 'sacerdote' && specSlug === 'sagrado'
+    const isPriestSombra = classSlug === 'sacerdote' && specSlug === 'sombra'
+    const isDeathKnight = classSlug === 'caballero-de-la-muerte'
+    const isDeathKnightBlood = isDeathKnight && specSlug === 'sangre'
+    const isDeathKnightFrost = isDeathKnight && specSlug === 'escarcha'
+    const isDeathKnightUnholy = isDeathKnight && specSlug === 'profano'
     const stats = isDruidFeralDps
       ? druidferalDpsStats
       : isDruidRestoration
@@ -2090,7 +2828,11 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                 ? rogueCombatStats
                 : isRogueSutileza
                   ? rogueSutilezaStats
-                  : isRetribution
+                  : isPriestDisciplina
+                    ? priestDisciplinaStats
+                    : isPriestSagrado
+                      ? priestSagradoStats
+                      : isRetribution
                 ? retributionStats
                 : isArms
                   ? armsStats
@@ -2113,9 +2855,11 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             ? hunterSupervivenciaTips
             : isRogueAsesinato
               ? rogueAsesinatoTips
-              : isRogueCombate
-                ? rogueCombatTips
-                : isArms
+                : isRogueCombate
+                  ? rogueCombatTips
+                  : isPriestDisciplina
+                    ? priestDisciplinaTips
+                    : isArms
                 ? armsTips
                 : isFury
                   ? furyTips
@@ -2124,7 +2868,9 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                     : isRetribution
                       ? retributionTips
                       : undefined
-    const rotation = isDruidFeralDps
+    const rotation = isPriestSombra
+      ? priestSombraRotation
+      : isDruidFeralDps
       ? druidferalDpsRotation
       : isDruidRestoration
       ? druidRestorationRotation
@@ -2142,7 +2888,11 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                 ? rogueCombatRotation
                 : isRogueSutileza
                   ? rogueSutilezaRotation
-                  : isPaladinProtection
+                  : isPriestDisciplina
+                    ? priestDisciplinaRotation
+                    : isPriestSagrado
+                      ? priestSagradoRotation
+                      : isPaladinProtection
                 ? paladinProtectionRotation
                 : isRetribution
                   ? retributionRotation
@@ -2155,27 +2905,59 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                         : undefined
     builds[classSlug][specSlug] = variants.map((variant) => {
       const buildLabel = displayBuildLabel(variant.label)
-      const buildRotation =
-        isHunterPunteria && buildLabel === 'Trap weaving'
-          ? hunterPunteriaTrapRotation
-          : rotation
+      const isDeathKnightUnholyPrincipal =
+        isDeathKnightUnholy && buildLabel === 'Build principal'
+      const isPriestSombraMindFlay =
+        isPriestSombra && buildLabel === 'Mind Flay'
+      const buildStats = isDeathKnightUnholyPrincipal
+        ? deathKnightUnholyStats
+        : isDeathKnightFrost
+          ? deathKnightFrostStats
+          : isPriestSombra
+            ? priestSombraStats
+            : stats
+      const buildRotation = isDeathKnightUnholyPrincipal
+        ? deathKnightUnholyRotation
+        : isDeathKnightBlood
+          ? deathKnightBloodRotation
+          : isDeathKnightFrost
+            ? deathKnightFrostRotation
+            : isPriestSombraMindFlay
+              ? priestSombraMindFlayRotation
+              : isHunterPunteria && buildLabel === 'Trap weaving'
+                ? hunterPunteriaTrapRotation
+                : rotation
 
-      return createBuild(buildLabel, stats, {
+      return createBuild(buildLabel, buildStats, {
         allocations: variant.trees,
-        priority: isHoly
-          ? holyPriority
-          : isHunterPunteria
-            ? hunterPunteriaPriority
-            : isHunterSupervivencia
-              ? hunterSupervivenciaPriority
-              : isRogueAsesinato
-                ? rogueAsesinatoPriority
-                : isRogueCombate
-                  ? rogueCombatPriority
-                  : isArms || isFury
-                  ? armsPriority
-                  : undefined,
-        priorityGroups: isDruidFeralDps
+        priority: isDeathKnightUnholyPrincipal
+          ? deathKnightUnholyPriority
+          : isDeathKnightFrost
+            ? deathKnightFrostPriority
+            : isPriestSombra
+              ? priestSombraPriority
+              : isHoly
+                ? holyPriority
+                : isHunterPunteria
+                  ? hunterPunteriaPriority
+                  : isHunterSupervivencia
+                    ? hunterSupervivenciaPriority
+                    : isRogueAsesinato
+                      ? rogueAsesinatoPriority
+                      : isRogueCombate
+                        ? rogueCombatPriority
+                        : isRogueSutileza
+                          ? rogueSutilezaPriority
+                          : isPriestDisciplina
+                            ? priestDisciplinaPriority
+                            : isPriestSagrado
+                              ? priestSagradoPriority
+                              : isArms || isFury
+                                ? armsPriority
+                                : undefined,
+        priorityGroups: isDeathKnightBlood
+          ? deathKnightBloodPriorityGroups
+          : isDruidFeralDps
           ? druidferalDpsPriorityGroups
           : isDruidRestoration
           ? druidRestorationPriorityGroups
@@ -2188,36 +2970,52 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             : isRetribution
               ? retributionPriorityGroups
               : undefined,
-        glyphs: isDruidFeralDps
-          ? druidferalDpsGlyphs
-          : isDruidRestoration
-          ? druidRestorationGlyphs
-          : isHoly
-            ? holyGlyphs
-            : isHunterBestias
-            ? hunterBestiasGlyphs
-            : isHunterPunteria
-              ? hunterPunteriaGlyphs
-              : isHunterSupervivencia
-                ? hunterSupervivenciaGlyphs
-                : isRogueAsesinato
-                  ? rogueAsesinatoGlyphs
-                  : isRogueCombate
-                    ? rogueCombatGlyphs
-                    : isRogueSutileza
-                      ? rogueSutilezaGlyphs
-                      : isPaladinProtection
-                    ? paladinProtectionGlyphs
-                    : isRetribution
-                      ? retributionGlyphs
-                      : isArms
-                        ? armsGlyphs
-                        : isFury
-                          ? furyGlyphs
-                          : isProtection
-                            ? protectionGlyphs
-                            : undefined,
-        notice: isArms
+        glyphs: isDeathKnightUnholy
+          ? deathKnightUnholyGlyphs
+          : isDeathKnightBlood
+            ? deathKnightBloodGlyphs
+            : isDeathKnightFrost
+              ? deathKnightFrostGlyphs
+              : isDeathKnight
+                ? deathKnightMinorGlyphs
+                : isPriestSombra
+                  ? priestSombraGlyphs
+                  : isDruidFeralDps
+                    ? druidferalDpsGlyphs
+                    : isDruidRestoration
+                      ? druidRestorationGlyphs
+                      : isHoly
+                        ? holyGlyphs
+                        : isHunterBestias
+                          ? hunterBestiasGlyphs
+                          : isHunterPunteria
+                            ? hunterPunteriaGlyphs
+                            : isHunterSupervivencia
+                              ? hunterSupervivenciaGlyphs
+                              : isRogueAsesinato
+                                ? rogueAsesinatoGlyphs
+                                : isRogueCombate
+                                  ? rogueCombatGlyphs
+                                  : isRogueSutileza
+                                    ? rogueSutilezaGlyphs
+                                    : isPriestDisciplina
+                                      ? priestDisciplinaGlyphs
+                                      : isPriestSagrado
+                                        ? priestSagradoGlyphs
+                                        : isPaladinProtection
+                                          ? paladinProtectionGlyphs
+                                          : isRetribution
+                                            ? retributionGlyphs
+                                            : isArms
+                                              ? armsGlyphs
+                                              : isFury
+                                                ? furyGlyphs
+                                                : isProtection
+                                                  ? protectionGlyphs
+                                                  : undefined,
+        notice: isPriestSombraMindFlay
+          ? priestSombraMindFlayNotice
+          : isArms
           ? armsNotice
           : isHunterBestias
             ? hunterBestiasNotice
@@ -2228,6 +3026,10 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
                 : isProtection
                   ? protectionNotice
                   : undefined,
+        noticeTitle: isPriestSombraMindFlay ? 'Importante' : undefined,
+        noticeIcons: isPriestSombraMindFlay
+          ? ['spell-shadow-unholyfrenzy']
+          : undefined,
         noticeTone: isRogueSutileza ? 'danger' : undefined,
         rotation: buildRotation,
         rotationNotice:
@@ -2235,16 +3037,23 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
           isHunterSupervivencia ||
           isRogueAsesinato ||
           isRogueCombate ||
-          isRogueSutileza
+          isRogueSutileza ||
+          isPriestDisciplina ||
+          isPriestSagrado ||
+          isPriestSombraMindFlay ||
+          isDeathKnightBlood ||
+          isDeathKnightFrost
             ? undefined
             : buildRotation
             ? isFury && variant.label.includes('Overpower')
               ? furyOverpowerRotationNotice
               : rotationPriorityNotice
             : undefined,
-        tips: tankSpecs.has(specSlug)
-          ? [...(baseTips ?? []), ...tankTips]
-          : baseTips,
+        tips: isDeathKnightUnholyPrincipal
+          ? deathKnightUnholyTips
+          : tankSpecs.has(specSlug)
+            ? [...(baseTips ?? []), ...tankTips]
+            : baseTips,
         pet: isHunter
           ? isHunterBestias
             ? hunterPetWolf20

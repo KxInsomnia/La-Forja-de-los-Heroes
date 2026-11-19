@@ -14,7 +14,7 @@ export const deathknight: WowClass = {
       name: 'Sangre',
       role: 'Tanque',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
-      buildCount: 3,
+      buildCount: 1,
     },
     {
       slug: 'escarcha',
@@ -22,7 +22,7 @@ export const deathknight: WowClass = {
       name: 'Escarcha',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
-      buildCount: 2,
+      buildCount: 1,
     },
     {
       slug: 'profano',
