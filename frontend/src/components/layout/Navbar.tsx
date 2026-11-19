@@ -17,12 +17,6 @@ export function Navbar() {
         <NavLink className={navLinkClass} to="/pve">
           Guías PvE
         </NavLink>
-        <NavLink className={navLinkClass} to="/pvp">
-          Guías PvP
-        </NavLink>
-        <NavLink className={navLinkClass} to="/bandas">
-          Guía de Bandas
-        </NavLink>
       </nav>
     </header>
   )

@@ -133,6 +133,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  margin-left: auto;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.1em;

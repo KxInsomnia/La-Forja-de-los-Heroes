@@ -9,7 +9,7 @@ interface GuideCardProps {
   variant: GuideVariant
   kicker: string
   title: string
-  status: string
+  status?: string
   available?: boolean
   color: string
 }
@@ -163,11 +163,13 @@ export function GuideCard({
       <p className="guide-card__kicker">{kicker}</p>
       <h2 className="guide-card__title">{title}</h2>
       <div className="guide-card__footer">
-        <span
-          className={`guide-card__status${available ? ' guide-card__status--available' : ''}`}
-        >
-          {status}
-        </span>
+        {status && (
+          <span
+            className={`guide-card__status${available ? ' guide-card__status--available' : ''}`}
+          >
+            {status}
+          </span>
+        )}
         <span className="guide-card__cta">
           {available ? 'Explorar' : 'Ver estado'}
           <ArrowIcon />
