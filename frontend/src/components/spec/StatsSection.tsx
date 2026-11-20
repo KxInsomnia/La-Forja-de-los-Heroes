@@ -5,13 +5,15 @@ interface StatsSectionProps {
   stats: WowStatRow[]
   priority?: string[]
   priorityGroups?: WowStatPriorityGroup[]
+  notice?: string
+  noticeTitle?: string
 }
 
 function StatPriorityChain({ stats }: { stats: string[] }) {
   return (
     <ol className="stats-priority__chain">
       {stats.map((stat, index) => (
-        <li className="stats-priority__item" key={stat}>
+        <li className="stats-priority__item" key={`${stat}-${index}`}>
           {stat}
           {index < stats.length - 1 && (
             <span className="stats-priority__sep" aria-hidden="true">
@@ -28,6 +30,8 @@ export function StatsSection({
   stats,
   priority,
   priorityGroups,
+  notice,
+  noticeTitle,
 }: StatsSectionProps) {
   const hasStats = stats.length > 0
 
@@ -71,6 +75,14 @@ export function StatsSection({
             </h3>
           )}
           <StatPriorityChain stats={priority} />
+          {notice && (
+            <div className="spec-notice" role="note">
+              <p className="spec-notice__title">{noticeTitle ?? 'Nota de la build'}</p>
+              <div className="spec-notice__body">
+                <p className="spec-notice__text">{notice}</p>
+              </div>
+            </div>
+          )}
         </div>
       )}
 

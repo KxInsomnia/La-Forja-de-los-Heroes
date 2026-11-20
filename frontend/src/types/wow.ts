@@ -125,6 +125,9 @@ export interface WowSpecBuild {
   priorityGroups?: WowStatPriorityGroup[]
   notice?: string
   noticeTitle?: string
+  statsNotice?: string
+  statsNoticeTitle?: string
+  noticeHighlight?: string
   noticeIcons?: string[]
   noticeTone?: 'warning' | 'danger'
   rotation?: WowRotation

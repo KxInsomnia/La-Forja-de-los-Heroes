@@ -22,7 +22,7 @@ export const shaman: WowClass = {
       name: 'Mejora',
       role: 'DPS',
       badges: [{ label: 'Recomendado', tone: 'yes' }],
-      buildCount: 1,
+      buildCount: 2,
     },
     {
       slug: 'restauracion',

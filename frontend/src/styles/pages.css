@@ -175,6 +175,12 @@
   line-height: 1.6;
 }
 
+.spec-notice__highlight {
+  color: #ff9d2e;
+  font-weight: 700;
+  text-shadow: 0 0 0.65rem rgba(255, 128, 0, 0.45);
+}
+
 .spec-notice--danger .spec-notice__title {
   color: #ffb3b3;
 }

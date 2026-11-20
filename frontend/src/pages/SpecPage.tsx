@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { useParams } from 'react-router-dom'
 import { BackLink } from '../components/ui/BackLink'
@@ -29,6 +29,20 @@ const sectionAnchors: Record<(typeof guideSections)[number], string> = {
   Rotación: 'rotacion',
   Consejos: 'consejos',
   Mascota: 'mascota',
+}
+
+function renderNoticeText(text: string, highlight?: string) {
+  if (!highlight) return text
+
+  const parts = text.split(highlight)
+  return parts.map((part, index) => (
+    <Fragment key={index}>
+      {part}
+      {index < parts.length - 1 && (
+        <span className="spec-notice__highlight">{highlight}</span>
+      )}
+    </Fragment>
+  ))
 }
 
 export function SpecPage() {
@@ -174,7 +188,12 @@ export function SpecPage() {
                     ))}
                   </span>
                 )}
-                <p className="spec-notice__text">{activeBuild.notice}</p>
+                <p className="spec-notice__text">
+                  {renderNoticeText(
+                    activeBuild.notice,
+                    activeBuild.noticeHighlight,
+                  )}
+                </p>
               </div>
             </div>
           )}
@@ -199,6 +218,8 @@ export function SpecPage() {
               stats={activeBuild.stats}
               priority={activeBuild.priority}
               priorityGroups={activeBuild.priorityGroups}
+              notice={activeBuild.statsNotice}
+              noticeTitle={activeBuild.statsNoticeTitle}
             />
           </div>
           {activeBuild.rotation && (

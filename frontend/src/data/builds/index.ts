@@ -1719,6 +1719,12 @@ const deathKnightUnholyStats: WowStatRow[] = [
   { label: 'Pericia', value: '26' },
 ]
 
+const deathKnightUnholyDwStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '8%' },
+  { label: 'Índice de golpe Hechizos', value: '11%' },
+  { label: 'Pericia', value: '26/26' },
+]
+
 const deathKnightUnholyPriority = [
   'Cap Golpe',
   'Fuerza',
@@ -1726,6 +1732,17 @@ const deathKnightUnholyPriority = [
   'Crítico',
   'ArPen',
   'Cap Golpe Hechizos',
+  'ArPen',
+  'Cap Pericia',
+]
+
+const deathKnightUnholyDwPriority = [
+  'Cap Golpe',
+  'Fuerza',
+  'Celeridad',
+  'Cap Golpe Hechizos',
+  'Crítico',
+  'ArPen',
   'ArPen',
   'Cap Pericia',
 ]
@@ -1768,6 +1785,18 @@ const deathKnightUnholyGlyphs: WowGlyphSlot[] = [
   ...deathKnightMinorGlyphs,
 ]
 
+const deathKnightUnholyDwGlyphs: WowGlyphSlot[] = deathKnightUnholyGlyphs.map(
+  (glyph) =>
+    glyph.name === 'Glifo de Toque helado'
+      ? {
+          type: glyph.type,
+          name: 'Glifo de Muerte y descomposición',
+          icon: 'spell-shadow-deathanddecay',
+          description: 'Aumenta un 20% el daño de Muerte y Descomposición.',
+        }
+      : glyph,
+)
+
 const deathKnightUnholyRotation: WowRotation = {
   groups: [
     {
@@ -1804,12 +1833,59 @@ const deathKnightUnholyRotation: WowRotation = {
   ],
 }
 
+const deathKnightUnholyDwRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Toque helado para mantener Fiebre de Escarcha',
+          icons: [
+            'spell-death-knight-ice-touch',
+            'spell-death-knight-frostfever',
+          ],
+        },
+        {
+          label: 'Golpe de peste para mantener Peste de sangre',
+          icons: [
+            'spell-death-knight-empowerruneblade',
+            'spell-death-knight-bloodplague',
+          ],
+        },
+        {
+          label: 'Golpe sangriento para mantener Desolación',
+          icons: ['spell-death-knight-death-strike', 'spell-shadow-unholyfrenzy'],
+        },
+        {
+          label: 'Muerte y descomposición',
+          icons: ['spell-shadow-deathanddecay'],
+        },
+        {
+          label: 'Golpe de la Plaga',
+          icons: ['spell-death-knight-scourge-strike'],
+        },
+        {
+          label: 'Espiral de la muerte',
+          icons: ['spell-shadow-deathcoil'],
+        },
+        {
+          label: 'Furia del necrófago',
+          icons: ['spell-shadow-unholyfrenzy'],
+        },
+      ],
+    },
+  ],
+}
+
 const deathKnightUnholyTips: WowBuildTip[] = [
   {
     text: 'Invocar Gárgola es el hechizo más poderoso del Profano por lo que deberás lanzarlo (normalmente al inicio) cuando tengas el mayor número de buffs posibles que aumenten tu Celeridad y Poder de ataque o Fuerza.',
     icons: ['ability-hunter-pet-bat'],
   },
 ]
+
+const deathKnightUnholyDwNotice =
+  'Unholy DW, es decir Profano con armas de 1 mano, es la mejor opción hasta obtener Agonía de las Sombras.'
 
 const tankStats: WowStatRow[] = [
   { label: 'Índice de defensa', value: '540' },
@@ -2724,6 +2800,254 @@ const furyOverpowerRotationNotice: WowRotationNotice = {
   items: [{ text: furyRotationNotice }],
 }
 
+const shamanElementalStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '11%' },
+  { label: 'Celeridad', value: '1269' },
+]
+
+const shamanElementalPriority = [
+  'Cap Golpe',
+  'Poder con hechizos (SP)',
+  'Celeridad',
+  'Crítico',
+]
+
+const shamanElementalNotice =
+  'Tristemente, comparado con otros casters y especializaciones en general, Elemental es una de las que menos daño hace (sin contar las specs PvP). Aun así, es viable y una configuración dual de elemental puede ser útil.'
+
+const shamanMinorGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'minor',
+    name: 'Glifo de Escudo de agua',
+    icon: 'ability-shaman-water-shield',
+    description: 'Cada orbe de tu Escudo de agua otorga 1 de maná adicional.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Tormenta de truenos',
+    icon: 'spell-shaman-thunder-storm',
+    description: 'Aumenta un 20% el daño de Tormenta de truenos.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Vida renovada',
+    icon: 'inv-relics-idol-of-rejuvenation',
+    description: 'Reduce el coste de maná de Vida terrestre un 50%.',
+  },
+]
+
+const shamanEnhancementMinorGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'minor',
+    name: 'Glifo de Escudo de agua',
+    icon: 'ability-shaman-water-shield',
+    description: 'Cada orbe de tu Escudo de agua otorga 1 de maná adicional.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Caminar sobre el agua',
+    icon: 'spell-frost-windwalkon',
+    description: 'Reduce el coste de maná de Caminar sobre el agua.',
+  },
+  {
+    type: 'minor',
+    name: 'Glifo de Vida renovada',
+    icon: 'inv-relics-idol-of-rejuvenation',
+    description: 'Reduce el coste de maná de Vida terrestre un 50%.',
+  },
+]
+
+const shamanElementalGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Descarga de relámpago',
+    icon: 'spell-nature-lightning',
+    description:
+      'Tu Descarga de relámpagos inflige un 4% más de daño, pero ya no salta a objetivos cercanos.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo del Tótem de cólera',
+    icon: 'spell-fire-totem-of-wrath',
+    description: 'Aumenta 60 s la duración de tu Tótem de cólera.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Arma lengua de fuego',
+    icon: 'spell-fire-flametounge',
+    description: 'Aumenta un 10% el daño de tu Arma lengua de fuego.',
+  },
+  ...shamanMinorGlyphs,
+]
+
+const shamanElementalRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Choque de llamas',
+          note: 'Mantener',
+          icons: ['spell-fire-flameshock'],
+        },
+        {
+          label: 'Ráfaga de lava',
+          note: 'A CD',
+          icons: ['spell-shaman-lava-burst'],
+        },
+        {
+          label: 'Descarga de relámpagos',
+          icons: ['spell-nature-lightning'],
+        },
+        {
+          label: 'Choque de escarcha',
+          note: 'Si necesitas moverte',
+          icons: ['spell-frost-frostshock'],
+        },
+      ],
+    },
+    {
+      title: 'Multitarget',
+      steps: [
+        {
+          label: 'Tótem de magma',
+          icons: ['ability-hunter-explosive-shot'],
+        },
+        {
+          label: 'Nova de Fuego',
+          icons: ['spell-fire-sealof-fire'],
+        },
+        {
+          label: 'Cadena de relámpagos',
+          icons: ['spell-nature-chainlightning'],
+        },
+      ],
+    },
+  ],
+}
+
+const shamanEnhancementStats: WowStatRow[] = [
+  { label: 'Índice de golpe', value: '2%' },
+  { label: 'Índice de golpe Hechizos', value: '14%' },
+  { label: 'Pericia', value: '26/26' },
+]
+
+const shamanEnhancementPriority = [
+  'Cap Golpe',
+  'Cap Golpe Hechizos',
+  'Celeridad',
+  'Poder de Ataque',
+  'Cap Pericia',
+  'Agilidad',
+  'Poder con Hechizos (SP)',
+  'Crítico',
+]
+
+const shamanEnhancementNotice =
+  'Si estás jugando Spellhance, Poder con hechizos tiene mayor importancia que Agilidad.'
+
+const shamanEnhancementGlyphs: WowGlyphSlot[] = [
+  {
+    type: 'major',
+    name: 'Glifo de Espíritu feral',
+    icon: 'spell-shaman-feral-spirit',
+    description: 'Tus lobos Ferales duran 15 s más.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Nova de Fuego',
+    icon: 'spell-fire-sealof-fire',
+    description: 'Reduce el tiempo de reutilización de Nova de Fuego 2 s.',
+  },
+  {
+    type: 'major',
+    name: 'Glifo de Golpe de Tormenta',
+    icon: 'ability-shaman-storm-strike',
+    description: 'Aumenta un 20% el daño de Golpe de Tormenta.',
+    badge: '2 opciones',
+    featured: true,
+    options: [
+      {
+        name: 'Glifo de Golpe de Tormenta',
+        icon: 'ability-shaman-storm-strike',
+        description: 'Aumenta un 20% el daño de Golpe de Tormenta.',
+        reason: 'Enhancement',
+      },
+      {
+        name: 'Glifo de Arma lengua de fuego',
+        icon: 'spell-fire-flametounge',
+        description: 'Aumenta un 10% el daño de tu Arma lengua de fuego.',
+        reason: 'Spellhance',
+      },
+    ],
+  },
+  ...shamanEnhancementMinorGlyphs,
+]
+
+const shamanEnhancementRotation: WowRotation = {
+  groups: [
+    {
+      title: 'Unitarget',
+      steps: [
+        {
+          label: 'Golpe de tormenta',
+          icons: ['ability-shaman-storm-strike'],
+        },
+        {
+          label: 'Descarga de relámpago',
+          note: 'Con el buff de Vorágine. Si eres Spellhance, este poder va antes que Golpe de Tormenta',
+          icons: ['spell-nature-lightning', 'spell-shaman-maelstromweapon'],
+        },
+        {
+          label: 'Choque de llamas',
+          note: 'Mantener',
+          icons: ['spell-fire-flameshock'],
+        },
+        {
+          label: 'Tótem de fuego',
+          note: 'Ya sea Tótem de magma o Tótem abrasador',
+          icons: ['ability-hunter-explosive-shot'],
+        },
+        {
+          label: 'Escudo de relámpagos',
+          note: 'Mantener y solo renovar cuando el escudo haya caído por completo o en tiempos muertos si todo lo demás está en CD',
+          icons: ['spell-nature-lightning-shield'],
+        },
+        {
+          label: 'Nova de fuego',
+          icons: ['spell-fire-sealof-fire'],
+        },
+        {
+          label: 'Choque de tierra',
+          icons: ['spell-nature-earthshock'],
+        },
+        {
+          label: 'Latigazo de lava',
+          icons: ['ability-shaman-lavalash'],
+        },
+      ],
+    },
+    {
+      title: 'Multitarget',
+      steps: [
+        {
+          label: 'Tótem de magma',
+          icons: ['ability-hunter-explosive-shot'],
+        },
+        {
+          label: 'Nova de Fuego',
+          icons: ['spell-fire-sealof-fire'],
+        },
+        {
+          label: 'Cadena de relámpagos',
+          note: 'Con el buff de Vorágine',
+          icons: ['spell-nature-chainlightning', 'spell-shaman-maelstromweapon'],
+        },
+      ],
+    },
+  ],
+}
+
 function createPlaceholderGlyphs(): WowGlyphSlot[] {
   const glyph = (type: WowGlyphSlot['type'], icon: string): WowGlyphSlot => ({
     type,
@@ -2750,6 +3074,9 @@ function createBuild(
     glyphs?: WowGlyphSlot[]
     notice?: string
     noticeTitle?: string
+    statsNotice?: string
+    statsNoticeTitle?: string
+    noticeHighlight?: string
     noticeIcons?: string[]
     noticeTone?: 'warning' | 'danger'
     rotation?: WowRotation
@@ -2769,6 +3096,9 @@ function createBuild(
     priorityGroups: options.priorityGroups,
     notice: options.notice,
     noticeTitle: options.noticeTitle,
+    statsNotice: options.statsNotice,
+    statsNoticeTitle: options.statsNoticeTitle,
+    noticeHighlight: options.noticeHighlight,
     noticeIcons: options.noticeIcons,
     noticeTone: options.noticeTone,
     rotation: options.rotation,
@@ -2810,151 +3140,175 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
     const isDeathKnightBlood = isDeathKnight && specSlug === 'sangre'
     const isDeathKnightFrost = isDeathKnight && specSlug === 'escarcha'
     const isDeathKnightUnholy = isDeathKnight && specSlug === 'profano'
+    const isShamanElemental = classSlug === 'chaman' && specSlug === 'elemental'
+    const isShamanEnhancement = classSlug === 'chaman' && specSlug === 'mejora'
     const stats = isDruidFeralDps
       ? druidferalDpsStats
       : isDruidRestoration
-      ? druidRestorationStats
-      : isHoly
-        ? []
-        : isHunterBestias
-        ? hunterBestiasStats
-        : isHunterPunteria
-          ? hunterPunteriaStats
-          : isHunterSupervivencia
-            ? hunterSupervivenciaStats
-            : isRogueAsesinato
-              ? rogueAsesinatoStats
-              : isRogueCombate
-                ? rogueCombatStats
-                : isRogueSutileza
-                  ? rogueSutilezaStats
-                  : isPriestDisciplina
-                    ? priestDisciplinaStats
-                    : isPriestSagrado
-                      ? priestSagradoStats
-                      : isRetribution
-                ? retributionStats
-                : isArms
-                  ? armsStats
-                  : isFury
-                    ? furyStats
-                    : tankSpecs.has(specSlug)
-                      ? tankStats
-                      : dpsStats
+        ? druidRestorationStats
+        : isShamanElemental
+          ? shamanElementalStats
+          : isHoly
+            ? []
+            : isHunterBestias
+              ? hunterBestiasStats
+              : isHunterPunteria
+                ? hunterPunteriaStats
+                : isHunterSupervivencia
+                  ? hunterSupervivenciaStats
+                  : isRogueAsesinato
+                    ? rogueAsesinatoStats
+                    : isRogueCombate
+                      ? rogueCombatStats
+                      : isRogueSutileza
+                        ? rogueSutilezaStats
+                        : isPriestDisciplina
+                          ? priestDisciplinaStats
+                          : isPriestSagrado
+                            ? priestSagradoStats
+                            : isRetribution
+                              ? retributionStats
+                              : isArms
+                                ? armsStats
+                                : isFury
+                                  ? furyStats
+                                  : tankSpecs.has(specSlug)
+                                    ? tankStats
+                                    : dpsStats
     const baseTips = isDruidFeralDps
       ? druidferalDpsTips
       : isDruidRestoration
-      ? druidRestorationTips
-      : isHoly
-        ? holyTips
-        : isHunterBestias
-        ? hunterBestiasTips
-        : isHunterPunteria
-          ? hunterPunteriaTips
-          : isHunterSupervivencia
-            ? hunterSupervivenciaTips
-            : isRogueAsesinato
-              ? rogueAsesinatoTips
-                : isRogueCombate
-                  ? rogueCombatTips
-                  : isPriestDisciplina
-                    ? priestDisciplinaTips
-                    : isArms
-                ? armsTips
-                : isFury
-                  ? furyTips
-                  : isProtection
-                    ? protectionTips
-                    : isRetribution
-                      ? retributionTips
-                      : undefined
+        ? druidRestorationTips
+        : isShamanElemental
+          ? undefined
+          : isHoly
+            ? holyTips
+            : isHunterBestias
+              ? hunterBestiasTips
+              : isHunterPunteria
+                ? hunterPunteriaTips
+                : isHunterSupervivencia
+                  ? hunterSupervivenciaTips
+                  : isRogueAsesinato
+                    ? rogueAsesinatoTips
+                    : isRogueCombate
+                      ? rogueCombatTips
+                      : isPriestDisciplina
+                        ? priestDisciplinaTips
+                        : isArms
+                          ? armsTips
+                          : isFury
+                            ? furyTips
+                            : isProtection
+                              ? protectionTips
+                              : isRetribution
+                                ? retributionTips
+                                : undefined
     const rotation = isPriestSombra
       ? priestSombraRotation
       : isDruidFeralDps
-      ? druidferalDpsRotation
-      : isDruidRestoration
-      ? druidRestorationRotation
-      : isHoly
-        ? holyRotation
-        : isHunterBestias
-        ? hunterBestiasRotation
-        : isHunterPunteria
-          ? hunterPunteriaRotation
-          : isHunterSupervivencia
-            ? hunterSupervivenciaRotation
-            : isRogueAsesinato
-              ? rogueAsesinatoRotation
-              : isRogueCombate
-                ? rogueCombatRotation
-                : isRogueSutileza
-                  ? rogueSutilezaRotation
-                  : isPriestDisciplina
-                    ? priestDisciplinaRotation
-                    : isPriestSagrado
-                      ? priestSagradoRotation
-                      : isPaladinProtection
-                ? paladinProtectionRotation
-                : isRetribution
-                  ? retributionRotation
-                  : isArms
-                    ? armsRotation
-                    : isFury
-                      ? furyRotation
-                      : isProtection
-                        ? protectionRotation
-                        : undefined
+        ? druidferalDpsRotation
+        : isDruidRestoration
+          ? druidRestorationRotation
+          : isShamanElemental
+            ? shamanElementalRotation
+            : isHoly
+              ? holyRotation
+              : isHunterBestias
+                ? hunterBestiasRotation
+                : isHunterPunteria
+                  ? hunterPunteriaRotation
+                  : isHunterSupervivencia
+                    ? hunterSupervivenciaRotation
+                    : isRogueAsesinato
+                      ? rogueAsesinatoRotation
+                      : isRogueCombate
+                        ? rogueCombatRotation
+                        : isRogueSutileza
+                          ? rogueSutilezaRotation
+                          : isPriestDisciplina
+                            ? priestDisciplinaRotation
+                            : isPriestSagrado
+                              ? priestSagradoRotation
+                              : isPaladinProtection
+                                ? paladinProtectionRotation
+                                : isRetribution
+                                  ? retributionRotation
+                                  : isArms
+                                    ? armsRotation
+                                    : isFury
+                                      ? furyRotation
+                                      : isProtection
+                                        ? protectionRotation
+                                        : undefined
     builds[classSlug][specSlug] = variants.map((variant) => {
       const buildLabel = displayBuildLabel(variant.label)
       const isDeathKnightUnholyPrincipal =
         isDeathKnightUnholy && buildLabel === 'Build principal'
+      const isDeathKnightUnholyDw =
+        isDeathKnightUnholy && buildLabel === 'Dual Wielding'
       const isPriestSombraMindFlay =
         isPriestSombra && buildLabel === 'Mind Flay'
       const buildStats = isDeathKnightUnholyPrincipal
         ? deathKnightUnholyStats
-        : isDeathKnightFrost
-          ? deathKnightFrostStats
-          : isPriestSombra
-            ? priestSombraStats
-            : stats
+        : isDeathKnightUnholyDw
+          ? deathKnightUnholyDwStats
+          : isShamanEnhancement
+            ? shamanEnhancementStats
+            : isDeathKnightFrost
+              ? deathKnightFrostStats
+              : isPriestSombra
+                ? priestSombraStats
+                : stats
       const buildRotation = isDeathKnightUnholyPrincipal
         ? deathKnightUnholyRotation
-        : isDeathKnightBlood
-          ? deathKnightBloodRotation
-          : isDeathKnightFrost
-            ? deathKnightFrostRotation
-            : isPriestSombraMindFlay
-              ? priestSombraMindFlayRotation
-              : isHunterPunteria && buildLabel === 'Trap weaving'
-                ? hunterPunteriaTrapRotation
-                : rotation
+        : isDeathKnightUnholyDw
+          ? deathKnightUnholyDwRotation
+          : isShamanEnhancement
+            ? shamanEnhancementRotation
+            : isDeathKnightBlood
+              ? deathKnightBloodRotation
+              : isDeathKnightFrost
+                ? deathKnightFrostRotation
+                : isPriestSombraMindFlay
+                  ? priestSombraMindFlayRotation
+                  : isHunterPunteria && buildLabel === 'Trap weaving'
+                    ? hunterPunteriaTrapRotation
+                    : rotation
 
       return createBuild(buildLabel, buildStats, {
         allocations: variant.trees,
         priority: isDeathKnightUnholyPrincipal
           ? deathKnightUnholyPriority
-          : isDeathKnightFrost
-            ? deathKnightFrostPriority
-            : isPriestSombra
-              ? priestSombraPriority
-              : isHoly
-                ? holyPriority
-                : isHunterPunteria
-                  ? hunterPunteriaPriority
-                  : isHunterSupervivencia
-                    ? hunterSupervivenciaPriority
-                    : isRogueAsesinato
-                      ? rogueAsesinatoPriority
-                      : isRogueCombate
-                        ? rogueCombatPriority
-                        : isRogueSutileza
-                          ? rogueSutilezaPriority
-                          : isPriestDisciplina
-                            ? priestDisciplinaPriority
-                            : isPriestSagrado
-                              ? priestSagradoPriority
-                              : isArms || isFury
-                                ? armsPriority
-                                : undefined,
+          : isDeathKnightUnholyDw
+            ? deathKnightUnholyDwPriority
+            : isShamanElemental
+              ? shamanElementalPriority
+              : isShamanEnhancement
+                ? shamanEnhancementPriority
+                : isDeathKnightFrost
+                  ? deathKnightFrostPriority
+                  : isPriestSombra
+                    ? priestSombraPriority
+                    : isHoly
+                      ? holyPriority
+                      : isHunterPunteria
+                        ? hunterPunteriaPriority
+                        : isHunterSupervivencia
+                          ? hunterSupervivenciaPriority
+                          : isRogueAsesinato
+                            ? rogueAsesinatoPriority
+                            : isRogueCombate
+                              ? rogueCombatPriority
+                              : isRogueSutileza
+                                ? rogueSutilezaPriority
+                                : isPriestDisciplina
+                                  ? priestDisciplinaPriority
+                                  : isPriestSagrado
+                                    ? priestSagradoPriority
+                                    : isArms || isFury
+                                      ? armsPriority
+                                      : undefined,
         priorityGroups: isDeathKnightBlood
           ? deathKnightBloodPriorityGroups
           : isDruidFeralDps
@@ -2970,67 +3324,92 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
             : isRetribution
               ? retributionPriorityGroups
               : undefined,
-        glyphs: isDeathKnightUnholy
+        glyphs: isDeathKnightUnholyPrincipal
           ? deathKnightUnholyGlyphs
-          : isDeathKnightBlood
-            ? deathKnightBloodGlyphs
-            : isDeathKnightFrost
-              ? deathKnightFrostGlyphs
-              : isDeathKnight
-                ? deathKnightMinorGlyphs
-                : isPriestSombra
-                  ? priestSombraGlyphs
-                  : isDruidFeralDps
-                    ? druidferalDpsGlyphs
-                    : isDruidRestoration
-                      ? druidRestorationGlyphs
-                      : isHoly
-                        ? holyGlyphs
-                        : isHunterBestias
-                          ? hunterBestiasGlyphs
-                          : isHunterPunteria
-                            ? hunterPunteriaGlyphs
-                            : isHunterSupervivencia
-                              ? hunterSupervivenciaGlyphs
-                              : isRogueAsesinato
-                                ? rogueAsesinatoGlyphs
-                                : isRogueCombate
-                                  ? rogueCombatGlyphs
-                                  : isRogueSutileza
-                                    ? rogueSutilezaGlyphs
-                                    : isPriestDisciplina
-                                      ? priestDisciplinaGlyphs
-                                      : isPriestSagrado
-                                        ? priestSagradoGlyphs
-                                        : isPaladinProtection
-                                          ? paladinProtectionGlyphs
-                                          : isRetribution
-                                            ? retributionGlyphs
-                                            : isArms
-                                              ? armsGlyphs
-                                              : isFury
-                                                ? furyGlyphs
-                                                : isProtection
-                                                  ? protectionGlyphs
-                                                  : undefined,
-        notice: isPriestSombraMindFlay
-          ? priestSombraMindFlayNotice
-          : isArms
-          ? armsNotice
-          : isHunterBestias
-            ? hunterBestiasNotice
-            : isHunterSupervivencia
-              ? hunterSupervivenciaNotice
-              : isRogueSutileza
-                ? rogueSutilezaNotice
-                : isProtection
-                  ? protectionNotice
-                  : undefined,
-        noticeTitle: isPriestSombraMindFlay ? 'Importante' : undefined,
+          : isDeathKnightUnholyDw
+            ? deathKnightUnholyDwGlyphs
+            : isShamanElemental
+              ? shamanElementalGlyphs
+              : isDeathKnightBlood
+                ? deathKnightBloodGlyphs
+                : isDeathKnightFrost
+                  ? deathKnightFrostGlyphs
+                  : isDeathKnight
+                    ? deathKnightMinorGlyphs
+                    : isPriestSombra
+                      ? priestSombraGlyphs
+                      : isDruidFeralDps
+                        ? druidferalDpsGlyphs
+                        : isDruidRestoration
+                          ? druidRestorationGlyphs
+                          : isHoly
+                            ? holyGlyphs
+                            : isHunterBestias
+                              ? hunterBestiasGlyphs
+                              : isHunterPunteria
+                                ? hunterPunteriaGlyphs
+                                : isHunterSupervivencia
+                                  ? hunterSupervivenciaGlyphs
+                                  : isRogueAsesinato
+                                    ? rogueAsesinatoGlyphs
+                                    : isRogueCombate
+                                      ? rogueCombatGlyphs
+                                      : isRogueSutileza
+                                        ? rogueSutilezaGlyphs
+                                        : isPriestDisciplina
+                                          ? priestDisciplinaGlyphs
+                                          : isPriestSagrado
+                                            ? priestSagradoGlyphs
+                                            : isPaladinProtection
+                                              ? paladinProtectionGlyphs
+                                              : isRetribution
+                                                ? retributionGlyphs
+                                                : isArms
+                                                  ? armsGlyphs
+                                                  : isFury
+                                                    ? furyGlyphs
+                                                    : isProtection
+                                                      ? protectionGlyphs
+                                                      : isShamanEnhancement
+                                                        ? shamanEnhancementGlyphs
+                                                        : undefined,
+        notice: isDeathKnightUnholyDw
+          ? deathKnightUnholyDwNotice
+          : isPriestSombraMindFlay
+            ? priestSombraMindFlayNotice
+            : isArms
+              ? armsNotice
+              : isHunterBestias
+                ? hunterBestiasNotice
+                : isHunterSupervivencia
+                  ? hunterSupervivenciaNotice
+                  : isRogueSutileza
+                    ? rogueSutilezaNotice
+                    : isProtection
+                      ? protectionNotice
+                      : isShamanElemental
+                        ? shamanElementalNotice
+                        : undefined,
+        noticeTitle: isDeathKnightUnholyDw
+          ? 'Nota de la build'
+          : isPriestSombraMindFlay
+            ? 'Importante'
+            : undefined,
+        noticeHighlight: isDeathKnightUnholyDw
+          ? 'Agonía de las Sombras'
+          : isShamanElemental
+            ? 'viable'
+            : undefined,
         noticeIcons: isPriestSombraMindFlay
           ? ['spell-shadow-unholyfrenzy']
           : undefined,
         noticeTone: isRogueSutileza ? 'danger' : undefined,
+        statsNotice: isShamanEnhancement
+          ? shamanEnhancementNotice
+          : undefined,
+        statsNoticeTitle: isShamanEnhancement
+          ? 'Nota de la build'
+          : undefined,
         rotation: buildRotation,
         rotationNotice:
           isHunterPunteria ||

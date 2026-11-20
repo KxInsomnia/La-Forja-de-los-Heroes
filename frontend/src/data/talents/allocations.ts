@@ -3,6 +3,56 @@ export interface SpecAllocationBuild {
   trees: Record<string, Record<string, number>>
 }
 
+const shamanEnhancementLowGearTrees: SpecAllocationBuild['trees'] = {
+  'elemental': {
+    'Llamada de las llamas': 3,
+    'Conmoción': 5,
+    'Furia elemental': 5,
+    'Nova de Fuego mejorada': 2,
+    'Enfoque elemental': 1,
+    'Devastación elemental': 3,
+  },
+  'mejora': {
+    'Aluvión': 5,
+    'Tótems de mejoría': 3,
+    'Armas elementales': 3,
+    'Golpes de trueno': 5,
+    'Conocimiento ancestral': 3,
+    'Armas de espíritu': 1,
+    'Enfoque chamanístico': 1,
+    'Golpe de tormenta': 1,
+    'Maestría en armas': 3,
+    'Tótem Viento Furioso mejorado': 0,
+    'Escudos mejorados': 1,
+    'Ira desatada': 3,
+    'Doble empuñadura': 1,
+    'Presura mental': 3,
+    'Especialización en doble empuñadura': 3,
+    'Ira del chamán': 1,
+    'Golpe de tormenta mejorado': 2,
+    'Choque estático': 3,
+    'Arma vorágine': 5,
+    'Espíritu feral': 1,
+    'Maña mental': 3,
+    'Latigazo de lava': 1,
+  },
+}
+
+const shamanEnhancementPrincipalTrees: SpecAllocationBuild['trees'] = {
+  'elemental': {
+    ...shamanEnhancementLowGearTrees.elemental,
+    'Enfoque elemental': 0,
+  },
+  'mejora': {
+    ...shamanEnhancementLowGearTrees.mejora,
+    'Conocimiento ancestral': 5,
+    'Enfoque chamanístico': 0,
+    'Tótem Viento Furioso mejorado': 0,
+    'Golpe de tormenta mejorado': 0,
+    'Escudos mejorados': 3,
+  },
+}
+
 export const specAllocations: Record<
   string,
   Record<string, SpecAllocationBuild[]>
@@ -960,6 +1010,7 @@ export const specAllocations: Record<
         label: 'Build principal',
         trees: {
           'elemental': {
+            'Convección': 2,
             'Llamada de las llamas': 3,
             'Llamada del trueno': 1,
             'Conmoción': 5,
@@ -968,7 +1019,6 @@ export const specAllocations: Record<
             'Maestría elemental': 1,
             'Enfoque elemental': 1,
             'Maestría en relámpagos': 5,
-            'Amparo elemental': 3,
             'Alcance elemental': 2,
             'Ojo de la tormenta': 3,
             'Tormenta inexorable': 3,
@@ -983,7 +1033,8 @@ export const specAllocations: Record<
             'Ecos retumbantes': 2,
           },
           'mejora': {
-            'Escudos mejorados': 3,
+            'Escudos mejorados': 1,
+            'Armas elementales': 3,
             'Golpes de trueno': 5,
             'Conocimiento ancestral': 5,
             'Enfoque chamanístico': 1,
@@ -994,39 +1045,11 @@ export const specAllocations: Record<
     'mejora': [
       {
         label: 'Build principal',
-        trees: {
-          'elemental': {
-            'Llamada de las llamas': 3,
-            'Conmoción': 5,
-            'Furia elemental': 5,
-            'Nova de Fuego mejorada': 2,
-            'Enfoque elemental': 1,
-            'Devastación elemental': 3,
-          },
-          'mejora': {
-            'Aluvión': 5,
-            'Tótems de mejoría': 3,
-            'Armas elementales': 3,
-            'Golpes de trueno': 5,
-            'Conocimiento ancestral': 3,
-            'Armas de espíritu': 1,
-            'Enfoque chamanístico': 1,
-            'Golpe de tormenta': 1,
-            'Maestría en armas': 3,
-            'Tótem Viento Furioso mejorado': 2,
-            'Ira desatada': 3,
-            'Doble empuñadura': 1,
-            'Presura mental': 3,
-            'Especialización en doble empuñadura': 3,
-            'Ira del chamán': 1,
-            'Golpe de tormenta mejorado': 1,
-            'Choque estático': 3,
-            'Arma vorágine': 5,
-            'Espíritu feral': 1,
-            'Maña mental': 3,
-            'Latigazo de lava': 1,
-          },
-        },
+        trees: shamanEnhancementPrincipalTrees,
+      },
+      {
+        label: 'Low Gear',
+        trees: shamanEnhancementLowGearTrees,
       },
     ],
     'restauracion': [
