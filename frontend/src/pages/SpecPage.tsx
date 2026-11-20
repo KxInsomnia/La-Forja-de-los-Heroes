@@ -45,6 +45,57 @@ function renderNoticeText(text: string, highlight?: string) {
   ))
 }
 
+function NoticeBlock({
+  text,
+  title,
+  highlight,
+  tone,
+  icons,
+  className,
+}: {
+  text: string
+  title?: string
+  highlight?: string
+  tone?: 'warning' | 'danger'
+  icons?: string[]
+  className?: string
+}) {
+  return (
+    <div
+      className={`spec-notice${
+        tone === 'danger' ? ' spec-notice--danger' : ''
+      }${className ? ` ${className}` : ''}`}
+      role="note"
+    >
+      <p className="spec-notice__title">
+        {title ?? 'Antes de elegir esta especialización'}
+      </p>
+      <div className="spec-notice__body">
+        {icons && icons.length > 0 && (
+          <span className="spec-notice__icons" aria-hidden="true">
+            {icons.map((icon) => (
+              <img
+                key={icon}
+                src={`${import.meta.env.BASE_URL}${
+                  icon.includes('/') ? icon : `talents/${icon}.jpg`
+                }`}
+                alt=""
+                width={20}
+                height={20}
+                loading="lazy"
+                decoding="async"
+              />
+            ))}
+          </span>
+        )}
+        <p className="spec-notice__text">
+          {renderNoticeText(text, highlight)}
+        </p>
+      </div>
+    </div>
+  )
+}
+
 export function SpecPage() {
   const { classSlug, specSlug } = useParams()
   const routeKey = `${classSlug ?? ''}/${specSlug ?? ''}`
@@ -110,6 +161,17 @@ export function SpecPage() {
         <p className="spec-page__desc">{spec.description}</p>
       )}
 
+      {activeBuild?.notice && activeBuild.noticeAtTop && (
+        <NoticeBlock
+          text={activeBuild.notice}
+          title={activeBuild.noticeTitle}
+          highlight={activeBuild.noticeHighlight}
+          tone={activeBuild.noticeTone}
+          icons={activeBuild.noticeIcons}
+          className="spec-notice--page"
+        />
+      )}
+
       {sections.length > 0 && (
         <nav aria-label="Secciones de la guía">
           <ul className="spec-page__sections">
@@ -159,43 +221,14 @@ export function SpecPage() {
               </div>
             )}
           </div>
-          {activeBuild?.notice && (
-            <div
-              className={`spec-notice${
-                activeBuild.noticeTone === 'danger' ? ' spec-notice--danger' : ''
-              }`}
-              role="note"
-            >
-              <p className="spec-notice__title">
-                {activeBuild.noticeTitle ??
-                  'Antes de elegir esta especialización'}
-              </p>
-              <div className="spec-notice__body">
-                {activeBuild.noticeIcons && activeBuild.noticeIcons.length > 0 && (
-                  <span className="spec-notice__icons" aria-hidden="true">
-                    {activeBuild.noticeIcons.map((icon) => (
-                      <img
-                        key={icon}
-                        src={`${import.meta.env.BASE_URL}${
-                          icon.includes('/') ? icon : `talents/${icon}.jpg`
-                        }`}
-                        alt=""
-                        width={20}
-                        height={20}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    ))}
-                  </span>
-                )}
-                <p className="spec-notice__text">
-                  {renderNoticeText(
-                    activeBuild.notice,
-                    activeBuild.noticeHighlight,
-                  )}
-                </p>
-              </div>
-            </div>
+          {activeBuild?.notice && !activeBuild.noticeAtTop && (
+            <NoticeBlock
+              text={activeBuild.notice}
+              title={activeBuild.noticeTitle}
+              highlight={activeBuild.noticeHighlight}
+              tone={activeBuild.noticeTone}
+              icons={activeBuild.noticeIcons}
+            />
           )}
           <TalentTree
             trees={talentTrees}

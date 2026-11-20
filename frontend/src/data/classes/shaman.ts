@@ -21,7 +21,10 @@ export const shaman: WowClass = {
       icon: 'shaman-enhancement',
       name: 'Mejora',
       role: 'DPS',
-      badges: [{ label: 'Recomendado', tone: 'yes' }],
+      badges: [
+        { label: 'Recomendado', tone: 'yes' },
+        { label: 'Complejo', tone: 'complex' },
+      ],
       buildCount: 2,
     },
     {

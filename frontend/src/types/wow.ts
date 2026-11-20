@@ -125,6 +125,7 @@ export interface WowSpecBuild {
   priorityGroups?: WowStatPriorityGroup[]
   notice?: string
   noticeTitle?: string
+  noticeAtTop?: boolean
   statsNotice?: string
   statsNoticeTitle?: string
   noticeHighlight?: string

@@ -2820,19 +2820,20 @@ const shamanMinorGlyphs: WowGlyphSlot[] = [
     type: 'minor',
     name: 'Glifo de Escudo de agua',
     icon: 'ability-shaman-water-shield',
-    description: 'Cada orbe de tu Escudo de agua otorga 1 de maná adicional.',
+    description: 'Aumenta en 1 el número de cargas de tu Escudo de agua.',
   },
   {
     type: 'minor',
     name: 'Glifo de Tormenta de truenos',
     icon: 'spell-shaman-thunder-storm',
-    description: 'Aumenta un 20% el daño de Tormenta de truenos.',
+    description:
+      'Aumenta la cantidad de maná que recibes de tu hechizo Tormenta de truenos un 2%, pero ya no derriba a los enemigos.',
   },
   {
     type: 'minor',
     name: 'Glifo de Vida renovada',
-    icon: 'inv-relics-idol-of-rejuvenation',
-    description: 'Reduce el coste de maná de Vida terrestre un 50%.',
+    icon: 'spell-nature-reincarnation',
+    description: 'Tu hechizo Reencarnación ya no necesita un componente.',
   },
 ]
 
@@ -2841,7 +2842,7 @@ const shamanEnhancementMinorGlyphs: WowGlyphSlot[] = [
     type: 'minor',
     name: 'Glifo de Escudo de agua',
     icon: 'ability-shaman-water-shield',
-    description: 'Cada orbe de tu Escudo de agua otorga 1 de maná adicional.',
+    description: 'Aumenta en 1 el número de cargas de tu Escudo de agua.',
   },
   {
     type: 'minor',
@@ -2852,8 +2853,8 @@ const shamanEnhancementMinorGlyphs: WowGlyphSlot[] = [
   {
     type: 'minor',
     name: 'Glifo de Vida renovada',
-    icon: 'inv-relics-idol-of-rejuvenation',
-    description: 'Reduce el coste de maná de Vida terrestre un 50%.',
+    icon: 'spell-nature-reincarnation',
+    description: 'Tu hechizo Reencarnación ya no necesita un componente.',
   },
 ]
 
@@ -2862,20 +2863,21 @@ const shamanElementalGlyphs: WowGlyphSlot[] = [
     type: 'major',
     name: 'Glifo de Descarga de relámpago',
     icon: 'spell-nature-lightning',
-    description:
-      'Tu Descarga de relámpagos inflige un 4% más de daño, pero ya no salta a objetivos cercanos.',
+    description: 'Tu Descarga de relámpagos inflige un 4% más de daño.',
   },
   {
     type: 'major',
     name: 'Glifo del Tótem de cólera',
     icon: 'spell-fire-totem-of-wrath',
-    description: 'Aumenta 60 s la duración de tu Tótem de cólera.',
+    description:
+      'Cuando lanzas Tótem de cólera, ganas un 30% del bonus de poder con hechizos del tótem durante 5 min.',
   },
   {
     type: 'major',
     name: 'Glifo de Arma lengua de fuego',
     icon: 'spell-fire-flametounge',
-    description: 'Aumenta un 10% el daño de tu Arma lengua de fuego.',
+    description:
+      'Aumenta la probabilidad de golpe crítico con hechizos un 2% mientras Arma lengua de fuego está activada.',
   },
   ...shamanMinorGlyphs,
 ]
@@ -2901,7 +2903,7 @@ const shamanElementalRotation: WowRotation = {
         },
         {
           label: 'Choque de escarcha',
-          note: 'Si necesitas moverte',
+          note: 'Si necesitas moverte y Choque de llamas tiene más de 3 segundos de duración restante',
           icons: ['spell-frost-frostshock'],
         },
       ],
@@ -2911,7 +2913,7 @@ const shamanElementalRotation: WowRotation = {
       steps: [
         {
           label: 'Tótem de magma',
-          icons: ['ability-hunter-explosive-shot'],
+          icons: ['spell-fire-self-destruct'],
         },
         {
           label: 'Nova de Fuego',
@@ -2976,7 +2978,8 @@ const shamanEnhancementGlyphs: WowGlyphSlot[] = [
       {
         name: 'Glifo de Arma lengua de fuego',
         icon: 'spell-fire-flametounge',
-        description: 'Aumenta un 10% el daño de tu Arma lengua de fuego.',
+        description:
+          'Aumenta la probabilidad de golpe crítico con hechizos un 2% mientras Arma lengua de fuego está activada.',
         reason: 'Spellhance',
       },
     ],
@@ -3004,9 +3007,8 @@ const shamanEnhancementRotation: WowRotation = {
           icons: ['spell-fire-flameshock'],
         },
         {
-          label: 'Tótem de fuego',
-          note: 'Ya sea Tótem de magma o Tótem abrasador',
-          icons: ['ability-hunter-explosive-shot'],
+          label: 'Tótem de fuego o Tótem abrasador',
+          icons: ['spell-fire-self-destruct', 'spell-fire-searing-totem'],
         },
         {
           label: 'Escudo de relámpagos',
@@ -3032,7 +3034,7 @@ const shamanEnhancementRotation: WowRotation = {
       steps: [
         {
           label: 'Tótem de magma',
-          icons: ['ability-hunter-explosive-shot'],
+          icons: ['spell-fire-self-destruct'],
         },
         {
           label: 'Nova de Fuego',
@@ -3074,6 +3076,7 @@ function createBuild(
     glyphs?: WowGlyphSlot[]
     notice?: string
     noticeTitle?: string
+    noticeAtTop?: boolean
     statsNotice?: string
     statsNoticeTitle?: string
     noticeHighlight?: string
@@ -3096,6 +3099,7 @@ function createBuild(
     priorityGroups: options.priorityGroups,
     notice: options.notice,
     noticeTitle: options.noticeTitle,
+    noticeAtTop: options.noticeAtTop,
     statsNotice: options.statsNotice,
     statsNoticeTitle: options.statsNoticeTitle,
     noticeHighlight: options.noticeHighlight,
@@ -3395,6 +3399,7 @@ for (const [classSlug, specs] of Object.entries(specAllocations)) {
           : isPriestSombraMindFlay
             ? 'Importante'
             : undefined,
+        noticeAtTop: isShamanElemental ? true : undefined,
         noticeHighlight: isDeathKnightUnholyDw
           ? 'Agonía de las Sombras'
           : isShamanElemental
